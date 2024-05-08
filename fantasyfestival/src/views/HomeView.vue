@@ -3,6 +3,6 @@
 
 <template>
   <main>
-    <TheWelcome />
+    <h1 class="text-3xl font-bold underline"> Tailwind Installed!</h1>
   </main>
 </template>
