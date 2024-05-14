@@ -4,24 +4,34 @@
       <h1 class="text-5xl font-bold text-center">Fantasy Quest Esbjerg<br>2024</h1>
     </div>
 
+    <div class="countdown">
+      <div class="placeholder-box"></div>
+      <div class="placeholder-box"></div>
+      <div class="placeholder-box"></div>
+      <div class="placeholder-box"></div>
+    </div>
+
+
     <div class="tail">
       <img src="../assets/img/dragontail.png" alt="Dragon Tail">
     </div>
     <div class="maintekst">
-      <p class="text-center text-2xl">Er du klar til at leve dig ind i en anden verden, en magisk <br> historie, hvor du er helten, der er på en “quest” for at <br> overvinde de onde magter og redde hele verden? Så gør <br>dig klar til Fantasy Quest Esbjerg.</p>
+      <p class="text-center text-2xl">Er du klar til at leve dig ind i en anden verden, en magisk <br> historie, hvor du
+        er helten, der er på en “quest” for at <br> overvinde de onde magter og redde hele verden? Så gør <br>dig klar
+        til Fantasy Quest Esbjerg.</p>
     </div>
-  <div class="container-card">
-    <div v-for="questItem in questItems" :key="questItem.id" class="card">
-      <div class="portfolio-item">
-        <div class="info">
-          <h2 class="titletext">{{ questItem.title }}</h2>
-          <img class="bg-auto" :src="questItem.image" alt="">
-          <p class="description">{{ questItem.description }}</p>
-          <button class="button bg-blue-500 text-white rounded-full">Læs mere</button>
+    <div class="container-card">
+      <div v-for="questItem in questItems" :key="questItem.id" class="card">
+        <div class="portfolio-item">
+          <div class="info">
+            <h2 class="titletext">{{ questItem.title }}</h2>
+            <img class="bg-auto" :src="questItem.image" alt="">
+            <p class="description">{{ questItem.description }}</p>
+            <button class="button bg-blue-500 text-white rounded-full">Læs mere</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </main>
 </template>
 
@@ -35,6 +45,23 @@ const { questItems } = getQuestsItems();
 
 
 <style lang="scss" scoped>
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.placeholder-box {
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+}
+
+.bg-auto {
+  overflow: hidden;
+}
+
 .info {
   display: flex;
   flex-direction: column;
@@ -49,6 +76,7 @@ const { questItems } = getQuestsItems();
   margin-top: 1rem;
 
 }
+
 .container-card {
   margin-top: 5%;
   display: flex;
@@ -58,14 +86,14 @@ const { questItems } = getQuestsItems();
 .card {
   max-width: 500px;
   height: auto;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
 }
 
 .card img {
-  width: 70%;
-  height: 300px;
+  width: 100%;
+  height: 350px;
   object-fit: cover;
 }
 
@@ -76,7 +104,7 @@ const { questItems } = getQuestsItems();
 
 .card p {
   margin-left: 2%;
-  max-width: 30%;
+  max-width: 50%;
   text-align: left;
   margin-bottom: 1rem;
 }
