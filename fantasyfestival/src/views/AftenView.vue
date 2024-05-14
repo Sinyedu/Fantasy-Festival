@@ -1,6 +1,3 @@
-<script setup>
-// @import dragonnight.png;
-</script>
 
 <template>
   <div class="herocontainer">
@@ -36,10 +33,27 @@
     </div>
   </div>
 
-  <div class="info">
+  <div class="container-card">
+    <div v-for="infoData in infoDatas" :key="infoData.id" class="card">
+      <div class="info-data">
+        <div class="info">
+          <h2 class="titletext">{{ infoData.title }}</h2>
+          <p class="date">{{ infoData.date }}</p>
+          <p class="time">{{ infoData.time }}</p>
+          <p class="location">{{ infoData.location }}</p>
+          <p class="duration">{{ infoData.duration }}</p>
+          <p class="ages">{{ infoData.ages }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
+<script setup>
+  import { ref } from "vue";
+  import getInfosDatas from '@/modules/getInfo.js';
+  const { infoDatas } = getInfosDatas();
+</script>
 
 <style lang="scss" scoped>
 .herocontainer{
@@ -79,5 +93,31 @@
 .infotext{
   margin-top: 3%;
   width: 50%;
+}
+
+.container-card {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  max-width: 500px;
+  height: 100px;
+  align-items: center; 
+  justify-content: center;
+  box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
+}
+
+.card h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card p {
+  margin-left: 2%;
+  margin-top: 1rem;
+  max-width: 95%;
+  text-align: left;
 }
 </style>
