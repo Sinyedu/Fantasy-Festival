@@ -3,11 +3,8 @@
 </script>
 
 <template>
-  <div class="container">
-    <div class="hero">
-      <img src="../assets/img/dragonnight.png" alt="Dragon Looking">
-      <!-- <img src="../assets/img/dragonnight.png" alt="Dragon Looking"> -->
-    </div>
+  <div class="centertext">
+<h1 class="font-bold text-3xl text-center"> Aften Questen!</h1>
   </div>
 </template>
 

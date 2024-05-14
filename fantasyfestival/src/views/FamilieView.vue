@@ -1,8 +1,13 @@
+<script setup>
+
+</script>
 <template>
-  <div class="about">
-    <h1>Dag Questen!</h1>
+<main>
+  <div class="centertext">
+    <h1 class="font-bold text-center text-3xl">Dag Questen!</h1>
   </div>
+</main>
 </template>
 
-<style>
+<style lang="scss" scoped>
 </style>
