@@ -15,9 +15,9 @@
       <div class="portfolio-item">
         <div class="info">
           <h2 class="titletext">{{ questItem.title }}</h2>
-          <img class="object-fill" :src="questItem.image" alt="">
+          <img class="bg-auto" :src="questItem.image" alt="">
           <p class="description">{{ questItem.description }}</p>
-          <p :class="questItem.stack">{{ questItem.stack }}</p>
+          <button class="button bg-blue-500 text-white rounded-full">Læs mere</button>
         </div>
       </div>
     </div>
@@ -35,6 +35,20 @@ const { questItems } = getQuestsItems();
 
 
 <style lang="scss" scoped>
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.button {
+  padding: 10px;
+  width: 70%;
+  margin-top: 1rem;
+
+}
 .container-card {
   margin-top: 5%;
   display: flex;
@@ -50,7 +64,9 @@ const { questItems } = getQuestsItems();
 }
 
 .card img {
-  width: 100%;
+  width: 70%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .card h2 {
@@ -60,9 +76,9 @@ const { questItems } = getQuestsItems();
 
 .card p {
   margin-left: 2%;
-  margin-top: 1rem;
-  max-width: 95%;
+  max-width: 30%;
   text-align: left;
+  margin-bottom: 1rem;
 }
 
 .tail {
