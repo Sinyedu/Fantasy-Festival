@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
   <main>
     <div class="centertext">
@@ -13,52 +10,61 @@
     <div class="maintekst">
       <p class="text-center text-2xl">Er du klar til at leve dig ind i en anden verden, en magisk <br> historie, hvor du er helten, der er på en “quest” for at <br> overvinde de onde magter og redde hele verden? Så gør <br>dig klar til Fantasy Quest Esbjerg.</p>
     </div>
-    <div :key="questItems" class="card">
-        <div class="portfolio-item flex items-center">
-          <div class="info mr-4">
-          <img class="object-fill" :src="questItems.image" alt="">
-            <h2 class="text-white">{{ questItems.title }}</h2>
-            <p class="text-white">{{ questItems.description }}</p>
-            <p :class="questItems.stack">{{ questItems.stack }}</p>
-          </div>
-
-
-        </div>
-        <div class="projectlink" v-if="questItems.link">
-          <a class="text-white font-bold" :href="questItems.link">LINK FOR THE PROJECT</a>
-        </div>
-        <div v-else>
-
+  <div class="container-card">
+    <div v-for="questItem in questItems" :key="questItem.id" class="card">
+      <div class="portfolio-item">
+        <div class="info">
+          <img class="object-fill" :src="questItem.image" alt="">
+          <h2 class="titletext">{{ questItem.title }}</h2>
+          <p class="description">{{ questItem.description }}</p>
+          <p :class="questItem.stack">{{ questItem.stack }}</p>
         </div>
       </div>
+    </div>
+  </div>
   </main>
 </template>
 
 <script setup>
-const { questItems } = getQuestsItems()
-import getQuestsItems from '@/modules/getQuest.js'
+import { ref } from "vue";
+import getQuestsItems from '@/modules/getQuest.js';
 
+// Get questItems from the imported function
+const { questItems } = getQuestsItems();
 </script>
+
+
 <style lang="scss" scoped>
-.card {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
+.container-card {
+  margin-top: 5%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  margin: 1rem auto;
-  border-radius: 5px;
+  justify-content: space-evenly;
+}
+
+.card {
+  max-width: 500px;
+  height: auto;
+  align-items: center; 
+  justify-content: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
   width: 100%;
-  max-width: 100%;
-  height: auto;
 }
 
+.card h2 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card p {
+  margin-left: 2%;
+  margin-top: 1rem;
+  max-width: 95%;
+  text-align: left;
+}
 
 .tail {
   position: absolute;
