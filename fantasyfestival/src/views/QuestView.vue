@@ -46,7 +46,7 @@ const { questItems } = getQuestsItems();
   height: auto;
   align-items: center; 
   justify-content: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
 }
 
 .card img {

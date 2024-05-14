@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <div class="container">
+  <div class="herocontainer">
     <div class="hero">
-      <img class="w-full" src="../assets/img/dragonnight.png" alt="Dragen Gnist">      
+      <img class="" src="../assets/img/dragonnight.png" alt="Dragen Gnist">      
     </div>
     <div class="hands">
       <img src="../assets/img/dragonhands.png" alt="Gnist's hænder">
@@ -42,7 +42,7 @@
 
 
 <style lang="scss" scoped>
-.container{
+.herocontainer{
   display: flex;
   width: 100%;
   justify-content: center;
@@ -52,7 +52,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 100vh;
 }
 
