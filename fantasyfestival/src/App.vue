@@ -19,7 +19,7 @@ import { RouterLink, RouterView } from 'vue-router'
   </Transition>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.75s ease;
 }
@@ -32,7 +32,6 @@ import { RouterLink, RouterView } from 'vue-router'
 .slide-fade-enter-from, .slide-fade-leave-to {
   opacity: 0;
 }
-
 
 header {
   line-height: 1.5;
@@ -49,4 +48,7 @@ nav a {
   margin-right: 1rem;
 }
 
+#app {
+  overflow: hidden;
+}
 </style>

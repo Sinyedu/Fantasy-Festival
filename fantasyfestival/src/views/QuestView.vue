@@ -14,8 +14,8 @@
     <div v-for="questItem in questItems" :key="questItem.id" class="card">
       <div class="portfolio-item">
         <div class="info">
-          <img class="object-fill" :src="questItem.image" alt="">
           <h2 class="titletext">{{ questItem.title }}</h2>
+          <img class="object-fill" :src="questItem.image" alt="">
           <p class="description">{{ questItem.description }}</p>
           <p :class="questItem.stack">{{ questItem.stack }}</p>
         </div>
@@ -54,7 +54,6 @@ const { questItems } = getQuestsItems();
 }
 
 .card h2 {
-  margin-top: 1rem;
   font-size: 2rem;
   text-align: center;
 }
