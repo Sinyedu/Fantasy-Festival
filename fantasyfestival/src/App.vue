@@ -22,6 +22,7 @@ import { RouterLink, RouterView } from 'vue-router'
 header {
   line-height: 1.5;
   max-height: 100vh;
+  position: absolute;
 }
 
 .logo {
@@ -30,10 +31,11 @@ header {
 }
 
 nav a {
-  display: flex;
+  margin-right: 1rem;
+  /* display: flex; */
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   header {
     display: flex;
     place-items: center;
@@ -49,5 +51,5 @@ nav a {
     place-items: flex-start;
     flex-wrap: wrap;
   }
-}
+} */
 </style>
