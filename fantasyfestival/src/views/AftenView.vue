@@ -96,16 +96,18 @@
 .container-card {
   margin-top: 4%;
   display: flex;
+  width: 50%;
   justify-content: center;
-  align-items: end;
 }
 
 .card {
-  max-width: 500px;
-  height: 100px;
+  max-width: 100%;
+  width: 35%;
+  height: 60%;
   align-items: center; 
   justify-content: center;
   box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
+  border-radius: 7%;
 }
 
 .card h1 {
@@ -114,9 +116,10 @@
 }
 
 .card h2 {
-  margin-left: 2%;
+  margin-left: 5%;
   margin-top: 1rem;
   max-width: 95%;
   text-align: left;
+  font-size: 1.35rem;
 }
 </style>
