@@ -55,7 +55,7 @@
 
   <div class="video-holder">
     <img class="holder" src="../assets/img/dragonholder.png" alt="Dragon Tail">
-    <iframe class="video" width="1280" height="720" src="https://www.youtube.com/embed/AFBSUQvmt1o" title="Commercial - Red Merrild (For your perfect morning)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe class="video" width="1280" height="600" src="https://www.youtube.com/embed/AFBSUQvmt1o" title="Commercial - Red Merrild (For your perfect morning)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 
 </template>
@@ -76,7 +76,7 @@
 .hero{
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 101vh;
 }
 
 .hands{
@@ -147,22 +147,31 @@
   z-index: 3;
   font-size: 2rem;
 }
+
 .video-holder{
   display: flex;
   width: 100%;
   height: 100vh;
   justify-content: center;
-  align-items: center;
   position: relative;
+  margin-top: 10%;
+  margin-bottom: 10%;
   z-index: 0;
-
 }
 
 .holder{
   position: absolute;
   display: flex;
-  width: 50%;
+  width: auto;
   height: 100%;
+  margin-left: 42%;
+  scale: 1.24;
+  z-index: 2;
+}
+
+.video{
+  display: flex;
+  margin-top: 17.9%;
   z-index: 1;
 }
 </style>
