@@ -33,17 +33,70 @@
       </div>
     </div>
     <div class="relative">
-    <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonleft.png" alt="Dragon Left">
-    <iframe id="youtubePlayer" width="1200" height="700" src="https://www.youtube.com/embed/LHXuOTdFvNA" title="Peaky Blinders Reenactment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <img class="absolute right-0 top-0 z-10 dragonhand2" src="../assets/img/dragonright.png" alt="Dragon Right">
-  </div>
-  <div class="faq">
-</div>
+      <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonleft.png" alt="Dragon Left">
+      <iframe id="youtubePlayer" width="1200" height="700" src="https://www.youtube.com/embed/LHXuOTdFvNA"
+        title="Peaky Blinders Reenactment" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <img class="absolute right-0 top-0 z-10 dragonhand2" src="../assets/img/dragonright.png" alt="Dragon Right">
+    </div>
+    <div class="container mx-auto py-12">
+      <div class="max-w-lg mx-auto">
+        <h2 class="text-3xl font-semibold mb-6">Ofte stillede spørgsmål</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-title cursor-pointer">Hvordan bestiller jeg billetter?</div>
+            <div class="accordion-content hidden">Det gør du på <a class="text-bold underline" href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4">HER!</a></div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-title cursor-pointer">Er der en aldersbegrænsning på Aften Quest?</div>
+            <div class="accordion-content hidden">Lige nu er aldersgrænsen 16+</div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-title cursor-pointer">Hvor lang tid tager disse to Quests?</div>
+            <div class="accordion-content hidden">Hver deres Quest tager 2+ timer</div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-title cursor-pointer">Kan jeg have mit kæledyr med rundt på Quest?</div>
+            <div class="accordion-content hidden">Ja!</div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-title cursor-pointer">Kan jeg have en barnevogn med?</div>
+            <div class="accordion-content hidden">Ja, børn er altid velkommen! Vi ville dog vare imod Aften Questen</div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-title cursor-pointer">Er disse Quests handicapvenlige?</div>
+            <div class="accordion-content hidden">Vores Quests er handicapvenlige og støttende for andre!</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   </main>
 </template>
+<script>
+export default {
+  mounted() {
+    const accordionTitles = document.querySelectorAll('.accordion-title');
 
+    accordionTitles.forEach(title => {
+      title.addEventListener('click', () => {
+        const content = title.nextElementSibling;
+
+        // Toggle visibility and animate height
+        content.classList.toggle('hidden');
+        anime({
+          targets: content,
+          height: content.classList.contains('hidden') ? 0 : 'auto',
+          duration: 300,
+          easing: 'easeInOutQuad'
+        });
+      });
+    });
+  }
+};
+</script>
 <script setup>
 import { ref } from "vue";
 import getQuestsItems from '@/modules/getQuest.js';
@@ -53,10 +106,19 @@ const { questItems } = getQuestsItems();
 </script>
 
 <style lang="scss" scoped>
-.faq {
-  width: 50%;
+.accordion-item {
+  border-bottom: 1px solid #e5e7eb;
 }
 
+.accordion-title {
+  padding: 1rem;
+  background-color: #f3f4f6;
+}
+
+.accordion-content {
+  padding: 1rem;
+  background-color: #edf2f7;
+}
 
 iframe {
   display: flex;
@@ -89,6 +151,7 @@ iframe {
   left: 15%;
   padding-bottom: 15%;
 }
+
 .booknu2 {
   width: 25%;
   padding: 10px;
