@@ -32,6 +32,9 @@
         </div>
       </div>
     </div>
+    <div class="booknu">
+      <button class="booknu button bg-blue-500 text-white rounded-full">BOOK NU</button>
+    </div>
   </main>
 </template>
 
@@ -45,11 +48,19 @@ const { questItems } = getQuestsItems();
 
 
 <style lang="scss" scoped>
+.booknu {
+  width: 20%;
+  position: relative;
+  left: 18%;
+}
+
+
 .countdown {
   display: flex;
   justify-content: center;
   gap: 250px;
-  margin-top: 20px; /* Adjust margin as needed */
+  margin-top: 20px;
+  /* Adjust margin as needed */
 }
 
 .placeholder-box {
