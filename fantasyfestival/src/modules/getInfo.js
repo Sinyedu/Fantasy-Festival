@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 
-const getInfoData = () => {
-  const infoData = ref([
+const getInfoDetails = () => {
+  const infoDetails = ref([
     {
       id: 1,
       title: 'Generel info',
@@ -13,7 +13,7 @@ const getInfoData = () => {
     },
   ])
 
-  return { infoData }
+  return { infoDetails }
 }
 
-export default getInfoData
+export default getInfoDetails
