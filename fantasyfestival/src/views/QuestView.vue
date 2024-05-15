@@ -32,9 +32,15 @@
         </div>
       </div>
     </div>
-    <div class="booknu">
-      <button class="booknu button bg-blue-500 text-white rounded-full">BOOK NU</button>
-    </div>
+    <div class="relative">
+    <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonleft.png" alt="Dragon Left">
+    <iframe id="youtubePlayer" width="1200" height="700" src="https://www.youtube.com/embed/LHXuOTdFvNA" title="Peaky Blinders Reenactment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <img class="absolute right-0 top-0 z-10 dragonhand2" src="../assets/img/dragonright.png" alt="Dragon Right">
+  </div>
+  <div class="faq">
+</div>
+
+
   </main>
 </template>
 
@@ -46,12 +52,46 @@ import getQuestsItems from '@/modules/getQuest.js';
 const { questItems } = getQuestsItems();
 </script>
 
-
 <style lang="scss" scoped>
-.booknu {
-  width: 20%;
+.faq {
+  width: 50%;
+}
+
+
+iframe {
+  display: flex;
   position: relative;
-  left: 18%;
+  right: 20.8%;
+  margin-top: 7%;
+  scale: 1.1;
+}
+
+.relative {
+  display: flex;
+  justify-content: center;
+}
+
+.dragonhand {
+  scale: .5;
+  position: inherit;
+}
+
+.dragonhand2 {
+  scale: .5;
+}
+
+.booknu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-evenly;
+  left: 15%;
+  padding-bottom: 15%;
+}
+.booknu2 {
+  width: 25%;
+  padding: 10px;
 }
 
 

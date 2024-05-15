@@ -13,7 +13,7 @@ const getQuestsItems = () => {
     {
       id: 2,
       title: 'Aften Quest',
-      description: 'Når tusmørket begynder at sænke sig over Esbjerg, skrues sværhedsgraden i AftenQuesten op. Nu skal der virkelig tænkes kreativt og løses opgaver, der kræver både mod, samarbejde og snilde for at I kan gennemføre questen og redde Esbjerg.',
+      description: 'Når tusmørket begynder at sænke sig over Esbjerg, skrues sværhedsgraden i Aften Questen op. Nu skal der virkelig tænkes kreativt og løses opgaver, der kræver både mod, samarbejde og snilde for at I kan gennemføre questen og redde Esbjerg.',
       image: image5
     },
   ])
