@@ -1,19 +1,19 @@
 import { ref } from 'vue'
 
-const getInfoDetails = () => {
-  const infoDetails = ref([
+const getDayDetails = () => {
+  const dayDetails = ref([
     {
       id: 1,
       title: 'Generel info',
       date: 'Lørdag d. 14 September',
-      time: 'Kl. 18.00 - 22.00',
+      time: 'Kl. 10.00 - 14.30',
       location: 'På Torvet i Esbjerg',
       duration: 'Varighed: 1 time og 15 minutter',
-      ages: 'Anbefales fra 7 år og op',
+      ages: 'Anbefales for hele familien',
     },
   ])
 
-  return { infoDetails }
+  return { dayDetails }
 }
 
-export default getInfoDetails
+export default getDayDetails
