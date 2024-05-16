@@ -33,14 +33,15 @@
       </div>
     </div>
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
-    <div class="relative">
-      <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonleft.png" alt="Dragon Left">
-      <iframe id="youtubePlayer" width="1200" height="700" src="https://www.youtube.com/embed/LHXuOTdFvNA"
-        title="Peaky Blinders Reenactment" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <img class="absolute right-0 top-0 z-10 dragonhand2" src="../assets/img/dragonright.png" alt="Dragon Right">
-    </div>
+    <div class="video-container relative">
+  <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonleft.png" alt="Dragon Left">
+  <iframe class="responsive-iframe mx-auto flex justify-center" width="1200" height="720" src="https://www.youtube.com/embed/LHXuOTdFvNA"
+    title="Peaky Blinders Reenactment" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <img class="absolute right-0 top-0 z-10 dragonhand2" src="../assets/img/dragonright.png" alt="Dragon Right">
+</div>
+
     <!-- THIS IS THE FAQ SECTION USED WITH TAILWINDCSS -->
     <div class="container mx-auto py-12">
       <div class="max-w-lg mx-auto">
@@ -135,26 +136,34 @@ const { questItems } = getQuestsItems();
 }
 
 
-iframe {
-  display: flex;
+.video-container {
   position: relative;
-  right: 20.8%;
-  margin-top: 7%;
-  scale: 1.1;
-}
-
-.relative {
+  max-width: 80%; /* Adjust as needed */
+  max-height: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
 }
 
+.responsive-iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 .dragonhand {
-  scale: .5;
-  position: inherit;
+  position: absolute;
+  top: -20%;
+  left: -12%;
+  z-index: 10; /* Ensure hands are above the video */
+  scale: 0.5;
 }
 
 .dragonhand2 {
-  scale: .5;
+  position: absolute;
+  top: -21%;
+  left: 59%;
+  z-index: 10; /* Ensure hands are above the video */
+  scale: 0.5;
 }
 
 .booknu {
@@ -255,8 +264,20 @@ iframe {
 .maintekst {
   margin-top: 30%;
 }
+@media (max-width: 1024px) {
+  .container-card {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-@media (max-width: 768px) {  
+  .card {
+    margin-bottom: 2rem;
+  }
+  
+}
+
+
+@media (max-width: 768px) {
   .container-card {
     flex-direction: column;
     justify-content: center;
