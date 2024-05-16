@@ -46,27 +46,27 @@
         <div class="accordion">
           <div class="accordion-item">
             <div class="accordion-title cursor-pointer">Hvordan bestiller jeg billetter?</div>
-            <div class="accordion-content hidden">Det gør du på <a class="text-bold underline" href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4">HER!</a></div>
+            <div class="accordion-content hidden"><p class="text-bold text-white">Det gør du på <a class="text-bold underline" href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">HER!</a></p></div>
           </div>
           <div class="accordion-item">
             <div class="accordion-title cursor-pointer">Er der en aldersbegrænsning på Aften Quest?</div>
-            <div class="accordion-content hidden">Lige nu er aldersgrænsen 16+</div>
+            <div class="accordion-content hidden"><p class="text-bold text-white">Lige nu er aldersgrænsen 16+</p></div>
           </div>
           <div class="accordion-item">
             <div class="accordion-title cursor-pointer">Hvor lang tid tager disse to Quests?</div>
-            <div class="accordion-content hidden">Hver deres Quest tager 2+ timer</div>
+            <div class="accordion-content hidden"><p class="text-bold text-white">Hver deres Quest tager 2+ timer</p></div>
           </div>
           <div class="accordion-item">
             <div class="accordion-title cursor-pointer">Kan jeg have mit kæledyr med rundt på Quest?</div>
-            <div class="accordion-content hidden">Ja!</div>
+            <div class="accordion-content hidden"><p class="text-bold text-white">Ja!</p></div>
           </div>
           <div class="accordion-item">
             <div class="accordion-title cursor-pointer">Kan jeg have en barnevogn med?</div>
-            <div class="accordion-content hidden">Ja, børn er altid velkommen! Vi ville dog vare imod Aften Questen</div>
+            <div class="accordion-content hidden"><p class="text-bold text-white">Ja, børn er altid velkommen! Vi ville dog vare imod Aften Questen</p></div>
           </div>
           <div class="accordion-item">
             <div class="accordion-title cursor-pointer">Er disse Quests handicapvenlige?</div>
-            <div class="accordion-content hidden">Vores Quests er handicapvenlige og støttende for andre!</div>
+            <div class="accordion-content hidden"><p class="text-bold text-white">Vores Quests er handicapvenlige og støttende for andre!</p></div>
           </div>
         </div>
       </div>
@@ -112,12 +112,12 @@ const { questItems } = getQuestsItems();
 
 .accordion-title {
   padding: 1rem;
-  background-color: #f3f4f6;
+  background-color: #C1BBAD;
 }
 
 .accordion-content {
   padding: 1rem;
-  background-color: #edf2f7;
+  background-color: #4b4d00;
 }
 
 iframe {
@@ -161,7 +161,7 @@ iframe {
 .countdown {
   display: flex;
   justify-content: center;
-  gap: 250px;
+  gap: 150px;
   margin-top: 20px;
   /* Adjust margin as needed */
 }
