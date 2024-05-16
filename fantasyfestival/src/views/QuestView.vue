@@ -45,59 +45,55 @@
         <h2 class="text-3xl font-semibold mb-6">Ofte stillede spørgsmål</h2>
         <div class="accordion">
           <div class="accordion-item">
-            <div class="accordion-title cursor-pointer">Hvordan bestiller jeg billetter?</div>
-            <div class="accordion-content hidden"><p class="text-bold text-white">Det gør du på <a class="text-bold underline" href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">HER!</a></p></div>
+            <input type="checkbox" id="q1" class="accordion-toggle">
+            <label for="q1" class="accordion-title cursor-pointer">Hvordan bestiller jeg billetter?</label>
+            <div class="accordion-content hidden">
+              <p class="text-bold text-black">Det gør du på <a class="text-bold underline"
+                  href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
+                  target="_blank">HER!</a></p>
+            </div>
           </div>
           <div class="accordion-item">
-            <div class="accordion-title cursor-pointer">Er der en aldersbegrænsning på Aften Quest?</div>
-            <div class="accordion-content hidden"><p class="text-bold text-white">Lige nu er aldersgrænsen 16+</p></div>
+            <input type="checkbox" id="q2" class="accordion-toggle">
+            <label for="q2" class="accordion-title cursor-pointer">Er der en aldersbegrænsning på Aften Quest?</label>
+            <div class="accordion-content hidden">
+              <p class="text-bold text-black">Ja, aldersgrænsen er på 16+</p>
+            </div>
           </div>
           <div class="accordion-item">
-            <div class="accordion-title cursor-pointer">Hvor lang tid tager disse to Quests?</div>
-            <div class="accordion-content hidden"><p class="text-bold text-white">Hver deres Quest tager 2+ timer</p></div>
+            <input type="checkbox" id="q3" class="accordion-toggle">
+            <label for="q3" class="accordion-title cursor-pointer">Hvor lang tid tager disse to Quests?</label>
+            <div class="accordion-content hidden">
+              <p class="text-bold text-black">Vores Quests tager en time og 15 minutter hver!</p>
+            </div>
           </div>
           <div class="accordion-item">
-            <div class="accordion-title cursor-pointer">Kan jeg have mit kæledyr med rundt på Quest?</div>
-            <div class="accordion-content hidden"><p class="text-bold text-white">Ja!</p></div>
+            <input type="checkbox" id="q4" class="accordion-toggle">
+            <label for="q4" class="accordion-title cursor-pointer">Kan jeg have min hund med rundt på Quest?</label>
+            <div class="accordion-content hidden">
+              <p class="text-bold text-black">Ja, det kan du godt!</p>
+            </div>
           </div>
           <div class="accordion-item">
-            <div class="accordion-title cursor-pointer">Kan jeg have en barnevogn med?</div>
-            <div class="accordion-content hidden"><p class="text-bold text-white">Ja, børn er altid velkommen! Vi ville dog vare imod Aften Questen</p></div>
+            <input type="checkbox" id="q5" class="accordion-toggle">
+            <label for="q5" class="accordion-title cursor-pointer">Kan jeg have en barnevogn med?</label>
+            <div class="accordion-content hidden">
+              <p class="text-bold text-black">Ja, det kan du godt!</p>
+            </div>
           </div>
           <div class="accordion-item">
-            <div class="accordion-title cursor-pointer">Er disse Quests handicapvenlige?</div>
-            <div class="accordion-content hidden"><p class="text-bold text-white">Vores Quests er handicapvenlige og støttende for andre!</p></div>
+            <input type="checkbox" id="q6" class="accordion-toggle">
+            <label for="q6" class="accordion-title cursor-pointer">Er disse Quests handicapvenlige?</label>
+            <div class="accordion-content hidden">
+              <p class="text-bold text-black">Ja, det er de!</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-
   </main>
 </template>
-<script>
-import anime from 'animejs';
-export default {
-  mounted() {
-    const accordionTitles = document.querySelectorAll('.accordion-title');
-
-    accordionTitles.forEach(title => {
-      title.addEventListener('click', () => {
-        const content = title.nextElementSibling;
-
-        // Toggle visibility and animate height
-        content.classList.toggle('hidden');
-        anime({
-          targets: content,
-          height: content.classList.contains('hidden') ? 0 : 'auto',
-          duration: 1200,
-          easing: 'easeInOutQuad'
-        });
-      });
-    });
-  }
-};
-</script>
 <script setup>
 import { ref } from "vue";
 import getQuestsItems from '@/modules/getQuest.js';
@@ -107,19 +103,35 @@ const { questItems } = getQuestsItems();
 </script>
 
 <style lang="scss" scoped>
-.accordion-item {
-  border-bottom: 1px solid #e5e7eb;
+.accordion-toggle {
+  display: none;
 }
 
 .accordion-title {
+  display: block;
   padding: 1rem;
-  background-color: #C1BBAD;
+  background-color: #f3f4f6;
+  border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
+}
+
+.accordion-title:hover {
+  background-color: #e5e7eb;
 }
 
 .accordion-content {
   padding: 1rem;
-  background-color: #0f0044;
+  border-bottom: 1px solid #e5e7eb;
 }
+
+.accordion-toggle:checked+.accordion-title {
+  background-color: #e5e7eb;
+}
+
+.accordion-toggle:checked+.accordion-title+.accordion-content {
+  display: block;
+}
+
 
 iframe {
   display: flex;
@@ -241,5 +253,4 @@ iframe {
 .maintekst {
   margin-top: 30%;
 }
-
 </style>
