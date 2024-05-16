@@ -1,10 +1,10 @@
 <template>
   <div class="herocontainer">
     <div class="hero">
-      <img class="gnist object-fill" src="../assets/img/dragonnight.svg" alt="Dragen Gnist">      
+      <img class="gnist" src="../assets/img/dragonnight.svg" alt="Dragen Gnist">      
     </div>
     <div class="hands">
-      <img src="../assets/img/dragonhands.png" alt="Gnist's hænder">
+      <img src="../assets/img/dragonhands.svg" alt="Gnist's hænder">
     </div>
   </div>
 
@@ -34,9 +34,9 @@
     <!-- Dynamically retrieves the general information about the night quest -->
     <div class="container-card">
       <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
-        <button class="button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          BOOK NU
-        </button>
+        <div class="book">
+          <img class="ylwbutton" src="../assets/img/yellow butten.svg" alt="Yellow Button">
+        </div>
       </a>
 
       <div v-for="infoDetail in infoDetails" :key="infoDetail.id" class="card">
@@ -74,44 +74,47 @@
 
 <style lang="scss" scoped>
 .herocontainer{
-  overflow: hidden;
-  position: inherit;
+  // overflow: hidden;
+  position: relative;
   display: flex;
   width: 100%;
   height: 100vh;
-  left: -5%;
+  // left: -5%;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
-.hero{
+.hero {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  align-items: center; /* Add this line to vertically center the content */
   text-align: center;
-  position: inherit;
-  width: 1920px;
-  height: 1080px;
-  // scale: 2.40;
+  position: relative;
+  width: 100%; /* Adjusted width to fit within the container */
+  height: 100%; /* Adjusted height to fit within the container */
 }
 
 .gnist {
   overflow: hidden;
-  position: inherit;
+  position: relative;
   display: flex;
-  top: -10%; 
-
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  max-height: 100%; /* Ensure the image doesn't exceed the container height */
+  scale: 2.40;
 }
 
 .hands{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   position: absolute;
   width: 100%;
   height: 100vh;
-  margin-top: 33%;
-  z-index: 2;
+  margin-top: 10%;
+  z-index: 100;
 }
 
 .questcontainer{
