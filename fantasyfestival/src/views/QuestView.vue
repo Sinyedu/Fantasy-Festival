@@ -32,6 +32,7 @@
         </div>
       </div>
     </div>
+    <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
     <div class="relative">
       <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonleft.png" alt="Dragon Left">
       <iframe id="youtubePlayer" width="1200" height="700" src="https://www.youtube.com/embed/LHXuOTdFvNA"
@@ -40,6 +41,7 @@
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <img class="absolute right-0 top-0 z-10 dragonhand2" src="../assets/img/dragonright.png" alt="Dragon Right">
     </div>
+    <!-- THIS IS THE FAQ SECTION USED WITH TAILWINDCSS -->
     <div class="container mx-auto py-12">
       <div class="max-w-lg mx-auto">
         <h2 class="text-3xl font-semibold mb-6">Ofte stillede spørgsmål</h2>
@@ -252,5 +254,16 @@ iframe {
 
 .maintekst {
   margin-top: 30%;
+}
+
+@media (max-width: 768px) {  
+  .container-card {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
 }
 </style>
