@@ -13,7 +13,7 @@
 
 
     <div class="tail">
-      <img src="../assets/img/dragontail.png" alt="Dragon Tail">
+      <img src="../assets/img/dragontail.svg" alt="Dragon Tail">
     </div>
     <div class="maintekst">
       <p class="text-center text-2xl">Er du klar til at leve dig ind i en anden verden, en magisk <br> historie, hvor du
@@ -34,12 +34,12 @@
     </div>
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
     <div class="video-container relative">
-  <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonleft.png" alt="Dragon Left">
+  <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonlefthand.svg" alt="Dragon Left">
   <iframe class="responsive-iframe mx-auto flex justify-center" width="1200" height="720" src="https://www.youtube.com/embed/LHXuOTdFvNA"
     title="Peaky Blinders Reenactment" frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  <img class="absolute right-0 top-0 z-10 dragonhand2" src="../assets/img/dragonright.png" alt="Dragon Right">
+  <img class="absolute right-0 top-0 z-10 dragonhand2" src="../assets/img/dragonrighthand.svg" alt="Dragon Right">
 </div>
 
     <!-- THIS IS THE FAQ SECTION USED WITH TAILWINDCSS -->
@@ -94,6 +94,7 @@
         </div>
       </div>
     </div>
+    <img class="arkivaren" src="../assets/img/Arkivaren_web.png" alt="Arkivaren">
 
   </main>
 </template>
@@ -106,6 +107,13 @@ const { questItems } = getQuestsItems();
 </script>
 
 <style lang="scss" scoped>
+.arkivaren {
+  position: absolute;
+  scale: 0.2;
+  left: 40%;
+  top: 180%;
+}
+
 .accordion-toggle {
   display: none;
 }
@@ -152,18 +160,16 @@ const { questItems } = getQuestsItems();
 
 .dragonhand {
   position: absolute;
-  top: -20%;
-  left: -12%;
+  left: -8%;
+  top: -25%;
   z-index: 10; /* Ensure hands are above the video */
-  scale: 0.5;
 }
 
 .dragonhand2 {
   position: absolute;
-  top: -21%;
-  left: 59%;
+  right: -33%;
+  top: -25%;
   z-index: 10; /* Ensure hands are above the video */
-  scale: 0.5;
 }
 
 .booknu {
@@ -249,11 +255,12 @@ const { questItems } = getQuestsItems();
 
 .tail {
   position: absolute;
-  right: 5%;
+  right: 6%;
   top: -26%;
   width: 100%;
   height: 100px;
   z-index: -1;
+  scale: 1.1;
 }
 
 .centertext {
