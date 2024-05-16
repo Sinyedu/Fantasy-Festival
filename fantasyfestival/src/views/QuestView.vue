@@ -27,12 +27,19 @@
             <h2 class="titletext">{{ questItem.title }}</h2>
             <img class="bg-auto" :src="questItem.image" alt="">
             <p class="description">{{ questItem.description }}</p>
-            <img class="ylwbutton" src="../assets/img/yellow butten.svg" alt="Yellow Button">
+            <div class="readmore">
+            <button>
+            <a href=""><img src="../assets/img/papperbutten.svg" alt="Paper Button"></a>
+            </button>
+            </div>
           </div>
         </div>
-
       </div>
     </div>
+    <div class="ylwbutton">
+    <button><a href=""><img class="ylwbutton" src="../assets/img/yellow butten.svg" alt="Yellow Button"></a></button>
+    </div>
+    
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
     <div class="video-container relative">
       <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonlefthand.svg" alt="Dragon Left">
@@ -108,8 +115,9 @@ const { questItems } = getQuestsItems();
 </script>
 
 <style lang="scss" scoped>
-.ylwbutton {
-  scale: 0.5;
+.readmore {
+  display: flex;
+  justify-content: center;
 }
 
 .booknutext {

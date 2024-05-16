@@ -23,9 +23,6 @@ import NavBar from './components/NavBar.vue'
 </script>
 
 <style lang="scss">
-html {
-  background-color: #EDE6D6;
-}
 
 .fade-enter-active, .fade-leave-active {
   transition: 0.3s ease;
