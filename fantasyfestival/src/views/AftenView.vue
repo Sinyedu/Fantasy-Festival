@@ -34,9 +34,11 @@
     
     <!-- Dynamically retrieves the general information about the night quest -->
     <div class="container-card">
-      <button class="button bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-        BOOK NU
-      </button>
+      <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
+        <button class="button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          BOOK NU
+        </button>
+      </a>
 
       <div v-for="infoDetail in infoDetails" :key="infoDetail.id" class="card">
         <div class="info-data">
@@ -58,6 +60,10 @@
     <iframe class="video" width="1280" height="600" src="https://www.youtube.com/embed/AFBSUQvmt1o" title="Commercial - Red Merrild (For your perfect morning)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 
+
+  <div class="footer-placeholder bg-blue-900">
+
+  </div>
 </template>
 
 <script setup>
@@ -118,6 +124,8 @@
   width: 35%;
   height: 60%;
   margin-bottom: 10%;
+  margin-top: 5%;
+  padding-top: 3%;
   align-items: center; 
   justify-content: center;
   box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
@@ -141,11 +149,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15%;
-  width: 35%;
-  margin-bottom: 5%;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10%;
   z-index: 3;
   font-size: 2rem;
+}
+
+a{
+  text-decoration: none;
+  width: 33%;
 }
 
 .video-holder{
@@ -173,5 +186,14 @@
   display: flex;
   margin-top: 17.9%;
   z-index: 1;
+}
+
+.footer-placeholder{
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
 }
 </style>
