@@ -76,6 +76,7 @@
   </main>
 </template>
 <script>
+import anime from 'animejs';
 export default {
   mounted() {
     const accordionTitles = document.querySelectorAll('.accordion-title');
@@ -89,7 +90,7 @@ export default {
         anime({
           targets: content,
           height: content.classList.contains('hidden') ? 0 : 'auto',
-          duration: 300,
+          duration: 1200,
           easing: 'easeInOutQuad'
         });
       });
@@ -117,7 +118,7 @@ const { questItems } = getQuestsItems();
 
 .accordion-content {
   padding: 1rem;
-  background-color: #4b4d00;
+  background-color: #0f0044;
 }
 
 iframe {
@@ -161,7 +162,7 @@ iframe {
 .countdown {
   display: flex;
   justify-content: center;
-  gap: 150px;
+  gap: 5%;
   margin-top: 20px;
   /* Adjust margin as needed */
 }
@@ -240,4 +241,5 @@ iframe {
 .maintekst {
   margin-top: 30%;
 }
+
 </style>
