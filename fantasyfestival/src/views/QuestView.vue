@@ -27,20 +27,21 @@
             <h2 class="titletext">{{ questItem.title }}</h2>
             <img class="bg-auto" :src="questItem.image" alt="">
             <p class="description">{{ questItem.description }}</p>
-            <button class="button bg-blue-500 text-white rounded-full">Læs mere</button>
+            <img class="ylwbutton" src="../assets/img/yellow butten.svg" alt="Yellow Button">
           </div>
         </div>
+
       </div>
     </div>
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
     <div class="video-container relative">
-  <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonlefthand.svg" alt="Dragon Left">
-  <iframe class="responsive-iframe mx-auto flex justify-center" width="1200" height="720" src="https://www.youtube.com/embed/LHXuOTdFvNA"
-    title="Peaky Blinders Reenactment" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  <img class="absolute right-0 top-0 z-10 dragonhand2" src="../assets/img/dragonrighthand.svg" alt="Dragon Right">
-</div>
+      <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonlefthand.svg" alt="Dragon Left">
+      <iframe class="responsive-iframe mx-auto flex justify-center" width="1200" height="720"
+        src="https://www.youtube.com/embed/LHXuOTdFvNA" title="Peaky Blinders Reenactment" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <img class="absolute right-0 top-0 z-10 dragonhand2" src="../assets/img/dragonrighthand.svg" alt="Dragon Right">
+    </div>
 
     <!-- THIS IS THE FAQ SECTION USED WITH TAILWINDCSS -->
     <div class="container mx-auto py-12">
@@ -107,6 +108,20 @@ const { questItems } = getQuestsItems();
 </script>
 
 <style lang="scss" scoped>
+.ylwbutton {
+  scale: 0.5;
+}
+
+.booknutext {
+  position: absolute;
+  left: 48%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+
+}
+
+
 .arkivaren {
   position: absolute;
   scale: 0.2;
@@ -146,7 +161,8 @@ const { questItems } = getQuestsItems();
 
 .video-container {
   position: relative;
-  max-width: 80%; /* Adjust as needed */
+  max-width: 80%;
+  /* Adjust as needed */
   max-height: 100%;
   margin: auto;
   display: flex;
@@ -162,23 +178,25 @@ const { questItems } = getQuestsItems();
   position: absolute;
   left: -8%;
   top: -25%;
-  z-index: 10; /* Ensure hands are above the video */
+  z-index: 10;
+  /* Ensure hands are above the video */
 }
 
 .dragonhand2 {
   position: absolute;
   right: -33%;
   top: -25%;
-  z-index: 10; /* Ensure hands are above the video */
+  z-index: 10;
+  /* Ensure hands are above the video */
 }
 
-.booknu {
-  width: 100%;
+.booknuknap {
+  scale: .5;
+  width: 200%;
   display: flex;
   align-items: center;
   position: relative;
   justify-content: space-evenly;
-  left: 15%;
   padding-bottom: 15%;
 }
 
@@ -271,6 +289,7 @@ const { questItems } = getQuestsItems();
 .maintekst {
   margin-top: 30%;
 }
+
 @media (max-width: 1024px) {
   .container-card {
     flex-direction: column;
@@ -280,7 +299,7 @@ const { questItems } = getQuestsItems();
   .card {
     margin-bottom: 2rem;
   }
-  
+
 }
 
 
