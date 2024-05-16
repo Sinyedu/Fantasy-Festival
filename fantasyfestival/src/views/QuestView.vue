@@ -53,7 +53,7 @@
     <!-- THIS IS THE FAQ SECTION USED WITH TAILWINDCSS -->
     <div class="container mx-auto py-12">
       <div class="max-w-lg mx-auto">
-        <h2 class="text-3xl font-semibold mb-6">Ofte stillede spørgsmål</h2>
+        <h2 class="text-3xl font-semibold mb-6 mt-32">Ofte stillede spørgsmål</h2>
         <div class="accordion">
           <div class="accordion-item">
             <input type="checkbox" id="q1" class="accordion-toggle">
@@ -115,6 +115,11 @@ const { questItems } = getQuestsItems();
 </script>
 
 <style lang="scss" scoped>
+h2.text-3xl.font-semibold.mb-6.mt-32 {
+  margin-top: 12.5rem;
+}
+
+
 .readmore {
   display: flex;
   justify-content: center;
