@@ -1,7 +1,7 @@
 <template>
   <div class="herocontainer">
     <div class="hero">
-      <img class="gnist" src="../assets/img/dragonnight.svg" alt="Dragen Gnist">      
+      <img class="gnist object-fill" src="../assets/img/dragonnight.svg" alt="Dragen Gnist">      
     </div>
     <div class="hands">
       <img src="../assets/img/dragonhands.png" alt="Gnist's hænder">
@@ -74,20 +74,33 @@
 
 <style lang="scss" scoped>
 .herocontainer{
+  overflow: hidden;
+  position: inherit;
   display: flex;
   width: 100%;
   height: 100vh;
-  left: 5%;
+  left: -5%;
   align-items: center;
   justify-content: center;
 }
 
 .hero{
+  overflow: hidden;
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: 100vh;
+  text-align: center;
+  position: inherit;
+  width: 1920px;
+  height: 1080px;
   // scale: 2.40;
+}
+
+.gnist {
+  overflow: hidden;
+  position: inherit;
+  display: flex;
+  top: -10%; 
+
 }
 
 .hands{
