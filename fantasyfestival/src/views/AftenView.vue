@@ -63,6 +63,7 @@
   <div class="footer-placeholder bg-blue-900">
 
   </div>
+
 </template>
 
 <script setup>
@@ -121,8 +122,8 @@
 .card {
   max-width: 100%;
   width: 35%;
-  height: 60%;
-  margin-bottom: 10%;
+  height: 65%;
+  margin-bottom: 7%;
   margin-top: 5%;
   padding-top: 3%;
   align-items: center; 
@@ -177,7 +178,7 @@ a{
   width: auto;
   height: 100%;
   margin-left: 42%;
-  scale: 1.24;
+  scale: 1.20;
   z-index: 2;
 }
 

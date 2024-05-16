@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import QuestView from '../views/QuestView.vue'
+import FamilieView from '../views/FamilieView.vue'
+import AftenView from '../views/AftenView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,12 +17,12 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/FamilieView.vue')
+      component: FamilieView
     },
     {
       path: '/aften',
       name: 'aften',
-      component: () => import('../views/AftenView.vue')
+      component: AftenView
     }
   ]
 })

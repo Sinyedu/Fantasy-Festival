@@ -1,44 +1,46 @@
 <template>
   <header>
     <div class="wrapper" :class="{ 'fade-out': fading }">
-      <nav>
-        <RouterLink to="/">Quest</RouterLink>
-        <RouterLink to="/familie">Familie Quest</RouterLink>
-        <RouterLink to="/aften">Aften Quest</RouterLink>
-      </nav>
+
     </div>
+    <NavBar/>
   </header>
-  <Transition name="fade" mode="out-in" @before-enter="beforeEnter" @after-enter="afterEnter">
-    <RouterView />
+
+  <Transition mode="out-in" name="fade">
+    <RouterView/>
   </Transition>
 </template>
+
+
 
 <script setup>
 import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
+import NavBar from './components/NavBar.vue'
 
-const fading = ref(false)
 
-const beforeEnter = () => {
-  fading.value = true
-}
 
-const afterEnter = () => {
-  fading.value = false
-}
 </script>
 
 <style lang="scss">
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 0.75s ease;
+  transition: 0.3s ease;
+  opacity: 0;
 }
 .fade-enter-from, .fade-leave-to {
   opacity: 0;
 }
+// .slide-fade-enter-active, .slide-fade-leave-active {
+//   transition: all 1s ease;
+// }
+// .slide-fade-enter-from, .slide-fade-leave-to {
+//   opacity: 0;
+// }
 
 header {
-  line-height: 1.5;
+  // line-height: 1.5;
   max-height: 100vh;
+  width: 100%;
   position: absolute;
 }
 
