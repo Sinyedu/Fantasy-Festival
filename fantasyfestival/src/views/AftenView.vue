@@ -1,7 +1,7 @@
 <template>
   <div class="herocontainer">
     <div class="hero">
-      <img class="" src="../assets/img/dragonnight.png" alt="Dragen Gnist">      
+      <img class="gnist" src="../assets/img/dragonnight.svg" alt="Dragen Gnist">      
     </div>
     <div class="hands">
       <img src="../assets/img/dragonhands.png" alt="Gnist's hænder">
@@ -76,13 +76,18 @@
 .herocontainer{
   display: flex;
   width: 100%;
+  height: 100vh;
+  left: 5%;
+  align-items: center;
   justify-content: center;
 }
 
 .hero{
   display: flex;
   justify-content: center;
-  height: 101vh;
+  width: 100%;
+  height: 100vh;
+  // scale: 2.40;
 }
 
 .hands{
@@ -91,7 +96,7 @@
   align-items: center;
   position: absolute;
   width: 100%;
-  // height: 100vh;
+  height: 100vh;
   margin-top: 33%;
   z-index: 2;
 }
