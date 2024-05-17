@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <body>
     <div class="centertext">
       <h1 class="text-5xl font-bold text-center">Fantasy Quest Esbjerg<br>2024</h1>
     </div>
@@ -25,15 +25,15 @@
         <div class="portfolio-item">
           <div class="info">
             <h2 class="titletext">{{ questItem.title }}</h2>
-            <img class="bg-auto" :src="questItem.image" alt="">
+            <img class="fillerimage bg-auto" :src="questItem.image" alt="">
             <p class="description">{{ questItem.description }}</p>
-            <div class="readmore">
-              <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
-                <div class="book">
-                  <img class="ylwbutton" src="../assets/img/yellow butten.svg" alt="Yellow Button">
-                </div>
-              </a>
-            </div>
+          </div>
+          <div class="readmore">
+            <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
+              <div class="readbutton">
+                <img class="ylwbutton" src="../assets/img/bookbutton.svg" alt="Yellow Button">
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@
     </div>
     <img class="arkivaren" src="../assets/img/Arkivaren_web.png" alt="Arkivaren">
 
-  </main>
+  </body>
 </template>
 <script setup>
 import { ref } from "vue";
@@ -114,14 +114,20 @@ const { questItems } = getQuestsItems();
 </script>
 
 <style lang="scss" scoped>
+body{
+  background-color: #F0DB98;
+}
+
 h2.text-3xl.font-semibold.mb-6.mt-32 {
   margin-top: 12.5rem;
 }
 
 
-.readmore {
+.readmore{
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .booknutext {
@@ -138,7 +144,11 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   position: absolute;
   scale: 0.2;
   left: 40%;
-  top: 180%;
+  top: 220%;
+}
+
+.accordion-item{
+  margin-bottom: 1rem;
 }
 
 .accordion-toggle {
@@ -148,13 +158,13 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 .accordion-title {
   display: block;
   padding: 1rem;
-  background-color: #f3f4f6;
+  background-color: #C1BBAD;
   border-bottom: 1px solid #e5e7eb;
   cursor: pointer;
 }
 
 .accordion-title:hover {
-  background-color: #e5e7eb;
+  background-color: #c1bbadd3;
 }
 
 .accordion-content {
@@ -163,11 +173,12 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 
 .accordion-toggle:checked+.accordion-title {
-  background-color: #e5e7eb;
+  background-color: #b3ada0;
 }
 
 .accordion-toggle:checked+.accordion-title+.accordion-content {
   display: block;
+  background-color: #F0DB98;
 }
 
 
@@ -223,13 +234,14 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   justify-content: center;
   gap: 5%;
   margin-top: 20px;
-  /* Adjust margin as needed */
+  z-index: 3;
 }
 
 .placeholder-box {
   width: 100px;
   height: 100px;
   background-color: lightgray;
+  z-index: 3;
 }
 
 .bg-auto {
@@ -241,7 +253,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .button {
@@ -253,6 +265,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .container-card {
   margin-top: 5%;
+  margin-bottom: 25%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -265,10 +278,20 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
 }
 
-.card img {
+.fillerimage {
   width: 100%;
   height: 350px;
   object-fit: cover;
+}
+
+.readbutton {
+  width: 100%;
+  height: 150px;
+}
+
+.ylwbutton {
+  width: 100%;
+  height: 100%;
 }
 
 .card h2 {
@@ -278,7 +301,8 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .card p {
   margin-left: 2%;
-  max-width: 50%;
+  margin-top: 5%;
+  max-width: 70%;
   text-align: left;
   margin-bottom: 1rem;
 }
@@ -289,13 +313,15 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   top: -26%;
   width: 100%;
   height: 100px;
-  z-index: -1;
+  z-index: 0;
   scale: 1.1;
 }
 
-.centertext {
+.centertext h1{
+  position: relative;
   text-align: center;
   margin-top: 15%;
+  z-index: 3;
 }
 
 .maintekst {

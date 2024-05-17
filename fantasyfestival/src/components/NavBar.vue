@@ -55,13 +55,14 @@ const toggleDropdown = () => {
 
 .dropdown-menu {
   position: absolute;
-  /* top: 100%; */
-  /* left: 0; */
+  top: 100%; /* Adjust this value as needed */
+  right: 0; /* Position it to the left side of the hamburger icon */
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
   border-radius: 4px;
   z-index: 999;
+  width: 200px; /* Adjust the width as needed */
 }
 
 .dropdown-menu a {
@@ -73,9 +74,5 @@ const toggleDropdown = () => {
 
 .dropdown-menu a:hover {
   background-color: #f0f0f0;
-}
-
-.dropdown-menu.active {
-  display: block;
 }
 </style>
