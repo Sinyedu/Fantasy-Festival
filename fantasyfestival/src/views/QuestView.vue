@@ -28,17 +28,9 @@
             <img class="fillerimage bg-auto" :src="questItem.image" alt="">
             <p class="description">{{ questItem.description }}</p>
           </div>
-          <div class="readmore">
-            <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
-              <div class="readbutton">
-                <img class="ylwbutton" src="../assets/img/bookbutton.svg" alt="Yellow Button">
-              </div>
-            </a>
-          </div>
         </div>
       </div>
-    </div>
-    
+    </div>  
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
     <div class="video-container relative">
       <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonlefthand.svg" alt="Dragon Left">
@@ -122,6 +114,17 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   margin-top: 12.5rem;
 }
 
+.portfolio-item {
+  background-color: #355C55;
+}
+.titletext {
+  color: #EDE6D6;
+}
+
+
+.description {
+  color: #EDE6D6;
+}
 
 .readmore{
   display: flex;
@@ -144,7 +147,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   position: absolute;
   scale: 0.2;
   left: 40%;
-  top: 220%;
+  top: 240%;
 }
 
 .accordion-item{
@@ -254,6 +257,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   align-items: center;
   text-align: center;
   margin-bottom: 1rem;
+  background-color: #355C55;
 }
 
 .button {
@@ -276,6 +280,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
+  background-color: #355C55;
 }
 
 .fillerimage {
@@ -289,9 +294,9 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   height: 150px;
 }
 
-.ylwbutton {
+.whtbutton {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .card h2 {
