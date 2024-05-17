@@ -28,7 +28,11 @@
             <img class="bg-auto" :src="questItem.image" alt="">
             <p class="description">{{ questItem.description }}</p>
             <div class="readmore">
-            <a href=""><img src="../assets/img/papperbutten.svg" alt="Paper Button"></a>
+              <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
+                <div class="book">
+                  <img class="ylwbutton" src="../assets/img/yellow butten.svg" alt="Yellow Button">
+                </div>
+              </a>
             </div>
           </div>
         </div>
