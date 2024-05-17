@@ -36,9 +36,6 @@
         </div>
       </div>
     </div>
-    <div class="ylwbutton">
-    <button><a href=""><img class="ylwbutton" src="../assets/img/yellow butten.svg" alt="Yellow Button"></a></button>
-    </div>
     
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
     <div class="video-container relative">
