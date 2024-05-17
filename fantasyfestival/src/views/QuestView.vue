@@ -28,9 +28,7 @@
             <img class="bg-auto" :src="questItem.image" alt="">
             <p class="description">{{ questItem.description }}</p>
             <div class="readmore">
-            <button>
             <a href=""><img src="../assets/img/papperbutten.svg" alt="Paper Button"></a>
-            </button>
             </div>
           </div>
         </div>
