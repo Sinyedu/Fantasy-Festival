@@ -8,22 +8,27 @@
 
       .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
         stroke-width: 0px;
+        z-index: 4;
       }
 
       .cls-2 {
         fill: url(#linear-gradient-2);
+        z-index: 4;
       }
 
       .cls-3 {
         fill: #0a3a35;
+        z-index: 4;
       }
 
       .cls-4 {
         fill: #002a26;
+        z-index: 4;
       }
 
       .cls-5 {
         fill: #77a145;
+        z-index 4;
       }
 
       .cls-6 {
@@ -32,6 +37,7 @@
         stroke-linecap: round;
         stroke-miterlimit: 10;
         stroke-width: 2px;
+        z-index: 4;
       }
     </style>
     <linearGradient id="linear-gradient" x1="464.65" y1="651.83" x2="528.6" y2="244.8" gradientUnits="userSpaceOnUse">
