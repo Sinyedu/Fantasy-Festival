@@ -12,7 +12,7 @@
   
     <div class="titlecontainer">
       <div class="centertext">
-        <h1 class="headliner font-bold text-3xl text-center"> Aften Questen!</h1>
+        <h1 class="headliner font-bold text-3xl text-center">Aften Questen!</h1>
       </div>
     </div>
   
@@ -30,14 +30,13 @@
         </p>
       </div>
   
-      <div class="book-button">
-      </div>
       
       <!-- Dynamically retrieves the general information about the evening quest -->
       <div class="container-card">
         <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
           <div class="book">
             <img class="ylwbutton" src="../assets/img/bookbutton.svg" alt="Yellow Button">
+            <h1 class="book-text">Book billetter</h1>
           </div>
         </a>
   
@@ -194,6 +193,14 @@ color: #D0D3C9;
   margin-bottom: 10%;
   z-index: 3;
   font-size: 2rem;
+}
+
+.book-text{
+  display: flex;
+  color: #EDE6D6;
+  font-size: 1.3rem;
+  margin-left: 2%;
+  position: absolute;
 }
 
 a{

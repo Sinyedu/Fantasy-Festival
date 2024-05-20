@@ -1,15 +1,13 @@
 <template>
   <div class="hamburger-dropdown">
-    <!-- Hamburger icon -->
     <div class="hamburger-icon" @click="toggleDropdown">
       <div></div>
       <div></div>
       <div></div>
     </div>
 
-    <!-- Dropdown menu -->
+
     <div v-if="isOpen" class="dropdown-menu">
-      <!-- Menu items -->
       <router-link to="/">Home</router-link>
       <router-link to="/familie">Familie Quest</router-link>
       <router-link to="/aften">Aften Quest</router-link>
@@ -46,8 +44,8 @@ const toggleDropdown = () => {
 }
 
 .hamburger-icon div {
-  width: 25%;
-  height: 7px;
+  width: 50%;
+  height: 10px;
   background-color: #182;
   transition: transform 0.3s, opacity 0.3s;
   border-radius: 15%;
@@ -55,14 +53,14 @@ const toggleDropdown = () => {
 
 .dropdown-menu {
   position: absolute;
-  top: 100%; /* Adjust this value as needed */
-  right: 0; /* Position it to the left side of the hamburger icon */
+  top: 0; 
+  right: 10%; 
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
   border-radius: 4px;
   z-index: 999;
-  width: 200px; /* Adjust the width as needed */
+  width: 200px; 
 }
 
 .dropdown-menu a {
