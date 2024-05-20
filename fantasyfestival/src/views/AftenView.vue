@@ -5,7 +5,8 @@
         <img class="gnist" src="../assets/img/dragonnight.svg" alt="Dragen Gnist">      
       </div>
       <div class="hands">
-        <img class="doublehands" src="../assets/img/dragonhands.svg" alt="Gnist's hænder">
+        <img src="../assets/img/lefthand.png" alt="Gnist's venstre hånd">
+        <img src="../assets/img/righthand.png" alt="Gnist's venstre hånd">
       </div>
     </div>
   
@@ -32,7 +33,7 @@
       <div class="book-button">
       </div>
       
-      <!-- Dynamically retrieves the general information about the night quest -->
+      <!-- Dynamically retrieves the general information about the evening quest -->
       <div class="container-card">
         <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
           <div class="book">
@@ -55,15 +56,12 @@
       </div>
     </div>
 
-    <!-- <div class="video-holder"> -->
-      <!-- <img class="holder" src="../assets/img/dragonholder.png" alt="Dragon Tail"> -->
-      <!-- <img class="holder" src="../assets/img/dragonvideo.svg" alt="Dragon Tail">
-      <iframe class="video" width="1280" height="600" src="https://www.youtube.com/embed/AFBSUQvmt1o" title="Commercial - Red Merrild (For your perfect morning)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div> -->
+    <!-- Video trailer for the evening quest -->
     <div class="video-holder">
-    <img class="holder" src="../assets/img/dragonvideo.svg" alt="Dragon Tail">
-    <iframe class="video" width="1280" height="600" src="https://www.youtube.com/embed/AFBSUQvmt1o" title="Commercial - Red Merrild (For your perfect morning)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+      <img class="top-half" src="../assets/img/toptail.png" alt="Toppen af Gnist's hale">
+      <iframe class="video" width="1280" height="700" src="https://www.youtube.com/embed/AFBSUQvmt1o" title="Commercial - Red Merrild (For your perfect morning)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <img class="bottom-half" src="../assets/img/bottomtail.png" alt="Bunden af Gnist's hale">
+    </div>
 
   
   
@@ -84,7 +82,6 @@
 body{
   margin: 0;
   padding: 0;
-  // font-family: 'Poppins', sans-serif;
   background-color: #355C55;
 }
 .info {
@@ -100,12 +97,10 @@ color: #D0D3C9;
 }
 
 .herocontainer{
-  // overflow: hidden;
   position: relative;
   display: flex;
   width: 100%;
   height: 100vh;
-  // left: -5%;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -115,36 +110,32 @@ color: #D0D3C9;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center; /* Add this line to vertically center the content */
+  align-items: center; 
   text-align: center;
   position: relative;
-  width: 100%; /* Adjusted width to fit within the container */
-  height: 100%; /* Adjusted height to fit within the container */
+  width: 100%; 
+  height: 100%; 
 }
 
 .gnist {
   overflow: hidden;
   position: relative;
   display: flex;
-  max-width: 100%; /* Ensure the image doesn't exceed the container width */
-  max-height: 100%; /* Ensure the image doesn't exceed the container height */
+  max-width: 100%; 
+  max-height: 100%; 
   scale: 2.40;
 }
 
 .hands{
-//   display: flex;
-//   // justify-content: center;
-//   // align-items: center;
-//   // text-align: center;
+  display: flex;
+  justify-content: center;
   position: absolute;
   width: 100%;
   height: 100vh;
+  margin-top: 45%;
   z-index: 100;
-}
-
-.doublehands{
-  // scale: 1.3;
-  // gap: 20px;
+  scale: 0.6;
+  gap: 77%;
 }
 
 .questcontainer{
@@ -179,9 +170,6 @@ color: #D0D3C9;
   padding-top: 3%;
   align-items: center; 
   justify-content: center;
-  // box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
-  border-radius: 7%;
-  // background-color: white;
 }
 
 .card h1 {
@@ -219,19 +207,19 @@ a{
   height: 100vh;
   justify-content: center;
   position: relative;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 25%;
+  margin-bottom: 25%;
   z-index: 0;
 }
 
-.holder{
+.top-half{
   position: absolute;
   display: flex;
-  width: auto;
+  width: 100%;
   height: 100%;
-  top: -4%;
-  margin-left: -5%;
-  // scale: 2.5;
+  left: 23%;
+  bottom: 44%;
+  scale: 0.6;
   z-index: 2;
 }
 
@@ -239,6 +227,18 @@ a{
   display: flex;
   margin-top: 17.9%;
   z-index: 3;
+}
+
+.bottom-half{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 7%;
+  top: 56.2%;
+  scale: 0.4;
+  z-index: 4;
+  pointer-events: none;
 }
 
 .footer-placeholder{
