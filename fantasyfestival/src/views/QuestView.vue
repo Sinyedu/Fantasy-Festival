@@ -333,6 +333,48 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   margin-top: 30%;
 }
 
+
+@media (max-width: 1820px) {
+
+.dragonhand {
+    display: none;
+  }
+  .dragonhand2 {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1600px) {
+  .dragonhand {
+    display: none;
+  }
+  .dragonhand2 {
+    display: none;
+}
+}
+
+
+@media (max-width: 1280px) {
+  .container-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+  .dragonhand {
+    display: none;
+  }
+  .dragonhand2 {
+    display: none;
+  }
+}
+
+
+
 @media (max-width: 1024px) {
   .container-card {
     flex-direction: column;
@@ -341,6 +383,12 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .card {
     margin-bottom: 2rem;
+  }
+  .dragonhand {
+    display: none;
+  }
+  .dragonhand2 {
+    display: none;
   }
 
 }
