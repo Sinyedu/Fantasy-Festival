@@ -1,4 +1,5 @@
 <template>
+
   <body>
     <div class="centertext">
       <h1 class="text-5xl font-bold text-center">Fantasy Quest Esbjerg<br>2024</h1>
@@ -39,7 +40,7 @@
           </div>
         </div>
       </div>
-    </div>  
+    </div>
 
 
 
@@ -52,6 +53,52 @@
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <img class="absolute right-0 top-0 z-10 dragonhand2" src="../assets/img/dragonrighthand.svg" alt="Dragon Right">
     </div>
+    <!-- Slider -->
+    <div data-hs-carousel='{
+    "loadingClasses": "opacity-0",
+    "isAutoPlay": true,
+    "autoPlayInterval": 3000
+  }' class="relative w-full h-96">
+  <div class="carousel">
+    <div class="hs-carousel relative overflow-hidden w-full h-full rounded-lg">
+      <div class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700">
+        <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
+          <img class="pressfoto object-cover w-full h-full" src="../assets/img/pressefoto1.png" alt="First slide">
+        </div>
+        <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
+          <img class="pressfoto object-cover w-full h-full" src="../assets/img/pressefoto2.png" alt="Second slide">
+        </div>
+        <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
+          <img class="pressfoto object-cover w-full h-full" src="../assets/img/pressefoto3.png" alt="Third slide">
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="hs-carousel-prev absolute inset-y-0 left-0 flex justify-center items-center w-[46px] h-full text-white bg-gray-800/50 hover:bg-gray-800/75 rounded-l-lg">
+      <span class="text-2xl" aria-hidden="true">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button type="button" class="hs-carousel-next absolute inset-y-0 right-0 flex justify-center items-center w-[46px] h-full text-white bg-gray-800/50 hover:bg-gray-800/75 rounded-r-lg">
+      <span class="sr-only">Next</span>
+      <span class="text-2xl" aria-hidden="true">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </span>
+    </button>
+
+    <div class="hs-carousel-pagination flex justify-center absolute bottom-3 left-0 right-0 space-x-2">
+      <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+      <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+      <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+    </div>
+  </div>
+</div>
+
 
     <!-- THIS IS THE FAQ SECTION USED WITH TAILWINDCSS -->
     <div class="container mx-auto py-12">
@@ -109,6 +156,7 @@
 
   </body>
 </template>
+
 <script setup>
 import { ref } from "vue";
 import getQuestsItems from '@/modules/getQuest.js';
@@ -117,11 +165,104 @@ import getDayQuest from '@/modules/getDayQuest.js';
 // Get questItems from the imported function
 const { questItems } = getQuestsItems();
 const { dayQuests } = getDayQuest();
+document.addEventListener('DOMContentLoaded', function () {
+  const carouselElement = document.querySelector('[data-hs-carousel]');
+  const slides = carouselElement.querySelectorAll('.hs-carousel-slide');
+  const prevButton = carouselElement.querySelector('.hs-carousel-prev');
+  const nextButton = carouselElement.querySelector('.hs-carousel-next');
+  const paginationDots = carouselElement.querySelectorAll('.hs-carousel-pagination span');
+  const autoPlay = JSON.parse(carouselElement.dataset.hsCarousel).isAutoPlay;
+  const autoPlayInterval = JSON.parse(carouselElement.dataset.hsCarousel).autoPlayInterval || 3000;
+  let currentIndex = 0;
+  let interval;
+
+  function updateCarousel() {
+    const carouselBody = carouselElement.querySelector('.hs-carousel-body');
+    carouselBody.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+    paginationDots.forEach((dot, index) => {
+      dot.classList.toggle('hs-carousel-active', index === currentIndex);
+    });
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    updateCarousel();
+  }
+
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+    updateCarousel();
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+    updateCarousel();
+  });
+
+  paginationDots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      goToSlide(index);
+    });
+  });
+
+  if (autoPlay) {
+    interval = setInterval(() => {
+      nextButton.click();
+    }, autoPlayInterval);
+
+    carouselElement.addEventListener('mouseenter', () => clearInterval(interval));
+    carouselElement.addEventListener('mouseleave', () => {
+      interval = setInterval(() => {
+        nextButton.click();
+      }, autoPlayInterval);
+    });
+  }
+
+  updateCarousel();
+});
+
 </script>
 
 <style lang="scss" scoped>
+.carousel {
+  margin-top: 21%;
+}
 
-body{
+.hs-carousel-body {
+  display: flex;
+  width: 100%; /* Adjust according to the number of slides */
+  transition: transform 2s ease-in-out;
+  background-color: #ede6d6;
+  z-index: 99999;
+}
+
+.hs-carousel-slide {
+  flex: 0 0 100%;
+}
+
+.pressfoto {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hs-carousel-pagination span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ede6d6;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hs-carousel-pagination .hs-carousel-active {
+  background-color: blue;
+  border-color: blue;
+}
+
+
+body {
   background-color: #ede6d6;
 }
 
@@ -132,6 +273,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 .portfolio-item {
   // background-color: #355C55;
 }
+
 .titletext {
   color: #EDE6D6;
   padding-top: 25%;
@@ -142,7 +284,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   color: #EDE6D6;
 }
 
-.readmore{
+.readmore {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,10 +305,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   position: absolute;
   scale: 0.2;
   left: 40%;
-  top: 240%;
+  top: 350%;
 }
 
-.accordion-item{
+.accordion-item {
   margin-bottom: 1rem;
 }
 
@@ -366,7 +508,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   scale: 1.1;
 }
 
-.centertext h1{
+.centertext h1 {
   position: relative;
   text-align: center;
   margin-top: 15%;
@@ -384,7 +526,8 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   width: 100%;
   height: 100%;
   margin-top: 2%;
-  overflow: hidden; /* Ensure no overflow */
+  overflow: hidden;
+  /* Ensure no overflow */
 }
 
 
@@ -398,9 +541,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 @media (max-width: 1820px) {
 
-.dragonhand {
+  .dragonhand {
     display: none;
   }
+
   .dragonhand2 {
     display: none;
   }
@@ -411,9 +555,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .dragonhand {
     display: none;
   }
+
   .dragonhand2 {
     display: none;
-}
+  }
 }
 
 
@@ -427,9 +572,11 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .card {
     margin-bottom: 2rem;
   }
+
   .dragonhand {
     display: none;
   }
+
   .dragonhand2 {
     display: none;
   }
@@ -446,9 +593,11 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .card {
     margin-bottom: 2rem;
   }
+
   .dragonhand {
     display: none;
   }
+
   .dragonhand2 {
     display: none;
   }
