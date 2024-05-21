@@ -200,6 +200,7 @@ color: #D0D3C9;
   color: #EDE6D6;
   font-size: 1.3rem;
   margin-left: 2%;
+  margin-bottom: 10%;
   position: absolute;
 }
 
@@ -225,7 +226,7 @@ a{
   width: 100%;
   height: 100%;
   left: 23%;
-  bottom: 44%;
+  bottom: 43.9%;
   scale: 0.6;
   z-index: 2;
 }
@@ -242,7 +243,7 @@ a{
   width: 100%;
   height: 100%;
   left: 7%;
-  top: 56.2%;
+  top: 57.1%;
   scale: 0.4;
   z-index: 4;
   pointer-events: none;

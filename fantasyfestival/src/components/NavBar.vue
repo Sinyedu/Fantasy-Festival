@@ -1,9 +1,9 @@
 <template>
   <div class="hamburger-dropdown">
     <div class="hamburger-icon" @click="toggleDropdown">
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class=""></div>
+      <div class=""></div>
+      <div class=""></div>
     </div>
 
 
@@ -17,12 +17,21 @@
 
 <script setup>
 import { ref } from "vue";
+import anime from 'animejs/lib/anime.es.js';
 
 const isOpen = ref(false);
 
 const toggleDropdown = () => {
   isOpen.value = !isOpen.value;
 }
+
+anime({
+  targets: '.dropdown-menu a',
+  translateX: 250,
+  easing: 'easeInOutExpo'
+});
+
+
 </script>
 
 <style scoped>
@@ -35,26 +44,27 @@ const toggleDropdown = () => {
 
 .hamburger-icon {
   cursor: pointer;
-  width: 10%;
+  position: relative;
+  width: 3%;
+  margin-right: 1%;
+  margin-top: 1%;
   height: 4vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 1000;
+  overflow: hidden;
 }
 
 .hamburger-icon div {
-  width: 50%;
-  height: 10px;
-  background-color: #182;
-  transition: transform 0.3s, opacity 0.3s;
-  border-radius: 15%;
+  height: 4px;
+  background-color: #fff;
 }
 
 .dropdown-menu {
   position: absolute;
-  top: 0; 
-  right: 10%; 
+  top: 30%; 
+  right: 4.1%; 
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -73,4 +83,6 @@ const toggleDropdown = () => {
 .dropdown-menu a:hover {
   background-color: #f0f0f0;
 }
+
+
 </style>
