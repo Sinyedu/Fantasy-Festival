@@ -16,10 +16,25 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 import anime from 'animejs/lib/anime.es.js';
 
 const isOpen = ref(false);
+
+const closeDropdown = (event) => {
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  if (dropdownMenu && !dropdownMenu.contains(event.target) && !event.target.closest('.hamburger-icon')) {
+    isOpen.value = false;
+  }
+};
+
+onMounted(() => {
+  document.addEventListener('click', closeDropdown);
+});
+
+onUnmounted(() => {
+  document.removeEventListener('click', closeDropdown);
+});
 
 const toggleDropdown = () => {
   isOpen.value = !isOpen.value;
@@ -57,8 +72,9 @@ anime({
 }
 
 .hamburger-icon div {
-  height: 4px;
-  background-color: #fff;
+  height: 7px;
+  background-color: #efba12;
+  border-radius: 5px;
 }
 
 .dropdown-menu {
