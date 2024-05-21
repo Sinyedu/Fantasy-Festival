@@ -24,6 +24,7 @@
       <div v-for="questItem in questItems" :key="questItem.id" class="card">
         <div class="portfolio-item">
           <div class="info">
+            <img class="frame bg-auto" :src="questItem.image2" alt="">
             <h2 class="titletext">{{ questItem.title }}</h2>
             <img class="fillerimage bg-auto" :src="questItem.image" alt="">
             <p class="description">{{ questItem.description }}</p>
@@ -31,6 +32,9 @@
         </div>
       </div>
     </div>  
+
+
+
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
     <div class="video-container relative">
       <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonlefthand.svg" alt="Dragon Left">
@@ -106,6 +110,7 @@ const { questItems } = getQuestsItems();
 </script>
 
 <style lang="scss" scoped>
+
 body{
   background-color: #ede6d6;
 }
@@ -119,6 +124,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 .titletext {
   color: #EDE6D6;
+  padding-top: 25%;
 }
 
 
@@ -332,7 +338,11 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 .maintekst {
   margin-top: 30%;
 }
-
+// Make it so that the content loads into the frame
+.frame img {
+  width: 100%;
+  height: 100%;
+} 
 
 @media (max-width: 1820px) {
 
