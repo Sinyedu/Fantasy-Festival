@@ -21,10 +21,18 @@
         til Fantasy Quest Esbjerg.</p>
     </div>
     <div class="container-card">
+      <div v-for="dayQuest in dayQuests" :key="dayQuest.id" class="card">
+        <div class="portfolio-item">
+          <div class="day-info">
+            <h2 class="titletext">{{ dayQuest.title }}</h2>
+            <img class="fillerimage bg-auto" :src="dayQuest.image" alt="">
+            <p class="description">{{ dayQuest.description }}</p>
+          </div>
+        </div>
+      </div>
       <div v-for="questItem in questItems" :key="questItem.id" class="card">
         <div class="portfolio-item">
-          <div class="info">
-            <img class="frame bg-auto" :src="questItem.image2" alt="">
+          <div class="night-info">
             <h2 class="titletext">{{ questItem.title }}</h2>
             <img class="fillerimage bg-auto" :src="questItem.image" alt="">
             <p class="description">{{ questItem.description }}</p>
@@ -104,9 +112,11 @@
 <script setup>
 import { ref } from "vue";
 import getQuestsItems from '@/modules/getQuest.js';
+import getDayQuest from '@/modules/getDayQuest.js';
 
 // Get questItems from the imported function
 const { questItems } = getQuestsItems();
+const { dayQuests } = getDayQuest();
 </script>
 
 <style lang="scss" scoped>
@@ -120,7 +130,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 
 .portfolio-item {
-  background-color: #355C55;
+  // background-color: #355C55;
 }
 .titletext {
   color: #EDE6D6;
@@ -253,17 +263,38 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   z-index: 3;
 }
 
-.bg-auto {
-  overflow: hidden;
-}
+// .bg-auto {
+//   overflow: hidden;
+// }
 
-.info {
+.night-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  height: 500px;
   margin-bottom: 1rem;
-  background-color: #355C55;
+}
+
+.day-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+  margin-bottom: 1rem;
+}
+
+.day-info img {
+  width: 75%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.night-info img {
+  width: 75%;
+  height: 350px;
+  object-fit: cover;
 }
 
 .button {
@@ -282,11 +313,18 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .card {
   max-width: 500px;
-  height: auto;
+  height: 1100px;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
   background-color: #355C55;
+  background-image: url("../assets/img/rammemoon.svg");
+  background-position: center;
+  background-size: 500px 1080px;
+  background-repeat: no-repeat;
+  // background-position: center;
+  border-radius: 10px;
+  // z-index: 3;
 }
 
 .fillerimage {
@@ -338,11 +376,25 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 .maintekst {
   margin-top: 30%;
 }
-// Make it so that the content loads into the frame
-.frame img {
+
+.card-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-} 
+  margin-top: 2%;
+  overflow: hidden; /* Ensure no overflow */
+}
+
+
+.card-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  // position: absolute;
+  overflow: hidden;
+}
 
 @media (max-width: 1820px) {
 
