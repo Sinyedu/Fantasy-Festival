@@ -234,7 +234,6 @@ document.addEventListener('DOMContentLoaded', function () {
   width: 100%; /* Adjust according to the number of slides */
   transition: transform 2s ease-in-out;
   background-color: #ede6d6;
-  z-index: 99999;
 }
 
 .hs-carousel-slide {
