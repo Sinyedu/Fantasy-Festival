@@ -58,18 +58,17 @@
     "loadingClasses": "opacity-0",
     "isAutoPlay": true,
     "autoPlayInterval": 3000
-  }' class="relative w-full h-96">
-  <div class="carousel">
+  }' class="relative w-full h-lvh">
     <div class="hs-carousel relative overflow-hidden w-full h-full rounded-lg">
       <div class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700">
         <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-          <img class="pressfoto w-full h-full" src="../assets/img/pressefoto1.png" alt="First slide">
+          <img class="pressfoto w-full h-full" src="../assets/img/testpres.jpg" alt="First slide">
         </div>
         <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-          <img class="pressfoto w-full h-full" src="../assets/img/pressefoto2.png" alt="Second slide">
+          <img class="pressfoto w-full h-full" src="../assets/img/testpres2.jpg" alt="Second slide">
         </div>
         <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-          <img class="pressfoto w-full h-full" src="../assets/img/pressefoto3.png" alt="Third slide">
+          <img class="pressfoto w-full h-full" src="../assets/img/testpres3.jpg" alt="Third slide">
         </div>
       </div>
     </div>
@@ -97,7 +96,6 @@
       <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
     </div>
   </div>
-</div>
 
 
     <!-- THIS IS THE FAQ SECTION USED WITH TAILWINDCSS -->
@@ -232,8 +230,16 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style lang="scss" scoped>
+
+.relative {
+  position: relative;
+}
+
+
+
 .carousel {
   margin-top: 21%;
+  z-index: 9999;
 }
 
 .hs-carousel-body {
@@ -245,10 +251,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 .hs-carousel-slide {
   flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .pressfoto {
-  object-fit: cover;
+  object-fit: fit;
   width: 100%;
   height: 100%;
 }
@@ -274,10 +282,6 @@ body {
 
 h2.text-3xl.font-semibold.mb-6.mt-32 {
   margin-top: 12.5rem;
-}
-
-.portfolio-item {
-  // background-color: #355C55;
 }
 
 .titletext {
@@ -362,12 +366,13 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 .responsive-iframe {
   display: block;
   margin: 0 auto;
+  margin-bottom: 30%;
 }
 
 .dragonhand {
   position: absolute;
   left: -8%;
-  top: -25%;
+  top: -13%;
   z-index: 10;
   /* Ensure hands are above the video */
 }
@@ -375,7 +380,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 .dragonhand2 {
   position: absolute;
   right: -33%;
-  top: -25%;
+  top: -13%;
   z-index: 10;
   /* Ensure hands are above the video */
 }
