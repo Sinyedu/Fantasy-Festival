@@ -40,7 +40,7 @@ import NavBar from './components/NavBar.vue'
 
 body{
   font-family: RomanSD, sans-serif;
-  background-color: #F0DB98;
+  background-color: #ede6d6;
 }
 
 header {

@@ -107,7 +107,7 @@ const { questItems } = getQuestsItems();
 
 <style lang="scss" scoped>
 body{
-  background-color: #F0DB98;
+  background-color: #ede6d6;
 }
 
 h2.text-3xl.font-semibold.mb-6.mt-32 {
