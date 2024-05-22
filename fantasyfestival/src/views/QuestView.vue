@@ -2,15 +2,15 @@
 
   <body>
     <div class="centertext">
-      <h1 class="text-5xl font-bold text-center">Fantasy Quest Esbjerg<br>2024</h1>
+      <h1 class="text-7xl font-bold text-center">Fantasy Quest <br>Esbjerg 2024</h1>
     </div>
     <div id="countdown">
-    <CountDown />
+      <CountDown />
     </div>
     <div class="tail">
       <img src="../assets/img/dragontail.svg" alt="Dragon Tail">
     </div>
-  
+
     <div class="maintekst">
       <p class="text-center text-2xl">Er du klar til at leve dig ind i en anden verden, en magisk <br> historie, hvor du
         er helten, der er på en “quest” for at <br> overvinde de onde magter og redde hele verden? Så gør <br>dig klar
@@ -41,56 +41,63 @@
 
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
     <div class="video-container relative">
-      <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonlefthand.svg" alt="Dragon Left">
-      <iframe class="responsive-iframe mx-auto flex justify-center" width="1200" height="720"
-        src="https://www.youtube.com/embed/LHXuOTdFvNA" title="Peaky Blinders Reenactment" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <img class="absolute right-0 top-0 z-10 dragonhand2" src="../assets/img/dragonrighthand.svg" alt="Dragon Right">
-    </div>
+  <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonlefthand.svg" alt="Dragon Left">
+  <iframe id="videoFrame" class="responsive-iframe mx-auto flex justify-center" width="1200" height="720"
+    src="https://www.youtube.com/embed/LHXuOTdFvNA" title="Peaky Blinders Reenactment" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <img class="absolute right-0 top-0 z-10 dragonhand2" src="../assets/img/dragonrighthand.svg" alt="Dragon Right">
+</div>
+
+
     <!-- Slider -->
     <div data-hs-carousel='{
     "loadingClasses": "opacity-0",
     "isAutoPlay": true,
     "autoPlayInterval": 3000
   }' class="relative w-full h-96">
-    <div class="hs-carousel relative overflow-hidden w-full h-full rounded-lg">
-      <div class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700">
-        <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-          <img class="pressfoto w-full h-full" src="../assets/img/pressefoto1.png" alt="First slide">
-        </div>
-        <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-          <img class="pressfoto w-full h-full" src="../assets/img/testpres2.jpg" alt="Second slide">
-        </div>
-        <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-          <img class="pressfoto w-full h-full" src="../assets/img/testpres3.jpg" alt="Third slide">
+      <div class="hs-carousel relative overflow-hidden w-full h-full rounded-lg">
+        <div class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700">
+          <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
+            <img class="pressfoto w-full h-full" src="../assets/img/pressefoto1.png" alt="First slide">
+          </div>
+          <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
+            <img class="pressfoto w-full h-full" src="../assets/img/testpres2.jpg" alt="Second slide">
+          </div>
+          <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
+            <img class="pressfoto w-full h-full" src="../assets/img/testpres3.jpg" alt="Third slide">
+          </div>
         </div>
       </div>
-    </div>
 
-    <button type="button" class="hs-carousel-prev absolute inset-y-0 left-0 flex justify-center items-center w-[46px] h-full text-white bg-gray-800/50 hover:bg-gray-800/75 rounded-l-lg">
-      <span class="text-2xl" aria-hidden="true">
-        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-      </span>
-      <span class="sr-only">Previous</span>
-    </button>
-    <button type="button" class="hs-carousel-next absolute inset-y-0 right-0 flex justify-center items-center w-[46px] h-full text-white bg-gray-800/50 hover:bg-gray-800/75 rounded-r-lg">
-      <span class="sr-only">Next</span>
-      <span class="text-2xl" aria-hidden="true">
-        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </span>
-    </button>
+      <button type="button"
+        class="hs-carousel-prev absolute inset-y-0 left-0 flex justify-center items-center w-[46px] h-full text-white bg-gray-800/50 hover:bg-gray-800/75 rounded-l-lg">
+        <span class="text-2xl" aria-hidden="true">
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button type="button"
+        class="hs-carousel-next absolute inset-y-0 right-0 flex justify-center items-center w-[46px] h-full text-white bg-gray-800/50 hover:bg-gray-800/75 rounded-r-lg">
+        <span class="sr-only">Next</span>
+        <span class="text-2xl" aria-hidden="true">
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </span>
+      </button>
 
-    <div class="hs-carousel-pagination flex justify-center absolute bottom-3 left-0 right-0 space-x-2">
-      <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
-      <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
-      <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+      <div class="hs-carousel-pagination flex justify-center absolute bottom-3 left-0 right-0 space-x-2">
+        <span
+          class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+        <span
+          class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+        <span
+          class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+      </div>
     </div>
-  </div>
 
 
     <!-- THIS IS THE FAQ SECTION USED WITH TAILWINDCSS -->
@@ -100,9 +107,10 @@
         <div class="accordion">
           <div class="accordion-item">
             <input type="checkbox" id="q1" class="accordion-toggle">
-            <label for="q1" class="accordion-title cursor-pointer">Hvordan bestiller jeg billetter? 
+            <label for="q1" class="accordion-title cursor-pointer">Hvordan bestiller jeg billetter?
               <span class="text-2xl" aria-hidden="true">
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
               </span>
@@ -237,14 +245,15 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style lang="scss" scoped>
+.hidden {
+  display: none;
+}
 
 
 
 .relative {
   position: relative;
 }
-
-
 
 .carousel {
   margin-top: 21%;
@@ -253,7 +262,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 .hs-carousel-body {
   display: flex;
-  width: 100%; /* Adjust according to the number of slides */
+  width: 100%;
+  /* Adjust according to the number of slides */
   transition: transform 2s ease-in-out;
   background-color: #ede6d6;
 }
@@ -383,6 +393,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   left: -8%;
   top: -13%;
   z-index: 10;
+  pointer-events: none;
   /* Ensure hands are above the video */
 }
 
@@ -391,6 +402,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   right: -33%;
   top: -13%;
   z-index: 10;
+  pointer-events: none;
   /* Ensure hands are above the video */
 }
 
@@ -533,6 +545,8 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   text-align: center;
   margin-top: 15%;
   z-index: 3;
+  color: #FECD08;
+  text-shadow: #083a36 5px 5px 8px;
 }
 
 .maintekst {

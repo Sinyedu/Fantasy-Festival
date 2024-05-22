@@ -2,19 +2,19 @@
     <div id="countdown">
       <div class="countdown-box">
         <span>{{ days }}</span>
-        <div class="label">DAGE</div>
+        <div class="label">Dage</div>
       </div>
       <div class="countdown-box">
         <span>{{ hours.toString().padStart(2, "0") }}</span>
-        <div class="label">Hours</div>
+        <div class="label">Timer</div>
       </div>
       <div class="countdown-box">
         <span>{{ minutes.toString().padStart(2, "0") }}</span>
-        <div class="label">Minutes</div>
+        <div class="label">Minutter</div>
       </div>
       <div class="countdown-box">
         <span>{{ seconds.toString().padStart(2, "0") }}</span>
-        <div class="label">Seconds</div>
+        <div class="label">Sekunder</div>
       </div>
     </div>
   </template>
