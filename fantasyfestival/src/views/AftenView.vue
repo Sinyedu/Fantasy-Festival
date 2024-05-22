@@ -243,7 +243,7 @@ a{
   width: 100%;
   height: 100%;
   left: 7%;
-  top: 57.1%;
+  top: 56.3%;
   scale: 0.4;
   z-index: 4;
   pointer-events: none;
