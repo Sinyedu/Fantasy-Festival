@@ -4,18 +4,13 @@
     <div class="centertext">
       <h1 class="text-5xl font-bold text-center">Fantasy Quest Esbjerg<br>2024</h1>
     </div>
-
-    <div class="countdown">
-      <div class="placeholder-box"></div>
-      <div class="placeholder-box"></div>
-      <div class="placeholder-box"></div>
-      <div class="placeholder-box"></div>
+    <div id="countdown">
+    <CountDown />
     </div>
-
-
     <div class="tail">
       <img src="../assets/img/dragontail.svg" alt="Dragon Tail">
     </div>
+  
     <div class="maintekst">
       <p class="text-center text-2xl">Er du klar til at leve dig ind i en anden verden, en magisk <br> historie, hvor du
         er helten, der er på en “quest” for at <br> overvinde de onde magter og redde hele verden? Så gør <br>dig klar
@@ -58,11 +53,11 @@
     "loadingClasses": "opacity-0",
     "isAutoPlay": true,
     "autoPlayInterval": 3000
-  }' class="relative w-full h-lvh">
+  }' class="relative w-full h-96">
     <div class="hs-carousel relative overflow-hidden w-full h-full rounded-lg">
       <div class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700">
         <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-          <img class="pressfoto w-full h-full" src="../assets/img/testpres.jpg" alt="First slide">
+          <img class="pressfoto w-full h-full" src="../assets/img/pressefoto1.png" alt="First slide">
         </div>
         <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
           <img class="pressfoto w-full h-full" src="../assets/img/testpres2.jpg" alt="Second slide">
@@ -160,6 +155,17 @@
 
   </body>
 </template>
+<script>
+import CountDown from '../components/CountDown.vue';
+
+export default {
+  name: 'App',
+  components: {
+    CountDown
+  }
+};
+</script>
+
 
 <script setup>
 import { ref } from "vue";
@@ -169,6 +175,7 @@ import getDayQuest from '@/modules/getDayQuest.js';
 // Get questItems from the imported function
 const { questItems } = getQuestsItems();
 const { dayQuests } = getDayQuest();
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const carouselElement = document.querySelector('[data-hs-carousel]');
@@ -230,6 +237,8 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style lang="scss" scoped>
+
+
 
 .relative {
   position: relative;
