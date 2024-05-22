@@ -35,8 +35,7 @@
       <div class="container-card">
         <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
           <div class="book">
-            <img class="ylwbutton" src="../assets/img/bookbutton.svg" alt="Yellow Button">
-            <h1 class="book-text">Book billetter</h1>
+            <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="Yellow Button">
           </div>
         </a>
   
@@ -62,14 +61,14 @@
       <img class="bottom-half" src="../assets/img/bottomtail.png" alt="Bunden af Gnist's hale">
     </div>
 
-    <div class="questcontainer">
+    <div class="lorecontainer">
       <div class="infotext">
         <h1 class="headliner font-bold text-3xl pb-9">I gamle dage sagde man...</h1>
         <p class="maintext text-2xl">
           ...at det onde ville komme fra havet. Gennem generationer blev den fortælling givet videre. Man hørte den, da Esbjerg blev grundlagt i 1868. Man holdt altid øje med havet. Mod vest. 
         </p>
       </div>
-      <img src="#" alt="Eventyr Goblin">
+      <img class="goblin" src="../assets/img/eventyrgoblin.png" alt="Eventyr Goblin">
     </div>
   
     <div class="footer-placeholder bg-blue-900">
@@ -257,6 +256,21 @@ a{
   scale: 0.4;
   z-index: 4;
   pointer-events: none;
+}
+
+.lorecontainer{
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  margin-top: 12%;
+}
+
+.goblin{
+  position: relative;
+  scale: 0.8;
+  margin-bottom: 5%;
+  bottom: 10%;
 }
 
 .footer-placeholder{
