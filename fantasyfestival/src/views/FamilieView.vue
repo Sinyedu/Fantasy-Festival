@@ -40,15 +40,15 @@
           </div>
         </a>
   
-        <div v-for="infoDetail in infoDetails" :key="infoDetail.id" class="card">
+        <div v-for="dayDetail in dayDetails" :key="dayDetail.id" class="card">
           <div class="info-data">
             <div class="info">
-              <h1 class="titletext">{{ infoDetail.title }}</h1>
-              <h2 class="date">{{ infoDetail.date }}</h2>
-              <h2 class="time">{{ infoDetail.time }}</h2>
-              <h2 class="location">{{ infoDetail.location }}</h2>
-              <h2 class="duration">{{ infoDetail.duration }}</h2>
-              <h2 class="ages">{{ infoDetail.ages }}</h2>
+              <h1 class="titletext">{{ dayDetail.title }}</h1>
+              <h2 class="date">{{ dayDetail.date }}</h2>
+              <h2 class="time">{{ dayDetail.time }}</h2>
+              <h2 class="location">{{ dayDetail.location }}</h2>
+              <h2 class="duration">{{ dayDetail.duration }}</h2>
+              <h2 class="ages">{{ dayDetail.ages }}</h2>
             </div>
           </div>
         </div>
@@ -81,8 +81,8 @@
 
 <script setup>
   import { ref } from "vue";
-  import getInfoDetails from '@/modules/getInfo.js';
-  const { infoDetails } = getInfoDetails();
+  import getDayDetails from '@/modules/getDayInfo.js';
+  const { dayDetails } = getDayDetails();
 </script>
 
 <style lang="scss" scoped>
