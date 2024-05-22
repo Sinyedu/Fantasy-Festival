@@ -23,6 +23,7 @@
             <h2 class="titletext">{{ dayQuest.title }}</h2>
             <img class="fillerimage bg-auto" :src="dayQuest.image" alt="">
             <p class="description">{{ dayQuest.description }}</p>
+            <img class="buttonimage" :src="dayQuest.image2" alt="">
           </div>
         </div>
       </div>
@@ -32,13 +33,15 @@
             <h2 class="titletext">{{ questItem.title }}</h2>
             <img class="fillerimage bg-auto" :src="questItem.image" alt="">
             <p class="description">{{ questItem.description }}</p>
+            <img class="buttonimage" :src="questItem.image2" alt="">
           </div>
         </div>
       </div>
     </div>
-
-
-
+    <div class="booknuknap">
+    <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><img class="ylwbutton h-24 w-54" src="../assets/img/yellow buttentext.png" alt=""></a>
+    <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><img class="ylwbutton h-24 w-54" src="../assets/img/yellow buttentext.png" alt=""></a>
+    </div>
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
     <div class="video-container relative">
   <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonlefthand.svg" alt="Dragon Left">
@@ -55,7 +58,7 @@
     "loadingClasses": "opacity-0",
     "isAutoPlay": true,
     "autoPlayInterval": 3000
-  }' class="relative w-full h-96">
+  }' class="relative w-full h-screen">
       <div class="hs-carousel relative overflow-hidden w-full h-full rounded-lg">
         <div class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700">
           <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
@@ -98,7 +101,7 @@
           class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
       </div>
     </div>
-
+<!-- END OF CAROUSEL!-->
 
     <!-- THIS IS THE FAQ SECTION USED WITH TAILWINDCSS -->
     <div class="container mx-auto py-12">
@@ -200,7 +203,6 @@
 </template>
 <script>
 import CountDown from '../components/CountDown.vue';
-
 export default {
   name: 'App',
   components: {
@@ -280,6 +282,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style lang="scss" scoped>
+
 .hidden {
   display: none;
 }
@@ -377,7 +380,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   position: absolute;
   scale: 0.2;
   left: 40%;
-  top: 350%;
+  top: 420%;
 }
 
 .accordion-item {
@@ -450,10 +453,9 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 
 .booknuknap {
-  scale: .5;
-  width: 200%;
   display: flex;
-  align-items: center;
+  // align-items: center;
+  justify-content: center;
   position: relative;
   justify-content: space-evenly;
   padding-bottom: 15%;
@@ -523,24 +525,24 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .container-card {
   margin-top: 5%;
-  margin-bottom: 25%;
+  margin-bottom: 5%;
   display: flex;
   justify-content: space-evenly;
 }
 
 .card {
   max-width: 500px;
-  height: 1100px;
+  height: 1000px;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
   background-color: #355C55;
   background-image: url("../assets/img/rammemoon.svg");
   background-position: center;
-  background-size: 500px 1080px;
+  background-size: 380px 1080px;
   background-repeat: no-repeat;
   // background-position: center;
-  border-radius: 10px;
+  border-radius: 50px;
   // z-index: 3;
 }
 
@@ -679,6 +681,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     display: none;
   }
 
+  .tail {
+    top: -20%
+  }
+
 }
 
 
@@ -690,6 +696,43 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .card {
     margin-bottom: 2rem;
+  }
+
+  .tail {
+    top: -8%;
+  }
+}
+
+@media (max-width: 640px) {
+  .container-card {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+
+  .tail {
+    top: -4%;
+    scale: 1.4;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container-card {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+
+  .tail {
+    top: -4%;
+    scale: 1.2;
   }
 }
 </style>
