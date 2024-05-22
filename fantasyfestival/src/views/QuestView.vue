@@ -109,7 +109,7 @@
             <input type="checkbox" id="q1" class="accordion-toggle">
             <label for="q1" class="accordion-title cursor-pointer">Hvordan bestiller jeg billetter?
               <span class="text-2xl" aria-hidden="true">
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
@@ -123,35 +123,70 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q2" class="accordion-toggle">
-            <label for="q2" class="accordion-title cursor-pointer">Er der en aldersbegrænsning på Aften Quest?</label>
+            <label for="q2" class="accordion-title cursor-pointer">Er der en aldersbegrænsning på Aften Quest?
+              <span class="text-2xl" aria-hidden="true">
+                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </label>
             <div class="accordion-content hidden">
               <p class="text-bold text-black">Ja, aldersgrænsen er på 16+</p>
             </div>
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q3" class="accordion-toggle">
-            <label for="q3" class="accordion-title cursor-pointer">Hvor lang tid tager disse to Quests?</label>
+            <label for="q3" class="accordion-title cursor-pointer">Hvor lang tid tager disse to Quests?
+              <span class="text-2xl" aria-hidden="true">
+                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </label>
             <div class="accordion-content hidden">
               <p class="text-bold text-black">Vores Quests tager en time og 15 minutter hver!</p>
             </div>
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q4" class="accordion-toggle">
-            <label for="q4" class="accordion-title cursor-pointer">Kan jeg have min hund med rundt på Quest?</label>
+            <label for="q4" class="accordion-title cursor-pointer">Kan jeg have min hund med rundt på Quest?
+              <span class="text-2xl" aria-hidden="true">
+                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </label>
             <div class="accordion-content hidden">
               <p class="text-bold text-black">Ja, det kan du godt!</p>
             </div>
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q5" class="accordion-toggle">
-            <label for="q5" class="accordion-title cursor-pointer">Kan jeg have en barnevogn med?</label>
+            <label for="q5" class="accordion-title cursor-pointer">Kan jeg have en barnevogn med?
+              <span class="text-2xl" aria-hidden="true">
+                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </label>
             <div class="accordion-content hidden">
               <p class="text-bold text-black">Ja, det kan du godt!</p>
             </div>
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q6" class="accordion-toggle">
-            <label for="q6" class="accordion-title cursor-pointer">Er disse Quests handicapvenlige?</label>
+            <label for="q6" class="accordion-title cursor-pointer">Er disse Quests handicapvenlige?
+              <span class="text-2xl" aria-hidden="true">
+                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </label>
             <div class="accordion-content hidden">
               <p class="text-bold text-black">Ja, det er de!</p>
             </div>
@@ -249,7 +284,15 @@ document.addEventListener('DOMContentLoaded', function () {
   display: none;
 }
 
+.arrow{
+  display: inline-block;
+  transition: transform 0.3s;
+  margin-top: 1%;
+}
 
+.accordion-toggle:checked + .accordion-title .arrow{
+  transform: rotate(90deg);
+}
 
 .relative {
   position: relative;
