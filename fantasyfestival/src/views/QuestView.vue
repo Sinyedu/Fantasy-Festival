@@ -63,13 +63,13 @@
       <div class="hs-carousel relative overflow-hidden w-full h-full rounded-lg">
         <div class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700">
           <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-            <img class="pressfoto w-full h-full" src="../assets/img/pressefoto1.jpg" alt="First slide">
+            <img class="pressfoto w-full h-full" src="../assets/img/pressefotos1.png" alt="First slide">
           </div>
           <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-            <img class="pressfoto w-full h-full" src="../assets/img/pressefoto2.jpg" alt="Second slide">
+            <img class="pressfoto w-full h-full" src="../assets/img/pressefotos2.png" alt="Second slide">
           </div>
           <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-            <img class="pressfoto w-full h-full" src="../assets/img/testpres3.jpg" alt="Third slide">
+            <img class="pressfoto w-full h-full" src="../assets/img/pressefotos3.png" alt="Third slide">
           </div>
         </div>
       </div>
