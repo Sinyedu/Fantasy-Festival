@@ -117,8 +117,8 @@
 
     <!-- THIS IS THE FAQ SECTION USED WITH TAILWINDCSS -->
     <div class="container mx-auto py-12">
-      <div class="max-w-lg mx-auto">
-        <h2 class="text-3xl font-semibold mb-6 mt-32">Ofte stillede spørgsmål</h2>
+      <div class="mx-auto accordion-seg">
+        <h2 class="text-3xl align-start font-semibold mb-6 mt-28">Ofte stillede spørgsmål</h2>
         <div class="accordion">
           <div class="accordion-item">
             <input type="checkbox" id="q1" class="accordion-toggle w-96">
@@ -131,7 +131,7 @@
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
-              <p class="raleway-font text-bold text-black">Det gør du på <a class="text-bold underline"
+              <p class="answer raleway-font text-bold">Det gør du på <a class="text-bold underline"
                   href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
                   target="_blank">HER!</a></p>
             </div>
@@ -147,7 +147,7 @@
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
-              <p class="raleway-font text-bold text-black">Ja, aldersgrænsen er på 16+</p>
+              <p class="answer raleway-font text-bold ">Ja, aldersgrænsen er på 16+</p>
             </div>
           </div>
           <div class="accordion-item">
@@ -161,7 +161,7 @@
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
-              <p class="raleway-font text-bold text-black">Vores Quests tager en time og 15 minutter hver!</p>
+              <p class="answer raleway-font text-bold">Vores Quests tager en time og 15 minutter hver!</p>
             </div>
           </div>
           <div class="accordion-item">
@@ -175,7 +175,7 @@
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
-              <p class="raleway-font text-bold text-black">Ja, det kan du godt!</p>
+              <p class="answer raleway-font text-bold">Ja, det kan du godt!</p>
             </div>
           </div>
           <div class="accordion-item">
@@ -189,7 +189,7 @@
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
-              <p class="raleway-font text-bold text-black">Ja, det kan du godt!</p>
+              <p class="answer raleway-font text-bold">Ja, det kan du godt!</p>
             </div>
           </div>
           <div class="accordion-item">
@@ -203,7 +203,7 @@
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
-              <p class="raleway-font text-bold text-black">Ja, det er de!</p>
+              <p class="answer raleway-font text-bold">Ja, det er de!</p>
             </div>
           </div>
         </div>
@@ -293,12 +293,16 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style lang="scss" scoped>
+.answer{
+  color: #083a35;
+  font-weight: bold;
+}
+
 .brødtekst {
   display: flex;
   justify-content: center;
   
 }
-
 
 .deltag h1 {
   text-align: start;
@@ -312,6 +316,20 @@ document.addEventListener('DOMContentLoaded', function () {
   display: inline-block;
   transition: transform 0.3s;
   margin-top: 1%;
+}
+
+.accordion-seg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+.accordion-seg h2{
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  width: 36%;
 }
 
 .accordion-toggle:checked + .accordion-title .arrow{
@@ -396,8 +414,8 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .accordion-item {
   // margin-bottom: 1rem;
-  width: 50%;
-  padding-bottom: 1%; 
+  width: 100%;
+  padding-bottom: 5%; 
 }
 
 .accordion-toggle {
@@ -414,7 +432,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 
 .accordion-title:hover {
-  background-color: #c1bbadd3;
+  background-color: #c1bbad;
 }
 
 .accordion-content {
@@ -428,7 +446,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .accordion-toggle:checked+.accordion-title+.accordion-content {
   display: block;
-  background-color: #F0DB98;
+  background-color: #dfd8c7;
 }
 
 .video-container {
