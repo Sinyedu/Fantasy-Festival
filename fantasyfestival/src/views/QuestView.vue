@@ -2,7 +2,8 @@
 
   <body>
     <div class="centertext">
-      <h1 class="text-7xl font-bold text-center">Fantasy Quest <br>Esbjerg 2024</h1>
+      <h1 class="text-7xl font-bold text-center">Fantasy Quest</h1>
+      <p class="text-5xl font-bold text-center">Esbjerg 2024</p>
     </div>
     <div id="countdown">
       <CountDown />
@@ -605,6 +606,13 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   text-shadow: #083a36 5px 5px 8px;
 }
 
+.centertext p {
+  position: relative;
+  text-align: center;
+  z-index: 3;
+  color: #FECD08;
+  text-shadow: #083a36 5px 5px 8px;
+}
 .maintekst {
   margin-top: 30%;
 }
