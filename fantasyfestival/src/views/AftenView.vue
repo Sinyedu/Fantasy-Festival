@@ -70,13 +70,7 @@
       </div>
       <img class="goblin" src="../assets/img/eventyrgoblin.png" alt="Eventyr Goblin">
     </div>
-    <div class="footer-placeholder bg-blue-900">
-      <div class="popup-arrow" v-show="showScrollToTop" @click="scrollToTop">
-      ↑ Scroll to Top
-    </div>
-    </div>
   </body>
-
 </template>
 
 
@@ -87,10 +81,16 @@
 </script>
 
 <style lang="scss" scoped>
+.footer {
+  background-color: #EDE6D6;
+}
+
+
+
 body{
   margin: 0;
   padding: 0;
-  background-color: #355C55;
+  background-color: #083a35;
 }
 .info {
   color: #EDE6D6;

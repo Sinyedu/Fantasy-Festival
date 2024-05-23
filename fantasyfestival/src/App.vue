@@ -26,6 +26,8 @@ import Footer from './components/FooterComponent.vue'
 
 
 
+
+
 </script>
 
 <style lang="scss">

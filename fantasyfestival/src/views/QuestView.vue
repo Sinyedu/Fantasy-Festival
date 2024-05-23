@@ -210,7 +210,6 @@
       </div>
     </div>
     <img class="arkivaren" src="../assets/img/Arkivaren_web.png" alt="Arkivaren">
-
   </body>
 </template>
 <script>
@@ -227,6 +226,7 @@ export default {
 <script setup>
 import getQuestsItems from '@/modules/getQuest.js';
 import getDayQuest from '@/modules/getDayQuest.js';
+
 
 // Get questItems from the imported function
 const { questItems } = getQuestsItems();
