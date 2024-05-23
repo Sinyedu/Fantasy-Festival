@@ -233,6 +233,8 @@ const { questItems } = getQuestsItems();
 const { dayQuests } = getDayQuest();
 
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
   const carouselElement = document.querySelector('[data-hs-carousel]');
   const slides = carouselElement.querySelectorAll('.hs-carousel-slide');
@@ -243,6 +245,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const autoPlayInterval = JSON.parse(carouselElement.dataset.hsCarousel).autoPlayInterval || 3000;
   let currentIndex = 0;
   let interval;
+  
 
   function updateCarousel() {
     const carouselBody = carouselElement.querySelector('.hs-carousel-body');
@@ -257,6 +260,7 @@ document.addEventListener('DOMContentLoaded', function () {
     currentIndex = index;
     updateCarousel();
   }
+
 
   prevButton.addEventListener('click', () => {
     currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
