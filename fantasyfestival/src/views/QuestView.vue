@@ -13,37 +13,47 @@
     </div>
 
     <div class="maintekst">
-      <h1 class="deltag flex justify-center text-5xl font-bold">Deltag i en magisk oplevelse</h1>
-      <p class="brødtekst text-center text-2xl">Er du klar til at leve dig ind i en anden verden, en magisk <br> historie, hvor du
+      <h1 class="deltag flex justify-center text-5xl mb-5 font-bold">Deltag i en magisk oplevelse</h1>
+      <p class="brødtekst raleway-font text-3xl">Er du klar til at leve dig ind i en anden verden, en magisk <br> historie, hvor du
         er helten, der er på en “quest” for at <br> overvinde de onde magter og redde hele verden? Så gør <br>dig klar
         til Fantasy Quest Esbjerg.</p>
     </div>
     <div class="container-card">
-      <div v-for="dayQuest in dayQuests" :key="dayQuest.id" class="card">
+      <div v-for="dayQuest in dayQuests" :key="dayQuest.id" class="day-card">
         <div class="portfolio-item">
           <div class="day-info">
             <h2 class="titletext">{{ dayQuest.title }}</h2>
             <img class="fillerimage bg-auto" :src="dayQuest.image" alt="">
-            <p class="description">{{ dayQuest.description }}</p>
-            <img class="buttonimage" :src="dayQuest.image2" alt="">
+            <p class="description raleway-font text-2xl">{{ dayQuest.description }}</p>
+            <a href="#">
+              <img class="buttonimage-day" :src="dayQuest.image2" alt="">
+            </a>
+
+            <div class="booknuknap-dag">
+              <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><img class="" src="../assets/img/yellow buttentext.png" alt=""></a>
+            </div>
           </div>
         </div>
       </div>
-      <div v-for="questItem in questItems" :key="questItem.id" class="card">
+      <div v-for="questItem in questItems" :key="questItem.id" class="night-card">
         <div class="portfolio-item">
           <div class="night-info">
             <h2 class="titletext">{{ questItem.title }}</h2>
             <img class="fillerimage bg-auto" :src="questItem.image" alt="">
-            <p class="description">{{ questItem.description }}</p>
-            <img class="buttonimage" :src="questItem.image2" alt="">
+            <p class="description raleway-font text-2xl">{{ questItem.description }}</p>
+            <a href="#">
+              <img class="buttonimage-night" :src="questItem.image2" alt="">
+            </a>
+            <div class="booknuknap-night">
+              <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><img class="" src="../assets/img/yellow buttentext.png" alt=""></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="booknuknap">
-    <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><img class="ylwbutton h-24 w-54" src="../assets/img/yellow buttentext.png" alt=""></a>
-    <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><img class="ylwbutton h-24 w-54" src="../assets/img/yellow buttentext.png" alt=""></a>
-    </div>
+    <!-- <div class="booknuknap-aften">
+      <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><img class=""  src="../assets/img/yellow buttentext.png" alt=""></a>
+    </div> -->
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
     <div class="video-container relative">
   <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonlefthand.svg" alt="Dragon Left">
@@ -76,20 +86,20 @@
       </div>
 
       <button type="button"
-        class="hs-carousel-prev absolute inset-y-0 left-0 flex justify-center items-center w-[46px] h-full text-white bg-gray-800/50 hover:bg-gray-800/75 rounded-l-lg">
+        class="hs-carousel-prev absolute inset-y-0 left-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-l-lg">
         <span class="text-2xl" aria-hidden="true">
-          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
           </svg>
         </span>
         <span class="sr-only">Previous</span>
       </button>
       <button type="button"
-        class="hs-carousel-next absolute inset-y-0 right-0 flex justify-center items-center w-[46px] h-full text-white bg-gray-800/50 hover:bg-gray-800/75 rounded-r-lg">
+        class="hs-carousel-next absolute inset-y-0 right-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-r-lg">
         <span class="sr-only">Next</span>
         <span class="text-2xl" aria-hidden="true">
-          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
           </svg>
         </span>
       </button>
@@ -111,8 +121,8 @@
         <h2 class="text-3xl font-semibold mb-6 mt-32">Ofte stillede spørgsmål</h2>
         <div class="accordion">
           <div class="accordion-item">
-            <input type="checkbox" id="q1" class="accordion-toggle">
-            <label for="q1" class="accordion-title cursor-pointer">Hvordan bestiller jeg billetter?
+            <input type="checkbox" id="q1" class="accordion-toggle w-96">
+            <label for="q1" class="accordion-title cursor-pointer rounded-lg">Hvordan bestiller jeg billetter?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -120,7 +130,7 @@
                 </svg>
               </span>
             </label>
-            <div class="accordion-content hidden">
+            <div class="accordion-content hidden rounded-lg">
               <p class="raleway-font text-bold text-black">Det gør du på <a class="text-bold underline"
                   href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
                   target="_blank">HER!</a></p>
@@ -128,7 +138,7 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q2" class="accordion-toggle">
-            <label for="q2" class="accordion-title cursor-pointer">Er der en aldersbegrænsning på Aften Quest?
+            <label for="q2" class="accordion-title cursor-pointer rounded-lg">Er der en aldersbegrænsning på Aften Quest?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -136,13 +146,13 @@
                 </svg>
               </span>
             </label>
-            <div class="accordion-content hidden">
+            <div class="accordion-content hidden rounded-lg">
               <p class="raleway-font text-bold text-black">Ja, aldersgrænsen er på 16+</p>
             </div>
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q3" class="accordion-toggle">
-            <label for="q3" class="accordion-title cursor-pointer">Hvor lang tid tager disse to Quests?
+            <label for="q3" class="accordion-title cursor-pointer rounded-lg">Hvor lang tid tager disse to Quests?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -150,13 +160,13 @@
                 </svg>
               </span>
             </label>
-            <div class="accordion-content hidden">
+            <div class="accordion-content hidden rounded-lg">
               <p class="raleway-font text-bold text-black">Vores Quests tager en time og 15 minutter hver!</p>
             </div>
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q4" class="accordion-toggle">
-            <label for="q4" class="accordion-title cursor-pointer">Kan jeg have min hund med rundt på Quest?
+            <label for="q4" class="accordion-title cursor-pointer rounded-lg">Kan jeg have min hund med rundt på Quest?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -164,13 +174,13 @@
                 </svg>
               </span>
             </label>
-            <div class="accordion-content hidden">
+            <div class="accordion-content hidden rounded-lg">
               <p class="raleway-font text-bold text-black">Ja, det kan du godt!</p>
             </div>
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q5" class="accordion-toggle">
-            <label for="q5" class="accordion-title cursor-pointer">Kan jeg have en barnevogn med?
+            <label for="q5" class="accordion-title cursor-pointer rounded-lg">Kan jeg have en barnevogn med?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -178,13 +188,13 @@
                 </svg>
               </span>
             </label>
-            <div class="accordion-content hidden">
+            <div class="accordion-content hidden rounded-lg">
               <p class="raleway-font text-bold text-black">Ja, det kan du godt!</p>
             </div>
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q6" class="accordion-toggle">
-            <label for="q6" class="accordion-title cursor-pointer">Er disse Quests handicapvenlige?
+            <label for="q6" class="accordion-title cursor-pointer rounded-lg">Er disse Quests handicapvenlige?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -192,7 +202,7 @@
                 </svg>
               </span>
             </label>
-            <div class="accordion-content hidden">
+            <div class="accordion-content hidden rounded-lg">
               <p class="raleway-font text-bold text-black">Ja, det er de!</p>
             </div>
           </div>
@@ -215,7 +225,6 @@ export default {
 
 
 <script setup>
-import { ref } from "vue";
 import getQuestsItems from '@/modules/getQuest.js';
 import getDayQuest from '@/modules/getDayQuest.js';
 
@@ -287,7 +296,7 @@ document.addEventListener('DOMContentLoaded', function () {
 .brødtekst {
   display: flex;
   justify-content: center;
-  text-align: start;
+  
 }
 
 
@@ -321,7 +330,6 @@ document.addEventListener('DOMContentLoaded', function () {
 .hs-carousel-body {
   display: flex;
   width: 100%;
-  /* Adjust according to the number of slides */
   transition: transform 2s ease-in-out;
   background-color: #ede6d6;
 }
@@ -364,7 +372,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .titletext {
   color: #EDE6D6;
-  padding-top: 25%;
+  padding-top: 30%;
 }
 
 
@@ -379,16 +387,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   text-align: center;
 }
 
-.booknutext {
-  position: absolute;
-  left: 48%;
-  top: 35%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-
-}
-
-
 .arkivaren {
   position: absolute;
   scale: 0.2;
@@ -397,7 +395,9 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 
 .accordion-item {
-  margin-bottom: 1rem;
+  // margin-bottom: 1rem;
+  width: 50%;
+  padding-bottom: 1%; 
 }
 
 .accordion-toggle {
@@ -410,6 +410,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   background-color: #C1BBAD;
   border-bottom: 1px solid #e5e7eb;
   cursor: pointer;
+  width: 100%;
 }
 
 .accordion-title:hover {
@@ -430,18 +431,14 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   background-color: #F0DB98;
 }
 
-// .answer{
-//   font-family: , sans-serif;
-// }
-
 .video-container {
   position: relative;
   max-width: 80%;
-  /* Adjust as needed */
   max-height: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
+  margin-top: 10%;
 }
 
 .responsive-iframe {
@@ -456,7 +453,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   top: -13%;
   z-index: 10;
   pointer-events: none;
-  /* Ensure hands are above the video */
 }
 
 .dragonhand2 {
@@ -465,16 +461,28 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   top: -13%;
   z-index: 10;
   pointer-events: none;
-  /* Ensure hands are above the video */
 }
 
-.booknuknap {
+.booknuknap-dag {
   display: flex;
-  // align-items: center;
+  align-items: center;
   justify-content: center;
   position: relative;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding-bottom: 15%;
+  scale: .65;
+  top: 45%;
+}
+
+.booknuknap-night {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  justify-content: space-between;
+  padding-bottom: 15%;
+  scale: .65;
+  top: 50%;
 }
 
 .booknu2 {
@@ -498,10 +506,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   z-index: 3;
 }
 
-// .bg-auto {
-//   overflow: hidden;
-// }
-
 .night-info {
   display: flex;
   flex-direction: column;
@@ -520,16 +524,38 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   margin-bottom: 1rem;
 }
 
-.day-info img {
-  width: 75%;
-  height: 350px;
-  object-fit: cover;
+.day-info a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 150px;
+  top: 9%;
 }
 
-.night-info img {
-  width: 75%;
-  height: 350px;
-  object-fit: cover;
+.buttonimage-day {
+  position: relative;
+  width: 327.24px;
+  height: 89.44px;
+  scale: 1;
+  top: 9%;
+}
+
+.night-info a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 150px;
+  top: 15%;
+}
+
+.buttonimage-night {
+  position: relative;
+  width: 327.24px;
+  height: 89.44px;
+  scale: 1;
+  top: 15%;
 }
 
 .button {
@@ -546,9 +572,24 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   justify-content: space-evenly;
 }
 
-.card {
-  max-width: 500px;
-  height: 1000px;
+.day-card{
+  max-width: 450px;
+  height: 1050px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
+  background-color: #355C55;
+  background-image: url("../assets/img/rammesol.svg");
+  background-position: center;
+  background-size: 380px 1080px;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  margin-bottom: 20%;
+}
+
+.night-card {
+  max-width: 450px;
+  height: 1050px;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
@@ -557,13 +598,12 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   background-position: center;
   background-size: 380px 1080px;
   background-repeat: no-repeat;
-  // background-position: center;
   border-radius: 50px;
-  // z-index: 3;
+  margin-bottom: 15%;
 }
 
 .fillerimage {
-  width: 100%;
+  width: 65%;
   height: 350px;
   object-fit: cover;
 }
@@ -578,12 +618,25 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   height: auto;
 }
 
-.card h2 {
+.day-card h2 {
   font-size: 2rem;
   text-align: center;
 }
 
-.card p {
+.day-card p {
+  margin-left: 2%;
+  margin-top: 5%;
+  max-width: 70%;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.night-card h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.night-card p {
   margin-left: 2%;
   margin-top: 5%;
   max-width: 70%;
@@ -629,15 +682,12 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   height: 100%;
   margin-top: 2%;
   overflow: hidden;
-  /* Ensure no overflow */
 }
-
 
 .card-frame img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  // position: absolute;
   overflow: hidden;
 }
 
@@ -663,7 +713,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
 }
 
-
 @media (max-width: 1280px) {
   .container-card {
     flex-direction: column;
@@ -683,8 +732,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     display: none;
   }
 }
-
-
 
 @media (max-width: 1024px) {
   .container-card {
@@ -709,7 +756,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
 
 }
-
 
 @media (max-width: 768px) {
   .container-card {
@@ -741,7 +787,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     scale: 1.4;
   }
 }
-
 
 @media (max-width: 480px) {
   .container-card {

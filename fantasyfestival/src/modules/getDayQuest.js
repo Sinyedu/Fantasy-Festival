@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import image1 from '../assets/img/statuer.png'
+import image1 from '../assets/img/Vogterne.jpg'
 import image2 from '../assets/img/paperbuttontext.png'
 
 const getDayQuests = () => {
