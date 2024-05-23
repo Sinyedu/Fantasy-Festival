@@ -1,25 +1,27 @@
 <template>
-    <footer class="footer raleway-font">
-      <div class="footer-content">
-        <div class="footer-column">
-          <ul class="footer-list">
-            <li class="footer-item">Word 1</li>
-            <li class="footer-item">Word 2</li>
-            <li class="footer-item">Word 3</li>
-          </ul>
+    <div class="masterfooter">
+      <footer class="footer raleway-font bg-teal-900 text-cream p-5 h-92">
+        <div class="footer-content flex justify-between items-center max-w-6xl mx-auto">
+          <div class="footer-column flex-1 p-2">
+            <ul class="footer-list list-none p-0">
+              <li class="footer-item py-1">Køb billetter</li>
+              <li class="footer-item py-1">Familie Quest</li>
+              <li class="footer-item py-1">Aften Quest</li>
+            </ul>
+          </div>
+          <div class="footer-column flex-1 p-2">
+            <ul class="footer-list list-none p-0">
+              <li class="footer-item py-1">FAQ</li>
+              <li class="footer-item py-1">Kontakt os</li>
+              <li class="footer-item py-1">Link til Fantasyfestivalen</li>
+            </ul>
+          </div>
+          <div class="footer-column footer-logo flex-1 p-2 flex justify-end">
+            <img src="../assets/img/logogultekst.png" alt="Logo" class="max-w-24">
+          </div>
         </div>
-        <div class="footer-column">
-          <ul class="footer-list">
-            <li class="footer-item">Word 4</li>
-            <li class="footer-item">Word 5</li>
-            <li class="footer-item">Word 6</li>
-          </ul>
-        </div>
-        <div class="footer-column footer-logo">
-          <img src="../assets/img/logo.png" alt="Logo">
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </template>
   
   <script>
@@ -28,55 +30,41 @@
   };
   </script>
   
-  <style scoped>
-  .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    height: 35vh;
-    width: 100%;
-  }
-  
-  .footer-content {
+  <style scoped lang="scss">
+
+.footer-item {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: start;
+}
+
+
+.footer-column {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: start; */
+}
+
+
+.footer-column img {
+    scale: 3.3;
+}
+
+  li {
+    display: flex;
+    justify-content: start;
+    font-size: 1.5rem;
   }
   
-  .footer-column {
-    flex: 1;
-    padding: 10px;
+  .bg-teal-900 {
+    background-color: #083A35;
   }
   
-  .footer-list {
-    list-style: none;
-    padding: 0;
+  .text-cream {
+    color: #ede6d6;
   }
   
-  .footer-item {
-    margin-bottom: 10px;
-  }
-  
-  .footer-logo img {
+  .max-w-24 {
     max-width: 100px;
-  }
-  
-  @media (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .footer-column {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    .footer-logo {
-      align-self: center;
-    }
   }
   </style>
   

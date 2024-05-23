@@ -72,12 +72,12 @@
   
   .countdown-box {
     background-color: #083a35;
-    color: #ffffff;
+    color: #ede6d6;
     font-size: 2em;
     text-align: center;
     padding: 10px;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 30px;
     width: 100px;
     display: flex;
     flex-direction: column;

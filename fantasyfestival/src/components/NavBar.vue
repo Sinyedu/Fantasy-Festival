@@ -2,8 +2,8 @@
   <div class="navbarcomp">
     <div class="brand">
       <div class="logo">
-        <h1>Logo</h1>
-        <!-- <img src="#" alt="Logo"> -->
+        <!-- <h1>Logo</h1> -->
+        <img src="../assets/img/logogul.png" alt="Logo">
       </div>
 
       <div class="hamburger-dropdown">
@@ -71,13 +71,18 @@ anime({
 }
 
 .logo{
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* margin-top: 2%; */
   width: 5%;
   height: 7.5vh;
-  background-color: #ede6ed;
+  padding-top: 2%;
+  scale: 1.3;
+  left: 1.7%;
+  /* background-color: #ede6ed; */
+  z-index: 9999;
 }
 
 .logo h1{
