@@ -25,7 +25,7 @@
             <h2 class="titletext">{{ dayQuest.title }}</h2>
             <img class="fillerimage bg-auto" :src="dayQuest.image" alt="">
             <p class="description raleway-font text-2xl">{{ dayQuest.description }}</p>
-            <a href="#">
+            <a href="/familie">
               <img class="buttonimage-day" :src="dayQuest.image2" alt="">
             </a>
 
@@ -41,7 +41,7 @@
             <h2 class="titletext">{{ questItem.title }}</h2>
             <img class="fillerimage bg-auto" :src="questItem.image" alt="">
             <p class="description raleway-font text-2xl">{{ questItem.description }}</p>
-            <a href="#">
+            <a href="/aften">
               <img class="buttonimage-night" :src="questItem.image2" alt="">
             </a>
             <div class="booknuknap-night">
