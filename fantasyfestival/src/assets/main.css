@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,4 +7,10 @@
 @font-face{
   font-family: RomanSD;
   src: url('./fonts/RomanSD.ttf');
+}
+
+.raleway-font{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }

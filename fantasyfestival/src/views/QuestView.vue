@@ -121,7 +121,7 @@
               </span>
             </label>
             <div class="accordion-content hidden">
-              <p class="text-bold text-black">Det gør du på <a class="text-bold underline"
+              <p class="raleway-font text-bold text-black">Det gør du på <a class="text-bold underline"
                   href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
                   target="_blank">HER!</a></p>
             </div>
@@ -137,7 +137,7 @@
               </span>
             </label>
             <div class="accordion-content hidden">
-              <p class="text-bold text-black">Ja, aldersgrænsen er på 16+</p>
+              <p class="raleway-font text-bold text-black">Ja, aldersgrænsen er på 16+</p>
             </div>
           </div>
           <div class="accordion-item">
@@ -151,7 +151,7 @@
               </span>
             </label>
             <div class="accordion-content hidden">
-              <p class="text-bold text-black">Vores Quests tager en time og 15 minutter hver!</p>
+              <p class="raleway-font text-bold text-black">Vores Quests tager en time og 15 minutter hver!</p>
             </div>
           </div>
           <div class="accordion-item">
@@ -165,7 +165,7 @@
               </span>
             </label>
             <div class="accordion-content hidden">
-              <p class="text-bold text-black">Ja, det kan du godt!</p>
+              <p class="raleway-font text-bold text-black">Ja, det kan du godt!</p>
             </div>
           </div>
           <div class="accordion-item">
@@ -179,7 +179,7 @@
               </span>
             </label>
             <div class="accordion-content hidden">
-              <p class="text-bold text-black">Ja, det kan du godt!</p>
+              <p class="raleway-font text-bold text-black">Ja, det kan du godt!</p>
             </div>
           </div>
           <div class="accordion-item">
@@ -193,7 +193,7 @@
               </span>
             </label>
             <div class="accordion-content hidden">
-              <p class="text-bold text-black">Ja, det er de!</p>
+              <p class="raleway-font text-bold text-black">Ja, det er de!</p>
             </div>
           </div>
         </div>
@@ -355,6 +355,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 body {
   background-color: #ede6d6;
+  font-family: RomanSD, sans-serif;
 }
 
 h2.text-3xl.font-semibold.mb-6.mt-32 {
@@ -429,6 +430,9 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   background-color: #F0DB98;
 }
 
+// .answer{
+//   font-family: , sans-serif;
+// }
 
 .video-container {
   position: relative;
