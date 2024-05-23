@@ -13,6 +13,7 @@
   <Transition mode="out-in" name="fade">
     <RouterView/>
   </Transition>
+  <Footer/>
 </template>
 
 
@@ -21,6 +22,7 @@
 import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import NavBar from './components/NavBar.vue'
+import Footer from './components/FooterComponent.vue'
 
 
 

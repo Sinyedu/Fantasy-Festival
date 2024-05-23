@@ -12,11 +12,11 @@
   
     <div class="titlecontainer">
       <div class="centertext">
-        <h1 class="headliner font-bold text-3xl text-center">Aften Questen!</h1>
+        <h1 class="headliner font-bold text-7xl pt-7 text-center">Aften Questen!</h1>
       </div>
     </div>
   
-    <div class="questcontainer">
+    <div class="questcontainer">  
       <div class="infotext">
         <h1 class="headliner font-bold text-3xl pb-9">Er du til uhygge og svære gåder?</h1>
         <p class="maintext text-2xl">
@@ -71,11 +71,14 @@
       <img class="goblin" src="../assets/img/eventyrgoblin.png" alt="Eventyr Goblin">
     </div>
     <div class="footer-placeholder bg-blue-900">
-  
+      <div class="popup-arrow" v-show="showScrollToTop" @click="scrollToTop">
+      ↑ Scroll to Top
+    </div>
     </div>
   </body>
 
 </template>
+
 
 <script setup>
   import { ref } from "vue";
@@ -105,7 +108,7 @@ color: #D0D3C9;
   position: relative;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -126,9 +129,10 @@ color: #D0D3C9;
   overflow: hidden;
   position: relative;
   display: flex;
-  max-width: 100%; 
-  max-height: 100%; 
-  scale: 2.40;
+  // max-width: 100%; 
+  // max-height: 100%;
+  top: -10%; 
+  scale: 1.65;
 }
 
 .hands{
