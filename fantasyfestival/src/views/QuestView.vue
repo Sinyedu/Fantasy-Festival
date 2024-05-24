@@ -61,7 +61,7 @@
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
     <div class="video-container relative">
   <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonlefthand.svg" alt="Dragon Left">
-  <iframe id="videoFrame" class="responsive-iframe mx-auto flex justify-center" width="1200" height="720"
+  <iframe id="videoFrame" class="responsive-iframe mx-auto flex justify-center" width="1452" height="940"
     src="https://www.youtube.com/embed/LHXuOTdFvNA" title="Peaky Blinders Reenactment" frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -487,10 +487,11 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   position: relative;
   max-width: 80%;
   max-height: 100%;
+  // height: 1000px;
   margin: auto;
   display: flex;
   justify-content: center;
-  margin-top: 10%;
+  margin-bottom: -10%;
 }
 
 .responsive-iframe {
@@ -613,13 +614,13 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .container-card {
   margin-top: 5%;
-  margin-bottom: 5%;
+  // margin-bottom: 5%;
   display: flex;
   justify-content: space-evenly;
 }
 
 .day-card{
-  max-width: 450px;
+  max-width: 600px;
   height: 1050px;
   align-items: center;
   justify-content: center;
@@ -634,7 +635,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 
 .night-card {
-  max-width: 450px;
+  max-width: 600px;
   height: 1050px;
   align-items: center;
   justify-content: center;
