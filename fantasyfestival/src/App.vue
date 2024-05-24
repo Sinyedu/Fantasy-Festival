@@ -1,29 +1,27 @@
 <template>
   <header>
-    <div class="wrapper" :class="{ 'fade-out': fading }">
-
-    </div>
-    <NavBar/>
+    <div class="wrapper" :class="{ 'fade-out': fading }"></div>
+    <NavBar />
   </header>
 
   <Transition mode="out-in" name="fade">
-    <RouterView/>
+    <RouterView />
   </Transition>
-  <Footer/>
+  <Footer />
 </template>
 
-
+<!-- <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
+  integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script> -->
 
 <script setup>
-import { ref } from 'vue'
-import { RouterLink, RouterView } from 'vue-router'
-import NavBar from './components/NavBar.vue'
-import Footer from './components/FooterComponent.vue'
-
-
-
-
-
+import { ref } from "vue";
+import { RouterLink, RouterView } from "vue-router";
+import NavBar from "./components/NavBar.vue";
+import Footer from "./components/FooterComponent.vue";
 </script>
 
 <style lang="scss">
@@ -31,11 +29,13 @@ html {
   scroll-behavior: smooth;
 }
 
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: 0.3s ease;
   opacity: 0;
 }
-.fade-enter-from, .fade-leave-to {
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
 }
 // .slide-fade-enter-active, .slide-fade-leave-active {
@@ -45,7 +45,7 @@ html {
 //   opacity: 0;
 // }
 
-body{
+body {
   font-family: RomanSD, sans-serif;
   background-color: #ede6d6;
 }
