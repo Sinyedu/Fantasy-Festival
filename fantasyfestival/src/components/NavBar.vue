@@ -2,8 +2,7 @@
   <div class="navbarcomp">
     <div class="brand">
       <div class="logo">
-        <!-- <h1>Logo</h1> -->
-        <img src="../assets/img/logogul.png" alt="Logo">
+        <img :src="logoSrc" alt="Logo">
       </div>
 
       <div class="hamburger-dropdown">
@@ -24,10 +23,37 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted, watch } from "vue";
+import { useRoute } from "vue-router";
 import anime from 'animejs/lib/anime.es.js';
+import logogreen from '../assets/img/logogreen.png';
+import logogul from '../assets/img/logogul.png';
 
 const isOpen = ref(false);
+const route = useRoute();
+const logoSrc = ref(logogreen);
+
+const updateLogo = () => {
+  switch (route.path) {
+    case '/':
+      logoSrc.value = logogreen;
+      break;
+
+      case '/familie':
+        logoSrc.value = logogul;
+        break;
+
+      case '/aften':
+        logoSrc.value = logogul;
+        break;
+      
+      default:
+        logoSrc.value = logogreen;
+        break;
+  }
+};
+
+watch(route, updateLogo);
 
 const closeDropdown = (event) => {
   const dropdownMenu = document.querySelector('.dropdown-menu');
@@ -142,5 +168,7 @@ anime({
   background-color: #d8d2c4;
 }
 
+
+/* @media  */
 
 </style>

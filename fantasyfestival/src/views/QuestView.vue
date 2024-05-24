@@ -30,7 +30,9 @@
             </a>
 
             <div class="booknuknap-dag">
-              <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><img class="" src="../assets/img/yellow buttentext.png" alt=""></a>
+              <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
+                <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="">
+              </a>
             </div>
           </div>
         </div>
@@ -45,7 +47,9 @@
               <img class="buttonimage-night" :src="questItem.image2" alt="">
             </a>
             <div class="booknuknap-night">
-              <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><img class="" src="../assets/img/yellow buttentext.png" alt=""></a>
+              <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
+                <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="">
+              </a>
             </div>
           </div>
         </div>
@@ -88,7 +92,7 @@
       <button type="button"
         class="hs-carousel-prev absolute inset-y-0 left-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-l-lg">
         <span class="text-2xl" aria-hidden="true">
-          <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg class="slide-arrow w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
           </svg>
         </span>
@@ -98,7 +102,7 @@
         class="hs-carousel-next absolute inset-y-0 right-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-r-lg">
         <span class="sr-only">Next</span>
         <span class="text-2xl" aria-hidden="true">
-          <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg class="slide-arrow w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
           </svg>
         </span>
@@ -297,6 +301,11 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style lang="scss" scoped>
+.ylwbutton {
+  width: 100%;
+  height: auto;
+}
+
 .answer{
   color: #083a35;
   font-weight: bold;
@@ -360,6 +369,15 @@ document.addEventListener('DOMContentLoaded', function () {
   flex: 0 0 100%;
   width: 100%;
   height: 100%;
+}
+
+.hs-carousel-prev, .hs-carousel-next{
+  background-color: #083a35;
+  transition: 0.5s ease;
+}
+
+.hs-carousel-prev:hover, .hs-carousel-next:hover{
+  background-color: #355C55;
 }
 
 .pressfoto {
@@ -485,15 +503,16 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   pointer-events: none;
 }
 
-.booknuknap-dag {
+.booknuknap-dag, .booknuknap-night {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   justify-content: space-between;
-  padding-bottom: 15%;
-  scale: .65;
+  margin-top: -10%;
+  scale: .60;
   top: 45%;
+  // height: 79.88px;
 }
 
 .booknuknap-night {
@@ -502,8 +521,8 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   justify-content: center;
   position: relative;
   justify-content: space-between;
-  padding-bottom: 15%;
-  scale: .65;
+  padding-top: 3%;
+  scale: .60;
   top: 50%;
 }
 
@@ -555,10 +574,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   top: 9%;
 }
 
-.buttonimage-day {
+.buttonimage-day, .buttonimage-night {
   position: relative;
-  width: 327.24px;
-  height: 89.44px;
+  width: 65%;
+  height: auto;
   scale: 1;
   top: 9%;
 }
@@ -569,14 +588,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   justify-content: center;
   width: auto;
   height: 150px;
-  top: 15%;
-}
-
-.buttonimage-night {
-  position: relative;
-  width: 327.24px;
-  height: 89.44px;
-  scale: 1;
   top: 15%;
 }
 

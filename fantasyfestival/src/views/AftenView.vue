@@ -75,7 +75,6 @@
 
 
 <script setup>
-  import { ref } from "vue";
   import getInfoDetails from '@/modules/getInfo.js';
   const { infoDetails } = getInfoDetails();
 </script>
@@ -84,8 +83,6 @@
 .footer {
   background-color: #EDE6D6;
 }
-
-
 
 body{
   margin: 0;
@@ -96,10 +93,10 @@ body{
   color: #EDE6D6;
 }
 
-
 .maintext {
 color: #D0D3C9;
 }
+
 .headliner {
   color: #FECD08;
 }

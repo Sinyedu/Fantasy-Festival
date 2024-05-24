@@ -79,7 +79,6 @@
 </template>
 
 <script setup>
-  import { ref } from "vue";
   import getDayDetails from '@/modules/getDayInfo.js';
   const { dayDetails } = getDayDetails();
 </script>
@@ -90,14 +89,15 @@ body{
   padding: 0;
   background-color: #355C55;
 }
+
 .info {
   color: #EDE6D6;
 }
 
-
 .maintext {
 color: #D0D3C9;
 }
+
 .headliner {
   color: #FECD08;
 }
@@ -121,8 +121,6 @@ color: #D0D3C9;
   position: relative;
   width: 100%; 
   height: 100%; 
-
-
 }
 
 .gnist {
@@ -271,14 +269,5 @@ a{
   scale: 0.8;
   margin-bottom: 5%;
   bottom: 10%;
-}
-
-.footer-placeholder{
-  display: flex;
-  width: 100%;
-  height: 50vh;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
 }
 </style>
