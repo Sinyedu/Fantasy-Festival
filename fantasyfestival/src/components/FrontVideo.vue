@@ -26,7 +26,7 @@ export default {
   methods: {
     loadPlayer() {
       this.player = new YT.Player('player', {
-        videoId: 'tAbEIZI9dZ8',
+        videoId: 'nWYL6oaLhKE',
         events: {
           'onStateChange': this.onPlayerStateChange
         }
