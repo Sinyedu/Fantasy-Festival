@@ -23,8 +23,14 @@ const router = createRouter({
       path: '/aften',
       name: 'aften',
       component: AftenView
-    }
+    },
+    {path: '/',
+    name: 'faq',
+    component: QuestView,
+  }
   ]
 })
+
+
 
 export default router

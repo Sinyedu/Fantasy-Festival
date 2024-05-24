@@ -1,8 +1,4 @@
 <template>
-<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
-
   <header>
     <div class="wrapper" :class="{ 'fade-out': fading }">
 
@@ -31,6 +27,9 @@ import Footer from './components/FooterComponent.vue'
 </script>
 
 <style lang="scss">
+html {
+  scroll-behavior: smooth;
+}
 
 .fade-enter-active, .fade-leave-active {
   transition: 0.3s ease;

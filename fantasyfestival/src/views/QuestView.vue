@@ -120,7 +120,7 @@
 <!-- END OF CAROUSEL!-->
 
     <!-- THIS IS THE FAQ SECTION USED WITH TAILWINDCSS -->
-    <div class="container mx-auto py-12">
+    <div id="faq" class="container mx-auto py-12">
       <div class="mx-auto accordion-seg">
         <h2 class="text-3xl align-start font-semibold mb-6 mt-28">Ofte stillede spørgsmål</h2>
         <div class="accordion">
@@ -301,9 +301,21 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style lang="scss" scoped>
+a:hover .buttonimage-day, a:hover .buttonimage-night{
+transform: scale(1.05);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a:hover .ylwbutton{
+transform: scale(1.05);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
 .ylwbutton {
   width: 100%;
   height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .answer{
@@ -580,6 +592,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   height: auto;
   scale: 1;
   top: 9%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .night-info a{

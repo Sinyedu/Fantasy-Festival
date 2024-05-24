@@ -1,5 +1,5 @@
 <template>
-  <div :class="footerClass">
+  <div :class="footerClass" id="scrolltoFooter">
     <footer class="footer raleway-font">
       <div class="footer-content">
         <div class="footer-column">
@@ -11,7 +11,7 @@
         </div>
         <div class="footer-column">
           <ul class="footer-list">
-            <li class="footer-item2"><a href="/">FAQ</a></li>
+            <li class="footer-item2"><a href="/#faq">FAQ</a></li>
             <li class="footer-item2"><a href="#">Kontakt os</a></li>
             <li class="footer-item2"><a href="#">Link til Fantasyfestivalen</a></li>
           </ul>
@@ -76,7 +76,6 @@ updateFooterClass();
     color: #ede6d6;
     padding-top: 3.5%;
     padding-left: 5%;
-    // padding-bottom: 5%
   }
 
   .default-footer .footer {
@@ -84,7 +83,7 @@ updateFooterClass();
 }
 
 .familie-footer .footer {
-  background-color: #083a35; // Example color for Familie Quest page
+  background-color: #083a35; 
   height: 300px;
 }
 
@@ -117,7 +116,6 @@ updateFooterClass();
   }
 
   .footer-list a:hover{
-    // color: #355C55;
     text-decoration: underline;
   }
   
