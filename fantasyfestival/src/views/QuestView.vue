@@ -59,14 +59,9 @@
       <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><img class=""  src="../assets/img/yellow buttentext.png" alt=""></a>
     </div> -->
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
-    <div class="video-container relative">
-  <img class="absolute left-0 top-0 z-10 dragonhand" src="../assets/img/dragonlefthand.svg" alt="Dragon Left">
-  <iframe id="videoFrame" class="responsive-iframe mx-auto flex justify-center" width="1452" height="940"
-    src="https://www.youtube.com/embed/LHXuOTdFvNA" title="Peaky Blinders Reenactment" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  <img class="absolute right-0 top-0 z-10 dragonhand2" src="../assets/img/dragonrighthand.svg" alt="Dragon Right">
-</div>
+    <div class="video-container relative pt-24 pb-[300px]">
+      <FrontVideo /> 
+    </div>
 
 
     <!-- Slider -->
@@ -218,10 +213,12 @@
 </template>
 <script>
 import CountDown from '../components/CountDown.vue';
+import FrontVideo from '../components/FrontVideo.vue';
 export default {
   name: 'App',
   components: {
-    CountDown
+    CountDown, 
+    FrontVideo
   }
 };
 </script>
@@ -485,10 +482,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .video-container {
   position: relative;
-  max-width: 80%;
+  // max-width: 80%;
   max-height: 100%;
   // height: 1000px;
-  margin: auto;
+  // margin: auto;
   display: flex;
   justify-content: center;
   margin-bottom: -10%;
@@ -500,21 +497,21 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   margin-bottom: 30%;
 }
 
-.dragonhand {
-  position: absolute;
-  left: -8%;
-  top: -13%;
-  z-index: 10;
-  pointer-events: none;
-}
+// .dragonhand {
+//   position: absolute;
+//   left: -8%;
+//   top: -13%;
+//   z-index: 10;
+//   pointer-events: none;
+// }
 
-.dragonhand2 {
-  position: absolute;
-  right: -33%;
-  top: -13%;
-  z-index: 10;
-  pointer-events: none;
-}
+// .dragonhand2 {
+//   position: absolute;
+//   right: -33%;
+//   top: -13%;
+//   z-index: 10;
+//   pointer-events: none;
+// }
 
 .booknuknap-dag, .booknuknap-night {
   display: flex;
