@@ -57,9 +57,11 @@
     <!-- Video trailer for the evening quest -->
     <div class="video-holder">
       <img class="top-half" src="../assets/img/toptail.png" alt="Toppen af Gnist's hale">
-      <iframe class="video" width="1280" height="700" src="https://www.youtube.com/embed/AFBSUQvmt1o" title="Commercial - Red Merrild (For your perfect morning)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe class="video" width="1280" height="700" src="https://www.youtube.com/embed/nFSdk8QekBw" title="Animeret trailer - Fantasy Festival Quest 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <img class="bottom-half" src="../assets/img/bottomtail.png" alt="Bunden af Gnist's hale">
     </div>
+
+    
 
     <div class="lorecontainer">
       <div class="infotext">

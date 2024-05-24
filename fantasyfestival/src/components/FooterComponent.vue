@@ -80,6 +80,7 @@ updateFooterClass();
 
   .default-footer .footer {
   background-color: #083A35;
+  height: 300px;
 }
 
 .familie-footer .footer {

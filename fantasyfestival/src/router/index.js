@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import QuestView from '../views/QuestView.vue'
 import FamilieView from '../views/FamilieView.vue'
 import AftenView from '../views/AftenView.vue'
+import getQuestsItems from '@/modules/getQuest'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,15 +10,14 @@ const router = createRouter({
     {
       path: '/',
       name: 'quest',
-      component: QuestView
+      component: QuestView,
+      meta: { title: 'Hjem' }
     },
     {
       path: '/familie',
       name: 'familie',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: FamilieView
+      component: FamilieView,
+      meta: { title: 'Familie Quest' }
     },
     {
       path: '/aften',
@@ -33,4 +33,22 @@ const router = createRouter({
 
 
 
-export default router
+
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.dynamicTitle && to.params.id) {
+    const fantasyTitle = getQuestsItems()
+      .projectItems.value.find(item => item.id === to.params.id);
+      
+    if (fantasyTitle) {
+      document.title = `Fantasy Quest | ${fantasyTitle.title}`;
+    } else {
+      document.title = `Fantasy Quest | ${to.meta.title}`;
+    }
+  } else {
+    document.title = `Fantasy Quest | ${to.meta.title}`;
+  }
+  next();
+});
+
+export default router;
