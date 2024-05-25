@@ -300,6 +300,8 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style lang="scss" scoped>
+ 
+
 .faqtekst {
   display: flex;
   justify-content: center;
@@ -369,8 +371,8 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .accordion-seg h2{
+  // font-size: 2.5rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   width: 75%;
 }
@@ -795,7 +797,11 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     scale: 1.5;
   }
 
+  .accordion {
+    width: 60%;
+  }
 }
+
 
 @media (max-width: 768px) {
   .container-card {
@@ -860,6 +866,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
   .accordion-seg h2{
     width: 100%;
+    max-width: 50%;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
@@ -871,7 +878,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     width: 100%;
   }
   .accordion {
-    width: 100%;
+    width: 65%;
   }
 }
 
@@ -889,6 +896,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     top: -4%;
     scale: 1.4;
   }
+
+  .accordion {
+    width: 65%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -905,5 +916,11 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     top: -4%;
     scale: 1.8;
   }
+}
+
+@media (max-width: 320px) {
+.accordion-title {
+  font-size: 0.8rem;
+}
 }
 </style>

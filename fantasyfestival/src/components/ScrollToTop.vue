@@ -77,6 +77,13 @@ export default {
   height: 24px;
 }
 
+@media (max-width: 1024px) {
+  .scrollbtn {
+display: none;
+  }
+}
+
+
 @media (max-width: 768px) {
   .scrollbtn {
     bottom: 15px;
