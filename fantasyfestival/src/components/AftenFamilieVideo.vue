@@ -119,8 +119,8 @@ export default {
   width: 100%;
   height: 100%;
   left: 23%;
-  bottom: 43.9%;
-  scale: 0.6;
+  top: -72.5%;
+  scale: 0.45;
   z-index: 2;
 }
 
@@ -136,7 +136,7 @@ export default {
   width: 100%;
   height: 100%;
   left: 7%;
-  top: 56.3%;
+  top: 67%;
   scale: 0.4;
   z-index: 4;
   pointer-events: none;

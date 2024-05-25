@@ -55,15 +55,17 @@ export default {
   color: #fff;
   border: none;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 50%;
   cursor: pointer;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
   opacity: 0.7;
   height: 60px;
   width: 60px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
+  overflow: hidden;
+  z-index: 999;
 }
 .scrollbtn:hover {
   opacity: 1;
@@ -71,6 +73,33 @@ export default {
 
 .arrow {
   transform: rotate(-90deg);
-  size: 5%;
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .scrollbtn {
+    bottom: 15px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+  }
+  .arrow {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scrollbtn {
+    bottom: 10px;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+  }
+  .arrow {
+    width: 16px;
+    height: 16px;
+  }
 }
 </style>

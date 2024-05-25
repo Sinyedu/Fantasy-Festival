@@ -68,19 +68,18 @@ updateFooterClass();
 <style scoped lang="scss">
   .masterfooter {
     width: 100%;
-    height: 400px;
+    height: 250px;
   }
   
   .footer {
     background-color: #083A35;
     color: #ede6d6;
-    padding-top: 3.5%;
-    // padding-left: 5%;
+    padding: 3.5% 5%;
   }
 
   .default-footer .footer {
   background-color: #083A35;
-  height: 400px;
+  height: 300px;
 }
 
 .familie-footer .footer {
@@ -94,20 +93,21 @@ updateFooterClass();
 }
   
   .footer-content {
-    // display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   }
   
   .footer-column {
+    // flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    margin-bottom: 20px; 
   }
   
   .footer-list {
-    list-style: none;
+    // list-style: none;
     padding: 0;
   }
 
@@ -145,6 +145,19 @@ updateFooterClass();
     padding-top: 5%;
   }
   @media (max-width: 768px) {
+.logo-img {
+  max-width: 250px;
+  padding-right: 55px;
+}
+
+
+   .masterfooter {
+    height: 450px;
+   }
+   .default-footer .footer {
+    height: 450px;
+   }   
+   
     .footer-content {
       flex-direction: row;
       justify-content: space-between;
@@ -181,7 +194,6 @@ updateFooterClass();
     }
   }
 
-  /* Additional footer styles */
   .default-footer .footer {
     background-color: #083A35;
   }
@@ -194,4 +206,5 @@ updateFooterClass();
     background-color: #ede6d6;
     color: #083a35;
   }
+
 </style>

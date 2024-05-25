@@ -836,7 +836,13 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     text-align: start;
   }
   .day-card {
-    background-size: 900px 1200px;
+    height: 1400px;
+    background-size: 1050px 1100px;
+  }
+
+  .day-card h2 {
+    font-size: 2rem;
+    padding-top: 50%
   }
 .tail {
     top: -8%;

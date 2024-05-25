@@ -117,5 +117,4 @@ export default {
   transform: translateY(-50%);
   z-index: 1;
 }
-
 </style>
