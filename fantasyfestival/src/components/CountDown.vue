@@ -2,19 +2,19 @@
     <div id="countdown">
       <div class="countdown-box">
         <span>{{ days }}</span>
-        <div class="label">Dage</div>
+        <!-- <div class="label">Dage</div> -->
       </div>
       <div class="countdown-box">
         <span>{{ hours.toString().padStart(2, "0") }}</span>
-        <div class="label">Timer</div>
+        <!-- <div class="label">Timer</div> -->
       </div>
       <div class="countdown-box">
         <span>{{ minutes.toString().padStart(2, "0") }}</span>
-        <div class="label">Minutter</div>
+        <!-- <div class="label">Minutter</div> -->
       </div>
       <div class="countdown-box">
         <span>{{ seconds.toString().padStart(2, "0") }}</span>
-        <div class="label">Sekunder</div>
+        <!-- <div class="label">Sekunder</div> -->
       </div>
     </div>
   </template>
@@ -64,28 +64,35 @@
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    margin-top: 1%;
+    margin-top: 4%;
     position: relative;
     z-index: 9999;
     gap: 2%;
   }
   
   .countdown-box {
-    background-color: #083a35;
-    color: #ede6d6;
-    font-size: 2em;
+    background-image: url("../assets/img/timer.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    color: var(--text-colour-light);
+    font-size: 3rem;
+    font-family: RomanSD, sans-serif;
     text-align: center;
     padding: 10px;
     margin: 5px;
     border-radius: 30px;
-    width: 100px;
+    width: 120px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   
   .label {
-    font-size: 0.5em;
+    font-size: 0.4em;
     margin-top: 5px;
   }
   </style>

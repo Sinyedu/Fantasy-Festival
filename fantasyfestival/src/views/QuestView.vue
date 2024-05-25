@@ -2,8 +2,8 @@
 
   <body>
     <div class="centertext">
-      <h1 class="text-7xl font-bold text-center">Fantasy Quest</h1>
-      <p class="text-5xl font-bold text-center">Esbjerg 2024</p>
+      <h1 class="top-text text-7xl font-bold text-center">Fantasy Quest</h1>
+      <p class="city-text text-5xl font-bold text-center">Esbjerg 2024</p>
     </div>
     <div id="countdown">
       <CountDown />
@@ -14,8 +14,8 @@
 
     <div class="maintekst">
       <h1 class="deltag flex justify-center text-5xl mb-5 font-bold">Deltag i en magisk oplevelse</h1>
-      <p class="brødtekst raleway-font text-3xl">Er du klar til at leve dig ind i en anden verden, en magisk <br> historie, hvor du
-        er helten, der er på en “quest” for at <br> overvinde de onde magter og redde hele verden? Så gør <br>dig klar
+      <p class="brødtekst raleway-font text-3xl">Er du klar til at leve dig ind i en anden verden, en magisk historie, hvor du
+        er helten, der er på en “quest” for at overvinde de onde magter og redde hele verden? Så gør dig klar
         til Fantasy Quest Esbjerg.</p>
     </div>
     <div class="container-card">
@@ -69,17 +69,17 @@
     "loadingClasses": "opacity-0",
     "isAutoPlay": true,
     "autoPlayInterval": 3000
-  }' class="relative w-full h-screen">
+  }' class="relative h-screen">
       <div class="hs-carousel relative overflow-hidden w-full h-full rounded-lg">
         <div class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700">
-          <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-            <img class="pressfoto w-full h-full" src="../assets/img/pressefotos1.png" alt="First slide">
+          <div class="hs-carousel-slide flex-shrink-0 h-full">
+            <img class="pressfoto" src="../assets/img/musikanter.png" alt="First slide">
           </div>
           <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-            <img class="pressfoto w-full h-full" src="../assets/img/pressefotos2.png" alt="Second slide">
+            <img class="pressfoto" src="../assets/img/karaktere.png" alt="Second slide">
           </div>
           <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-            <img class="pressfoto w-full h-full" src="../assets/img/pressefotos3.png" alt="Third slide">
+            <img class="pressfoto" src="../assets/img/market.png" alt="Third slide">
           </div>
         </div>
       </div>
@@ -105,23 +105,23 @@
 
       <div class="hs-carousel-pagination flex justify-center absolute bottom-3 left-0 right-0 space-x-2">
         <span
-          class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+        class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
         <span
-          class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+        class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
         <span
-          class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+        class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
       </div>
     </div>
-<!-- END OF CAROUSEL!-->
+    <!-- END OF CAROUSEL!-->
 
     <!-- THIS IS THE FAQ SECTION USED WITH TAILWINDCSS -->
-    <div id="faq" class="container mx-auto py-12">
-      <div class="mx-auto accordion-seg">
+    <div id="faq" class="container w-full mx-auto py-12">
+      <div class="accordion-seg w-full">
         <h2 class="text-3xl align-start font-semibold mb-6 mt-28">Ofte stillede spørgsmål</h2>
         <div class="accordion">
           <div class="accordion-item">
             <input type="checkbox" id="q1" class="accordion-toggle w-96">
-            <label for="q1" class="accordion-title cursor-pointer rounded-lg">Hvordan bestiller jeg billetter?
+            <label for="q1" class="accordion-title raleway-font cursor-pointer rounded-lg">Hvordan bestiller jeg billetter?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -137,7 +137,7 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q2" class="accordion-toggle">
-            <label for="q2" class="accordion-title cursor-pointer rounded-lg">Er der en aldersbegrænsning på Aften Quest?
+            <label for="q2" class="accordion-title raleway-font cursor-pointer rounded-lg">Er der en aldersbegrænsning på Aften Quest?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -151,7 +151,7 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q3" class="accordion-toggle">
-            <label for="q3" class="accordion-title cursor-pointer rounded-lg">Hvor lang tid tager disse to Quests?
+            <label for="q3" class="accordion-title raleway-font cursor-pointer rounded-lg">Hvor lang tid tager disse to Quests?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -165,7 +165,7 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q4" class="accordion-toggle">
-            <label for="q4" class="accordion-title cursor-pointer rounded-lg">Kan jeg have min hund med rundt på Quest?
+            <label for="q4" class="accordion-title raleway-font cursor-pointer rounded-lg">Kan jeg have min hund med rundt på Quest?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -179,7 +179,7 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q5" class="accordion-toggle">
-            <label for="q5" class="accordion-title cursor-pointer rounded-lg">Kan jeg have en barnevogn med?
+            <label for="q5" class="accordion-title raleway-font cursor-pointer rounded-lg">Kan jeg have en barnevogn med?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -193,7 +193,7 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q6" class="accordion-toggle">
-            <label for="q6" class="accordion-title cursor-pointer rounded-lg">Er disse Quests handicapvenlige?
+            <label for="q6" class="accordion-title raleway-font cursor-pointer rounded-lg">Er disse Quests handicapvenlige?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -208,7 +208,7 @@
         </div>
       </div>
     </div>
-    <img class="arkivaren" src="../assets/img/Arkivaren_web.png" alt="Arkivaren">
+          <img class="arkivaren" src="../assets/img/Arkivaren_web.png" alt="Arkivaren">
   </body>
 </template>
 <script>
@@ -308,6 +308,9 @@ transform: scale(1.05);
 transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.city-text{
+  margin-top: 1%;
+}
 
 .ylwbutton {
   width: 100%;
@@ -323,7 +326,12 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 .brødtekst {
   display: flex;
   justify-content: center;
-  
+  align-items: center;
+  width: 47%;
+  font-size: 1.7rem;
+  // height: vh;
+  // position: relative;
+  // padding-right: 15%;
 }
 
 .deltag h1 {
@@ -340,18 +348,23 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 1%;
 }
 
+.accordion{
+  width: 45%;
+}
+
 .accordion-seg{
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
+  margin-bottom: 5%;
 }
 
 .accordion-seg h2{
   display: flex;
   flex-direction: column;
   // align-items: center;
-  width: 36%;
+  width: 45%;
 }
 
 .accordion-toggle:checked + .accordion-title .arrow{
@@ -378,6 +391,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex: 0 0 100%;
   width: 100%;
   height: 100%;
+  justify-content: center;
 }
 
 .hs-carousel-prev, .hs-carousel-next{
@@ -390,9 +404,10 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .pressfoto {
-  object-fit: fit;
+  object-fit: contain;
   width: 100%;
   height: 100%;
+
 }
 
 .hs-carousel-pagination span {
@@ -422,6 +437,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 .titletext {
   color: #EDE6D6;
   padding-top: 30%;
+  font-size: 3rem;
 }
 
 
@@ -440,7 +456,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   position: absolute;
   scale: 0.2;
   left: 40%;
-  top: 420%;
+  top: 330%;
 }
 
 .accordion-item {
@@ -496,22 +512,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   margin: 0 auto;
   margin-bottom: 30%;
 }
-
-// .dragonhand {
-//   position: absolute;
-//   left: -8%;
-//   top: -13%;
-//   z-index: 10;
-//   pointer-events: none;
-// }
-
-// .dragonhand2 {
-//   position: absolute;
-//   right: -33%;
-//   top: -13%;
-//   z-index: 10;
-//   pointer-events: none;
-// }
 
 .booknuknap-dag, .booknuknap-night {
   display: flex;
@@ -618,14 +618,14 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .day-card{
   max-width: 600px;
-  height: 1050px;
+  height: 1450px;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
   background-color: #355C55;
   background-image: url("../assets/img/rammesol.svg");
   background-position: center;
-  background-size: 380px 1080px;
+  background-size: 1050px 1400px;
   background-repeat: no-repeat;
   border-radius: 50px;
   margin-bottom: 20%;
@@ -633,22 +633,24 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .night-card {
   max-width: 600px;
-  height: 1050px;
+  height: 1450px;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
   background-color: #355C55;
   background-image: url("../assets/img/rammemoon.svg");
   background-position: center;
-  background-size: 380px 1080px;
+  // background-size: cover;
+  background-size: 1050px 1400px;
   background-repeat: no-repeat;
   border-radius: 50px;
   margin-bottom: 15%;
 }
 
 .fillerimage {
-  width: 65%;
-  height: 350px;
+  width: 75%;
+  height: 100%;
+  margin: 5% 0 5% 0;
   object-fit: cover;
 }
 
@@ -663,20 +665,21 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 
 .day-card h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
 .day-card p {
   margin-left: 2%;
   margin-top: 5%;
-  max-width: 70%;
+  max-width: 60%;
+  font-size: 28px;
   text-align: left;
   margin-bottom: 1rem;
 }
 
 .night-card h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -716,6 +719,11 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 .maintekst {
   margin-top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // width: 50%;
 }
 
 .card-frame {

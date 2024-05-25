@@ -14,3 +14,12 @@
   font-weight: 500;
   font-style: normal;
 }
+
+:root{
+  --body-colour-light: #ede6d6;
+  --body-colour-dark: #083a35;
+
+  --text-colour-light: #083a35;
+  --text-colour-dark: #c1bbad;
+  --titletext-colour-dark: #fecd08;
+}
