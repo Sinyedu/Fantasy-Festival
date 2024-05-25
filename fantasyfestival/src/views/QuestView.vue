@@ -117,7 +117,9 @@
     <!-- THIS IS THE FAQ SECTION USED WITH TAILWINDCSS -->
     <div id="faq" class="container w-full mx-auto py-12">
       <div class="accordion-seg w-full">
+        <div class="faqtekst">
         <h2 class="text-3xl align-start font-semibold mb-6 mt-28">Ofte stillede spørgsmål</h2>
+        </div>
         <div class="accordion">
           <div class="accordion-item">
             <input type="checkbox" id="q1" class="accordion-toggle w-96">
@@ -298,6 +300,12 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style lang="scss" scoped>
+.faqtekst {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 a:hover .buttonimage-day, a:hover .buttonimage-night{
 transform: scale(1.05);
 transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -363,8 +371,8 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 .accordion-seg h2{
   display: flex;
   flex-direction: column;
-  // align-items: center;
-  width: 45%;
+  justify-content: center;
+  width: 75%;
 }
 
 .accordion-toggle:checked + .accordion-title .arrow{
@@ -743,27 +751,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   overflow: hidden;
 }
 
-@media (max-width: 1820px) {
-
-  .dragonhand {
-    display: none;
-  }
-
-  .dragonhand2 {
-    display: none;
-  }
-
-}
-
-@media (max-width: 1600px) {
-  .dragonhand {
-    display: none;
-  }
-
-  .dragonhand2 {
-    display: none;
-  }
-}
 
 @media (max-width: 1280px) {
   .container-card {
@@ -804,7 +791,8 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
 
   .tail {
-    top: -20%
+    top: -20%;
+    scale: 1.5;
   }
 
 }
@@ -821,6 +809,63 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .tail {
     top: -8%;
+    scale: 1.5;
+  }
+  .deltag {
+    width: 100%;
+    font-size: 2.2rem;
+    // font-weight: lighter;
+    justify-content: center;
+    text-align: start;
+  }
+.maintekst {
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+  .brødtekst {
+    width: 85%;
+    font-size: 1.5rem;
+    // font-weight: lighter;
+    justify-content: center;
+    text-align: start;
+  }
+  .day-card {
+    background-size: 900px 1200px;
+  }
+.tail {
+    top: -8%;
+    scale: 1.5;
+  }
+  .hs-carousel-prev {
+    width: 50px;
+    height: 50px;
+    top: 47%;
+  }
+  .hs-carousel-next {
+    width: 50px;
+    height: 50px;
+    top: 47%;
+  }
+  .accordion-seg h2{
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    padding-left: 29px;
+  }
+  .faqtekst {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .accordion {
+    width: 100%;
   }
 }
 
@@ -852,7 +897,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .tail {
     top: -4%;
-    scale: 1.2;
+    scale: 1.8;
   }
 }
 </style>

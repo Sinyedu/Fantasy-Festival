@@ -270,4 +270,43 @@ a{
   margin-bottom: 5%;
   bottom: 10%;
 }
+
+@media (max-width: 1440px) {
+  .herocontainer {
+    height: 60vh;
+    background-position: center;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .herocontainer {
+    height: 50vh;
+    background-position: center;
+  }
+}
+
+@media (max-width: 864px) {
+  .herocontainer {
+    height: 40vh;
+    background-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .herocontainer {
+    height: 40vh;
+    background-position: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .herocontainer {
+    height: 30vh;
+    background-position: center;
+  }
+}
+
+
+
 </style>

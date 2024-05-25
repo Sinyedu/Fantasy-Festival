@@ -68,19 +68,19 @@ updateFooterClass();
 <style scoped lang="scss">
   .masterfooter {
     width: 100%;
-    height: 250px;
+    height: 400px;
   }
   
   .footer {
     background-color: #083A35;
     color: #ede6d6;
     padding-top: 3.5%;
-    padding-left: 5%;
+    // padding-left: 5%;
   }
 
   .default-footer .footer {
   background-color: #083A35;
-  height: 300px;
+  height: 400px;
 }
 
 .familie-footer .footer {
@@ -94,7 +94,7 @@ updateFooterClass();
 }
   
   .footer-content {
-    display: flex;
+    // display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -142,6 +142,56 @@ updateFooterClass();
   
   .logo-img {
     max-width: 350px;
+    padding-top: 5%;
   }
-  </style>
-  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .footer-column {
+      align-items: flex-start;
+      text-align: start;
+      padding-left: 10%;
+    }
+
+    .footer-item2 {
+      left: 0;
+    }
+
+    .footer-logo {
+      justify-content: end;
+      padding-right: 2.5%;
+    }
+
+    .footer-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-item1,
+    .footer-item2 {
+      font-size: 1.2rem;
+    }
+  }
+
+  /* Additional footer styles */
+  .default-footer .footer {
+    background-color: #083A35;
+  }
+
+  .familie-footer .footer {
+    background-color: #083a35;
+  }
+
+  .aften-footer .footer {
+    background-color: #ede6d6;
+    color: #083a35;
+  }
+</style>
