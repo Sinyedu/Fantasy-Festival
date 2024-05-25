@@ -1,12 +1,13 @@
 <template>
   <header>
-    <div class="wrapper" :class="{ 'fade-out': fading }"></div>
+    <div id="app" class="wrapper" :class="{ 'fade-out': fading }"></div>
     <NavBar />
   </header>
 
   <Transition mode="out-in" name="fade">
     <RouterView />
   </Transition>
+  <ScrollToTop />
   <Footer />
 </template>
 
@@ -22,6 +23,8 @@ import { ref } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 import NavBar from "./components/NavBar.vue";
 import Footer from "./components/FooterComponent.vue";
+import ScrollToTop from "./components/ScrollToTop.vue";
+  
 </script>
 
 <style lang="scss">
