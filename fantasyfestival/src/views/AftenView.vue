@@ -103,7 +103,6 @@ font-size: 25px;
 
 .headliner {
   color: #FECD08;
-  text-align: center;
   margin-top: 2%;
 }
 

@@ -105,7 +105,6 @@ body{
 
 .headliner {
   color: var(--text-colour-light);
-  text-align: center;
   margin-top: 2%;
 }
 
