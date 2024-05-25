@@ -2,7 +2,7 @@
   <body>
     <div class="herocontainer">
       <div class="hero">
-        <img class="gnist" src="../assets/img/dragonnight.svg" alt="Dragen Gnist">      
+        <img class="gnist">      
       </div>
       <div class="hands">
         <img src="../assets/img/lefthand.png" alt="Gnist's venstre hånd">
@@ -12,14 +12,14 @@
   
     <div class="titlecontainer">
       <div class="centertext">
-        <h1 class="headliner font-bold text-7xl pt-7 text-center">Aften Questen!</h1>
+        <h1 class="headliner font-bold text-7xl text-center">Aften Quest!</h1>
       </div>
     </div>
   
     <div class="questcontainer">  
       <div class="infotext">
         <h1 class="headliner font-bold text-3xl pb-9">Er du til uhygge og svære gåder?</h1>
-        <p class="maintext text-2xl">
+        <p class="maintext raleway-font">
           Når tusmørket begynder at sænke sig over Esbjerg, skrues sværhedsgraden i AftenQuesten op. 
           <br><br>
           Nu skal der virkelig tænkes kreativt og løses opgaver, der kræver både mod, samarbejde og snilde for at I kan gennemføre questen og redde Esbjerg.
@@ -39,7 +39,7 @@
           </div>
         </a>
   
-        <div v-for="infoDetail in infoDetails" :key="infoDetail.id" class="card">
+        <div v-for="infoDetail in infoDetails" :key="infoDetail.id" class="card raleway-font">
           <div class="info-data">
             <div class="info">
               <h1 class="titletext">{{ infoDetail.title }}</h1>
@@ -57,15 +57,19 @@
     <!-- Video trailer for the evening quest -->
     <div class="video-holder">
       <img class="top-half" src="../assets/img/toptail.png" alt="Toppen af Gnist's hale">
-      <iframe class="video" width="1280" height="700" src="https://www.youtube.com/embed/AFBSUQvmt1o" title="Commercial - Red Merrild (For your perfect morning)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe class="video" width="1280" height="760" src="https://www.youtube.com/embed/tAbEIZI9dZ8" title="Animeret trailer - Fantasy Festival Quest 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <img class="bottom-half" src="../assets/img/bottomtail.png" alt="Bunden af Gnist's hale">
     </div>
 
     <div class="lorecontainer">
       <div class="infotext">
         <h1 class="headliner font-bold text-3xl pb-9">I gamle dage sagde man...</h1>
-        <p class="maintext text-2xl">
+        <p class="maintext raleway-font text-2xl">
           ...at det onde ville komme fra havet. Gennem generationer blev den fortælling givet videre. Man hørte den, da Esbjerg blev grundlagt i 1868. Man holdt altid øje med havet. Mod vest. 
+          <br><br>
+          Så i Esbjerg byggede man et værn mod ondskaben. Noget der skulle holde øje med havet, noget der skulle træde i karakter, hvis det gik galt. I 1995 blev det værn forstærket, da skulpturerne ”Mennesket ved havet” blev skabt. Mens kunstneren byggede om dagen, arbejdede troldmanden Gygaz den Vise om natten. 
+          <br><br>
+          Gygaz åbnede en portal til kæmpernes verden. Her fandt han frem til fire gode kæmper, der meldte sig frivilligt. De sagde farvel til deres familier og travede gennem portalen mod Esbjerg. Her mødtes de med Gygaz. Luften sitrede af magi, og da de sidste ord i en magtfuld formular forlod Gygaz’ læber, var de fire kæmper blevet ét med statuerne af de fire hvide mænd. På den måde kunne de til evig tid holde øje med havet…
         </p>
       </div>
       <img class="goblin" src="../assets/img/eventyrgoblin.png" alt="Eventyr Goblin">
@@ -80,25 +84,27 @@
 </script>
 
 <style lang="scss" scoped>
-.footer {
-  background-color: #EDE6D6;
-}
 
 body{
   margin: 0;
   padding: 0;
-  background-color: #083a35;
+  background-color: var(--body-colour-dark);
 }
+
 .info {
   color: #EDE6D6;
+  padding-top: 7.5%;
 }
 
 .maintext {
-color: #D0D3C9;
+color: var(--text-colour-dark);
+font-size: 25px;
 }
 
 .headliner {
   color: #FECD08;
+  text-align: center;
+  margin-top: 2%;
 }
 
 .herocontainer{
@@ -109,6 +115,10 @@ color: #D0D3C9;
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-image: url("../assets/img/aftengnist.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 90%;
 }
 
 .hero {
@@ -156,59 +166,54 @@ color: #D0D3C9;
 .infotext{
   margin-top: 3%;
   width: 50%;
+  // font-size: 35px;
 }
 
 .container-card {
   display: flex;
   flex-direction: column;
   width: 50%;
+  height: 60vh;
   justify-content: center;
   align-items: center;
+  margin-top: 3%;
   z-index: 3;
 }
 
 .card {
   max-width: 100%;
-  width: 35%;
-  height: 65%;
-  margin-bottom: 7%;
+  width: 55%;
+  height: 100%;
+  // margin-bottom: 7%;
   margin-top: 5%;
   padding-top: 3%;
   align-items: center; 
   justify-content: center;
+  background-image: url("../assets/img/aftenramme.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .card h1 {
-  font-size: 2rem;
-  text-align: center;
+  font-size: 33px;
+  text-align: left;
+  padding-left: 15%;
+  color: var(--text-colour-dark);
 }
 
 .card h2 {
-  margin-left: 5%;
+  padding-left: 15%;
   margin-top: 1rem;
-  max-width: 95%;
-  text-align: left;
-  font-size: 1.35rem;
+  max-width: 100%;
+  font-size: 25px;
+  color: var(--text-colour-dark);
 }
 
-.button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+.ylwbutton {
   width: 100%;
-  margin-bottom: 10%;
-  z-index: 3;
-  font-size: 2rem;
-}
-
-.book-text{
-  display: flex;
-  color: #EDE6D6;
-  font-size: 1.3rem;
-  margin-left: 2%;
-  margin-bottom: 10%;
-  position: absolute;
+  height: 100%;
+  scale: 1.4;
 }
 
 a{
@@ -250,7 +255,7 @@ a{
   width: 100%;
   height: 100%;
   left: 7%;
-  top: 56.3%;
+  top: 62.5%;
   scale: 0.4;
   z-index: 4;
   pointer-events: none;
@@ -259,14 +264,14 @@ a{
 .lorecontainer{
   display: flex;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   justify-content: center;
   margin-top: 12%;
 }
 
 .goblin{
   position: relative;
-  scale: 0.8;
+  scale: 0.65;
   margin-bottom: 5%;
   bottom: 10%;
 }

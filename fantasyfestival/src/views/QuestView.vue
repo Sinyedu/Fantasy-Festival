@@ -121,7 +121,7 @@
         <div class="accordion">
           <div class="accordion-item">
             <input type="checkbox" id="q1" class="accordion-toggle w-96">
-            <label for="q1" class="accordion-title cursor-pointer rounded-lg">Hvordan bestiller jeg billetter?
+            <label for="q1" class="accordion-title raleway-font cursor-pointer rounded-lg">Hvordan bestiller jeg billetter?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -137,7 +137,7 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q2" class="accordion-toggle">
-            <label for="q2" class="accordion-title cursor-pointer rounded-lg">Er der en aldersbegrænsning på Aften Quest?
+            <label for="q2" class="accordion-title raleway-font cursor-pointer rounded-lg">Er der en aldersbegrænsning på Aften Quest?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -151,7 +151,7 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q3" class="accordion-toggle">
-            <label for="q3" class="accordion-title cursor-pointer rounded-lg">Hvor lang tid tager disse to Quests?
+            <label for="q3" class="accordion-title raleway-font cursor-pointer rounded-lg">Hvor lang tid tager disse to Quests?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -165,7 +165,7 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q4" class="accordion-toggle">
-            <label for="q4" class="accordion-title cursor-pointer rounded-lg">Kan jeg have min hund med rundt på Quest?
+            <label for="q4" class="accordion-title raleway-font cursor-pointer rounded-lg">Kan jeg have min hund med rundt på Quest?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -179,7 +179,7 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q5" class="accordion-toggle">
-            <label for="q5" class="accordion-title cursor-pointer rounded-lg">Kan jeg have en barnevogn med?
+            <label for="q5" class="accordion-title raleway-font cursor-pointer rounded-lg">Kan jeg have en barnevogn med?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -193,7 +193,7 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q6" class="accordion-toggle">
-            <label for="q6" class="accordion-title cursor-pointer rounded-lg">Er disse Quests handicapvenlige?
+            <label for="q6" class="accordion-title raleway-font cursor-pointer rounded-lg">Er disse Quests handicapvenlige?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
