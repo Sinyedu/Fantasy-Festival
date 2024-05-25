@@ -55,12 +55,7 @@
     </div>
 
     <!-- Video trailer for the evening quest -->
-    <div class="video-holder">
-      <img class="top-half" src="../assets/img/toptail.png" alt="Toppen af Gnist's hale">
-      <iframe class="video" width="1280" height="700" src="https://www.youtube.com/embed/nFSdk8QekBw" title="Animeret trailer - Fantasy Festival Quest 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <img class="bottom-half" src="../assets/img/bottomtail.png" alt="Bunden af Gnist's hale">
-    </div>
-
+    <AftenFamilieVideo/>
     
 
     <div class="lorecontainer">
@@ -83,6 +78,8 @@
 <script setup>
   import getDayDetails from '@/modules/getDayInfo.js';
   const { dayDetails } = getDayDetails();
+
+  import AftenFamilieVideo from '../components/AftenFamilieVideo.vue';
 </script>
 
 <style lang="scss" scoped>
@@ -216,46 +213,6 @@ color: #D0D3C9;
 a{
   text-decoration: none;
   width: 33%;
-}
-
-.video-holder{
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  position: relative;
-  margin-top: 25%;
-  margin-bottom: 25%;
-  z-index: 0;
-}
-
-.top-half{
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  left: 23%;
-  bottom: 43.9%;
-  scale: 0.6;
-  z-index: 2;
-}
-
-.video{
-  display: flex;
-  margin-top: 17.9%;
-  z-index: 3;
-}
-
-.bottom-half{
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  left: 7%;
-  top: 56.3%;
-  scale: 0.4;
-  z-index: 4;
-  pointer-events: none;
 }
 
 .lorecontainer{
