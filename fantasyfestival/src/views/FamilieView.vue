@@ -154,6 +154,7 @@ body{
   z-index: 100;
   scale: 0.6;
   gap: 77%;
+  pointer-events: none;
 }
 
 .questcontainer{
