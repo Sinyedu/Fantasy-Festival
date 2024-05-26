@@ -6,10 +6,10 @@
       </div>
 
       <div class="hamburger-dropdown">
-        <div class="hamburger-icon" @click="toggleDropdown">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+        <div class="hamburger-icon" :class="{'active': 'isOpen'}" @click="toggleDropdown">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
         </div>
     
         <div ref="dropdownMenu" v-show="isOpen" class="dropdown-menu">
@@ -23,7 +23,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, watch } from "vue";
+import { ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import anime from 'animejs/lib/anime.es.js';
 import logogreen from '../assets/img/logogreen.png';
@@ -56,83 +56,28 @@ const updateLogo = () => {
 
 watch(route, updateLogo);
 
-const closeDropdown = (event) => {
-  const dropdownMenu = document.querySelector('.dropdown-menu');
-  if (dropdownMenu && !dropdownMenu.contains(event.target) && !event.target.closest('.hamburger-icon')) {
-    isOpen.value = false;
-    anime({
-      targets: '.dropdown-menu.value',
-      width: '0%',
-      duration: 500,
-      easing: 'easeInOutQuad'
-    });
-    anime({
-      targets: '.line1',
-      rotate: '0deg',
-      translateY: '0px',
-      duration: 500,
-      easing: 'easeInOutQuad'
-    });
-    anime({
-      targets: '.line2',
-      opacity: 1,
-      duration: 500,
-      easing: 'easeInOutQuad'
-    });
-    anime({
-      targets: '.line3',
-      rotate: '0deg',
-      translateY: '0px',
-      duration: 500,
-      easing: 'easeInOutQuad'
-    });
-  }
-};
-
-onMounted(() => {
-  document.addEventListener('click', closeDropdown);
-});
-
-onUnmounted(() => {
-  document.removeEventListener('click', closeDropdown);
-});
-
 const toggleDropdown = () => {
   isOpen.value = !isOpen.value;
+  const dropdown = dropdownMenu.value;
+
   if (isOpen.value) {
     anime({
-      targets: dropdownMenu.value,
-      width: '15%',
+      targets: dropdown,
+      height: ['0%', '150px'],
+      width: ['0%', '200px'],
       duration: 500,
       easing: 'easeInOutQuad'
     });
+  } else {
     anime({
-      targets: '.line1',
-      rotate: '45deg',
-      translateY: '10px',
+      targets: dropdown,
+      height: ['200px', '0%'],
+      width: ['200px', '0%'], 
       duration: 500,
-      easing: 'easeInOutQuad'
-    });
-    anime({
-      targets: '.line2',
-      opacity: 0,
-      duration: 500,
-      easing: 'easeInOutQuad'
-    });
-    anime({
-      targets: '.line3',
-      rotate: '-45deg',
-      translateY: '-10px',
-      duration: 500,
-      easing: 'easeInOutQuad'
-    });
-  } 
-  else {
-    anime({
-      targets: dropdownMenu.value,
-      width: '0%',
-      duration: 500,
-      easing: 'easeInOutQuad'
+      easing: 'easeInOutQuad',
+      complete: () => {
+        dropdown.style.display = 'none';
+      }
     });
   }
 }
@@ -193,11 +138,13 @@ const toggleDropdown = () => {
   /* overflow: hidden; */
 }
 
-.hamburger-icon div {
+.hamburger-icon span {
   height: 7px;
   background-color: #efba12;
   border-radius: 5px;
 }
+
+
 
 .dropdown-menu {
   position: absolute;
