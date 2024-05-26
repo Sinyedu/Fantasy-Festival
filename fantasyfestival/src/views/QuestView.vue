@@ -160,7 +160,7 @@
             </label>
             <div class="accordion-content hidden rounded-lg">
               <p class="answer raleway-font text-bold">Det gør du på <a class="text-bold underline"
-                  href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
+                  href="https://www.universe.com/explore?query=Fantasy%20Quest"
                   target="_blank">HER!</a></p>
             </div>
           </div>
