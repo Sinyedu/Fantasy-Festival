@@ -90,7 +90,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: var(--body-colour-dark);
+  background-color: var(--body-colour-dark-2);
 }
 
 .info {
@@ -137,8 +137,6 @@ font-size: 25px;
   overflow: hidden;
   position: relative;
   display: flex;
-  // max-width: 100%; 
-  // max-height: 100%;
   top: -10%; 
   scale: 1.65;
 }
@@ -170,6 +168,12 @@ font-size: 25px;
   // font-size: 35px;
 }
 
+.infotext2{
+  margin-top: 3%;
+  width: 50%;
+  // font-size: 35px;
+}
+
 .container-card {
   display: flex;
   flex-direction: column;
@@ -185,7 +189,6 @@ font-size: 25px;
   max-width: 100%;
   width: 55%;
   height: 100%;
-  // margin-bottom: 7%;
   margin-top: 5%;
   padding-top: 3%;
   align-items: center; 
@@ -222,52 +225,12 @@ a{
   width: 33%;
 }
 
-.video-holder{
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  position: relative;
-  margin-top: 25%;
-  margin-bottom: 25%;
-  z-index: 0;
-}
-
-.top-half{
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  left: 23%;
-  bottom: 43.9%;
-  scale: 0.6;
-  z-index: 2;
-}
-
-.video{
-  display: flex;
-  margin-top: 17.9%;
-  z-index: 3;
-}
-
-.bottom-half{
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  left: 7%;
-  top: 62.5%;
-  scale: 0.4;
-  z-index: 4;
-  pointer-events: none;
-}
-
 .lorecontainer{
   display: flex;
   width: 100%;
-  height: 100vh;
   justify-content: center;
   margin-top: 12%;
+
 }
 
 .goblin{
@@ -277,14 +240,6 @@ a{
   bottom: 10%;
 }
 
-.footer-placeholder{
-  display: flex;
-  width: 100%;
-  height: 50vh;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
-}
 
 @media (max-width: 1440px) {
   .herocontainer {

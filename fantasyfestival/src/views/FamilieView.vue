@@ -92,7 +92,7 @@ body{
 
 .info {
   color: var(--text-colour-light);
-  // padding-top: 7.5%;
+  padding-top: 7.5%;
 }
 
 .maintext {
@@ -101,6 +101,11 @@ body{
 }
 
 .headliner {
+  color: var(--text-colour-light);
+  margin-top: 2%;
+}
+
+.headliner2 {
   color: var(--text-colour-light);
   margin-top: 2%;
 }
@@ -154,15 +159,15 @@ body{
 .questcontainer{
   display: flex;
   width: 100%;
-  // height: 60vh;
+  height: 80vh;
   padding: 0 5% 0 5%;
-  margin-top: 15%;
+  margin-top: 12%;
   margin-left: 8%;
 }
 
 .infotext{
   margin-top: 3%;
-  width: 100%;
+  width: 50%;
 }
 
 .infotext2 {
@@ -174,10 +179,10 @@ body{
   display: flex;
   flex-direction: column;
   width: 50%;
-  // height: 60vh;
+  height: 60vh;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 3%;
   z-index: 3;
 }
 
@@ -185,7 +190,6 @@ body{
   max-width: 100%;
   width: 55%;
   height: 100%;
-  // margin-bottom: 7%;
   margin-top: 5%;
   padding-top: 3%;
   align-items: center; 
@@ -220,50 +224,9 @@ a{
   width: 33%;
 }
 
-.video-holder{
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  position: relative;
-  margin-top: 25%;
-  margin-bottom: 25%;
-  z-index: 0;
-}
-
-.top-half{
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  left: 23%;
-  bottom: 43.9%;
-  scale: 0.6;
-  z-index: 2;
-}
-
-.video{
-  display: flex;
-  margin-top: 17.9%;
-  z-index: 3;
-}
-
-.bottom-half{
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  left: 7%;
-  top: 62.5%;
-  scale: 0.4;
-  z-index: 4;
-  pointer-events: none;
-}
-
 .lorecontainer{
   display: flex;
   width: 100%;
-  // height: 100vh;
   justify-content: center;
   margin-top: 12%;
 

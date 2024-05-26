@@ -9,9 +9,9 @@
 
 
   <div class="video-holder">
-      <img class="top-half absolute -top-[200px]" src="../assets/img/toptail.png" alt="Toppen af Gnist's hale">
+      <img class="top-half" src="../assets/img/toptail.png" alt="Toppen af Gnist's hale">
       <div id="player" class="responsive-iframe mx-auto flex justify-center video "></div>
-      <img class="bottom-half absolute -botton-[72px]" src="../assets/img/bottomtail.png" alt="Bunden af Gnist's hale">
+      <img class="bottom-half" src="../assets/img/bottomtail.png" alt="Bunden af Gnist's hale">
     </div>
 </template>
 
@@ -33,8 +33,8 @@ export default {
   methods: {
     loadPlayer() {
       this.player = new YT.Player('player', {
-        height: '100%', 
-        width: '100%',  
+        height: '760px', 
+        width: '1280px',  
         videoId: 'tAbEIZI9dZ8',
         events: {
           'onStateChange': this.onPlayerStateChange
@@ -65,12 +65,6 @@ export default {
 </script>
 
 <style scoped>
-.video-holder {
-  position: relative;
-  width: fit-content;
-  margin: auto;
-}
-
 #player {
   position: relative;
   z-index: 2;
@@ -94,14 +88,6 @@ export default {
   animation-timing-function: ease;
 }
 
-.bottom-half {
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
 .video-holder{
   display: flex;
   width: 100%;
@@ -109,7 +95,7 @@ export default {
   justify-content: center;
   position: relative;
   margin-top: 25%;
-  margin-bottom: 25%;
+  margin-bottom: 20%;
   z-index: 0;
 }
 
@@ -118,9 +104,9 @@ export default {
   display: flex;
   width: 100%;
   height: 100%;
-  left: 23%;
-  top: -72.5%;
-  scale: 0.45;
+  left: 27%;
+  top: -75%;
+  scale: 0.50;
   z-index: 2;
 }
 
@@ -136,10 +122,11 @@ export default {
   width: 100%;
   height: 100%;
   left: 7%;
-  top: 67%;
-  scale: 0.4;
+  top: 44.6%;
+  scale: 0.35;
   z-index: 4;
   pointer-events: none;
+  transform: translateY(-50%);
 }
 
 </style>
