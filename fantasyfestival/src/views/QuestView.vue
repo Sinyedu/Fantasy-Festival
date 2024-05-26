@@ -13,7 +13,7 @@
     </div>
 
     <div class="maintekst">
-      <h1 class="deltag flex justify-center text-5xl mb-5 font-bold">Deltag i en magisk oplevelse</h1>
+      <h1 class="deltag text-5xl mb-5 font-bold">Deltag i en magisk oplevelse</h1>
       <p class="brødtekst raleway-font text-3xl">Er du klar til at leve dig ind i en anden verden, en magisk historie, hvor du
         er helten, der er på en “quest” for at overvinde de onde magter og redde hele verden? Så gør dig klar
         til Fantasy Quest Esbjerg.</p>
@@ -890,7 +890,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     scale: 1.5;
   }
   .deltag {
-    width: 100%;
+    width: 60%;
     font-size: 2.2rem;
     // font-weight: lighter;
     justify-content: center;

@@ -368,7 +368,14 @@ a{
     height: 40vh;
     background-position: center;
   }
-
+.maintext {
+    font-size: 20px;
+    // padding-top: 100%;
+  }
+  .infotext {
+    margin-top: 3%;
+    width: 80%;
+}
   .ylwbutton {
     width: 100%;
     height: 100%;
@@ -396,6 +403,7 @@ a{
   }
   .lorecontainer p {
     font-size: 20px;
+    margin-top: 1%;
   }
 }
 
