@@ -129,4 +129,17 @@ export default {
   transform: translateY(-50%);
 }
 
+
+@media (max-width: 768px) {
+  .video-holder{
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+  .top-half{
+    display: none;
+  }
+  .bottom-half{
+    display: none;
+  }
+}
 </style>

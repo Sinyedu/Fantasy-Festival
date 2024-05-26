@@ -210,10 +210,12 @@ body{
 .card h2 {
   padding-left: 15%;
   margin-top: 1rem;
-  max-width: 100%;
+  max-width: 90%;
   font-size: 25px;
 }
-
+.headliner {
+ text-align: center;
+}
 .ylwbutton {
   width: 100%;
   height: 100%;
@@ -307,14 +309,19 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 0%;
+    padding: 0;
+    margin: 0%;
   }
 
   .questcontainer h1 {
     font-size: 35px;
     max-width: 100%;
+    // text-align: center;
   }
 
   .card {
+    // scale: 0.9;
     width: 100%;
     height: 100%;
     margin-top: 5%;
@@ -326,18 +333,13 @@ a{
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
-
-  .card h1 {
-    font-size: 33px;
-    text-align: left;
-    padding-left: 15%;
-  }
-
-  .card h2 {
-    padding-left: 15%;
-    margin-top: 1rem;
-    max-width: 100%;
+.info h1 {
     font-size: 25px;
+}
+
+  .info h2 {
+    font-size: 20px;
+  
   }
 
   .maintext {
@@ -356,11 +358,12 @@ a{
     flex-direction: column;
   
   }
-
-  .ylwbutton {
+    .ylwbutton {
     width: 100%;
     height: 100%;
-    scale: 1.4;
+    scale: 2;
+    padding-bottom: 25%;
+    padding-top: 25%;
   }
   .headliner2 {
   //  padding-top: 25%;
@@ -430,7 +433,7 @@ a{
     width: 100%;
     height: 100%;
     scale: 3;
-    padding-bottom: 10%;
+    padding-bottom: 25%;
   }
 }
 

@@ -82,5 +82,11 @@
   .logo-img {
     max-width: 350px;
   }
+
+  @media (max-width: 768px) {
+    img.top-half {
+   display: none;
+  }
+}
   </style>
   

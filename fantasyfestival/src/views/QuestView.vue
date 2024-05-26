@@ -56,7 +56,7 @@
               <div class="buttons">
                 <div class="booknuknap-night">
                   <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
-                    <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="">
+                    <img class="ylwbutton2" src="../assets/img/yellow buttentext.png" alt="">
                   </a>
                 </div>
               </div>
@@ -344,6 +344,10 @@ a:hover .ylwbutton{
 transform: scale(1.05);
 transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+a:hover .ylwbutton2{
+transform: scale(1.05);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 .city-text{
   margin-top: 1%;
@@ -356,6 +360,12 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.ylwbutton2 {
+  width: 100%;
+  padding: 0 5% 0 5%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .answer{
   color: #083a35;
   font-weight: bold;
@@ -733,7 +743,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   max-width: 75%;
   font-size: 28px;
   text-align: left;
-  margin-bottom: 1rem;
 }
 
 .night-card h2 {
@@ -882,6 +891,27 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     justify-content: center;
   }
 
+  .ylwbutton { 
+    position: relative;
+    bottom: 20%;
+    height: 60%;
+    width: 100%;
+    scale: 1.1;
+  }
+  .ylwbutton2 { 
+    position: relative;
+    bottom: 30%;
+    height: 60%;
+    width: 100%;
+    scale: 1.1;
+  }
+
+  .buttonimage-night {
+    position: relative;
+    top: -1%;
+    display: flex;
+    
+  }
   .card {
     margin-bottom: 2rem;
   }
@@ -916,12 +946,22 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
   .day-card {
     height: 1400px;
-    background-size: 1050px 1100px;
+    background-size: 950px 1100px;
+  } 
+
+  .night-card {
+    height: 1400px;
+    background-size: 950px 1100px;
+  }
+
+  .night-card h2 {
+    font-size: 2rem;
+    padding-top: 55%
   }
 
   .day-card h2 {
     font-size: 2rem;
-    padding-top: 50%
+    padding-top: 60%
   }
 .tail {
     top: -8%;
@@ -939,11 +979,11 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
   .accordion-seg h2{
     width: 100%;
-    max-width: 50%;
+    max-width: 100%;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
-    padding-left: 29px;
+
   }
   .faqtekst {
     display: flex;
@@ -967,7 +1007,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .tail {
     top: -4%;
-    scale: 1.4;
+    scale: 1.1;
   }
 
   .accordion {
@@ -1001,8 +1041,8 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
 
   .tail {
-    top: -4%;
-    scale: 1.8;
+    top: -5%;
+    scale: 1.1;
   }
 }
 
