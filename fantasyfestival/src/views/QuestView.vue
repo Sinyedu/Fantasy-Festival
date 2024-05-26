@@ -782,6 +782,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: var(--text-colour-light);
   // width: 50%;
 }
 
