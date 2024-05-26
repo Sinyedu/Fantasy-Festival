@@ -58,7 +58,7 @@
     <AftenFamilieVideo/>
 
     <div class="lorecontainer">
-      <div class="infotext">
+      <div class="infotext2">
         <h1 class="headliner font-bold text-3xl pb-9">I gamle dage sagde man...</h1>
         <p class="maintext raleway-font text-2xl">
           ...at det onde ville komme fra havet. Gennem generationer blev den fortælling givet videre. Man hørte den, da Esbjerg blev grundlagt i 1868. Man holdt altid øje med havet. Mod vest. 
@@ -286,6 +286,184 @@ a{
   z-index: 0;
 }
 
+@media (max-width: 1440px) {
+  .herocontainer {
+    height: 60vh;
+    background-position: center;
+  }
+}
 
+
+@media (max-width: 1024px) {
+  .herocontainer {
+    height: 50vh;
+    background-position: center;
+  }
+
+  .hands img {
+    scale: 0.5;
+  }
+  .hands {
+   gap: 60%;
+  }
+.infotext {
+    margin-top: 15%;
+    width: 80%;
+  }
+
+
+  .infotext2 {
+    margin-top: 3%;
+    width: 80%;
+  }
+  .herocontainer {
+    height: 40vh;
+    background-position: center;
+  }
+.infotext2 {
+    margin-top: 3%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .lorecontainer {
+    margin-top: 5%;
+    // display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lorecontainer img {
+    scale: 0.7;
+  }
+  .lorecontainer p {
+    font-size: 25px;
+  }
+  .questcontainer {
+    // margin-top: 35%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .questcontainer h1 {
+    font-size: 35px;
+    max-width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    padding-top: 3%;
+    align-items: center; 
+    justify-content: center;
+    background-image: url("../assets/img/familieramme.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .card h1 {
+    font-size: 33px;
+    text-align: left;
+    padding-left: 15%;
+  }
+
+  .card h2 {
+    padding-left: 15%;
+    margin-top: 1rem;
+    max-width: 100%;
+    font-size: 25px;
+  }
+
+  .maintext {
+    font-size: 20px;
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .infotext {
+    // margin-top: 250%;
+    // width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .ylwbutton {
+    width: 100%;
+    height: 100%;
+    scale: 1.4;
+  }
+  .headliner2 {
+  //  padding-top: 25%;
+   justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+
+@media (max-width: 864px) {
+  .herocontainer {
+    height: 40vh;
+    background-position: center;
+  }
+
+  .ylwbutton {
+    width: 100%;
+    height: 100%;
+    scale: 2;
+    padding-bottom: 5%;
+  }
+.infotext2 {
+    margin-top: 3%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .lorecontainer {
+    margin-top: 5%;
+    // display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lorecontainer img {
+    scale: 0.7;
+  }
+  .lorecontainer p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .herocontainer {
+    height: 40vh;
+    background-position: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .herocontainer {
+    height: 30vh;
+    background-position: center;
+  }
+  .ylwbutton {
+    width: 100%;
+    height: 100%;
+    scale: 3;
+    padding-bottom: 10%;
+  }
+}
 
 </style>

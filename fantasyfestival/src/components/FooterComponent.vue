@@ -149,6 +149,9 @@ updateFooterClass();
   max-width: 250px;
   padding-right: 55px;
 }
+.familie-footer .footer { 
+  height: 450px;
+}
 
 
    .masterfooter {

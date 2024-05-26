@@ -170,11 +170,81 @@ anime({
 
 
 /* @media  */
+@media (max-width: 1024px) {
+  .hamburger-icon {
+    width: 5%;
+    margin-right: 1%;
+    margin-top: 2%;
+    height: 4vh;
+  }
+
+  .dropdown-menu {
+    top: 18%; 
+    right: 4.1%; 
+    background-color: #ede6d6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 999;
+    width: 200px; 
+    font-weight: bold;
+  }
+
+  .dropdown-menu a {
+    display: block;
+    padding: 8px 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  .logo {
+    width: 12%;
+    height: 20vh;
+    padding-top: 8%;
+    scale: 1.3;
+    left: 1.7%;
+  }
+}
+
 
 @media (max-width: 768px) {
 
   .hamburger-icon {
-    width: 15%;
+    width: 7%;
+    margin-right: 1%;
+    margin-top: 2%;
+    height: 4vh;
+  }
+
+  .dropdown-menu {
+    top: 18%; 
+    right: 4.1%; 
+    background-color: #ede6d6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 999;
+    width: 200px; 
+    font-weight: bold;
+  }
+
+  .dropdown-menu a {
+    display: block;
+    padding: 8px 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  .logo {
+    width: 12%;
+    height: 20vh;
+    padding-top: 8%;
+    scale: 1.3;
+    left: 1.7%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hamburger-icon {
+    width: 10%;
     margin-right: 1%;
     margin-top: 2%;
     height: 4vh;

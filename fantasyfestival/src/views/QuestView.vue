@@ -752,7 +752,14 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   object-fit: contain;
   overflow: hidden;
 }
+@media (max-width: 1680px) {
+  .arkivaren {
+    display: none;
+  }
 
+
+
+} 
 
 @media (max-width: 1280px) {
   .container-card {
@@ -772,12 +779,18 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .dragonhand2 {
     display: none;
   }
+
+
+  .arkivaren {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
   .container-card {
     flex-direction: column;
     justify-content: center;
+    // height: 1200px;
   }
 
   .card {
@@ -799,6 +812,16 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .accordion {
     width: 60%;
+  }
+  .hs-carousel-prev {
+    width: 50px;
+    height: 50px;
+    top: 47%;
+  }
+  .hs-carousel-next {
+    width: 50px;
+    height: 50px;
+    top: 47%;
   }
 }
 
@@ -900,6 +923,21 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .accordion {
     width: 65%;
   }
+  .hs-carousel-prev {
+    width: 20px;
+    height: 20px;
+    top: 49%;
+  }
+  .hs-carousel-next {
+    width: 20px;
+    height: 20px;
+    top: 49%;
+  }
+  .slide-arrow {
+    width: 20px;
+    height: 20px;
+  }
+
 }
 
 @media (max-width: 480px) {

@@ -18,7 +18,7 @@
   
     <div class="questcontainer">
       <div class="infotext">
-        <h1 class="headliner font-bold text-3xl pb-9">Deltag i en eventyrlig oplevelse</h1>
+        <h1 class="headliner2 font-bold text-3xl pb-9">Deltag i en eventyrlig oplevelse</h1>
         <p class="maintext raleway-font">
           Familieudgaven af Fantasy Quest Esbjerg er et oplevelsesløb for hele familien, med tryk på oplevelse. For det er ikke et klassisk løb. Det handler om at leve sig ind i en anden verden, en magisk historie, hvor I sammen er på en ”quest” – en mission, en opgave, en jagt.
           <br><br>
@@ -59,7 +59,7 @@
     
 
     <div class="lorecontainer">
-      <div class="infotext">
+      <div class="infotext2">
         <h1 class="headliner font-bold text-3xl pb-9">I gamle dage sagde man...</h1>
         <p class="maintext raleway-font text-2xl">
           ...at det onde ville komme fra havet. Gennem generationer blev den fortælling givet videre. Man hørte den, da Esbjerg blev grundlagt i 1868. Man holdt altid øje med havet. Mod vest. 
@@ -92,7 +92,7 @@ body{
 
 .info {
   color: var(--text-colour-light);
-  padding-top: 7.5%;
+  // padding-top: 7.5%;
 }
 
 .maintext {
@@ -154,13 +154,18 @@ body{
 .questcontainer{
   display: flex;
   width: 100%;
-  height: 60vh;
+  // height: 60vh;
   padding: 0 5% 0 5%;
-  margin-top: 20%;
+  margin-top: 15%;
   margin-left: 8%;
 }
 
 .infotext{
+  margin-top: 3%;
+  width: 100%;
+}
+
+.infotext2 {
   margin-top: 3%;
   width: 50%;
 }
@@ -169,7 +174,7 @@ body{
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 60vh;
+  // height: 60vh;
   justify-content: center;
   align-items: center;
   margin-top: 5%;
@@ -258,7 +263,7 @@ a{
 .lorecontainer{
   display: flex;
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   justify-content: center;
   margin-top: 12%;
 
@@ -284,12 +289,150 @@ a{
     height: 50vh;
     background-position: center;
   }
+
+  .hands img {
+    scale: 0.5;
+  }
+  .hands {
+   gap: 60%;
+  }
+.infotext {
+    margin-top: 3%;
+    width: 80%;
+  }
+
+
+  .infotext2 {
+    margin-top: 3%;
+    width: 80%;
+  }
+  .herocontainer {
+    height: 40vh;
+    background-position: center;
+  }
+.infotext2 {
+    margin-top: 3%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .lorecontainer {
+    margin-top: 5%;
+    // display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lorecontainer img {
+    scale: 0.7;
+  }
+  .lorecontainer p {
+    font-size: 25px;
+  }
+  .questcontainer {
+    // margin-top: 35%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .questcontainer h1 {
+    font-size: 35px;
+    max-width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    padding-top: 3%;
+    align-items: center; 
+    justify-content: center;
+    background-image: url("../assets/img/familieramme.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .card h1 {
+    font-size: 33px;
+    text-align: left;
+    padding-left: 15%;
+  }
+
+  .card h2 {
+    padding-left: 15%;
+    margin-top: 1rem;
+    max-width: 100%;
+    font-size: 25px;
+  }
+
+  .maintext {
+    font-size: 20px;
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .infotext {
+    // margin-top: 250%;
+    // width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .ylwbutton {
+    width: 100%;
+    height: 100%;
+    scale: 1.4;
+  }
+  .headliner2 {
+  //  padding-top: 25%;
+   justify-content: center;
+    align-items: center;
+    display: flex;
+  }
 }
 
 @media (max-width: 864px) {
   .herocontainer {
     height: 40vh;
     background-position: center;
+  }
+
+  .ylwbutton {
+    width: 100%;
+    height: 100%;
+    scale: 2;
+    padding-bottom: 5%;
+  }
+.infotext2 {
+    margin-top: 3%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .lorecontainer {
+    margin-top: 5%;
+    // display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lorecontainer img {
+    scale: 0.7;
+  }
+  .lorecontainer p {
+    font-size: 20px;
   }
 }
 
@@ -304,6 +447,12 @@ a{
   .herocontainer {
     height: 30vh;
     background-position: center;
+  }
+  .ylwbutton {
+    width: 100%;
+    height: 100%;
+    scale: 3;
+    padding-bottom: 10%;
   }
 }
 

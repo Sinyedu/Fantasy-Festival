@@ -81,6 +81,13 @@ export default {
   .scrollbtn {
 display: none;
   }
+  .arrow {
+    display: none;
+  }
+
+  .scrollbtn:hover {
+    display: none;
+  }
 }
 
 

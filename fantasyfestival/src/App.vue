@@ -51,6 +51,7 @@ html {
 body {
   font-family: RomanSD, sans-serif;
   background-color: #ede6d6;
+  // overflow: hidden;
 }
 
 header {
