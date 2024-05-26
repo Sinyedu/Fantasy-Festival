@@ -7,12 +7,12 @@
 
       <div class="hamburger-dropdown">
         <div class="hamburger-icon" @click="toggleDropdown">
-          <div class=""></div>
-          <div class=""></div>
-          <div class=""></div>
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
     
-        <div v-if="isOpen" class="dropdown-menu">
+        <div ref="dropdownMenu" v-show="isOpen" class="dropdown-menu">
           <router-link to="/">Home</router-link>
           <router-link to="/familie">Familie Quest</router-link>
           <router-link to="/aften">Aften Quest</router-link>
@@ -32,6 +32,7 @@ import logogul from '../assets/img/logogul.png';
 const isOpen = ref(false);
 const route = useRoute();
 const logoSrc = ref(logogreen);
+const dropdownMenu = ref(null);
 
 const updateLogo = () => {
   switch (route.path) {
@@ -59,6 +60,32 @@ const closeDropdown = (event) => {
   const dropdownMenu = document.querySelector('.dropdown-menu');
   if (dropdownMenu && !dropdownMenu.contains(event.target) && !event.target.closest('.hamburger-icon')) {
     isOpen.value = false;
+    anime({
+      targets: '.dropdown-menu.value',
+      width: '0%',
+      duration: 500,
+      easing: 'easeInOutQuad'
+    });
+    anime({
+      targets: '.line1',
+      rotate: '0deg',
+      translateY: '0px',
+      duration: 500,
+      easing: 'easeInOutQuad'
+    });
+    anime({
+      targets: '.line2',
+      opacity: 1,
+      duration: 500,
+      easing: 'easeInOutQuad'
+    });
+    anime({
+      targets: '.line3',
+      rotate: '0deg',
+      translateY: '0px',
+      duration: 500,
+      easing: 'easeInOutQuad'
+    });
   }
 };
 
@@ -72,15 +99,43 @@ onUnmounted(() => {
 
 const toggleDropdown = () => {
   isOpen.value = !isOpen.value;
+  if (isOpen.value) {
+    anime({
+      targets: dropdownMenu.value,
+      width: '15%',
+      duration: 500,
+      easing: 'easeInOutQuad'
+    });
+    anime({
+      targets: '.line1',
+      rotate: '45deg',
+      translateY: '10px',
+      duration: 500,
+      easing: 'easeInOutQuad'
+    });
+    anime({
+      targets: '.line2',
+      opacity: 0,
+      duration: 500,
+      easing: 'easeInOutQuad'
+    });
+    anime({
+      targets: '.line3',
+      rotate: '-45deg',
+      translateY: '-10px',
+      duration: 500,
+      easing: 'easeInOutQuad'
+    });
+  } 
+  else {
+    anime({
+      targets: dropdownMenu.value,
+      width: '0%',
+      duration: 500,
+      easing: 'easeInOutQuad'
+    });
+  }
 }
-
-anime({
-  targets: '.dropdown-menu a',
-  translateX: 250,
-  easing: 'easeInOutExpo'
-});
-
-
 </script>
 
 <style scoped>
@@ -135,7 +190,7 @@ anime({
   flex-direction: column;
   justify-content: space-between;
   z-index: 1000;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .hamburger-icon div {

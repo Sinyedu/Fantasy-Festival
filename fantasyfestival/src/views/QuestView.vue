@@ -29,11 +29,16 @@
               <img class="buttonimage-day" :src="dayQuest.image2" alt="">
             </a>
 
-            <div class="booknuknap-dag">
-              <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
-                <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="">
-              </a>
+            <div class="booking">
+              <div class="buttons">
+                <div class="booknuknap-dag">
+                  <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
+                    <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="">
+                  </a>
+                </div>
+              </div>
             </div>
+            
           </div>
         </div>
       </div>
@@ -46,18 +51,38 @@
             <a href="/aften">
               <img class="buttonimage-night" :src="questItem.image2" alt="">
             </a>
-            <div class="booknuknap-night">
-              <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
-                <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="">
-              </a>
+
+            <div class="booking">
+              <div class="buttons">
+                <div class="booknuknap-night">
+                  <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
+                    <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="">
+                  </a>
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
       </div>
     </div>
-    <!-- <div class="booknuknap-aften">
-      <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><img class=""  src="../assets/img/yellow buttentext.png" alt=""></a>
+    <!-- <div class="booking">
+      <div class="buttons">
+        <div class="booknuknap-dag">
+              <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
+                <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="">
+              </a>
+            </div>
+
+        <div class="booknuknap-night">
+              <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
+                <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="">
+              </a>
+            </div>
+      </div>
     </div> -->
+
+
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
     <div class="video-container relative pt-24 pb-[300px]">
       <FrontVideo /> 
@@ -65,51 +90,53 @@
 
 
     <!-- Slider -->
-    <div data-hs-carousel='{
-    "loadingClasses": "opacity-0",
-    "isAutoPlay": true,
-    "autoPlayInterval": 3000
-  }' class="relative h-screen">
-      <div class="hs-carousel relative overflow-hidden w-full h-full rounded-lg">
-        <div class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700">
-          <div class="hs-carousel-slide flex-shrink-0 h-full">
-            <img class="pressfoto" src="../assets/img/musikanter.png" alt="First slide">
-          </div>
-          <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-            <img class="pressfoto" src="../assets/img/karaktere.png" alt="Second slide">
-          </div>
-          <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-            <img class="pressfoto" src="../assets/img/market.png" alt="Third slide">
+    <div class="presscarousel">
+      <div data-hs-carousel='{
+      "loadingClasses": "opacity-0",
+      "isAutoPlay": true,
+      "autoPlayInterval": 3000
+    }' class="carouselbody relative h-screen">
+        <div class="hs-carousel relative overflow-hidden w-full h-full rounded-lg">
+          <div class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700">
+            <div class="hs-carousel-slide flex-shrink-0 h-full">
+              <img class="pressfoto" src="../assets/img/musikanter.png" alt="First slide">
+            </div>
+            <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
+              <img class="pressfoto" src="../assets/img/karaktere.png" alt="Second slide">
+            </div>
+            <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
+              <img class="pressfoto" src="../assets/img/market.png" alt="Third slide">
+            </div>
           </div>
         </div>
-      </div>
-
-      <button type="button"
-        class="hs-carousel-prev absolute inset-y-0 left-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-l-lg">
-        <span class="text-2xl" aria-hidden="true">
-          <svg class="slide-arrow w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
-          </svg>
-        </span>
-        <span class="sr-only">Previous</span>
-      </button>
-      <button type="button"
-        class="hs-carousel-next absolute inset-y-0 right-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-r-lg">
-        <span class="sr-only">Next</span>
-        <span class="text-2xl" aria-hidden="true">
-          <svg class="slide-arrow w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-          </svg>
-        </span>
-      </button>
-
-      <div class="hs-carousel-pagination flex justify-center absolute bottom-3 left-0 right-0 space-x-2">
-        <span
-        class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
-        <span
-        class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
-        <span
-        class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+  
+        <button type="button"
+          class="hs-carousel-prev absolute inset-y-0 left-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-l-lg">
+          <span class="text-2xl" aria-hidden="true">
+            <svg class="slide-arrow w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
+            </svg>
+          </span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button type="button"
+          class="hs-carousel-next absolute inset-y-0 right-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-r-lg">
+          <span class="sr-only">Next</span>
+          <span class="text-2xl" aria-hidden="true">
+            <svg class="slide-arrow w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+            </svg>
+          </span>
+        </button>
+  
+        <div class="hs-carousel-pagination flex justify-center absolute bottom-3 left-0 right-0 space-x-2">
+          <span
+          class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+          <span
+          class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+          <span
+          class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+        </div>
       </div>
     </div>
     <!-- END OF CAROUSEL!-->
@@ -324,6 +351,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 .ylwbutton {
   width: 100%;
+  padding: 0 5% 0 5%;
   height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -388,6 +416,16 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 .carousel {
   margin-top: 21%;
   z-index: 9999;
+}
+
+.presscarousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselbody{
+  width: 80%;
 }
 
 .hs-carousel-body {
@@ -466,11 +504,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   position: absolute;
   scale: 0.2;
   left: 40%;
-  top: 330%;
+  top: 420%;
 }
 
 .accordion-item {
-  // margin-bottom: 1rem;
   width: 100%;
   padding-bottom: 5%; 
 }
@@ -508,10 +545,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .video-container {
   position: relative;
-  // max-width: 80%;
   max-height: 100%;
-  // height: 1000px;
-  // margin: auto;
   display: flex;
   justify-content: center;
   margin-bottom: -10%;
@@ -523,16 +557,30 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   margin-bottom: 30%;
 }
 
+.booking{
+  display: flex;
+  justify-content: space-evenly;
+  // align-items: center;
+  // margin-top: 5%;
+  // bottom: 50%;
+}
+
+.buttons {
+  display: flex;
+  // justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  // top: 50%;
+}
+
 .booknuknap-dag, .booknuknap-night {
   display: flex;
+  flex: 1;
   align-items: center;
-  justify-content: center;
+  justify-content: center, space-between;
   position: relative;
-  justify-content: space-between;
-  margin-top: -10%;
-  scale: .60;
+  scale: .90;
   top: 45%;
-  // height: 79.88px;
 }
 
 .booknuknap-night {
@@ -542,9 +590,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   position: relative;
   justify-content: space-between;
   padding-top: 3%;
-  scale: .60;
+  // scale: .60;
   top: 50%;
 }
+
 
 .booknu2 {
   width: 25%;
@@ -598,7 +647,8 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   position: relative;
   width: 65%;
   height: auto;
-  scale: 1;
+  scale: 0.80;
+  margin-bottom: 1rem;
   top: 9%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -616,7 +666,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   padding: 10px;
   width: 70%;
   margin-top: 1rem;
-
 }
 
 .container-card {
@@ -680,9 +729,8 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 
 .day-card p {
-  margin-left: 2%;
   margin-top: 5%;
-  max-width: 60%;
+  max-width: 75%;
   font-size: 28px;
   text-align: left;
   margin-bottom: 1rem;
@@ -694,9 +742,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 
 .night-card p {
-  margin-left: 2%;
+  // margin-left: 2%;
   margin-top: 5%;
-  max-width: 70%;
+  max-width: 75%;
+  font-size: 28px;
   text-align: left;
   margin-bottom: 1rem;
 }

@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <img class="absolute -left-[72px] top-0 z-10 dragonhand-left hand h-64"
+    <img class="absolute -left-[85px] top-0 z-10 dragonhand-left hand h-72"
       src="../assets/img/dragon_hand_left_darkcolour_mfinal.png" alt="Dragon Left">
     <div id="player" class="responsive-iframe mx-auto flex justify-center"></div>
-    <img class="absolute -right-[72px] top-0 z-10 dragonhand-right hand h-64"
+    <img class="absolute -right-[85px] top-0 z-10 dragonhand-right hand h-72"
       src="../assets/img/dragon_hand_right_darkcolour_mfinal.png" alt="Dragon Right">
   </div>
 </template>
@@ -26,6 +26,8 @@ export default {
   methods: {
     loadPlayer() {
       this.player = new YT.Player('player', {
+        height: '760px',
+        width: '1420px',
         videoId: 'nWYL6oaLhKE',
         events: {
           'onStateChange': this.onPlayerStateChange
@@ -79,21 +81,21 @@ export default {
 
 @keyframes move1 {
   from {
-    left: -72px;
+    left: -85px;
   }
 
   to {
-    left: -300px;
+    left: -230px;
   }
 }
 
 @keyframes move2 {
   from {
-    right: -72px;
+    right: -85px;
   }
 
   to {
-    right: -300px;
+    right: -230px;
   }
 }
 

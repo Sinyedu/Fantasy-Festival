@@ -22,7 +22,8 @@ const router = createRouter({
     {
       path: '/aften',
       name: 'aften',
-      component: AftenView
+      component: AftenView,
+      meta: { title: 'Aften Quest' }
     },
     {path: '/',
     name: 'faq',
