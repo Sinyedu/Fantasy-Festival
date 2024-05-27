@@ -769,7 +769,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 .night-card p {
   // margin-left: 2%;
   margin-top: 5%;
-  max-width: 75%;
+  max-width: 80%;
   font-size: 28px;
   text-align: left;
 }
@@ -1059,25 +1059,21 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     // padding-top: 60%
   }
 }
-  .day-card h2 {
-    font-size: 2rem;
-    // padding-top: 60%
-  }
 .tail {
-    top: -9%;
+    // top: -9%;
     scale: 1.12;
   }
   .hs-carousel-prev {
     width: 50px;
     height: 50px;
     top: 37.5%;
-    display: none;
+    // display: none;
   }
   .hs-carousel-next {
     width: 50px;
     height: 50px;
     top: 37.5%;
-    display: none;
+    // display: none;
   }
   .accordion-seg h2{
     width: 100%;
@@ -1107,34 +1103,34 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
 
   .day-card h2 {
-    padding-top: 35%;
+    padding-top: 23%;
   }
 
   .night-card h2 {
-    padding-top: 35%;
+    padding-top: 23%;
   }
 
   .night-card p {
-    max-width: 80%;
+    max-width: 55%;
   }
 
   .ylwbutton2 {
-    bottom: 50%;
+    bottom: 60%;
   }
 
   .buttonimage-night {
     top: -30%;
   }
   .tail {
-    top: -4%;
-    scale: 1.1;
+    top: -9%;
+    scale: 1.12;
   }
 
   .buttonimage-day {
     top: -20%;
   }
   .ylwbutton {
-    bottom: 50%;
+    bottom: 60%;
   }
   .accordion {
     width: 65%;

@@ -240,7 +240,7 @@ const toggleDropdown = () => {
   .logo {
     width: 12%;
     height: 20vh;
-    padding-top: 8%;
+    padding-top: 5%;
     scale: 1.3;
     left: 1.7%;
   }
