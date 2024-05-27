@@ -17,7 +17,7 @@
           </ul>
         </div>
         <div class="footer-column footer-logo">
-          <img :src="logoSrc" alt="Logo" class="logo-img">
+         <a href="/"><img :src="logoSrc" alt="Logo" class="logo-img"></a> 
         </div>
       </div>
     </footer>

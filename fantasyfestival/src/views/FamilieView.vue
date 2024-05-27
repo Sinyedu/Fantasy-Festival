@@ -179,7 +179,7 @@ body{
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 60vh;
+  // height: 60vh;
   justify-content: center;
   align-items: center;
   margin-top: 3%;
@@ -265,7 +265,9 @@ a{
     height: 50vh;
     background-position: center;
   }
-
+.container-card {
+  width: 90%;
+  }
   .hands img {
     scale: 0.5;
   }
@@ -319,15 +321,15 @@ a{
   }
 
   .questcontainer h1 {
-    font-size: 35px;
-    max-width: 100%;
-    // text-align: center;
+    font-size: 140%;
+    max-width: 90%;
+    text-align: start;
   }
 
   .card {
     // scale: 0.9;
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    height: 50%;
     margin-top: 5%;
     padding-top: 3%;
     align-items: center; 
@@ -338,11 +340,11 @@ a{
     background-size: 100% 100%;
   }
 .info h1 {
-    font-size: 25px;
+    font-size: 90%;
 }
 
   .info h2 {
-    font-size: 20px;
+    font-size: 90%;
   
   }
 
@@ -356,7 +358,7 @@ a{
   .infotext {
     // margin-top: 250%;
     // width: 80%;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     display: flex;
     flex-direction: column;

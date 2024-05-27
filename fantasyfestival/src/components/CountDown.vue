@@ -97,5 +97,17 @@
     font-size: 30%;
     /* margin-top: 5px; */
   }
-  </style>
+
+  @media (max-width: 768px) {
+    .countdown-box {
+      font-size: 2rem;
+      width: 85px;
+      height: 85px;
+      scale: 0.8;
+    }
+    #countdown {
+      gap: 0%;
+    }
+  }
+ </style>
   

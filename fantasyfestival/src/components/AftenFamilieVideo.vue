@@ -128,6 +128,25 @@ export default {
   pointer-events: none;
   transform: translateY(-50%);
 }
+@media (max-width: 1440px) {
+  .top-half {
+    display: none;
+  }
+  .bottom-half {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 1028px) {
+  .top-half {
+    display: none;
+  }
+  .bottom-half {
+    display: none;
+  }
+}
 
 
 @media (max-width: 768px) {

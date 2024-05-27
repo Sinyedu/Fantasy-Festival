@@ -2,11 +2,14 @@
   <div class="container">
     <img class="absolute -left-[85px] top-0 z-10 dragonhand-left hand h-72"
       src="../assets/img/dragon_hand_left_darkcolour_mfinal.png" alt="Dragon Left">
-    <div id="player" class="responsive-iframe mx-auto flex justify-center"></div>
+    <div class="player-wrapper">
+      <div id="player" class="responsive-iframe"></div>
+    </div>
     <img class="absolute -right-[85px] top-0 z-10 dragonhand-right hand h-72"
       src="../assets/img/dragon_hand_right_darkcolour_mfinal.png" alt="Dragon Right">
   </div>
 </template>
+
 
 <script>
 export default {
@@ -26,8 +29,8 @@ export default {
   methods: {
     loadPlayer() {
       this.player = new YT.Player('player', {
-        height: '720px',
-        width: '1280px',
+        height: '520px',
+        width: '1020px',
         videoId: 'nWYL6oaLhKE',
         events: {
           'onStateChange': this.onPlayerStateChange
@@ -65,6 +68,7 @@ export default {
 };
 </script>
 
+
 <style scoped>
 .container {
   position: relative;
@@ -72,13 +76,20 @@ export default {
   margin: auto;
 }
 
-#player {
+.player-wrapper {
   position: relative;
-  z-index: 2;
-  /* width: 1420px; */
-  width: 1000px;
+  width: 100%;
+  /* scale: 0.7; */
 }
 
+#player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
 
 @keyframes move1 {
   from {
@@ -100,7 +111,6 @@ export default {
   }
 }
 
-
 .hide-left {
   animation: move1 1s;
   animation-fill-mode: forwards;
@@ -119,5 +129,43 @@ export default {
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
+}
+ @media (max-width: 1028px) {
+  #player {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+  .player-wrapper {
+    width: 100%;
+    scale: 0.7;
+    justify-content: center;
+    display: flex;
+  }
+  .hand {
+    display: none;
+  }
+}
+  
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .player-wrapper {
+    width: 100%;
+    scale: 0.7;
+    justify-content: center;
+    display: flex;
+  }
+
+  #player {
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>

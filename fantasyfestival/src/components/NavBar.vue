@@ -2,7 +2,7 @@
   <div class="navbarcomp">
     <div class="brand">
       <div class="logo">
-        <img :src="logoSrc" alt="Logo">
+      <a href="/"><img :src="logoSrc" alt="Logo"></a>
       </div>
 
       <div class="hamburger-dropdown">

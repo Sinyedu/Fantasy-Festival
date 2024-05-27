@@ -84,7 +84,7 @@
 
 
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
-    <div class="video-container relative pt-24 pb-[300px]">
+    <div class="video-container relative pb-[300px]">
       <FrontVideo /> 
     </div>
 
@@ -881,6 +881,9 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     width: 50px;
     height: 50px;
     top: 47%;
+  }
+  .video-container {
+    padding-bottom: 0%;
   }
 }
 
