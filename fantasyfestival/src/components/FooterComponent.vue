@@ -12,8 +12,8 @@
         <div class="footer-column">
           <ul class="footer-list">
             <li class="footer-item2"><a href="/#faq">FAQ</a></li>
-            <li class="footer-item2"><a href="#">Kontakt os</a></li>
-            <li class="footer-item2"><a href="#">Link til Fantasyfestivalen</a></li>
+            <li class="footer-item2"><a href="https://www.facebook.com/fantasyfestivalen">Kontakt os</a></li>
+            <li class="footer-item2"><a href="https://www.ticketmaster.dk/artist/fantasyfestival-billetter/1233494">Link til Fantasyfestivalen</a></li>
           </ul>
         </div>
         <div class="footer-column footer-logo">

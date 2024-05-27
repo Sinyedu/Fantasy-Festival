@@ -33,7 +33,7 @@
       
       <!-- Dynamically retrieves the general information about the evening quest -->
       <div class="container-card">
-        <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
+        <a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3?ref=universe-discover" target="_blank">
           <div class="book">
             <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="Book Nu Knap">
           </div>
@@ -280,7 +280,6 @@ a{
     align-items: center;
   }
 
-
   .infotext2 {
     margin-top: 3%;
     width: 80%;
@@ -341,8 +340,10 @@ a{
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
+
+
 .info h1 {
-    font-size: 90%;
+    font-size: 80%;
     text-align: center;
 }
 
@@ -454,9 +455,18 @@ a{
   //   padding-bottom: 25%;
   // }
 
+
+  .centertext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
   .headliner{
     font-size: 50px;
     margin-top: 5%;
+    max-width: 50%;
     padding: 0;
   }
 
@@ -489,9 +499,8 @@ a{
     align-items: center; 
     justify-content: center;
   }
-
-  .card{
-    display: flex;
+  .card {
+    // scale: 0.9;
     width: 100%;
     height: 100%;
     margin-top: 5%;
@@ -503,17 +512,19 @@ a{
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
-
-  .info h1 {
-    font-size: 30px;
-    text-align: center;
-    padding: 0;
+  .card h2 {
+    max-width: 100%;
+  }
+.info h1 {
+    font-size: 35px;
 }
 
   .info h2 {
-    font-size: 22px;
+    font-size: 21px;
     text-align: center;
     padding: 0;
+    margin-bottom: 5%;
+  
   }
 
   .headliner2 {
@@ -525,8 +536,8 @@ a{
   .lorecontainer p{
     max-width: 90%;
   }
-}
 
+}
 
 
 </style>
