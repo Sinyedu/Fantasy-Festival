@@ -441,11 +441,89 @@ a{
     height: 30vh;
     background-position: center;
   }
+
+  .hands{
+    scale: 0.5;
+    gap: 50%;
+  }
+
+  // .ylwbutton {
+  //   width: 100%;
+  //   height: 100%;
+  //   scale: 2.2;
+  //   padding-bottom: 25%;
+  // }
+
+  .headliner{
+    font-size: 50px;
+    margin-top: 5%;
+    padding: 0;
+  }
+
+  .maintext{
+    max-width: 90%;
+  }
+
   .ylwbutton {
     width: 100%;
     height: 100%;
-    scale: 2.2;
+    scale: 3;
     padding-bottom: 25%;
+  }
+
+  .questcontainer {
+    // margin-top: 35%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 0%;
+    padding: 0;
+    margin: 0%;
+  }
+
+  .container-card{
+    width: 80%;
+    // height: 100%;
+    margin-top: 5%;
+    padding-top: 3%;
+    align-items: center; 
+    justify-content: center;
+  }
+
+  .card{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    padding-top: 3%;
+    align-items: center; 
+    justify-content: center;
+    background-image: url("../assets/img/familieramme.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .info h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
+}
+
+  .info h2 {
+    font-size: 22px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .headliner2 {
+    max-width: 90%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .lorecontainer p{
+    max-width: 90%;
   }
 }
 

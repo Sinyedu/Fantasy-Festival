@@ -265,7 +265,7 @@ a{
     scale: 0.5;
   }
   .hands {
-   gap: 60%;
+   gap: 50%;
   }
 .infotext {
     margin-top: 15%;
@@ -346,7 +346,7 @@ a{
 
   .maintext {
     font-size: 20px;
-    max-width: 80%;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -366,6 +366,11 @@ a{
     height: 100%;
     scale: 1.4;
   }
+
+  .headliner{
+    margin-top: 5%;
+  }
+
   .headliner2 {
   //  padding-top: 25%;
    justify-content: center;
@@ -417,7 +422,7 @@ a{
     padding-top: 3%;
     align-items: center; 
     justify-content: center;
-    background-image: url("../assets/img/familieramme.png");
+    background-image: url("../assets/img/aftenramme.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -450,6 +455,52 @@ a{
     scale: 3;
     padding-bottom: 25%;
   }
+
+  .questcontainer {
+    // margin-top: 35%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 0%;
+    padding: 0;
+    margin: 0%;
+  }
+
+
+  .container-card{
+    width: 80%;
+    // height: 100%;
+    margin-top: 5%;
+    padding-top: 3%;
+    align-items: center; 
+    justify-content: center;
+  }
+
+  .card{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    padding-top: 3%;
+    align-items: center; 
+    justify-content: center;
+    background-image: url("../assets/img/aftenramme.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+  }
+
+  .info h1 {
+    font-size: 32px;
+    text-align: center;
+    padding: 0;
+}
+
+  .info h2 {
+    font-size: 22px;
+    text-align: center;
+    padding: 0;
+  }
+  
 }
 
 </style>

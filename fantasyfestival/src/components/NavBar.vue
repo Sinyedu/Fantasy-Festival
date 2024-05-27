@@ -250,13 +250,13 @@ const toggleDropdown = () => {
   .hamburger-icon {
     width: 10%;
     margin-right: 1%;
-    margin-top: 2%;
+    margin-top: 4%;
     height: 4vh;
   }
 
   .dropdown-menu {
-    top: 18%; 
-    right: 4.1%; 
+    top: 6%; 
+    right: 11%; 
     background-color: #ede6d6;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
