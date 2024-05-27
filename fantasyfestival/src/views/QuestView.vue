@@ -517,7 +517,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   position: absolute;
   scale: 0.2;
   left: 40%;
-  top: 390%;
+  top: 460%;
 }
 
 .accordion-item {
@@ -919,6 +919,9 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .hs-carousel-pagination{
     display: none;
   }
+  .carouselbody {
+    width: 100%;
+  }
 }
 
 
@@ -964,7 +967,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     position: relative;
     top: -80%;
     display: flex;
-    scale: 0.6;
+    scale: 0.7;
     
   }
 
@@ -972,7 +975,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     position: relative;
     top: -45%;
     display: flex;
-    scale: 0.6;
+    scale: 0.7;
     
   }
   .card {
