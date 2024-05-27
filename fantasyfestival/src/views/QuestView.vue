@@ -957,7 +957,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     max-width: 55%;
   }
   .video-container {
-    padding-bottom: 70%;
+    padding-bottom: 130%;
     padding-right: 15px;
     padding-left: 15px;
   }
@@ -1037,7 +1037,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     font-size: 26px;
     // width: 55%;
     margin-top: 0%;
-    max-width: 55%;
+    max-width: 65%;
   }
   .night-card {
     height: 1100px;
@@ -1107,19 +1107,19 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
 
   .day-card h2 {
-    padding-top: 23%;
+    padding-top: 33%;
   }
 
   .night-card h2 {
-    padding-top: 23%;
+    padding-top: 30%;
   }
 
   .night-card p {
-    max-width: 55%;
+    max-width: 65%;
   }
 
   .ylwbutton2 {
-    bottom: 60%;
+    bottom: 55%;
   }
 
   .buttonimage-night {

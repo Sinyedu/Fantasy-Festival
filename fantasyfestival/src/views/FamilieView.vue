@@ -188,7 +188,7 @@ body{
 
 .card {
   max-width: 100%;
-  width: 55%;
+  width: 50%;
   height: 100%;
   margin-top: 5%;
   padding-top: 3%;
@@ -197,11 +197,11 @@ body{
   background-image: url("../assets/img/familieramme.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 82%;
 }
 
 .card h1 {
-  font-size: 33px;
+  font-size: 35px;
   text-align: left;
   padding-left: 15%;
 }
@@ -277,6 +277,7 @@ a{
 .infotext {
     margin-top: 3%;
     width: 80%;
+    align-items: center;
   }
 
 
@@ -320,6 +321,7 @@ a{
     margin: 0%;
   }
 
+
   .questcontainer h1 {
     font-size: 140%;
     max-width: 90%;
@@ -328,7 +330,7 @@ a{
 
   .card {
     // scale: 0.9;
-    // width: 100%;
+    width: 60%;
     height: 50%;
     margin-top: 5%;
     padding-top: 3%;
@@ -341,13 +343,16 @@ a{
   }
 .info h1 {
     font-size: 90%;
+    text-align: center;
 }
 
   .info h2 {
     font-size: 90%;
-  
+    text-align: center;
   }
-
+  .ages {
+    padding-bottom: 5%;
+  }
   .maintext {
     font-size: 20px;
     max-width: 80%;
@@ -391,6 +396,7 @@ a{
   .infotext {
     margin-top: 3%;
     width: 80%;
+    align-items: center;
 }
   .ylwbutton {
     width: 100%;
@@ -438,7 +444,7 @@ a{
   .ylwbutton {
     width: 100%;
     height: 100%;
-    scale: 3;
+    scale: 2.2;
     padding-bottom: 25%;
   }
 }
