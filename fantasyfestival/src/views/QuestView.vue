@@ -838,11 +838,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .arkivaren {
     display: none;
   }
-
-
-
-} 
-
+  .hs-carousel-next, .hs-carousel-prev {
+    display: none;
+  } 
+}
 @media (max-width: 1280px) {
   .container-card {
     flex-direction: column;
@@ -1172,9 +1171,65 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
 .accordion-title {
   font-size: 0.8rem;
+}
+.accordion-seg h2 { 
+  font-size: 1.5rem;
+  text-align: center;
+
+}
+
+.deltag { 
+  font-size: 2rem;
+max-width: 95%;
+}
+.night-card {
+  height: 900px;
+  background-size: 365px 880px;
+}
+
+.day-card {
+  height: 900px;
+  background-size: 365px 880px;
+}
+.day-card h2 {
+  font-size: 1.7rem;
+}
+
+.day-card p {
+  font-size: 1.2rem;
+  max-width: 85%;
+}
+
+.fillerimage {
+  width: 80%;
+  height: 100%;
+}
+.ylwbutton{
+  bottom: 75%;
+  scale: 1;
+}
+
+.ylwbutton2 {
+  bottom: 75%;
+  scale: 1;
+}
+
+.night-card h2 {
+  font-size: 1.7rem;
+}
+
+.night-card p {
+  font-size: 1.2rem;
+  max-width: 75%;
+}
+.buttonimage-day {
+  top: -50%;
+}
+.buttonimage-night {
+  top: -50%;
 }
 }
 </style>
