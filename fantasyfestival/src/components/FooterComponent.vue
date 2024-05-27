@@ -5,8 +5,8 @@
         <div class="footer-column">
           <ul class="footer-list">
             <li class="footer-item1"><a href="https://www.universe.com/explore?query=fantasy&loc=Esbjerg%252C%2520Danmark&ll=55.476466%252C8.459405">Køb billetter</a></li>
-            <li class="footer-item1"><a href="/familie">Familie Questen</a></li>
-            <li class="footer-item1"><a href="/aften">Aften Questen</a></li>
+            <li class="footer-item1"><a href="/familie">Familie Quest</a></li>
+            <li class="footer-item1"><a href="/aften">Aften Quest</a></li>
           </ul>
         </div>
         <div class="footer-column">
@@ -68,7 +68,7 @@ updateFooterClass();
 <style scoped lang="scss">
   .masterfooter {
     width: 100%;
-    height: 250px;
+    height: 300px;
   }
   
   .footer {
@@ -144,6 +144,47 @@ updateFooterClass();
     max-width: 350px;
     padding-top: 5%;
   }
+
+@media (max-width: 1024px) {
+
+.logo-img {
+  max-width: 250px;
+  padding-right: 55px;
+}
+.familie-footer .footer { 
+  height: 450px;
+}
+
+
+ .default-footer .footer {
+  height: 450px;
+ }   
+ 
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer-column {
+    align-items: flex-start;
+    text-align: start;
+    padding-left: 10%;
+  }
+  .footer-item2 {
+    left: 0;
+  }
+  .footer-logo {
+    justify-content: end;
+    padding-right: 2.5%;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
   @media (max-width: 768px) {
 .logo-img {
   max-width: 250px;

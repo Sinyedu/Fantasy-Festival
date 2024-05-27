@@ -41,21 +41,13 @@ html {
 .fade-leave-to {
   opacity: 0;
 }
-// .slide-fade-enter-active, .slide-fade-leave-active {
-//   transition: all 1s ease;
-// }
-// .slide-fade-enter-from, .slide-fade-leave-to {
-//   opacity: 0;
-// }
 
 body {
   font-family: RomanSD, sans-serif;
   background-color: #ede6d6;
-  // overflow: hidden;
 }
 
 header {
-  // line-height: 1.5;
   max-height: 100vh;
   width: 100%;
   position: absolute;

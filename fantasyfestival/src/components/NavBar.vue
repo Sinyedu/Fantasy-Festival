@@ -33,6 +33,7 @@ const isOpen = ref(false);
 const route = useRoute();
 const logoSrc = ref(logogreen);
 const dropdownMenu = ref(null);
+const dropDown = ref('masterdropdown default-dropdown')
 
 const updateLogo = () => {
   switch (route.path) {
@@ -42,14 +43,17 @@ const updateLogo = () => {
 
       case '/familie':
         logoSrc.value = logogul;
+        dropDown.value = 'masterdropdown familie-dropdown'
         break;
 
       case '/aften':
         logoSrc.value = logogul;
+        dropDown.value = 'masterdropdown aften-dropdown'
         break;
       
       default:
         logoSrc.value = logogreen;
+        dropDown.value = 'masterdropdown default-dropdown'
         break;
   }
 };
@@ -135,7 +139,6 @@ const toggleDropdown = () => {
   flex-direction: column;
   justify-content: space-between;
   z-index: 1000;
-  /* overflow: hidden; */
 }
 
 .hamburger-icon span {
@@ -143,8 +146,6 @@ const toggleDropdown = () => {
   background-color: #efba12;
   border-radius: 5px;
 }
-
-
 
 .dropdown-menu {
   position: absolute;
@@ -171,6 +172,7 @@ const toggleDropdown = () => {
 }
 
 
+
 /* @media  */
 @media (max-width: 1024px) {
   .hamburger-icon {
@@ -181,8 +183,8 @@ const toggleDropdown = () => {
   }
 
   .dropdown-menu {
-    top: 18%; 
-    right: 4.1%; 
+    top: 7%; 
+    right: 6%; 
     background-color: #ede6d6;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -201,7 +203,7 @@ const toggleDropdown = () => {
   .logo {
     width: 12%;
     height: 20vh;
-    padding-top: 8%;
+    padding-top: 3%;
     scale: 1.3;
     left: 1.7%;
   }
