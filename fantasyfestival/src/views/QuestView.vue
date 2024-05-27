@@ -142,7 +142,7 @@
     <!-- END OF CAROUSEL!-->
 
     <!-- THIS IS THE FAQ SECTION USED WITH TAILWINDCSS -->
-    <div id="faq" class="container w-full mx-auto py-12">
+    <div id="faq" class="container w-full py-12">
       <div class="accordion-seg w-full">
         <div class="faqtekst">
         <h2 class="text-3xl align-start font-semibold mb-6 mt-28">Ofte stillede spørgsmål</h2>
@@ -509,11 +509,15 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   text-align: center;
 }
 
+.container{
+  max-width: 100%;
+}
+
 .arkivaren {
   position: absolute;
   scale: 0.2;
   left: 40%;
-  top: 420%;
+  top: 390%;
 }
 
 .accordion-item {
@@ -878,7 +882,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
 
   .brødtekst{
-    width: 80%;
+    width: 89.5%;
   }
 
   .card {
