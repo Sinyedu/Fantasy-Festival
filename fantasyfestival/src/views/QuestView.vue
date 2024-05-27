@@ -364,6 +364,8 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 0 5% 0 5%;
   height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  bottom: 15%;
+  position: relative;
 }
 .answer{
   color: #083a35;
@@ -657,7 +659,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   top: 9%;
 }
 
-.buttonimage-day, .buttonimage-night {
+.buttonimage-day {
   position: relative;
   width: 65%;
   height: auto;
@@ -667,6 +669,16 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.buttonimage-night {
+  position: relative;
+  width: 65%;
+  height: auto;
+  scale: 0.80;
+  margin-bottom: 1rem;
+  // top: 9%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
 .night-info a{
   position: relative;
   display: flex;
@@ -760,7 +772,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   max-width: 75%;
   font-size: 28px;
   text-align: left;
-  margin-bottom: 1rem;
 }
 
 .tail {
@@ -934,12 +945,12 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 
   .fillerimage{
-    width: 80%;
+    width: 55%;
     height: 100%;
   }
 
   .night-card p {
-    max-width: 80%;
+    max-width: 55%;
   }
   .video-container {
     padding-bottom: 70%;
@@ -968,7 +979,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .buttonimage-night {
     position: relative;
-    top: -80%;
+    top: -65%;
     display: flex;
     scale: 0.7;
     
@@ -976,7 +987,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .buttonimage-day {
     position: relative;
-    top: -45%;
+    top: -35%;
     display: flex;
     scale: 0.7;
     
@@ -1020,7 +1031,9 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .day-card p {
     font-size: 26px;
-    width: 80%
+    // width: 55%;
+    margin-top: 0%;
+    max-width: 55%;
   }
   .night-card {
     height: 1100px;
@@ -1029,13 +1042,23 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .night-card p {
     font-size: 26px;
+    margin-top: 0%;
   }
 
   .night-card h2 {
     font-size: 2rem;
     // padding-top: 5%
   }
+.titletext {
+  font-size: 2.5rem;
+  padding-top: 22%;
+}
 
+  .day-card h2 {
+    font-size: 2rem;
+    // padding-top: 60%
+  }
+}
   .day-card h2 {
     font-size: 2rem;
     // padding-top: 60%
@@ -1072,7 +1095,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .accordion {
     width: 65%;
   }
-}
 
 @media (max-width: 640px) {
   .container-card {
@@ -1084,11 +1106,36 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     margin-bottom: 2rem;
   }
 
+  .day-card h2 {
+    padding-top: 35%;
+  }
+
+  .night-card h2 {
+    padding-top: 35%;
+  }
+
+  .night-card p {
+    max-width: 80%;
+  }
+
+  .ylwbutton2 {
+    bottom: 50%;
+  }
+
+  .buttonimage-night {
+    top: -30%;
+  }
   .tail {
     top: -4%;
     scale: 1.1;
   }
 
+  .buttonimage-day {
+    top: -20%;
+  }
+  .ylwbutton {
+    bottom: 50%;
+  }
   .accordion {
     width: 65%;
   }

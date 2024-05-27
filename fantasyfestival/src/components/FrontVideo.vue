@@ -212,6 +212,7 @@ export default {
     scale: 0.9;
     justify-content: center;
     display: flex;
+    height: 520px;
   }
 
   #player {
