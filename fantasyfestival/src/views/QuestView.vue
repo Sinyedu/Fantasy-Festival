@@ -958,7 +958,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .buttonimage-night {
     position: relative;
-    top: -70%;
+    top: -80%;
     display: flex;
     scale: 0.6;
     
@@ -1019,12 +1019,12 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .night-card h2 {
     font-size: 2rem;
-    padding-top: 45%
+    padding-top: 60%
   }
 
   .day-card h2 {
     font-size: 2rem;
-    padding-top: 45%
+    padding-top: 60%
   }
 .tail {
     top: -9%;
