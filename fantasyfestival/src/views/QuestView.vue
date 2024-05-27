@@ -886,14 +886,9 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     height: 50px;
     top: 47%;
   }
-<<<<<<< Updated upstream
-  .video-container {
-    padding-bottom: 0%;
-=======
 
   .hs-carousel-pagination{
     display: none;
->>>>>>> Stashed changes
   }
 }
 

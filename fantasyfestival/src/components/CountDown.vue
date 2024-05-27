@@ -55,22 +55,6 @@ export default {
   beforeUnmount() {
     clearInterval(this.timerInterval);
   }
-<<<<<<< Updated upstream
-
-  @media (max-width: 768px) {
-    .countdown-box {
-      font-size: 2rem;
-      width: 85px;
-      height: 85px;
-      scale: 0.8;
-    }
-    #countdown {
-      gap: 0%;
-    }
-  }
- </style>
-  
-=======
 };
 </script>
 
@@ -79,7 +63,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, sans-serif;
   margin-top: 4%;
   position: relative;
   z-index: 9999;
@@ -107,4 +90,3 @@ export default {
   font-size: 40%;
 }
 </style>
->>>>>>> Stashed changes
