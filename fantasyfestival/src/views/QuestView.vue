@@ -435,6 +435,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 .carouselbody{
   width: 80%;
+  pointer-events: none;
 }
 
 .hs-carousel-body {
@@ -942,6 +943,8 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
   .video-container {
     padding-bottom: 70%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .presscarousel {
