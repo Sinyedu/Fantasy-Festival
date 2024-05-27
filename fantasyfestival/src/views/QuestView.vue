@@ -493,7 +493,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .titletext {
   color: #EDE6D6;
-  padding-top: 30%;
+  padding-top: 35%;
   font-size: 3rem;
 }
 
@@ -743,7 +743,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .day-card p {
   margin-top: 5%;
-  max-width: 75%;
+  max-width: 80%;
   font-size: 28px;
   text-align: left;
 }
@@ -933,12 +933,12 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 
   .fillerimage{
-    width: 60%;
+    width: 80%;
     height: 100%;
   }
 
   .night-card p {
-    max-width: 60%;
+    max-width: 80%;
   }
   .video-container {
     padding-bottom: 70%;
@@ -1011,27 +1011,31 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     text-align: start;
   }
   .day-card {
-    height: 1400px;
-    background-size: 950px 1100px;
+    height: 1100px;
+    background-size: 400px 1100px;
   } 
 
   .day-card p {
-    margin-top: 0%;
-    max-width: 60%;
+    font-size: 26px;
+    width: 80%
   }
   .night-card {
-    height: 1400px;
-    background-size: 950px 1100px;
+    height: 1100px;
+    background-size: 400px 1100px;
+  }
+
+  .night-card p {
+    font-size: 26px;
   }
 
   .night-card h2 {
     font-size: 2rem;
-    padding-top: 60%
+    // padding-top: 5%
   }
 
   .day-card h2 {
     font-size: 2rem;
-    padding-top: 60%
+    // padding-top: 60%
   }
 .tail {
     top: -9%;
