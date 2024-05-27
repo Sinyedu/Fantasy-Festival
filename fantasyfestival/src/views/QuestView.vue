@@ -327,7 +327,6 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style lang="scss" scoped>
- 
 
 .faqtekst {
   display: flex;
@@ -442,7 +441,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   width: 100%;
   transition: transform 2s ease-in-out;
-  background-color: #ede6d6;
+  pointer-events: none;
 }
 
 .hs-carousel-slide {
@@ -811,6 +810,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   object-fit: contain;
   overflow: hidden;
 }
+
+.pb-\[300px\] {
+  padding-bottom: 30%;
+}
 @media (max-width: 1680px) {
   .arkivaren {
     display: none;
@@ -826,7 +829,14 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     justify-content: center;
     align-items: center;
   }
+.pressfoto {
+  height: 80%;
+}
 
+
+  .video-container {
+    padding-bottom: 50%;
+  }
   .card {
     margin-bottom: 2rem;
   }
@@ -841,6 +851,21 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 
   .arkivaren {
+    display: none;
+  }
+
+  .hs-carousel-next {
+    height: 50px;
+    width: 50px;
+    top: 38%;
+  }
+
+  .hs-carousel-prev {
+    height: 50px;
+    width: 50px;
+    top: 38%;
+  }
+  .hs-carousel-pagination {
     display: none;
   }
 }
@@ -879,12 +904,12 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .hs-carousel-prev {
     width: 50px;
     height: 50px;
-    top: 47%;
+    top: 38%;
   }
   .hs-carousel-next {
     width: 50px;
     height: 50px;
-    top: 47%;
+    top: 38%;
   }
 
   .hs-carousel-pagination{
@@ -899,25 +924,51 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     justify-content: center;
   }
 
+
+  .fillerimage{
+    width: 60%;
+    height: 100%;
+  }
+
+  .night-card p {
+    max-width: 60%;
+  }
+  .video-container {
+    padding-bottom: 70%;
+  }
+
+  .presscarousel {
+    height: 0;
+  }
+
   .ylwbutton { 
     position: relative;
-    bottom: 20%;
+    bottom: 70%;
     height: 60%;
     width: 100%;
-    scale: 1.1;
+    scale: 1;
   }
   .ylwbutton2 { 
     position: relative;
-    bottom: 30%;
+    bottom: 99%;
     height: 60%;
     width: 100%;
-    scale: 1.1;
+    scale: 1;
   }
 
   .buttonimage-night {
     position: relative;
-    top: -1%;
+    top: -70%;
     display: flex;
+    scale: 0.6;
+    
+  }
+
+  .buttonimage-day {
+    position: relative;
+    top: -45%;
+    display: flex;
+    scale: 0.6;
     
   }
   .card {
@@ -957,6 +1008,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     background-size: 950px 1100px;
   } 
 
+  .day-card p {
+    margin-top: 0%;
+    max-width: 60%;
+  }
   .night-card {
     height: 1400px;
     background-size: 950px 1100px;
@@ -964,26 +1019,28 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .night-card h2 {
     font-size: 2rem;
-    padding-top: 55%
+    padding-top: 45%
   }
 
   .day-card h2 {
     font-size: 2rem;
-    padding-top: 60%
+    padding-top: 45%
   }
 .tail {
-    top: -8%;
-    scale: 1.5;
+    top: -9%;
+    scale: 1.12;
   }
   .hs-carousel-prev {
     width: 50px;
     height: 50px;
-    top: 47%;
+    top: 37.5%;
+    display: none;
   }
   .hs-carousel-next {
     width: 50px;
     height: 50px;
-    top: 47%;
+    top: 37.5%;
+    display: none;
   }
   .accordion-seg h2{
     width: 100%;
@@ -1024,12 +1081,12 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .hs-carousel-prev {
     width: 20px;
     height: 20px;
-    top: 49%;
+    top: 11.8%;
   }
   .hs-carousel-next {
     width: 20px;
     height: 20px;
-    top: 49%;
+    top: 11.8%;
   }
   .slide-arrow {
     width: 20px;

@@ -14,7 +14,7 @@
     </div>
     <div class="countdown-box raleway-font">
       <span>{{ seconds.toString().padStart(2, "0") }}</span>
-      <div class="label">Sekunder</div>
+      <div class="label2">Sekunder</div>
     </div>
   </div>
 </template>
@@ -88,5 +88,8 @@ export default {
 
 .label {
   font-size: 40%;
+}
+.label2 {
+  font-size: 35%;
 }
 </style>

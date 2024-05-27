@@ -29,8 +29,8 @@ export default {
   methods: {
     loadPlayer() {
       this.player = new YT.Player('player', {
-        height: '520px',
-        width: '1020px',
+        height: '720px',
+        width: '1050px',
         videoId: 'nWYL6oaLhKE',
         events: {
           'onStateChange': this.onPlayerStateChange
@@ -45,28 +45,33 @@ export default {
       }
     },
     hideHands() {
-      const element = document.querySelector('.dragonhand-left');
-      if (element) {
-        element.classList.add('hide-left');
+      const leftHand = document.querySelector('.dragonhand-left');
+      if (leftHand) {
+        leftHand.classList.add('hide-left');
+        leftHand.classList.remove('show-left');
       }
-      const element2 = document.querySelector('.dragonhand-right');
-      if (element2) {
-        element2.classList.add('hide-right');
+      const rightHand = document.querySelector('.dragonhand-right');
+      if (rightHand) {
+        rightHand.classList.add('hide-right');
+        rightHand.classList.remove('show-right');
       }
     },
     showHands() {
-      const element = document.querySelector('.dragonhand-left');
-      if (element) {
-        element.classList.remove('hide-left');
+      const leftHand = document.querySelector('.dragonhand-left');
+      if (leftHand) {
+        leftHand.classList.add('show-left');
+        leftHand.classList.remove('hide-left');
       }
-      const element2 = document.querySelector('.dragonhand-right');
-      if (element2) {
-        element2.classList.remove('hide-right');
+      const rightHand = document.querySelector('.dragonhand-right');
+      if (rightHand) {
+        rightHand.classList.add('show-right');
+        rightHand.classList.remove('hide-right');
       }
     }
   }
 };
 </script>
+
 
 
 <style scoped>
@@ -111,6 +116,26 @@ export default {
   }
 }
 
+@keyframes move3 {
+  from {
+    left: -230px;
+  }
+
+  to {
+    left: -85px;
+  }
+}
+
+@keyframes move4 {
+  from {
+    right: -230px;
+  }
+
+  to {
+    right: -85px;
+  }
+}
+
 .hide-left {
   animation: move1 1s;
   animation-fill-mode: forwards;
@@ -123,6 +148,18 @@ export default {
   animation-timing-function: ease;
 }
 
+.show-left {
+  animation: move3 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.show-right {
+  animation: move4 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+
+}
 .hand {
   pointer-events: none;
   position: absolute;
@@ -130,6 +167,13 @@ export default {
   transform: translateY(-50%);
   z-index: 1;
 }
+@media (max-width: 1440px) {
+  .hand {
+    display: none;
+  }
+}
+
+
  @media (max-width: 1028px) {
   #player {
     width: 100%;
@@ -141,7 +185,7 @@ export default {
   }
   .player-wrapper {
     width: 100%;
-    scale: 0.7;
+    scale: 1.2;
     justify-content: center;
     display: flex;
   }
@@ -158,7 +202,7 @@ export default {
 
   .player-wrapper {
     width: 100%;
-    scale: 0.7;
+    scale: 0.9;
     justify-content: center;
     display: flex;
   }
