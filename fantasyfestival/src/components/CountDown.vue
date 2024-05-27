@@ -2,19 +2,19 @@
     <div id="countdown">
       <div class="countdown-box">
         <span>{{ days }}</span>
-        <!-- <div class="label">Dage</div> -->
+        <div class="label1">Dage</div>
       </div>
       <div class="countdown-box">
         <span>{{ hours.toString().padStart(2, "0") }}</span>
-        <!-- <div class="label">Timer</div> -->
+        <div class="label1">Timer</div>
       </div>
       <div class="countdown-box">
         <span>{{ minutes.toString().padStart(2, "0") }}</span>
-        <!-- <div class="label">Minutter</div> -->
+        <div class="label2">Minutter</div>
       </div>
       <div class="countdown-box">
         <span>{{ seconds.toString().padStart(2, "0") }}</span>
-        <!-- <div class="label">Sekunder</div> -->
+        <div class="label2">Sekunder</div>
       </div>
     </div>
   </template>
@@ -80,9 +80,6 @@
     font-size: 3rem;
     font-family: RomanSD, sans-serif;
     text-align: center;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 30px;
     width: 120px;
     height: 120px;
     display: flex;
@@ -91,9 +88,14 @@
     justify-content: center;
   }
   
-  .label {
-    font-size: 0.4em;
-    margin-top: 5px;
+  .label1 {
+    font-size: 40%;
+    /* margin-top: 5px; */
+  }
+
+  .label2 {
+    font-size: 30%;
+    /* margin-top: 5px; */
   }
   </style>
   

@@ -12,7 +12,7 @@
   
     <div class="titlecontainer">
       <div class="centertext">
-        <h1 class="headliner font-bold text-7xl text-center">Aften Quest!</h1>
+        <h1 class="headliner font-bold text-7xl text-center">Aften Quest</h1>
       </div>
     </div>
   
@@ -95,7 +95,6 @@ body{
 
 .info {
   color: #EDE6D6;
-  padding-top: 7.5%;
 }
 
 .maintext {
@@ -150,7 +149,7 @@ font-size: 25px;
   margin-top: 45%;
   z-index: 100;
   scale: 0.6;
-  gap: 77%;
+  gap: 80%;
   pointer-events: none;
 }
 
@@ -220,6 +219,7 @@ font-size: 25px;
   height: 100%;
   scale: 1.4;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-top: 10%;
 }
 
 a:hover .ylwbutton{

@@ -122,7 +122,7 @@ export default {
   width: 100%;
   height: 100%;
   left: 7%;
-  top: 44.6%;
+  top: 48.33%;
   scale: 0.35;
   z-index: 4;
   pointer-events: none;

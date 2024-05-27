@@ -26,8 +26,8 @@ export default {
   methods: {
     loadPlayer() {
       this.player = new YT.Player('player', {
-        height: '760px',
-        width: '1420px',
+        height: '720px',
+        width: '1280px',
         videoId: 'nWYL6oaLhKE',
         events: {
           'onStateChange': this.onPlayerStateChange
@@ -75,6 +75,7 @@ export default {
 #player {
   position: relative;
   z-index: 2;
+  /* width: 1420px; */
   width: 1000px;
 }
 
@@ -119,6 +120,4 @@ export default {
   transform: translateY(-50%);
   z-index: 1;
 }
-
-
 </style>

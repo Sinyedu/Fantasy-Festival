@@ -12,7 +12,7 @@
   
     <div class="titlecontainer">
       <div class="centertext">
-        <h1 class="headliner font-bold text-7xl text-center">Familie Quest!</h1>
+        <h1 class="headliner font-bold text-7xl text-center">Familie Quest</h1>
       </div>
     </div>
   
@@ -60,7 +60,7 @@
 
     <div class="lorecontainer">
       <div class="infotext2">
-        <h1 class="headliner font-bold text-3xl pb-9">I gamle dage sagde man...</h1>
+        <h1 class="headliner2 font-bold text-3xl pb-9">I gamle dage sagde man...</h1>
         <p class="maintext raleway-font text-2xl">
           ...at det onde ville komme fra havet. Gennem generationer blev den fortælling givet videre. Man hørte den, da Esbjerg blev grundlagt i 1868. Man holdt altid øje med havet. Mod vest. 
           <br><br>
@@ -92,7 +92,6 @@ body{
 
 .info {
   color: var(--text-colour-light);
-  padding-top: 7.5%;
 }
 
 .maintext {
@@ -153,7 +152,7 @@ body{
   margin-top: 45%;
   z-index: 100;
   scale: 0.6;
-  gap: 77%;
+  gap: 82%;
   pointer-events: none;
 }
 
@@ -216,7 +215,12 @@ body{
 .headliner {
  text-align: center;
 }
+
+.headliner2 {
+  text-align: start;
+}
 .ylwbutton {
+  padding-top: 14%;
   width: 100%;
   height: 100%;
   scale: 1.4;
