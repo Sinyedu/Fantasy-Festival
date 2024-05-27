@@ -852,6 +852,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     // height: 1200px;
   }
 
+  .brødtekst{
+    width: 80%;
+  }
+
   .card {
     margin-bottom: 2rem;
   }
@@ -866,7 +870,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .tail {
     top: -20%;
-    scale: 1.5;
+    scale: 1.1;
   }
 
   .accordion {
@@ -882,8 +886,14 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     height: 50px;
     top: 47%;
   }
+<<<<<<< Updated upstream
   .video-container {
     padding-bottom: 0%;
+=======
+
+  .hs-carousel-pagination{
+    display: none;
+>>>>>>> Stashed changes
   }
 }
 
