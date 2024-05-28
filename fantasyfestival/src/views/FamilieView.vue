@@ -564,6 +564,13 @@ a {
     font-size: 1.3rem;
     text-align: center;
   }
+
+  .headliner2 {
+    font-size: 2.5rem;
+    max-width: 80%;
+    text-align: center;
+    padding-top: 60%;
+  }
 }
 
 @media (max-width: 640px) {
@@ -621,7 +628,13 @@ a {
     justify-content: center;
   
   }
+.headliner2 {
+  font-size: 2.5rem;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 60%;
 
+}
 }
 
 @media (max-width: 480px) {
@@ -727,10 +740,20 @@ a {
     max-width: 90%;
   }
 }
-
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .hands {
     display: none;
+  }
+
+}
+@media (max-width: 340px) {
+
+
+  .headliner2 {
+    font-size: 1.9rem; 
+    max-width: 100%;
+    text-align: center;
+    padding-top: 60%;
   }
 }
 </style>
