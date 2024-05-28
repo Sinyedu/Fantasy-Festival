@@ -116,15 +116,14 @@ export default {
   z-index: 3;
 }
 
-.bottom-half{
+.bottom-half {
   position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  left: 15%;
-  top: 27.8%;
-  scale: 0.35;
-  z-index: 4;
+  width: 50%;
+  height: auto;
+  bottom: 23.9%;
+  left: 45%;
+  transform: translateY(50%);
+  z-index: 1;
   pointer-events: none;
 }
 
