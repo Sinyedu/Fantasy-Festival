@@ -256,6 +256,14 @@ a{
   }
 }
 
+
+@media (max-width: 1366px) {
+.lorecontainer{
+  display: flex;
+  padding-bottom: 15%;
+  margin-top: -20%;
+  }
+}
 @media (max-width: 1090px) {
 .card h1 {
   font-size: 2rem;
