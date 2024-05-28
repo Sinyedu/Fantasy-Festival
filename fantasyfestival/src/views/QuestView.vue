@@ -1,4 +1,5 @@
 <template>
+
   <body>
     <div class="centertext">
       <h1 class="top-text text-7xl font-bold text-center">Fantasy Quest</h1>
@@ -37,26 +38,15 @@
 
             <div class="booking">
               <div class="booknuknap-dag">
-                <a
-                  href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
-                  target="_blank"
-                >
-                  <img
-                    class="ylwbutton"
-                    src="../assets/img/yellow buttentext.png"
-                    alt=""
-                  />
+                <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
+                  <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="" />
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div
-        v-for="questItem in questItems"
-        :key="questItem.id"
-        class="night-card"
-      >
+      <div v-for="questItem in questItems" :key="questItem.id" class="night-card">
         <div class="portfolio-item">
           <div class="night-info">
             <h2 class="titletext">{{ questItem.title }}</h2>
@@ -70,15 +60,8 @@
 
             <div class="booking">
               <div class="booknuknap-night">
-                <a
-                  href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
-                  target="_blank"
-                >
-                  <img
-                    class="ylwbutton2"
-                    src="../assets/img/yellow buttentext.png"
-                    alt=""
-                  />
+                <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
+                  <img class="ylwbutton2" src="../assets/img/yellow buttentext.png" alt="" />
                 </a>
               </div>
             </div>
@@ -109,101 +92,53 @@
 
     <!-- Slider -->
     <div class="presscarousel">
-      <div
-        data-hs-carousel='{
+      <div data-hs-carousel='{
       "loadingClasses": "opacity-0",
       "isAutoPlay": true,
       "autoPlayInterval": 6000
-    }'
-        class="carouselbody relative h-screen"
-      >
-        <div
-          class="hs-carousel relative overflow-hidden w-full h-full rounded-lg"
-        >
-          <div
-            class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700"
-          >
+    }' class="carouselbody relative h-screen">
+        <div class="hs-carousel relative overflow-hidden w-full h-full rounded-lg">
+          <div class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700">
             <div class="hs-carousel-slide flex-shrink-0 h-full">
-              <img
-                class="pressfoto"
-                src="../assets/img/musikanter.png"
-                alt="First slide"
-              />
+              <img class="pressfoto" src="../assets/img/musikanter.png" alt="First slide" />
             </div>
             <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-              <img
-                class="pressfoto"
-                src="../assets/img/karaktere.png"
-                alt="Second slide"
-              />
+              <img class="pressfoto" src="../assets/img/karaktere.png" alt="Second slide" />
             </div>
             <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-              <img
-                class="pressfoto"
-                src="../assets/img/market.png"
-                alt="Third slide"
-              />
+              <img class="pressfoto" src="../assets/img/market.png" alt="Third slide" />
             </div>
           </div>
         </div>
 
-        <button
-          type="button"
-          class="hs-carousel-prev absolute inset-y-0 left-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-l-lg"
-        >
+        <button type="button"
+          class="hs-carousel-prev absolute inset-y-0 left-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-l-lg">
           <span class="text-2xl" aria-hidden="true">
-            <svg
-              class="slide-arrow w-9 h-9"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
-                d="M15 19l-7-7 7-7"
-              />
+            <svg class="slide-arrow w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
             </svg>
           </span>
           <span class="sr-only">Previous</span>
         </button>
-        <button
-          type="button"
-          class="hs-carousel-next absolute inset-y-0 right-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-r-lg"
-        >
+        <button type="button"
+          class="hs-carousel-next absolute inset-y-0 right-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-r-lg">
           <span class="sr-only">Next</span>
           <span class="text-2xl" aria-hidden="true">
-            <svg
-              class="slide-arrow w-9 h-9"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
-                d="M9 5l7 7-7 7"
-              />
+            <svg class="slide-arrow w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
             </svg>
           </span>
         </button>
 
-        <div
-          class="hs-carousel-pagination flex justify-center absolute bottom-3 left-0 right-0 space-x-2"
-        >
+        <div class="hs-carousel-pagination flex justify-center absolute bottom-3 left-0 right-0 space-x-2">
           <span
-            class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"
-          ></span>
+            class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
           <span
-            class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"
-          ></span>
+            class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
           <span
-            class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"
-          ></span>
+            class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
         </div>
       </div>
     </div>
@@ -220,59 +155,31 @@
         <div class="accordion">
           <div class="accordion-item">
             <input type="checkbox" id="q1" class="accordion-toggle w-96" />
-            <label
-              for="q1"
-              class="accordion-title raleway-font cursor-pointer rounded-lg"
-              >Hvordan bestiller jeg billetter?
+            <label for="q1" class="accordion-title raleway-font cursor-pointer rounded-lg">Hvordan bestiller jeg
+              billetter?
               <span class="text-2xl" aria-hidden="true">
-                <svg
-                  class="arrow w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5l7 7-7 7"
-                  />
+                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
               <p class="answer raleway-font text-bold">
                 Det gør du på
-                <a
-                  class="text-bold underline"
-                  href="https://www.universe.com/explore?query=Fantasy%20Quest"
-                  target="_blank"
-                  >HER!</a
-                >
+                <a class="text-bold underline" href="https://www.universe.com/explore?query=Fantasy%20Quest"
+                  target="_blank">HER!</a>
               </p>
             </div>
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q2" class="accordion-toggle" />
-            <label
-              for="q2"
-              class="accordion-title raleway-font cursor-pointer rounded-lg"
-              >Er der en aldersbegrænsning på Aften Quest?
+            <label for="q2" class="accordion-title raleway-font cursor-pointer rounded-lg">Er der en aldersbegrænsning
+              på Aften Quest?
               <span class="text-2xl" aria-hidden="true">
-                <svg
-                  class="arrow w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5l7 7-7 7"
-                  />
+                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
               </span>
             </label>
@@ -284,24 +191,12 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q3" class="accordion-toggle" />
-            <label
-              for="q3"
-              class="accordion-title raleway-font cursor-pointer rounded-lg"
-              >Hvor lang tid tager disse to Quests?
+            <label for="q3" class="accordion-title raleway-font cursor-pointer rounded-lg">Hvor lang tid tager disse to
+              Quests?
               <span class="text-2xl" aria-hidden="true">
-                <svg
-                  class="arrow w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5l7 7-7 7"
-                  />
+                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
               </span>
             </label>
@@ -313,24 +208,12 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q4" class="accordion-toggle" />
-            <label
-              for="q4"
-              class="accordion-title raleway-font cursor-pointer rounded-lg"
-              >Kan jeg have min hund med rundt på Quest?
+            <label for="q4" class="accordion-title raleway-font cursor-pointer rounded-lg">Kan jeg have min hund med
+              rundt på Quest?
               <span class="text-2xl" aria-hidden="true">
-                <svg
-                  class="arrow w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5l7 7-7 7"
-                  />
+                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
               </span>
             </label>
@@ -340,24 +223,12 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q5" class="accordion-toggle" />
-            <label
-              for="q5"
-              class="accordion-title raleway-font cursor-pointer rounded-lg"
-              >Kan jeg have en barnevogn med?
+            <label for="q5" class="accordion-title raleway-font cursor-pointer rounded-lg">Kan jeg have en barnevogn
+              med?
               <span class="text-2xl" aria-hidden="true">
-                <svg
-                  class="arrow w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5l7 7-7 7"
-                  />
+                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
               </span>
             </label>
@@ -367,24 +238,12 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q6" class="accordion-toggle" />
-            <label
-              for="q6"
-              class="accordion-title raleway-font cursor-pointer rounded-lg"
-              >Er disse Quests handicapvenlige?
+            <label for="q6" class="accordion-title raleway-font cursor-pointer rounded-lg">Er disse Quests
+              handicapvenlige?
               <span class="text-2xl" aria-hidden="true">
-                <svg
-                  class="arrow w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5l7 7-7 7"
-                  />
+                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
               </span>
             </label>
@@ -395,11 +254,7 @@
         </div>
       </div>
     </div>
-    <img
-      class="arkivaren"
-      src="../assets/img/Arkivaren_web.png"
-      alt="Arkivaren"
-    />
+    <img class="arkivaren" src="../assets/img/Arkivaren_web.png" alt="Arkivaren" />
   </body>
 </template>
 <script>
@@ -503,6 +358,7 @@ a:hover .ylwbutton {
   transform: scale(1.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 a:hover .ylwbutton2 {
   transform: scale(1.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -525,6 +381,7 @@ a:hover .ylwbutton2 {
   height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .answer {
   color: #083a35;
   font-weight: bold;
@@ -574,7 +431,7 @@ a:hover .ylwbutton2 {
   width: 75%;
 }
 
-.accordion-toggle:checked + .accordion-title .arrow {
+.accordion-toggle:checked+.accordion-title .arrow {
   transform: rotate(90deg);
 }
 
@@ -709,11 +566,11 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   border-bottom: 1px solid #e5e7eb;
 }
 
-.accordion-toggle:checked + .accordion-title {
+.accordion-toggle:checked+.accordion-title {
   background-color: #b3ada0;
 }
 
-.accordion-toggle:checked + .accordion-title + .accordion-content {
+.accordion-toggle:checked+.accordion-title+.accordion-content {
   display: block;
   background-color: #dfd8c7;
 }
@@ -813,6 +670,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   // top: 9%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .night-info a {
   position: relative;
   display: flex;
@@ -925,6 +783,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   color: #fecd08;
   text-shadow: #083a36 5px 5px 8px;
 }
+
 .maintekst {
   margin-top: 30%;
   display: flex;
@@ -959,6 +818,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .arkivaren {
     display: none;
   }
+
   .hs-carousel-next,
   .hs-carousel-prev {
     display: none;
@@ -1092,31 +952,39 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .pressfoto {
     height: 80%;
   }
+
   .video-container {
     padding-bottom: 50%;
   }
+
   .card {
     margin-bottom: 2rem;
   }
+
   .dragonhand {
     display: none;
   }
+
   .dragonhand2 {
     display: none;
   }
+
   .arkivaren {
     display: none;
   }
+
   .hs-carousel-next {
     // height: 50px;
     // width: 50px;
     // top: 38%;
   }
+
   .hs-carousel-prev {
     // height: 50px;
     // width: 50px;
     // top: 38%;
   }
+
   .hs-carousel-pagination {
     display: none;
   }
@@ -1139,6 +1007,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     justify-content: center;
     align-items: center;
   }
+
   .pressfoto {
     height: 80%;
   }
@@ -1146,6 +1015,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .video-container {
     padding-bottom: 50%;
   }
+
   .card {
     margin-bottom: 2rem;
   }
@@ -1173,6 +1043,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     // width: 50px;
     // top: 38%;
   }
+
   .hs-carousel-pagination {
     display: none;
   }
@@ -1209,11 +1080,13 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .accordion {
     width: 60%;
   }
+
   .hs-carousel-prev {
     // width: 50px;
     // height: 50px;
     // top: 38%;
   }
+
   .hs-carousel-next {
     // width: 50px;
     // height: 50px;
@@ -1223,6 +1096,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .hs-carousel-pagination {
     display: none;
   }
+
   .carouselbody {
     width: 100%;
   }
@@ -1242,6 +1116,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .night-card p {
     max-width: 55%;
   }
+
   .video-container {
     padding-bottom: 130%;
     padding-right: 15px;
@@ -1259,6 +1134,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     width: 100%;
     scale: 1;
   }
+
   .ylwbutton2 {
     position: relative;
     bottom: 99%;
@@ -1280,6 +1156,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     display: flex;
     scale: 0.7;
   }
+
   .card {
     margin-bottom: 2rem;
   }
@@ -1288,6 +1165,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     top: -8%;
     scale: 1.5;
   }
+
   .deltag {
     width: 60%;
     font-size: 2.2rem;
@@ -1295,6 +1173,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     justify-content: center;
     text-align: start;
   }
+
   .maintekst {
     margin-top: 30%;
     display: flex;
@@ -1311,6 +1190,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     justify-content: center;
     text-align: start;
   }
+
   .day-card {
     height: 1100px;
     background-size: 400px 1100px;
@@ -1322,6 +1202,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     margin-top: 0%;
     max-width: 65%;
   }
+
   .night-card {
     height: 1100px;
     background-size: 400px 1100px;
@@ -1336,6 +1217,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     font-size: 2rem;
     // padding-top: 5%
   }
+
   .titletext {
     font-size: 2.5rem;
     padding-top: 22%;
@@ -1350,18 +1232,21 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     // top: -9%;
     scale: 1.12;
   }
+
   .hs-carousel-prev {
     // width: 50px;
     // height: 50px;
     // top: 37.5%;
     display: none;
   }
+
   .hs-carousel-next {
     // width: 50px;
     // height: 50px;
     // top: 37.5%;
     display: none;
   }
+
   .accordion-seg h2 {
     width: 100%;
     max-width: 100%;
@@ -1369,11 +1254,13 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     display: flex;
     justify-content: center;
   }
+
   .faqtekst {
     display: flex;
     justify-content: center;
     width: 100%;
   }
+
   .accordion {
     width: 65%;
   }
@@ -1401,13 +1288,14 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     max-width: 65%;
   }
 
-  .booknuknap-night{
+  .booknuknap-night {
     top: 0;
   }
 
   .buttonimage-night {
     top: -30%;
   }
+
   .tail {
     top: -9%;
     scale: 1.12;
@@ -1416,22 +1304,27 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .buttonimage-day {
     top: -20%;
   }
+
   .ylwbutton {
     bottom: 60%;
   }
+
   .accordion {
     width: 65%;
   }
+
   .hs-carousel-prev {
     width: 20px;
     height: 20px;
     top: 11.8%;
   }
+
   .hs-carousel-next {
     width: 20px;
     height: 20px;
     top: 11.8%;
   }
+
   .slide-arrow {
     width: 20px;
     height: 20px;
@@ -1458,6 +1351,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .accordion-title {
     font-size: 0.8rem;
   }
+
   .accordion-seg h2 {
     font-size: 1.5rem;
     text-align: center;
@@ -1467,6 +1361,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     font-size: 2rem;
     max-width: 95%;
   }
+
   .night-card {
     height: 900px;
     background-size: 365px 880px;
@@ -1476,6 +1371,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     height: 900px;
     background-size: 365px 880px;
   }
+
   .day-card h2 {
     font-size: 1.7rem;
   }
@@ -1489,6 +1385,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     width: 80%;
     height: 100%;
   }
+
   .ylwbutton {
     bottom: 75%;
     scale: 1;
@@ -1507,9 +1404,11 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     font-size: 1.2rem;
     max-width: 75%;
   }
+
   .buttonimage-day {
     top: -50%;
   }
+
   .buttonimage-night {
     top: -50%;
   }
