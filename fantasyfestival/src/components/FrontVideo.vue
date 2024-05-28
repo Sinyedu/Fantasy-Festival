@@ -176,6 +176,17 @@ export default {
   z-index: 1;
 }
 
+@media (min-width: 1920px) {
+  .hand {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+}
+
+
 @media (max-width: 1440px) {
   .hand {
     display: none;
