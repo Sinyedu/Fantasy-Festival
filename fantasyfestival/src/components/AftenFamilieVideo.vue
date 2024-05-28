@@ -65,19 +65,12 @@ export default {
 </script>
 
 <style scoped>
-#player {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  height: auto;
-}
 
 
 @keyframes hide-animation {
   from {
     opacity: 100%;
   }
-
   to {
     opacity: 0%;
   }
@@ -94,73 +87,68 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 200vh;
   position: relative;
-}
-.top-half{
-  position: absolute;
-  width: 50%;
-  height: auto;
-  top: -36.5%;
-  left: 80%;
-  transform: translateX(-50%);
-  z-index: 1;
+  overflow: hidden; /* Hide overflow to ensure tails don't show outside */
 }
 
-.video{
+.tail-container {
   display: flex;
-  margin-top: 17.9%;
-  z-index: 3;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
-.bottom-half {
-  position: absolute;
+
+.top-half {
+  position: relative;
   width: 50%;
   height: auto;
-  bottom: -22.6%;
-  left: 70%;
-  transform: translateX(-50%);
-  z-index: 1;
+  top: -2.25%;
+  left: 23%;
   pointer-events: none;
+  z-index: 1;
+  scale: 1.2;
+}
+.bottom-half {
+  position: relative;
+  width: 50%;
+  height: auto;
+  pointer-events: none;
+  z-index: 1;
+  top: -22%;
+  scale: 1.2;
+  left: 15%;
 }
 
 @media (max-width: 1600px) {
-  .bottom-half {
-    display: none;
-  }
+  .bottom-half,
   .top-half {
     display: none;
   }
 }
+
 @media (max-width: 1440px) {
+  .bottom-half,
   .top-half {
     display: none;
   }
-  .bottom-half {
-    display: none;
-  }
 }
-
-
 
 @media (max-width: 1028px) {
+  .bottom-half,
   .top-half {
-    display: none;
-  }
-  .bottom-half {
     display: none;
   }
 }
 
-
 @media (max-width: 768px) {
-  .video-holder{
+  .video-holder {
     margin-top: 5%;
     margin-bottom: 0;
   }
-  .top-half{
-    display: none;
-  }
-  .bottom-half{
+  .bottom-half,
+  .top-half {
     display: none;
   }
 }
