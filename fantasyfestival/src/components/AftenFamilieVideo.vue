@@ -98,14 +98,12 @@ export default {
 }
 .top-half{
   position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  left: 27%;
-  /* top: -40.7%; */
-  scale: 0.50;
-  z-index: 2;
-  transform: translateY(-131.5%);
+  width: 50%;
+  height: auto;
+  top: 0;
+  left: 52%;
+  transform: translateY(-79.87%);
+  z-index: 1;
 }
 
 .video{
@@ -113,14 +111,13 @@ export default {
   margin-top: 17.9%;
   z-index: 3;
 }
-
 .bottom-half {
   position: absolute;
   width: 50%;
   height: auto;
-  /* bottom: 14.8%; */
-  left: 45%;
-  transform: translateY(47.3%);
+  bottom: 0;
+  left: 40%;
+  transform: translateY(30.3%);
   z-index: 1;
   pointer-events: none;
 }
