@@ -42,15 +42,12 @@ const updateLogo = () => {
       break;
     case '/familie':
       logoSrc.value = logogul;
-      dropDown.value = 'masterdropdown familie-dropdown';
       break;
     case '/aften':
       logoSrc.value = logogul;
-      dropDown.value = 'masterdropdown aften-dropdown';
       break;
     default:
       logoSrc.value = logogreen;
-      dropDown.value = 'masterdropdown default-dropdown';
       break;
   }
 };
@@ -66,22 +63,25 @@ const toggleDropdown = () => {
       targets: dropdown,
       height: ['0%', '150px'],
       width: ['0%', '200px'],
-      duration: 500,
+      duration: 150,
       easing: 'easeInOutQuad'
     });
   } else {
     anime({
-      targets: dropdown,
-      height: ['200px', '0%'],
-      width: ['200px', '0%'], 
-      duration: 500,
-      easing: 'easeInOutQuad',
-      complete: () => {
-        dropdown.style.display = 'none';
-      }
+    targets: dropdown,
+    height: ['150px', '0%'],
+    width: ['200px', '0%'], 
+    duration: 150,
+    easing: 'easeInOutQuad',
+    complete: () => {
+      dropdown.style.display = 'none';
+      isOpen.value = false;
+    }
     });
   }
+  
 };
+
 
 // Computed property for dropdown icon class
 const dropdownIconClass = computed(() => {
@@ -115,7 +115,7 @@ const dropdownIconClass = computed(() => {
   align-items: center;
   width: 5%;
   height: 7.5vh;
-  padding-top: 2%;
+  padding-top: 1%;
   scale: 1.3;
   left: 1.7%;
   z-index: 9999;
