@@ -89,7 +89,6 @@ export default {
   justify-content: center;
   height: 200vh;
   position: relative;
-  overflow: hidden; /* Hide overflow to ensure tails don't show outside */
 }
 
 .tail-container {
