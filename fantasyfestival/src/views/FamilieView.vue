@@ -450,6 +450,11 @@ a {
     padding-bottom: 5%;
     padding-top: 25%;
   }
+.headliner {
+  padding-top: 15%;
+}
+
+
   .headliner2 {
     //  padding-top: 25%;
     justify-content: center;
@@ -639,7 +644,7 @@ a {
   }
   .headliner {
     font-size: 2.5rem;
-    margin-top: 5%;
+    margin-top: 18%;
     max-width: 100%;
     padding: 0;
   }

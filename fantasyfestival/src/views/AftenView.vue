@@ -518,6 +518,11 @@ a{
     font-size: 1.3rem;
     text-align: center;
   }
+
+
+  .headliner {
+    margin-top: 15%;
+  }
   
 }
 

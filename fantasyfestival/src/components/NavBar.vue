@@ -288,4 +288,39 @@ export default {
     left: 1.7%;
   }
 }
+
+
+@media (max-width: 360px) {
+
+  .hamburger-icon {
+    width: 20%;
+    margin-right: 1%;
+    margin-top: 4%;
+    height: 4vh;
+  }
+
+  .dropdown-menu {
+    top: 6%; 
+    right: 11%; 
+    background-color: #ede6d6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 999;
+    width: 200px; 
+    font-weight: bold;
+  }
+
+  .logo {
+    width: 12%;
+    height: 20vh;
+    padding-top: 15%;
+    scale: 1.3;
+    left: 1.7%;
+  }
+
+
+
+
+}
 </style>
