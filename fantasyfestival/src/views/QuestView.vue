@@ -94,7 +94,7 @@
       <div data-hs-carousel='{
       "loadingClasses": "opacity-0",
       "isAutoPlay": true,
-      "autoPlayInterval": 3000
+      "autoPlayInterval": 6000
     }' class="carouselbody relative h-screen">
         <div class="hs-carousel relative overflow-hidden w-full h-full rounded-lg">
           <div class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700">
@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const nextButton = carouselElement.querySelector('.hs-carousel-next');
   const paginationDots = carouselElement.querySelectorAll('.hs-carousel-pagination span');
   const autoPlay = JSON.parse(carouselElement.dataset.hsCarousel).isAutoPlay;
-  const autoPlayInterval = JSON.parse(carouselElement.dataset.hsCarousel).autoPlayInterval || 3000;
+  const autoPlayInterval = JSON.parse(carouselElement.dataset.hsCarousel).autoPlayInterval || 6000;
   let currentIndex = 0;
   let interval;
   
@@ -842,6 +842,57 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     display: none;
   } 
 }
+
+@media (max-width: 1440px){
+  .container-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pressfoto {
+    height: 80%;
+  }
+  .video-container {
+    padding-bottom: 50%;
+  }
+  .card {
+    margin-bottom: 2rem;
+  }
+  .dragonhand {
+    display: none;
+  }
+  .dragonhand2 {
+    display: none;
+  }
+  .arkivaren {
+    display: none;
+  }
+  .hs-carousel-next {
+    // height: 50px;
+    // width: 50px;
+    // top: 38%;
+  }
+  .hs-carousel-prev {
+    // height: 50px;
+    // width: 50px;
+    // top: 38%;
+  }
+  .hs-carousel-pagination {
+    display: none;
+  }
+
+  .faqtekst {
+    display: flex;
+    justify-content: center;
+    padding-right: 12%;
+    width: 100%;
+  }
+
+  .video-container {
+    padding-bottom: 35%;
+  }
+}
+
 @media (max-width: 1280px) {
   .container-card {
     flex-direction: column;

@@ -145,6 +145,20 @@ updateFooterClass();
     padding-top: 5%;
   }
 
+  @media (max-width: 1440px) {
+    .masterfooter{
+      height: 250px;
+    }
+
+    .footer-item2 {
+      left: 0;
+    }
+
+    .footer-logo {
+      justify-content: start;
+    }
+  }
+
 @media (max-width: 1024px) {
 
 .logo-img {

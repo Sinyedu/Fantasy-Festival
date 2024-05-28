@@ -2,11 +2,11 @@
   <div class="navbarcomp">
     <div class="brand">
       <div class="logo">
-      <a href="/"><img :src="logoSrc" alt="Logo"></a>
+        <a href="/"><img :src="logoSrc" alt="Logo"></a>
       </div>
 
       <div class="hamburger-dropdown">
-        <div class="hamburger-icon" :class="{'active': 'isOpen'}" @click="toggleDropdown">
+        <div class="hamburger-icon" :class="dropdownIconClass" @click="toggleDropdown">
           <span class="line1"></span>
           <span class="line2"></span>
           <span class="line3"></span>
@@ -23,7 +23,7 @@
 </template>
 
 <script setup>
-import { ref, watch } from "vue";
+import { ref, computed, watch } from "vue";
 import { useRoute } from "vue-router";
 import anime from 'animejs/lib/anime.es.js';
 import logogreen from '../assets/img/logogreen.png';
@@ -33,28 +33,25 @@ const isOpen = ref(false);
 const route = useRoute();
 const logoSrc = ref(logogreen);
 const dropdownMenu = ref(null);
-const dropDown = ref('masterdropdown default-dropdown')
+const dropDown = ref('masterdropdown default-dropdown');
 
 const updateLogo = () => {
   switch (route.path) {
     case '/':
       logoSrc.value = logogreen;
       break;
-
-      case '/familie':
-        logoSrc.value = logogul;
-        dropDown.value = 'masterdropdown familie-dropdown'
-        break;
-
-      case '/aften':
-        logoSrc.value = logogul;
-        dropDown.value = 'masterdropdown aften-dropdown'
-        break;
-      
-      default:
-        logoSrc.value = logogreen;
-        dropDown.value = 'masterdropdown default-dropdown'
-        break;
+    case '/familie':
+      logoSrc.value = logogul;
+      dropDown.value = 'masterdropdown familie-dropdown';
+      break;
+    case '/aften':
+      logoSrc.value = logogul;
+      dropDown.value = 'masterdropdown aften-dropdown';
+      break;
+    default:
+      logoSrc.value = logogreen;
+      dropDown.value = 'masterdropdown default-dropdown';
+      break;
   }
 };
 
@@ -84,41 +81,44 @@ const toggleDropdown = () => {
       }
     });
   }
-}
+};
+
+// Computed property for dropdown icon class
+const dropdownIconClass = computed(() => {
+  switch (route.path) {
+    case '/familie':
+      return 'hamburger-icon famille-dropdown-icon';
+    case '/aften':
+      return 'hamburger-icon aften-dropdown-icon';
+    default:
+      return 'hamburger-icon default-dropdown-icon';
+  }
+});
+
 </script>
 
 <style scoped>
-.navbarcomp{
+.navbarcomp {
   z-index: 99999;
-  /* position: absolute; */
 }
 
-.brand{
+.brand {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   padding-left: 1rem;
 }
 
-.logo{
+.logo {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 2%; */
   width: 5%;
   height: 7.5vh;
   padding-top: 2%;
   scale: 1.3;
   left: 1.7%;
-  /* background-color: #ede6ed; */
   z-index: 9999;
-}
-
-.logo h1{
-  font-size: 1.5rem;
-  color: #efba12;
-  margin-top: 1rem;
 }
 
 .hamburger-dropdown {
@@ -147,6 +147,18 @@ const toggleDropdown = () => {
   border-radius: 5px;
 }
 
+.famille-dropdown-icon span {
+  background-color: var(--dropdown-colour-dark);
+}
+
+.aften-dropdown-icon span {
+  background-color: var(--dropdown-colour-dark);
+}
+
+.default-dropdown-icon span {
+  background-color: var(--dropdown-colour-light);
+}
+
 .dropdown-menu {
   position: absolute;
   top: 18%; 
@@ -171,9 +183,7 @@ const toggleDropdown = () => {
   background-color: #d8d2c4;
 }
 
-
-
-/* @media  */
+/* Media Queries */
 @media (max-width: 1024px) {
   .hamburger-icon {
     width: 5%;
@@ -194,12 +204,6 @@ const toggleDropdown = () => {
     font-weight: bold;
   }
 
-  .dropdown-menu a {
-    display: block;
-    padding: 8px 10px;
-    color: #333;
-    text-decoration: none;
-  }
   .logo {
     width: 12%;
     height: 20vh;
@@ -209,9 +213,7 @@ const toggleDropdown = () => {
   }
 }
 
-
 @media (max-width: 768px) {
-
   .hamburger-icon {
     width: 7%;
     margin-right: 1%;
@@ -231,12 +233,6 @@ const toggleDropdown = () => {
     font-weight: bold;
   }
 
-  .dropdown-menu a {
-    display: block;
-    padding: 8px 10px;
-    color: #333;
-    text-decoration: none;
-  }
   .logo {
     width: 12%;
     height: 20vh;
@@ -266,12 +262,6 @@ const toggleDropdown = () => {
     font-weight: bold;
   }
 
-  .dropdown-menu a {
-    display: block;
-    padding: 8px 10px;
-    color: #333;
-    text-decoration: none;
-  }
   .logo {
     width: 12%;
     height: 20vh;
@@ -280,5 +270,4 @@ const toggleDropdown = () => {
     left: 1.7%;
   }
 }
-
 </style>
