@@ -299,7 +299,7 @@ a {
     background-position: center;
   }
   .container-card {
-    width: 90%;
+    width: 70%;
   }
   .hands img {
     scale: 0.5;
@@ -361,7 +361,7 @@ a {
 
   .card {
     // scale: 0.9;
-    width: 60%;
+    max-width: 100%;
     height: 50%;
     margin-top: 5%;
     padding-top: 3%;
@@ -374,12 +374,12 @@ a {
   }
 
   .info h1 {
-    font-size: 80%;
+    font-size: 2rem;
     text-align: center;
   }
 
   .info h2 {
-    font-size: 90%;
+    font-size: 1.5rem;
     text-align: center;
   }
   .ages {
@@ -395,7 +395,7 @@ a {
   .infotext {
     // margin-top: 250%;
     // width: 80%;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -403,8 +403,7 @@ a {
   .ylwbutton {
     width: 100%;
     height: 100%;
-    scale: 2;
-    padding-bottom: 25%;
+    padding-bottom: 5%;
     padding-top: 25%;
   }
   .headliner2 {
@@ -432,7 +431,7 @@ a {
   .ylwbutton {
     width: 100%;
     height: 100%;
-    scale: 2;
+    scale: 1.5;
     padding-bottom: 5%;
   }
   .infotext2 {
@@ -471,14 +470,44 @@ a {
   .info {
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
     flex-direction: column;
   }
 
   .card h1 {
     padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    max-width: 100%;
+    font-size: 120%;
   }
+
+  .container-card {
+    width: 80%;
+  }
+  .ylwbutton {
+    scale: 2.3;
+    padding-bottom: 30%;
+  }
+
+  .headliner {
+    font-size: 5rem;
+  }
+
+  .questcontainer h1 {
+    max-width: 80%;
+    font-size: 1.5rem;
+  }
+
+  .maintext{
+    max-width: 80%;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -500,12 +529,16 @@ a {
     height: 100%;
   }
   .headliner {
-    font-size: 50px;
+    font-size: 3rem;
     margin-top: 5%;
-    max-width: 50%;
+    max-width: 100%;
     padding: 0;
   }
 
+  .questcontainer h1 {
+    max-width: 90%;
+    font-size: 1.9rem;
+  }
   .maintext {
     max-width: 90%;
   }
@@ -552,7 +585,8 @@ a {
     max-width: 100%;
   }
   .info h1 {
-    font-size: 35px;
+    font-size: 1.9rem;
+    max-width: 100%;
   }
 
   .info h2 {

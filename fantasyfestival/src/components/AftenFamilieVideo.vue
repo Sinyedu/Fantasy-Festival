@@ -121,12 +121,20 @@ export default {
   display: flex;
   width: 100%;
   height: 100%;
-  left: 7%;
-  top: 46.6%;
+  left: 15%;
+  top: 30.8%;
   scale: 0.35;
   z-index: 4;
   pointer-events: none;
-  transform: translateY(-50%);
+}
+
+@media (max-width: 1600px) {
+  .bottom-half {
+    display: none;
+  }
+  .top-half {
+    display: none;
+  }
 }
 @media (max-width: 1440px) {
   .top-half {
