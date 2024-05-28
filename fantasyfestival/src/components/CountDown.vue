@@ -86,6 +86,10 @@ export default {
   justify-content: center;
 }
 
+.countdown-box span {
+  font-family: RomanSD, sans-serif;
+}
+
 .label {
   font-size: 40%;
 }

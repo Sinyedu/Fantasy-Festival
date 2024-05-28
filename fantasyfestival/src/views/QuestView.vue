@@ -773,7 +773,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   margin-top: 15%;
   z-index: 3;
   color: #fecd08;
-  text-shadow: #083a36 5px 5px 8px;
+  text-shadow: #083a36 3px 3px 8px;
 }
 
 .centertext p {
@@ -781,7 +781,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   text-align: center;
   z-index: 3;
   color: #fecd08;
-  text-shadow: #083a36 5px 5px 8px;
+  text-shadow: #083a36 3px 3px 8px;
 }
 
 .maintekst {
@@ -1267,6 +1267,42 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 
 @media (max-width: 640px) {
+  .centertext{
+    padding-top: 5%;
+  }
+
+  .maintekst {
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .maintekst .deltag{
+    font-size: 2rem;
+    width: 85%;
+  }
+
+  .brødtekst{
+    width: 85%;
+    font-size: 1.5rem;
+    padding-bottom: 10%;
+  }
+
+  .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .card h1{
+    padding-left: -15%;
+  }
+
   .container-card {
     flex-direction: column;
     justify-content: center;
@@ -1280,6 +1316,20 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     padding-top: 33%;
   }
 
+  .fillerimage{
+    width: 65%;
+    // height: 100%;
+  }
+
+  .buttonimage-day{
+    top: 5%;
+  }
+
+  .booknuknap-dag{
+    top: 35%;
+    scale: 0.8;
+  }
+
   .night-card h2 {
     padding-top: 30%;
   }
@@ -1289,7 +1339,8 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
 
   .booknuknap-night {
-    top: 0;
+    top: -40;
+    scale: 0.8;
   }
 
   .buttonimage-night {
@@ -1301,16 +1352,16 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     scale: 1.12;
   }
 
-  .buttonimage-day {
-    top: -20%;
-  }
-
   .ylwbutton {
     bottom: 60%;
   }
 
   .accordion {
-    width: 65%;
+    width: 100%;
+  }
+
+  .faqtekst{
+    padding: 0;
   }
 
   .hs-carousel-prev {
@@ -1328,6 +1379,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .slide-arrow {
     width: 20px;
     height: 20px;
+  }
+
+  .scrollbtn{
+    display: none;
   }
 }
 

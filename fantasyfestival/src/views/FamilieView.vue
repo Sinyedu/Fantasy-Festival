@@ -2,44 +2,64 @@
   <body>
     <div class="herocontainer">
       <div class="hero">
-        <img class="gnist">      
+        <img class="gnist" />
       </div>
       <div class="hands">
-        <img src="../assets/img/lefthand.png" alt="Gnist's venstre hånd">
-        <img src="../assets/img/righthand.png" alt="Gnist's venstre hånd">
+        <img src="../assets/img/lefthand.png" alt="Gnist's venstre hånd" />
+        <img src="../assets/img/righthand.png" alt="Gnist's venstre hånd" />
       </div>
     </div>
-  
+
     <div class="titlecontainer">
       <div class="centertext">
         <h1 class="headliner font-bold text-7xl text-center">Familie Quest</h1>
       </div>
     </div>
-  
+
     <div class="questcontainer">
       <div class="infotext">
-        <h1 class="headliner2 font-bold text-3xl pb-9">Deltag i en eventyrlig oplevelse</h1>
+        <h1 class="headliner2 font-bold text-3xl pb-9">
+          Deltag i en eventyrlig oplevelse
+        </h1>
         <p class="maintext raleway-font">
-          Familieudgaven af Fantasy Quest Esbjerg er et oplevelsesløb for hele familien, med tryk på oplevelse. For det er ikke et klassisk løb. Det handler om at leve sig ind i en anden verden, en magisk historie, hvor I sammen er på en ”quest” – en mission, en opgave, en jagt.
-          <br><br>
-          Her møder I magiske væsner, der stiller jer nogle opgaver og udfordringer undervejs mod målet, som I skal løse sammen for at gennemføre Questen.
-          <br><br>
-          Sværhedsgraden er sænket, så børnene kan være med til at løse opgaverne. Men tag ikke fejl, der er brug for alle gode kræfter og samarbejdsevner, hvis I skal være med til at redde Esbjerg.
-          <br><br>
-          Som en ekstra bonus kan I møde YouTuberen Lakserytteren undervejs i Questen rundt i Esbjergs gader.
+          Familieudgaven af Fantasy Quest Esbjerg er et oplevelsesløb for hele
+          familien, med tryk på oplevelse. For det er ikke et klassisk løb. Det
+          handler om at leve sig ind i en anden verden, en magisk historie, hvor
+          I sammen er på en ”quest” – en mission, en opgave, en jagt.
+          <br /><br />
+          Her møder I magiske væsner, der stiller jer nogle opgaver og
+          udfordringer undervejs mod målet, som I skal løse sammen for at
+          gennemføre Questen.
+          <br /><br />
+          Sværhedsgraden er sænket, så børnene kan være med til at løse
+          opgaverne. Men tag ikke fejl, der er brug for alle gode kræfter og
+          samarbejdsevner, hvis I skal være med til at redde Esbjerg.
+          <br /><br />
+          Som en ekstra bonus kan I møde YouTuberen Lakserytteren undervejs i
+          Questen rundt i Esbjergs gader.
         </p>
       </div>
-  
-      
+
       <!-- Dynamically retrieves the general information about the evening quest -->
       <div class="container-card">
-        <a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3?ref=universe-discover" target="_blank">
+        <a
+          href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3?ref=universe-discover"
+          target="_blank"
+        >
           <div class="book">
-            <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="Book Nu Knap">
+            <img
+              class="ylwbutton"
+              src="../assets/img/yellow buttentext.png"
+              alt="Book Nu Knap"
+            />
           </div>
         </a>
-  
-        <div v-for="dayDetail in dayDetails" :key="dayDetail.id" class="card raleway-font">
+
+        <div
+          v-for="dayDetail in dayDetails"
+          :key="dayDetail.id"
+          class="card raleway-font"
+        >
           <div class="info-data">
             <div class="info">
               <h1 class="titletext">{{ dayDetail.title }}</h1>
@@ -55,36 +75,51 @@
     </div>
 
     <!-- Video trailer for the evening quest -->
-    <AftenFamilieVideo/>
-    
+    <AftenFamilieVideo />
 
     <div class="lorecontainer">
       <div class="infotext2">
-        <h1 class="headliner2 font-bold text-3xl pb-9">I gamle dage sagde man...</h1>
+        <h1 class="headliner2 font-bold text-3xl pb-9">
+          I gamle dage sagde man...
+        </h1>
         <p class="maintext raleway-font text-2xl">
-          ...at det onde ville komme fra havet. Gennem generationer blev den fortælling givet videre. Man hørte den, da Esbjerg blev grundlagt i 1868. Man holdt altid øje med havet. Mod vest. 
-          <br><br>
-          Så i Esbjerg byggede man et værn mod ondskaben. Noget der skulle holde øje med havet, noget der skulle træde i karakter, hvis det gik galt. I 1995 blev det værn forstærket, da skulpturerne ”Mennesket ved havet” blev skabt. Mens kunstneren byggede om dagen, arbejdede troldmanden Gygaz den Vise om natten. 
-          <br><br>
-          Gygaz åbnede en portal til kæmpernes verden. Her fandt han frem til fire gode kæmper, der meldte sig frivilligt. De sagde farvel til deres familier og travede gennem portalen mod Esbjerg. Her mødtes de med Gygaz. Luften sitrede af magi, og da de sidste ord i en magtfuld formular forlod Gygaz’ læber, var de fire kæmper blevet ét med statuerne af de fire hvide mænd. På den måde kunne de til evig tid holde øje med havet…
+          ...at det onde ville komme fra havet. Gennem generationer blev den
+          fortælling givet videre. Man hørte den, da Esbjerg blev grundlagt i
+          1868. Man holdt altid øje med havet. Mod vest.
+          <br /><br />
+          Så i Esbjerg byggede man et værn mod ondskaben. Noget der skulle holde
+          øje med havet, noget der skulle træde i karakter, hvis det gik galt. I
+          1995 blev det værn forstærket, da skulpturerne ”Mennesket ved havet”
+          blev skabt. Mens kunstneren byggede om dagen, arbejdede troldmanden
+          Gygaz den Vise om natten.
+          <br /><br />
+          Gygaz åbnede en portal til kæmpernes verden. Her fandt han frem til
+          fire gode kæmper, der meldte sig frivilligt. De sagde farvel til deres
+          familier og travede gennem portalen mod Esbjerg. Her mødtes de med
+          Gygaz. Luften sitrede af magi, og da de sidste ord i en magtfuld
+          formular forlod Gygaz’ læber, var de fire kæmper blevet ét med
+          statuerne af de fire hvide mænd. På den måde kunne de til evig tid
+          holde øje med havet…
         </p>
       </div>
-      <img class="goblin" src="../assets/img/eventyrgoblin.png" alt="Eventyr Goblin">
+      <img
+        class="goblin"
+        src="../assets/img/eventyrgoblin.png"
+        alt="Eventyr Goblin"
+      />
     </div>
   </body>
-
 </template>
 
 <script setup>
-  import getDayDetails from '@/modules/getDayInfo.js';
-  const { dayDetails } = getDayDetails();
+import getDayDetails from "@/modules/getDayInfo.js";
+const { dayDetails } = getDayDetails();
 
-  import AftenFamilieVideo from '../components/AftenFamilieVideo.vue';
+import AftenFamilieVideo from "../components/AftenFamilieVideo.vue";
 </script>
 
 <style lang="scss" scoped>
-
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: var(--body-colour-light);
@@ -109,7 +144,7 @@ body{
   margin-top: 2%;
 }
 
-.herocontainer{
+.herocontainer {
   position: relative;
   display: flex;
   width: 100%;
@@ -127,23 +162,23 @@ body{
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   text-align: center;
   position: relative;
-  width: 100%; 
-  height: 100%; 
+  width: 100%;
+  height: 100%;
 }
 
 .gnist {
   overflow: hidden;
   position: relative;
   display: flex;
-  max-width: 100%; 
-  max-height: 100%; 
-  scale: 2.40;
+  max-width: 100%;
+  max-height: 100%;
+  scale: 2.4;
 }
 
-.hands{
+.hands {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -156,7 +191,7 @@ body{
   pointer-events: none;
 }
 
-.questcontainer{
+.questcontainer {
   display: flex;
   width: 100%;
   height: 80vh;
@@ -165,7 +200,7 @@ body{
   margin-left: 8%;
 }
 
-.infotext{
+.infotext {
   margin-top: 3%;
   width: 50%;
 }
@@ -192,7 +227,7 @@ body{
   height: 100%;
   margin-top: 5%;
   padding-top: 3%;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   background-image: url("../assets/img/familieramme.png");
   background-size: cover;
@@ -213,7 +248,7 @@ body{
   font-size: 25px;
 }
 .headliner {
- text-align: center;
+  text-align: center;
 }
 
 .headliner2 {
@@ -227,25 +262,24 @@ body{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-a:hover .ylwbutton{
-transform: scale(1.05);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+a:hover .ylwbutton {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-a{
+a {
   text-decoration: none;
   width: 33%;
 }
 
-.lorecontainer{
+.lorecontainer {
   display: flex;
   width: 100%;
   justify-content: center;
   margin-top: 12%;
-
 }
 
-.goblin{
+.goblin {
   position: relative;
   scale: 0.65;
   margin-bottom: 5%;
@@ -259,22 +293,21 @@ a{
   }
 }
 
-
 @media (max-width: 1024px) {
   .herocontainer {
     height: 50vh;
     background-position: center;
   }
-.container-card {
-  width: 90%;
+  .container-card {
+    width: 90%;
   }
   .hands img {
     scale: 0.5;
   }
   .hands {
-   gap: 60%;
+    gap: 60%;
   }
-.infotext {
+  .infotext {
     margin-top: 3%;
     width: 80%;
     align-items: center;
@@ -288,7 +321,7 @@ a{
     height: 40vh;
     background-position: center;
   }
-.infotext2 {
+  .infotext2 {
     margin-top: 3%;
     width: 80%;
     align-items: center;
@@ -320,7 +353,6 @@ a{
     margin: 0%;
   }
 
-
   .questcontainer h1 {
     font-size: 140%;
     max-width: 90%;
@@ -333,7 +365,7 @@ a{
     height: 50%;
     margin-top: 5%;
     padding-top: 3%;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     background-image: url("../assets/img/familieramme.png");
     background-size: cover;
@@ -341,11 +373,10 @@ a{
     background-size: 100% 100%;
   }
 
-
-.info h1 {
+  .info h1 {
     font-size: 80%;
     text-align: center;
-}
+  }
 
   .info h2 {
     font-size: 90%;
@@ -368,9 +399,8 @@ a{
     justify-content: center;
     display: flex;
     flex-direction: column;
-  
   }
-    .ylwbutton {
+  .ylwbutton {
     width: 100%;
     height: 100%;
     scale: 2;
@@ -378,8 +408,8 @@ a{
     padding-top: 25%;
   }
   .headliner2 {
-  //  padding-top: 25%;
-   justify-content: center;
+    //  padding-top: 25%;
+    justify-content: center;
     align-items: center;
     display: flex;
   }
@@ -390,7 +420,7 @@ a{
     height: 40vh;
     background-position: center;
   }
-.maintext {
+  .maintext {
     font-size: 20px;
     // padding-top: 100%;
   }
@@ -398,14 +428,14 @@ a{
     margin-top: 3%;
     width: 80%;
     align-items: center;
-}
+  }
   .ylwbutton {
     width: 100%;
     height: 100%;
     scale: 2;
     padding-bottom: 5%;
   }
-.infotext2 {
+  .infotext2 {
     margin-top: 3%;
     width: 80%;
     align-items: center;
@@ -437,24 +467,30 @@ a{
   }
 }
 
+@media (max-width: 640px) {
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .card h1 {
+    padding: 0;
+  }
+}
+
 @media (max-width: 480px) {
   .herocontainer {
     height: 30vh;
     background-position: center;
   }
 
-  .hands{
+  .hands {
     scale: 0.5;
     gap: 50%;
   }
-
-  // .ylwbutton {
-  //   width: 100%;
-  //   height: 100%;
-  //   scale: 2.2;
-  //   padding-bottom: 25%;
-  // }
-
 
   .centertext {
     display: flex;
@@ -463,14 +499,14 @@ a{
     flex-direction: column;
     height: 100%;
   }
-  .headliner{
+  .headliner {
     font-size: 50px;
     margin-top: 5%;
     max-width: 50%;
     padding: 0;
   }
 
-  .maintext{
+  .maintext {
     max-width: 90%;
   }
 
@@ -491,12 +527,12 @@ a{
     margin: 0%;
   }
 
-  .container-card{
+  .container-card {
     width: 80%;
     // height: 100%;
     margin-top: 5%;
     padding-top: 3%;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
   }
   .card {
@@ -505,7 +541,7 @@ a{
     height: 100%;
     margin-top: 5%;
     padding-top: 3%;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     background-image: url("../assets/img/familieramme.png");
     background-size: cover;
@@ -515,16 +551,15 @@ a{
   .card h2 {
     max-width: 100%;
   }
-.info h1 {
+  .info h1 {
     font-size: 35px;
-}
+  }
 
   .info h2 {
     font-size: 21px;
     text-align: center;
     padding: 0;
     margin-bottom: 5%;
-  
   }
 
   .headliner2 {
@@ -533,11 +568,8 @@ a{
     padding-bottom: 5%;
   }
 
-  .lorecontainer p{
+  .lorecontainer p {
     max-width: 90%;
   }
-
 }
-
-
 </style>
