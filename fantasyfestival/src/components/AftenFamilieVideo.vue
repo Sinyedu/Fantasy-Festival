@@ -100,9 +100,9 @@ export default {
   position: absolute;
   width: 50%;
   height: auto;
-  top: 0;
-  left: 52%;
-  transform: translateY(-79.87%);
+  top: -13.6%;
+  left: 80%;
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
 
@@ -115,9 +115,9 @@ export default {
   position: absolute;
   width: 50%;
   height: auto;
-  bottom: 0;
-  left: 40%;
-  transform: translateY(30.3%);
+  bottom: 10%;
+  left: 70%;
+  transform: translate(-50%, 43.8%);
   z-index: 1;
   pointer-events: none;
 }
