@@ -102,9 +102,10 @@ export default {
   width: 100%;
   height: 100%;
   left: 27%;
-  top: -65.7%;
+  /* top: -40.7%; */
   scale: 0.50;
   z-index: 2;
+  transform: translateY(-131.5%);
 }
 
 .video{
@@ -117,9 +118,9 @@ export default {
   position: absolute;
   width: 50%;
   height: auto;
-  bottom: 14.7%;
+  /* bottom: 14.8%; */
   left: 45%;
-  transform: translateY(50%);
+  transform: translateY(47.3%);
   z-index: 1;
   pointer-events: none;
 }
