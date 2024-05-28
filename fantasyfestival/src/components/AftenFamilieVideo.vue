@@ -90,6 +90,8 @@ export default {
   height: 200vh;
   position: relative;
 }
+
+
 /* 
 .tail-container {
   display: flex;
@@ -143,9 +145,21 @@ export default {
 
 @media (max-width: 768px) {
   .video-holder {
-    margin-top: 5%;
-    margin-bottom: 0;
+    height: auto;
+    padding-top: 56.25%;
+    position: relative;
+    max-width: 100%;
+    flex-direction:row;
   }
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
   .bottom-half,
   .top-half {
     display: none;
