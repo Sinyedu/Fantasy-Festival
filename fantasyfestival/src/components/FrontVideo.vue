@@ -176,7 +176,7 @@ export default {
   z-index: 1;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1921px) {
   .hand {
   pointer-events: none;
   position: absolute;
