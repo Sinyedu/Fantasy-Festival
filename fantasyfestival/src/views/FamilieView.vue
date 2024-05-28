@@ -531,7 +531,7 @@ a {
   .headliner {
     font-size: 3rem;
     margin-top: 5%;
-    max-width: 100%;
+    max-width: 70%;
     padding: 0;
   }
 
