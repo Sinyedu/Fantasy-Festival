@@ -1,5 +1,4 @@
 <template>
-
   <body>
     <div class="centertext">
       <h1 class="top-text text-7xl font-bold text-center">Fantasy Quest</h1>
@@ -9,54 +8,80 @@
       <CountDown />
     </div>
     <div class="tail">
-      <img src="../assets/img/dragontail.svg" alt="Dragon Tail">
+      <img src="../assets/img/dragontail.svg" alt="Dragon Tail" />
     </div>
 
     <div class="maintekst">
-      <h1 class="deltag text-5xl mb-5 font-bold">Deltag i en magisk oplevelse</h1>
-      <p class="brødtekst raleway-font text-3xl">Er du klar til at leve dig ind i en anden verden, en magisk historie, hvor du
-        er helten, der er på en “quest” for at overvinde de onde magter og redde hele verden? Så gør dig klar
-        til Fantasy Quest Esbjerg.</p>
+      <h1 class="deltag text-5xl mb-5 font-bold">
+        Deltag i en magisk oplevelse
+      </h1>
+      <p class="brødtekst raleway-font text-3xl">
+        Er du klar til at leve dig ind i en anden verden, en magisk historie,
+        hvor du er helten, der er på en “quest” for at overvinde de onde magter
+        og redde hele verden? Så gør dig klar til Fantasy Quest Esbjerg.
+      </p>
     </div>
     <div class="container-card">
       <div v-for="dayQuest in dayQuests" :key="dayQuest.id" class="day-card">
         <div class="portfolio-item">
           <div class="day-info">
             <h2 class="titletext">{{ dayQuest.title }}</h2>
-            <img class="fillerimage bg-auto" :src="dayQuest.image" alt="">
-            <p class="description raleway-font text-2xl">{{ dayQuest.description }}</p>
+            <img class="fillerimage bg-auto" :src="dayQuest.image" alt="" />
+            <p class="description raleway-font text-2xl">
+              {{ dayQuest.description }}
+            </p>
 
-              <a href="/familie">
-                <img class="buttonimage-day" :src="dayQuest.image2" alt="">
-              </a>
+            <a href="/familie">
+              <img class="buttonimage-day" :src="dayQuest.image2" alt="" />
+            </a>
 
             <div class="booking">
               <div class="booknuknap-dag">
-                <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
-                  <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="">
+                <a
+                  href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
+                  target="_blank"
+                >
+                  <img
+                    class="ylwbutton"
+                    src="../assets/img/yellow buttentext.png"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div v-for="questItem in questItems" :key="questItem.id" class="night-card">
+      <div
+        v-for="questItem in questItems"
+        :key="questItem.id"
+        class="night-card"
+      >
         <div class="portfolio-item">
           <div class="night-info">
             <h2 class="titletext">{{ questItem.title }}</h2>
-            <img class="fillerimage bg-auto" :src="questItem.image" alt="">
-            <p class="description raleway-font text-2xl">{{ questItem.description }}</p>
+            <img class="fillerimage bg-auto" :src="questItem.image" alt="" />
+            <p class="description raleway-font text-2xl">
+              {{ questItem.description }}
+            </p>
             <a href="/aften">
-              <img class="buttonimage-night" :src="questItem.image2" alt="">
+              <img class="buttonimage-night" :src="questItem.image2" alt="" />
             </a>
 
-              <div class="booking">
-                <div class="booknuknap-night">
-                  <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
-                    <img class="ylwbutton2" src="../assets/img/yellow buttentext.png" alt="">
-                  </a>
-                </div>
+            <div class="booking">
+              <div class="booknuknap-night">
+                <a
+                  href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
+                  target="_blank"
+                >
+                  <img
+                    class="ylwbutton2"
+                    src="../assets/img/yellow buttentext.png"
+                    alt=""
+                  />
+                </a>
               </div>
+            </div>
           </div>
         </div>
       </div>
@@ -77,60 +102,108 @@
       </div>
     </div> -->
 
-
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
     <div class="video-container relative pb-[300px]">
-      <FrontVideo /> 
+      <FrontVideo />
     </div>
-
 
     <!-- Slider -->
     <div class="presscarousel">
-      <div data-hs-carousel='{
+      <div
+        data-hs-carousel='{
       "loadingClasses": "opacity-0",
       "isAutoPlay": true,
       "autoPlayInterval": 6000
-    }' class="carouselbody relative h-screen">
-        <div class="hs-carousel relative overflow-hidden w-full h-full rounded-lg">
-          <div class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700">
+    }'
+        class="carouselbody relative h-screen"
+      >
+        <div
+          class="hs-carousel relative overflow-hidden w-full h-full rounded-lg"
+        >
+          <div
+            class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700"
+          >
             <div class="hs-carousel-slide flex-shrink-0 h-full">
-              <img class="pressfoto" src="../assets/img/musikanter.png" alt="First slide">
+              <img
+                class="pressfoto"
+                src="../assets/img/musikanter.png"
+                alt="First slide"
+              />
             </div>
             <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-              <img class="pressfoto" src="../assets/img/karaktere.png" alt="Second slide">
+              <img
+                class="pressfoto"
+                src="../assets/img/karaktere.png"
+                alt="Second slide"
+              />
             </div>
             <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
-              <img class="pressfoto" src="../assets/img/market.png" alt="Third slide">
+              <img
+                class="pressfoto"
+                src="../assets/img/market.png"
+                alt="Third slide"
+              />
             </div>
           </div>
         </div>
-  
-        <button type="button"
-          class="hs-carousel-prev absolute inset-y-0 left-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-l-lg">
+
+        <button
+          type="button"
+          class="hs-carousel-prev absolute inset-y-0 left-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-l-lg"
+        >
           <span class="text-2xl" aria-hidden="true">
-            <svg class="slide-arrow w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
+            <svg
+              class="slide-arrow w-9 h-9"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
           </span>
           <span class="sr-only">Previous</span>
         </button>
-        <button type="button"
-          class="hs-carousel-next absolute inset-y-0 right-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-r-lg">
+        <button
+          type="button"
+          class="hs-carousel-next absolute inset-y-0 right-0 flex justify-center items-center w-[64px] h-full text-white bg-gray-800 hover:bg-gray-600 rounded-r-lg"
+        >
           <span class="sr-only">Next</span>
           <span class="text-2xl" aria-hidden="true">
-            <svg class="slide-arrow w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+            <svg
+              class="slide-arrow w-9 h-9"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </span>
         </button>
-  
-        <div class="hs-carousel-pagination flex justify-center absolute bottom-3 left-0 right-0 space-x-2">
+
+        <div
+          class="hs-carousel-pagination flex justify-center absolute bottom-3 left-0 right-0 space-x-2"
+        >
           <span
-          class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+            class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"
+          ></span>
           <span
-          class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+            class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"
+          ></span>
           <span
-          class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+            class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"
+          ></span>
         </div>
       </div>
     </div>
@@ -140,60 +213,124 @@
     <div id="faq" class="container w-full py-12">
       <div class="accordion-seg w-full">
         <div class="faqtekst">
-        <h2 class="text-3xl align-start font-semibold mb-6 mt-28">Ofte stillede spørgsmål</h2>
+          <h2 class="text-3xl align-start font-semibold mb-6 mt-28">
+            Ofte stillede spørgsmål
+          </h2>
         </div>
         <div class="accordion">
           <div class="accordion-item">
-            <input type="checkbox" id="q1" class="accordion-toggle w-96">
-            <label for="q1" class="accordion-title raleway-font cursor-pointer rounded-lg">Hvordan bestiller jeg billetter?
+            <input type="checkbox" id="q1" class="accordion-toggle w-96" />
+            <label
+              for="q1"
+              class="accordion-title raleway-font cursor-pointer rounded-lg"
+              >Hvordan bestiller jeg billetter?
               <span class="text-2xl" aria-hidden="true">
-                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                <svg
+                  class="arrow w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
-              <p class="answer raleway-font text-bold">Det gør du på <a class="text-bold underline"
+              <p class="answer raleway-font text-bold">
+                Det gør du på
+                <a
+                  class="text-bold underline"
                   href="https://www.universe.com/explore?query=Fantasy%20Quest"
-                  target="_blank">HER!</a></p>
+                  target="_blank"
+                  >HER!</a
+                >
+              </p>
             </div>
           </div>
           <div class="accordion-item">
-            <input type="checkbox" id="q2" class="accordion-toggle">
-            <label for="q2" class="accordion-title raleway-font cursor-pointer rounded-lg">Er der en aldersbegrænsning på Aften Quest?
+            <input type="checkbox" id="q2" class="accordion-toggle" />
+            <label
+              for="q2"
+              class="accordion-title raleway-font cursor-pointer rounded-lg"
+              >Er der en aldersbegrænsning på Aften Quest?
               <span class="text-2xl" aria-hidden="true">
-                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                <svg
+                  class="arrow w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
-              <p class="answer raleway-font text-bold ">Ja, aldersgrænsen er på 16+</p>
+              <p class="answer raleway-font text-bold">
+                Ja, aldersgrænsen er på 16+
+              </p>
             </div>
           </div>
           <div class="accordion-item">
-            <input type="checkbox" id="q3" class="accordion-toggle">
-            <label for="q3" class="accordion-title raleway-font cursor-pointer rounded-lg">Hvor lang tid tager disse to Quests?
+            <input type="checkbox" id="q3" class="accordion-toggle" />
+            <label
+              for="q3"
+              class="accordion-title raleway-font cursor-pointer rounded-lg"
+              >Hvor lang tid tager disse to Quests?
               <span class="text-2xl" aria-hidden="true">
-                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                <svg
+                  class="arrow w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
-              <p class="answer raleway-font text-bold">Vores Quests tager en time og 15 minutter hver!</p>
+              <p class="answer raleway-font text-bold">
+                Vores Quests tager en time og 15 minutter hver!
+              </p>
             </div>
           </div>
           <div class="accordion-item">
-            <input type="checkbox" id="q4" class="accordion-toggle">
-            <label for="q4" class="accordion-title raleway-font cursor-pointer rounded-lg">Kan jeg have min hund med rundt på Quest?
+            <input type="checkbox" id="q4" class="accordion-toggle" />
+            <label
+              for="q4"
+              class="accordion-title raleway-font cursor-pointer rounded-lg"
+              >Kan jeg have min hund med rundt på Quest?
               <span class="text-2xl" aria-hidden="true">
-                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                <svg
+                  class="arrow w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </span>
             </label>
@@ -202,12 +339,25 @@
             </div>
           </div>
           <div class="accordion-item">
-            <input type="checkbox" id="q5" class="accordion-toggle">
-            <label for="q5" class="accordion-title raleway-font cursor-pointer rounded-lg">Kan jeg have en barnevogn med?
+            <input type="checkbox" id="q5" class="accordion-toggle" />
+            <label
+              for="q5"
+              class="accordion-title raleway-font cursor-pointer rounded-lg"
+              >Kan jeg have en barnevogn med?
               <span class="text-2xl" aria-hidden="true">
-                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                <svg
+                  class="arrow w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </span>
             </label>
@@ -216,12 +366,25 @@
             </div>
           </div>
           <div class="accordion-item">
-            <input type="checkbox" id="q6" class="accordion-toggle">
-            <label for="q6" class="accordion-title raleway-font cursor-pointer rounded-lg">Er disse Quests handicapvenlige?
+            <input type="checkbox" id="q6" class="accordion-toggle" />
+            <label
+              for="q6"
+              class="accordion-title raleway-font cursor-pointer rounded-lg"
+              >Er disse Quests handicapvenlige?
               <span class="text-2xl" aria-hidden="true">
-                <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                <svg
+                  class="arrow w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </span>
             </label>
@@ -232,52 +395,53 @@
         </div>
       </div>
     </div>
-          <img class="arkivaren" src="../assets/img/Arkivaren_web.png" alt="Arkivaren">
+    <img
+      class="arkivaren"
+      src="../assets/img/Arkivaren_web.png"
+      alt="Arkivaren"
+    />
   </body>
 </template>
 <script>
-import CountDown from '../components/CountDown.vue';
-import FrontVideo from '../components/FrontVideo.vue';
+import CountDown from "../components/CountDown.vue";
+import FrontVideo from "../components/FrontVideo.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    CountDown, 
-    FrontVideo
-  }
+    CountDown,
+    FrontVideo,
+  },
 };
 </script>
 
-
 <script setup>
-import getQuestsItems from '@/modules/getQuest.js';
-import getDayQuest from '@/modules/getDayQuest.js';
-
+import getQuestsItems from "@/modules/getQuest.js";
+import getDayQuest from "@/modules/getDayQuest.js";
 
 // Get questItems from the imported function
 const { questItems } = getQuestsItems();
 const { dayQuests } = getDayQuest();
 
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const carouselElement = document.querySelector('[data-hs-carousel]');
-  const slides = carouselElement.querySelectorAll('.hs-carousel-slide');
-  const prevButton = carouselElement.querySelector('.hs-carousel-prev');
-  const nextButton = carouselElement.querySelector('.hs-carousel-next');
-  const paginationDots = carouselElement.querySelectorAll('.hs-carousel-pagination span');
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselElement = document.querySelector("[data-hs-carousel]");
+  const slides = carouselElement.querySelectorAll(".hs-carousel-slide");
+  const prevButton = carouselElement.querySelector(".hs-carousel-prev");
+  const nextButton = carouselElement.querySelector(".hs-carousel-next");
+  const paginationDots = carouselElement.querySelectorAll(
+    ".hs-carousel-pagination span"
+  );
   const autoPlay = JSON.parse(carouselElement.dataset.hsCarousel).isAutoPlay;
-  const autoPlayInterval = JSON.parse(carouselElement.dataset.hsCarousel).autoPlayInterval || 6000;
+  const autoPlayInterval =
+    JSON.parse(carouselElement.dataset.hsCarousel).autoPlayInterval || 6000;
   let currentIndex = 0;
   let interval;
-  
 
   function updateCarousel() {
-    const carouselBody = carouselElement.querySelector('.hs-carousel-body');
+    const carouselBody = carouselElement.querySelector(".hs-carousel-body");
     carouselBody.style.transform = `translateX(-${currentIndex * 100}%)`;
 
     paginationDots.forEach((dot, index) => {
-      dot.classList.toggle('hs-carousel-active', index === currentIndex);
+      dot.classList.toggle("hs-carousel-active", index === currentIndex);
     });
   }
 
@@ -286,19 +450,18 @@ document.addEventListener('DOMContentLoaded', function () {
     updateCarousel();
   }
 
-
-  prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+  prevButton.addEventListener("click", () => {
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : slides.length - 1;
     updateCarousel();
   });
 
-  nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+  nextButton.addEventListener("click", () => {
+    currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
     updateCarousel();
   });
 
   paginationDots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
+    dot.addEventListener("click", () => {
       goToSlide(index);
     });
   });
@@ -308,8 +471,10 @@ document.addEventListener('DOMContentLoaded', function () {
       nextButton.click();
     }, autoPlayInterval);
 
-    carouselElement.addEventListener('mouseenter', () => clearInterval(interval));
-    carouselElement.addEventListener('mouseleave', () => {
+    carouselElement.addEventListener("mouseenter", () =>
+      clearInterval(interval)
+    );
+    carouselElement.addEventListener("mouseleave", () => {
       interval = setInterval(() => {
         nextButton.click();
       }, autoPlayInterval);
@@ -318,11 +483,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   updateCarousel();
 });
-
 </script>
 
 <style lang="scss" scoped>
-
 .faqtekst {
   display: flex;
   justify-content: center;
@@ -330,21 +493,22 @@ document.addEventListener('DOMContentLoaded', function () {
   padding-right: 20%;
 }
 
-a:hover .buttonimage-day, a:hover .buttonimage-night{
-transform: scale(1.05);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+a:hover .buttonimage-day,
+a:hover .buttonimage-night {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-a:hover .ylwbutton{
-transform: scale(1.05);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+a:hover .ylwbutton {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-a:hover .ylwbutton2{
-transform: scale(1.05);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+a:hover .ylwbutton2 {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.city-text{
+.city-text {
   margin-top: 1%;
 }
 
@@ -361,7 +525,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.answer{
+.answer {
   color: #083a35;
   font-weight: bold;
 }
@@ -385,17 +549,17 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: none;
 }
 
-.arrow{
+.arrow {
   display: inline-block;
   transition: transform 0.3s;
   margin-top: 1%;
 }
 
-.accordion{
+.accordion {
   width: 45%;
 }
 
-.accordion-seg{
+.accordion-seg {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -403,14 +567,14 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 5%;
 }
 
-.accordion-seg h2{
+.accordion-seg h2 {
   // font-size: 2.5rem;
   display: flex;
   justify-content: center;
   width: 75%;
 }
 
-.accordion-toggle:checked + .accordion-title .arrow{
+.accordion-toggle:checked + .accordion-title .arrow {
   transform: rotate(90deg);
 }
 
@@ -423,13 +587,13 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 9999;
 }
 
-.presscarousel{
+.presscarousel {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.carouselbody{
+.carouselbody {
   width: 80%;
   pointer-events: none;
 }
@@ -448,22 +612,23 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   justify-content: center;
 }
 
-.hs-carousel-prev, .hs-carousel-next{
+.hs-carousel-prev,
+.hs-carousel-next {
   background-color: #083a35;
   transition: 0.5s ease;
   // width: 100%;
   // height: 100%;
 }
 
-.hs-carousel-prev:hover, .hs-carousel-next:hover{
-  background-color: #355C55;
+.hs-carousel-prev:hover,
+.hs-carousel-next:hover {
+  background-color: #355c55;
 }
 
 .pressfoto {
   object-fit: contain;
   width: 100%;
   height: 100%;
-
 }
 
 .hs-carousel-pagination span {
@@ -490,13 +655,13 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 
 .titletext {
-  color: #EDE6D6;
+  color: #ede6d6;
   padding-top: 35%;
   font-size: 3rem;
 }
 
 .description {
-  color: #EDE6D6;
+  color: #ede6d6;
 }
 
 .readmore {
@@ -506,7 +671,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   text-align: center;
 }
 
-.container{
+.container {
   max-width: 100%;
 }
 
@@ -519,7 +684,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .accordion-item {
   width: 100%;
-  padding-bottom: 5%; 
+  padding-bottom: 5%;
 }
 
 .accordion-toggle {
@@ -529,7 +694,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 .accordion-title {
   display: block;
   padding: 1rem;
-  background-color: #C1BBAD;
+  background-color: #c1bbad;
   border-bottom: 1px solid #e5e7eb;
   cursor: pointer;
   width: 100%;
@@ -544,11 +709,11 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   border-bottom: 1px solid #e5e7eb;
 }
 
-.accordion-toggle:checked+.accordion-title {
+.accordion-toggle:checked + .accordion-title {
   background-color: #b3ada0;
 }
 
-.accordion-toggle:checked+.accordion-title+.accordion-content {
+.accordion-toggle:checked + .accordion-title + .accordion-content {
   display: block;
   background-color: #dfd8c7;
 }
@@ -567,15 +732,13 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   margin-bottom: 30%;
 }
 
-
-
 .booknuknap-dag {
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: center, space-between;
   position: relative;
-  scale: .70;
+  scale: 0.7;
   // top: 45%;
 }
 
@@ -585,7 +748,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   align-items: center;
   justify-content: center, space-between;
   position: relative;
-  scale: .70;
+  scale: 0.7;
   top: 5%;
 }
 
@@ -622,7 +785,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   margin-bottom: 1rem;
 }
 
-.day-info a{
+.day-info a {
   position: relative;
   display: flex;
   justify-content: center;
@@ -635,7 +798,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   position: relative;
   width: 65%;
   height: auto;
-  scale: 0.80;
+  scale: 0.8;
   margin-bottom: 1rem;
   top: 9%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -645,13 +808,12 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   position: relative;
   width: 65%;
   height: auto;
-  scale: 0.80;
+  scale: 0.8;
   margin-bottom: 1rem;
   // top: 9%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
-.night-info a{
+.night-info a {
   position: relative;
   display: flex;
   justify-content: center;
@@ -672,13 +834,13 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   justify-content: space-evenly;
 }
 
-.day-card{
+.day-card {
   max-width: 550px;
   height: 1150px;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
-  background-color: #355C55;
+  background-color: #355c55;
   background-image: url("../assets/img/rammesol.svg");
   background-position: center;
   background-size: 550px 1100px;
@@ -693,7 +855,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
-  background-color: #355C55;
+  background-color: #355c55;
   background-image: url("../assets/img/rammemoon.svg");
   background-position: center;
   // background-size: cover;
@@ -752,7 +914,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   text-align: center;
   margin-top: 15%;
   z-index: 3;
-  color: #FECD08;
+  color: #fecd08;
   text-shadow: #083a36 5px 5px 8px;
 }
 
@@ -760,7 +922,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   position: relative;
   text-align: center;
   z-index: 3;
-  color: #FECD08;
+  color: #fecd08;
   text-shadow: #083a36 5px 5px 8px;
 }
 .maintekst {
@@ -797,17 +959,18 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .arkivaren {
     display: none;
   }
-  .hs-carousel-next, .hs-carousel-prev {
+  .hs-carousel-next,
+  .hs-carousel-prev {
     display: none;
-  } 
+  }
 }
 
-@media (max-width: 1440px){
-  .deltag{
+@media (max-width: 1440px) {
+  .deltag {
     width: 63.5%;
   }
 
-  .brødtekst{
+  .brødtekst {
     width: 63.5%;
   }
 
@@ -818,112 +981,113 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     gap: 10%;
   }
 
-  .day-card{
+  .day-card {
     height: 1050px;
     width: 500px;
     background-size: 500px 1000px;
   }
 
-  .day-card h2{
+  .day-card h2 {
     font-size: 2.3rem;
     padding-top: 30%;
   }
 
-  .day-card p{
+  .day-card p {
     font-size: 22px;
   }
 
-  .fillerimage{
+  .fillerimage {
     width: 65%;
   }
 
-  .description{
+  .description {
     width: 65%;
     font-size: 22px;
   }
 
-  .buttonimage-day{
+  .buttonimage-day {
     scale: 0.65;
     top: 0;
   }
 
-  .day-info a{
+  .day-info a {
     top: 1%;
   }
 
-  .booknuknap-dag, .booknuknap-night {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  // justify-content: center, space-between;
-  position: relative;
-  scale: .5;
-  top: -45%;
-}
+  .booknuknap-dag,
+  .booknuknap-night {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    // justify-content: center, space-between;
+    position: relative;
+    scale: 0.5;
+    top: -45%;
+  }
 
-.ylwbutton{
-  padding: 0;
-}
+  .ylwbutton {
+    padding: 0;
+  }
 
-.deltag{
+  .deltag {
     width: 63.5%;
   }
 
-// Night card
-  .brødtekst{
+  // Night card
+  .brødtekst {
     width: 63.5%;
   }
 
-  .night-card{
+  .night-card {
     height: 1050px;
     width: 500px;
     background-size: 500px 1000px;
     margin-bottom: 20%;
   }
 
-  .night-card h2{
+  .night-card h2 {
     font-size: 2.3rem;
     padding-top: 30%;
   }
 
-  .night-card p{
+  .night-card p {
     font-size: 22px;
   }
 
-  .fillerimage{
+  .fillerimage {
     width: 65%;
   }
 
-  .description{
+  .description {
     width: 65%;
     font-size: 22px;
   }
 
-  .buttonimage-night{
+  .buttonimage-night {
     scale: 0.65;
   }
 
-  .night-info a{
+  .night-info a {
     top: 9%;
   }
 
-  .booknuknap-dag, .booknuknap-night {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  // justify-content: center, space-between;
-  position: relative;
-  scale: .5;
-  top: -40%;
-}
+  .booknuknap-dag,
+  .booknuknap-night {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    // justify-content: center, space-between;
+    position: relative;
+    scale: 0.5;
+    top: -40%;
+  }
 
-
-.ylwbutton2{
-  padding: 0;
-  bottom: 0;
-  top: 40%;
-  scale: 1;
-}
+  .ylwbutton2 {
+    padding: 0;
+    bottom: 0;
+    top: 40%;
+    scale: 1;
+  }
 
   .pressfoto {
     height: 80%;
@@ -975,10 +1139,9 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     justify-content: center;
     align-items: center;
   }
-.pressfoto {
-  height: 80%;
-}
-
+  .pressfoto {
+    height: 80%;
+  }
 
   .video-container {
     padding-bottom: 50%;
@@ -994,7 +1157,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .dragonhand2 {
     display: none;
   }
-
 
   .arkivaren {
     display: none;
@@ -1023,7 +1185,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     // height: 1200px;
   }
 
-  .brødtekst{
+  .brødtekst {
     width: 89.5%;
   }
 
@@ -1058,7 +1220,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     // top: 38%;
   }
 
-  .hs-carousel-pagination{
+  .hs-carousel-pagination {
     display: none;
   }
   .carouselbody {
@@ -1066,15 +1228,13 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
 }
 
-
 @media (max-width: 768px) {
   .container-card {
     flex-direction: column;
     justify-content: center;
   }
 
-
-  .fillerimage{
+  .fillerimage {
     width: 55%;
     height: 100%;
   }
@@ -1092,14 +1252,14 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     height: 0;
   }
 
-  .ylwbutton { 
+  .ylwbutton {
     position: relative;
     bottom: 70%;
     height: 60%;
     width: 100%;
     scale: 1;
   }
-  .ylwbutton2 { 
+  .ylwbutton2 {
     position: relative;
     bottom: 99%;
     height: 60%;
@@ -1112,7 +1272,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     top: -65%;
     display: flex;
     scale: 0.7;
-    
   }
 
   .buttonimage-day {
@@ -1120,7 +1279,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     top: -35%;
     display: flex;
     scale: 0.7;
-    
   }
   .card {
     margin-bottom: 2rem;
@@ -1137,15 +1295,14 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     justify-content: center;
     text-align: start;
   }
-.maintekst {
+  .maintekst {
     margin-top: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-}
-
+  }
 
   .brødtekst {
     width: 85%;
@@ -1157,7 +1314,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .day-card {
     height: 1100px;
     background-size: 400px 1100px;
-  } 
+  }
 
   .day-card p {
     font-size: 26px;
@@ -1179,39 +1336,38 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     font-size: 2rem;
     // padding-top: 5%
   }
-.titletext {
-  font-size: 2.5rem;
-  padding-top: 22%;
-}
+  .titletext {
+    font-size: 2.5rem;
+    padding-top: 22%;
+  }
 
   .day-card h2 {
     font-size: 2rem;
     // padding-top: 60%
   }
 
-.tail {
+  .tail {
     // top: -9%;
     scale: 1.12;
-}
-.hs-carousel-prev {
-  // width: 50px;
-  // height: 50px;
-  // top: 37.5%;
-  display: none;
-}
-.hs-carousel-next {
-  // width: 50px;
-  // height: 50px;
-  // top: 37.5%;
-  display: none;
-}
-  .accordion-seg h2{
+  }
+  .hs-carousel-prev {
+    // width: 50px;
+    // height: 50px;
+    // top: 37.5%;
+    display: none;
+  }
+  .hs-carousel-next {
+    // width: 50px;
+    // height: 50px;
+    // top: 37.5%;
+    display: none;
+  }
+  .accordion-seg h2 {
     width: 100%;
     max-width: 100%;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
-
   }
   .faqtekst {
     display: flex;
@@ -1222,6 +1378,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     width: 65%;
   }
 }
+
 @media (max-width: 640px) {
   .container-card {
     flex-direction: column;
@@ -1244,8 +1401,8 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     max-width: 65%;
   }
 
-  .ylwbutton2 {
-    bottom: 55%;
+  .booknuknap-night{
+    top: 0;
   }
 
   .buttonimage-night {
@@ -1279,7 +1436,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     width: 20px;
     height: 20px;
   }
-
 }
 
 @media (max-width: 480px) {
@@ -1299,64 +1455,63 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 
 @media (max-width: 360px) {
-.accordion-title {
-  font-size: 0.8rem;
-}
-.accordion-seg h2 { 
-  font-size: 1.5rem;
-  text-align: center;
+  .accordion-title {
+    font-size: 0.8rem;
+  }
+  .accordion-seg h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
-}
+  .deltag {
+    font-size: 2rem;
+    max-width: 95%;
+  }
+  .night-card {
+    height: 900px;
+    background-size: 365px 880px;
+  }
 
-.deltag { 
-  font-size: 2rem;
-max-width: 95%;
-}
-.night-card {
-  height: 900px;
-  background-size: 365px 880px;
-}
+  .day-card {
+    height: 900px;
+    background-size: 365px 880px;
+  }
+  .day-card h2 {
+    font-size: 1.7rem;
+  }
 
-.day-card {
-  height: 900px;
-  background-size: 365px 880px;
-}
-.day-card h2 {
-  font-size: 1.7rem;
-}
+  .day-card p {
+    font-size: 1.2rem;
+    max-width: 85%;
+  }
 
-.day-card p {
-  font-size: 1.2rem;
-  max-width: 85%;
-}
+  .fillerimage {
+    width: 80%;
+    height: 100%;
+  }
+  .ylwbutton {
+    bottom: 75%;
+    scale: 1;
+  }
 
-.fillerimage {
-  width: 80%;
-  height: 100%;
-}
-.ylwbutton{
-  bottom: 75%;
-  scale: 1;
-}
+  .ylwbutton2 {
+    bottom: 75%;
+    scale: 1;
+  }
 
-.ylwbutton2 {
-  bottom: 75%;
-  scale: 1;
-}
+  .night-card h2 {
+    font-size: 1.7rem;
+  }
 
-.night-card h2 {
-  font-size: 1.7rem;
-}
-
-.night-card p {
-  font-size: 1.2rem;
-  max-width: 75%;
-}
-.buttonimage-day {
-  top: -50%;
-}
-.buttonimage-night {
-  top: -50%;
-}
+  .night-card p {
+    font-size: 1.2rem;
+    max-width: 75%;
+  }
+  .buttonimage-day {
+    top: -50%;
+  }
+  .buttonimage-night {
+    top: -50%;
+  }
 }
 </style>

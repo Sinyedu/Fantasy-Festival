@@ -36,7 +36,7 @@ export default {
       });
     },
     toggleVisibility() {
-      this.isVisible = window.scrollY > 500;
+      this.isVisible = window.scrollY > 900;
     },
     bounceAnimation() {
       anime({
