@@ -651,9 +651,13 @@ a {
 
   .questcontainer h1 {
     max-width: 90%;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding-top: 0;
     text-align: start;
+  }
+
+  .infotext {
+    width: 90%;
   }
   .maintext {
     max-width: 90%;
@@ -713,8 +717,8 @@ a {
   }
 
   .headliner2 {
-    font-size: 1.8rem;
-    max-width: 90%;
+    font-size: 2.5rem;
+    max-width: 100%;
     text-align: center;
     padding-top: 60%;
   }
