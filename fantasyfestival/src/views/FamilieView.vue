@@ -293,6 +293,49 @@ a {
   }
 }
 
+@media (max-width: 1280px) {
+.card {  
+  max-width: 100%;
+  width: 50%;
+  height: 70%;
+  margin-top: 5%;
+  padding-top: 0%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../assets/img/familieramme.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 82%;
+}
+
+.card h1 {
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 0%;
+}
+
+
+.card h2 {
+  font-size: 1.3rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 0%;
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+}
+
+
 @media (max-width: 1024px) {
   .herocontainer {
     height: 50vh;
@@ -376,10 +419,11 @@ a {
   .info h1 {
     font-size: 2rem;
     text-align: center;
+    max-width: 100%;
   }
 
   .info h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
   }
   .ages {
@@ -457,12 +501,63 @@ a {
     font-size: 20px;
     margin-top: 1%;
   }
+  
+  .card {
+    // scale: 0.9;
+    max-width: 100%;
+    height: 50%;
+    margin-top: 5%;
+    padding-top: 3%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/img/familieramme.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .info h1 {
+    font-size: 2rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .info h2 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
   .herocontainer {
     height: 40vh;
     background-position: center;
+  }
+  
+  .card {
+    // scale: 0.9;
+    max-width: 100%;
+    height: 80%;
+    width: 70%;
+    margin-top: 5%;
+    padding-top: 3%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/img/familieramme.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .info h1 {
+    font-size: 2rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .info h2 {
+    font-size: 1.3rem;
+    text-align: center;
   }
 }
 
@@ -484,7 +579,20 @@ a {
     max-width: 100%;
     font-size: 120%;
   }
-
+  .card {
+    // scale: 0.9;
+    max-width: 100%;
+    height: 80%;
+    width: 50%;
+    margin-top: 5%;
+    padding-top: 3%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/img/familieramme.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
   .container-card {
     width: 120%;
   }
@@ -598,9 +706,9 @@ a {
   }
 
   .headliner2 {
+    font-size: 1.8rem;
     max-width: 90%;
-    margin-top: 5%;
-    padding-bottom: 5%;
+    text-align: center;
   }
 
   .lorecontainer p {

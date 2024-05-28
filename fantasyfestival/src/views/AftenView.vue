@@ -191,7 +191,8 @@ font-size: 25px;
   width: 55%;
   height: 100%;
   margin-top: 5%;
-  padding-top: 3%;
+  // padding-top: 3%;
+  padding-bottom: 5%;
   align-items: center; 
   justify-content: center;
   background-image: url("../assets/img/aftenramme.png");
@@ -201,17 +202,17 @@ font-size: 25px;
 }
 
 .card h1 {
-  font-size: 33px;
-  text-align: left;
-  padding-left: 15%;
+  font-size: 3rem;
+  text-align: center;
+  // padding-left: 15%;
   color: var(--text-colour-dark);
 }
 
 .card h2 {
   padding-left: 15%;
-  margin-top: 1.9rem;
+  margin-top: 1rem;
   max-width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   color: var(--text-colour-dark);
 }
 
@@ -255,6 +256,24 @@ a{
   }
 }
 
+@media (max-width: 1090px) {
+.card h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding-left: 0%;
+  max-width: 100%;
+}
+
+.card h2 {
+  padding-left: 0%;
+  margin-top: 1.6rem;
+  max-width: 100%;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+}
+
 
 @media (max-width: 1024px) {
   .herocontainer {
@@ -290,7 +309,7 @@ a{
     flex-direction: column;
   }
   .lorecontainer {
-    margin-top: 5%;
+    margin-top: -45%;
     // display: flex;
     flex-direction: column;
     justify-content: center;
@@ -562,6 +581,7 @@ a{
 
   .headliner {
     font-size: 2.5rem;
+    text-align: center;
   }
 }
 
