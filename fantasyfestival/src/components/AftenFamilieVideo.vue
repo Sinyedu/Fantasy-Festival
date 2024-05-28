@@ -96,14 +96,13 @@ export default {
   justify-content: center;
   height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 .top-half{
   position: absolute;
   width: 50%;
   height: auto;
-  top: 10%;
-  left: 50%;
+  top: -36.5%;
+  left: 80%;
   transform: translateX(-50%);
   z-index: 1;
 }
@@ -117,8 +116,8 @@ export default {
   position: absolute;
   width: 50%;
   height: auto;
-  bottom: 10%;
-  left: 50%;
+  bottom: -22.6%;
+  left: 70%;
   transform: translateX(-50%);
   z-index: 1;
   pointer-events: none;
