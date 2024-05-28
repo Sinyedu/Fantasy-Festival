@@ -714,6 +714,7 @@ a {
     font-size: 1.8rem;
     max-width: 90%;
     text-align: center;
+    padding-top: 60%;
   }
 
   .lorecontainer p {

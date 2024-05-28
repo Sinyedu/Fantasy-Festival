@@ -501,7 +501,7 @@ a{
 
   .card {
     width: 115%;
-    height: 70%;
+    height: 100%;
     margin-top: 5%;
     padding-top: 3%;
     align-items: center; 
@@ -532,6 +532,10 @@ a{
     margin-top: 15%;
   }
   
+  .infotext {
+    margin-top: 0%;
+    width: 80%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -585,6 +589,34 @@ a{
     height: 30vh;
     background-position: center;
   }
+
+  .hands {
+    scale: 0.5;
+    gap: 50%;
+  }
+
+  .centertext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  .headliner {
+    font-size: 2.5rem;
+    margin-top: 18%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .questcontainer h1 {
+    max-width: 90%;
+    font-size: 1.5rem;
+  }
+  .maintext {
+    max-width: 90%;
+  }
+
   .ylwbutton {
     width: 100%;
     height: 100%;
@@ -592,9 +624,61 @@ a{
     padding-bottom: 25%;
   }
 
-  .headliner {
-    font-size: 2.5rem;
+  .questcontainer {
+    // margin-top: 35%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 0%;
+    padding: 0;
+    margin: 0%;
+  }
+
+  .container-card {
+    width: 80%;
+    // height: 100%;
+    margin-top: 5%;
+    padding-top: 3%;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    // scale: 0.9;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    padding-top: 3%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/img/aftenramme.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .card h2 {
+    max-width: 100%;
+  }
+  .info h1 {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+
+  .info h2 {
+    font-size: 1.2rem;
     text-align: center;
+    padding: 0;
+    margin-bottom: 5%;
+  }
+
+  .headliner2 {
+    font-size: 1.8rem;
+    max-width: 90%;
+    text-align: center;
+    padding-top: 60%;
+  }
+
+  .lorecontainer p {
+    max-width: 90%;
   }
 }
 
