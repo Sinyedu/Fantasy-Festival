@@ -974,18 +974,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     display: none;
   }
 
-  .hs-carousel-next {
-    // height: 50px;
-    // width: 50px;
-    // top: 38%;
-  }
-
-  .hs-carousel-prev {
-    // height: 50px;
-    // width: 50px;
-    // top: 38%;
-  }
-
   .hs-carousel-pagination {
     display: none;
   }
@@ -1032,19 +1020,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .arkivaren {
     display: none;
   }
-
-  .hs-carousel-next {
-    // height: 50px;
-    // width: 50px;
-    // top: 38%;
-  }
-
-  .hs-carousel-prev {
-    // height: 50px;
-    // width: 50px;
-    // top: 38%;
-  }
-
   .hs-carousel-pagination {
     display: none;
   }
@@ -1082,17 +1057,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
     width: 60%;
   }
 
-  .hs-carousel-prev {
-    // width: 50px;
-    // height: 50px;
-    // top: 38%;
-  }
-
-  .hs-carousel-next {
-    // width: 50px;
-    // height: 50px;
-    // top: 38%;
-  }
 
   .hs-carousel-pagination {
     display: none;

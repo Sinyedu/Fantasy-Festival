@@ -276,7 +276,7 @@ a {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 12%;
+  margin-bottom: 5%;
 }
 
 .goblin {
@@ -443,7 +443,7 @@ a {
     flex-direction: column;
   }
   .lorecontainer {
-    margin-top: 5%;
+    margin-top: -35%;
     // display: flex;
     flex-direction: column;
     justify-content: center;
@@ -472,6 +472,7 @@ a {
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    padding-bottom: 10%;
   }
 
   .card h1 {
@@ -485,10 +486,10 @@ a {
   }
 
   .container-card {
-    width: 80%;
+    width: 120%;
   }
   .ylwbutton {
-    scale: 2.3;
+    scale: 2;
     padding-bottom: 30%;
   }
 
@@ -497,7 +498,7 @@ a {
   }
 
   .questcontainer h1 {
-    max-width: 80%;
+    max-width: 100%;
     font-size: 1.5rem;
   }
 
@@ -529,15 +530,15 @@ a {
     height: 100%;
   }
   .headliner {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 5%;
-    max-width: 70%;
+    max-width: 100%;
     padding: 0;
   }
 
   .questcontainer h1 {
     max-width: 90%;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
   .maintext {
     max-width: 90%;
@@ -585,12 +586,12 @@ a {
     max-width: 100%;
   }
   .info h1 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     max-width: 100%;
   }
 
   .info h2 {
-    font-size: 21px;
+    font-size: 1.2rem;
     text-align: center;
     padding: 0;
     margin-bottom: 5%;
@@ -604,6 +605,12 @@ a {
 
   .lorecontainer p {
     max-width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .hands {
+    display: none;
   }
 }
 </style>

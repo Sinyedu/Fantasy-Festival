@@ -95,6 +95,7 @@ body{
 
 .info {
   color: #EDE6D6;
+  padding-top: 7.5%;
 }
 
 .maintext {
@@ -149,7 +150,7 @@ font-size: 25px;
   margin-top: 45%;
   z-index: 100;
   scale: 0.6;
-  gap: 80%;
+  gap: 77%;
   pointer-events: none;
 }
 
@@ -208,9 +209,9 @@ font-size: 25px;
 
 .card h2 {
   padding-left: 15%;
-  margin-top: 1rem;
+  margin-top: 1.9rem;
   max-width: 100%;
-  font-size: 25px;
+  font-size: 1.2rem;
   color: var(--text-colour-dark);
 }
 
@@ -219,7 +220,6 @@ font-size: 25px;
   height: 100%;
   scale: 1.4;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding-top: 10%;
 }
 
 a:hover .ylwbutton{
@@ -265,7 +265,7 @@ a{
     scale: 0.5;
   }
   .hands {
-   gap: 50%;
+   gap: 60%;
   }
 .infotext {
     margin-top: 15%;
@@ -311,6 +311,7 @@ a{
     height: 0%;
     padding: 0;
     margin: 0%;
+    
   }
 
   .questcontainer h1 {
@@ -318,35 +319,46 @@ a{
     max-width: 100%;
   }
 
+  .container-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    z-index: 3;
+  }
+
   .card {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     margin-top: 5%;
     padding-top: 3%;
     align-items: center; 
     justify-content: center;
-    background-image: url("../assets/img/familieramme.png");
+    background-image: url("../assets/img/aftenramme.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .card h1 {
-    font-size: 33px;
-    text-align: left;
-    padding-left: 15%;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-left: 0%;
+    max-width: 100%;
   }
 
   .card h2 {
-    padding-left: 15%;
-    margin-top: 1rem;
+    padding-left: 0%;
+    margin-top: 1.6rem;
     max-width: 100%;
-    font-size: 25px;
+    font-size: 1.4rem;
+    text-align: center;
   }
 
   .maintext {
     font-size: 20px;
-    max-width: 100%;
+    max-width: 80%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -366,11 +378,6 @@ a{
     height: 100%;
     scale: 1.4;
   }
-
-  .headliner{
-    margin-top: 5%;
-  }
-
   .headliner2 {
   //  padding-top: 25%;
    justify-content: center;
@@ -435,12 +442,109 @@ a{
     font-size: 20px;
   
   }
+  .card h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-left: 0%;
+    max-width: 100%;
+  }
+
+  .card h2 {
+    padding-left: 0%;
+    margin-top: 1.2rem;
+    max-width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
   .herocontainer {
     height: 40vh;
     background-position: center;
+  }
+  .container-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    z-index: 3;
+  }
+
+  .card {
+    width: 115%;
+    height: 70%;
+    margin-top: 5%;
+    padding-top: 3%;
+    align-items: center; 
+    justify-content: center;
+    background-image: url("../assets/img/aftenramme.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .card h1 {
+    font-size: 33px;
+    text-align: center;
+    padding-left: 0%;
+    max-width: 100%;
+  }
+
+  .card h2 {
+    padding-left: 0%;
+    margin-top: 1.3rem;
+    max-width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .container-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    z-index: 3;
+  }
+
+  .card {
+    width: 115%;
+    height: 80%;
+    margin-top: 5%;
+    padding-top: 3%;
+    align-items: center; 
+    justify-content: center;
+    background-image: url("../assets/img/aftenramme.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .card h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 0%;
+    max-width: 100%;
+  }
+
+  .card h2 {
+    padding-left: 0%;
+    margin-top: 1.6rem;
+    max-width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .ylwbutton {
+    width: 100%;
+    height: 100%;
+    scale: 3;
+    padding-bottom: 25%;
   }
 }
 
@@ -456,29 +560,27 @@ a{
     padding-bottom: 25%;
   }
 
-  .questcontainer {
-    // margin-top: 35%;
+  .headliner {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hands {
+    display: none;
+  }
+  .container-card {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 0%;
-    padding: 0;
-    margin: 0%;
+    margin-top: 3%;
+    z-index: 3;
   }
 
-
-  .container-card{
-    width: 80%;
-    // height: 100%;
-    margin-top: 5%;
-    padding-top: 3%;
-    align-items: center; 
-    justify-content: center;
-  }
-
-  .card{
-    width: 100%;
-    height: 100%;
+  .card {
+    width: 115%;
+    height: 80%;
     margin-top: 5%;
     padding-top: 3%;
     align-items: center; 
@@ -486,21 +588,30 @@ a{
     background-image: url("../assets/img/aftenramme.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100% 80%;
+    background-size: 100% 100%;
   }
 
-  .info h1 {
-    font-size: 32px;
+  .card h1 {
+    font-size: 1.3rem;
     text-align: center;
-    padding: 0;
-}
-
-  .info h2 {
-    font-size: 22px;
-    text-align: center;
-    padding: 0;
+    padding-left: 0%;
+    max-width: 100%;
   }
-  
+
+  .card h2 {
+    padding-left: 0%;
+    margin-top: 1.6rem;
+    max-width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .ylwbutton {
+    width: 100%;
+    height: 100%;
+    scale: 3;
+    padding-bottom: 25%;
+  }
 }
 
 </style>

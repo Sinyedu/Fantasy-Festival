@@ -90,14 +90,14 @@ export default {
   height: 200vh;
   position: relative;
 }
-
+/* 
 .tail-container {
   display: flex;
   justify-content: center;
   width: 100%;
   overflow: hidden;
   position: relative;
-}
+} */
 
 .top-half {
   position: relative;
