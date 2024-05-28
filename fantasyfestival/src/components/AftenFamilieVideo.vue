@@ -88,24 +88,21 @@ export default {
   animation-timing-function: ease;
 }
 
-.video-holder{
+.video-holder {
   display: flex;
-  width: 100%;
-  height: 100vh;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  height: 100vh;
   position: relative;
-  margin-top: 25%;
-  margin-bottom: 20%;
-  z-index: 0;
 }
-
 .top-half{
   position: absolute;
   display: flex;
   width: 100%;
   height: 100%;
   left: 27%;
-  top: -75%;
+  top: -65.7%;
   scale: 0.50;
   z-index: 2;
 }
@@ -120,7 +117,7 @@ export default {
   position: absolute;
   width: 50%;
   height: auto;
-  bottom: 23.9%;
+  bottom: 14.7%;
   left: 45%;
   transform: translateY(50%);
   z-index: 1;
