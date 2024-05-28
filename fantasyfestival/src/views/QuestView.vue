@@ -452,14 +452,12 @@ a:hover .ylwbutton2 {
 
 .carouselbody {
   width: 80%;
-  pointer-events: none;
 }
 
 .hs-carousel-body {
   display: flex;
   width: 100%;
   transition: transform 2s ease-in-out;
-  pointer-events: none;
 }
 
 .hs-carousel-slide {
