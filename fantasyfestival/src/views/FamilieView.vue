@@ -18,7 +18,7 @@
 
     <div class="questcontainer">
       <div class="infotext">
-        <h1 class="headliner2 font-bold text-3xl pb-9">
+        <h1 class="headliner2 font-bold text-3xl">
           Deltag i en eventyrlig oplevelse
         </h1>
         <p class="maintext raleway-font">
@@ -373,7 +373,7 @@ a {
     flex-direction: column;
   }
   .lorecontainer {
-    margin-top: 5%;
+    margin-top: -45%;
     // display: flex;
     flex-direction: column;
     justify-content: center;
@@ -651,7 +651,9 @@ a {
 
   .questcontainer h1 {
     max-width: 90%;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    padding-top: 0;
+    text-align: start;
   }
   .maintext {
     max-width: 90%;
