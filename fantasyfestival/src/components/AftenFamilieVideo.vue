@@ -68,7 +68,8 @@ export default {
 #player {
   position: relative;
   z-index: 2;
-  width: 2000px;
+  width: 100%;
+  height: auto;
 }
 
 
@@ -95,14 +96,15 @@ export default {
   justify-content: center;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 .top-half{
   position: absolute;
   width: 50%;
   height: auto;
-  top: -13.6%;
-  left: 80%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
 }
 
@@ -116,8 +118,8 @@ export default {
   width: 50%;
   height: auto;
   bottom: 10%;
-  left: 70%;
-  transform: translate(-50%, 43.8%);
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
   pointer-events: none;
 }
