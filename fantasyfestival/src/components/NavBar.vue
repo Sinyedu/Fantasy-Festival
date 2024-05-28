@@ -13,89 +13,107 @@
         </div>
     
         <div ref="dropdownMenu" v-show="isOpen" class="dropdown-menu">
-          <router-link to="/">Home</router-link>
-          <router-link to="/familie">Familie Quest</router-link>
-          <router-link to="/aften">Aften Quest</router-link>
+          <router-link @click.native="hideDropdown" to="/">Home</router-link>
+          <router-link @click.native="hideDropdown" to="/familie">Familie Quest</router-link>
+          <router-link @click.native="hideDropdown" to="/aften">Aften Quest</router-link>
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<script setup>
+<script>
 import { ref, computed, watch } from "vue";
 import { useRoute } from "vue-router";
 import anime from 'animejs/lib/anime.es.js';
 import logogreen from '../assets/img/logogreen.png';
 import logogul from '../assets/img/logogul.png';
 
-const isOpen = ref(false);
-const route = useRoute();
-const logoSrc = ref(logogreen);
-const dropdownMenu = ref(null);
-const dropDown = ref('masterdropdown default-dropdown');
-
-const updateLogo = () => {
-  switch (route.path) {
-    case '/':
-      logoSrc.value = logogreen;
-      break;
-    case '/familie':
-      logoSrc.value = logogul;
-      break;
-    case '/aften':
-      logoSrc.value = logogul;
-      break;
-    default:
-      logoSrc.value = logogreen;
-      break;
-  }
-};
-
-watch(route, updateLogo);
-
-const toggleDropdown = () => {
-  isOpen.value = !isOpen.value;
-  const dropdown = dropdownMenu.value;
-
-  if (isOpen.value) {
-    anime({
-      targets: dropdown,
-      height: ['0%', '150px'],
-      width: ['0%', '200px'],
-      duration: 150,
-      easing: 'easeInOutQuad'
+export default {
+  setup() {
+    const route = useRoute();
+    const isOpen = ref(false);
+    const logoSrc = computed(() => {
+      switch (route.path) {
+        case '/':
+          return logogreen;
+        case '/familie':
+          return logogul;
+        case '/aften':
+          return logogul;
+        default:
+          return logogreen;
+      }
     });
-  } else {
-    anime({
-    targets: dropdown,
-    height: ['150px', '0%'],
-    width: ['200px', '0%'], 
-    duration: 150,
-    easing: 'easeInOutQuad',
-    complete: () => {
-      dropdown.style.display = 'none';
+
+    const toggleDropdown = () => {
+      isOpen.value = !isOpen.value;
+      const dropdown = document.querySelector('.dropdown-menu');
+
+      if (isOpen.value) {
+        anime({
+          targets: dropdown,
+          height: ['0%', '150px'],
+          width: ['0%', '200px'],
+          duration: 150,
+          easing: 'easeInOutQuad'
+        });
+      } else {
+        anime({
+          targets: dropdown,
+          height: ['150px', '0%'],
+          width: ['200px', '0%'],
+          duration: 150,
+          easing: 'easeInOutQuad',
+          complete: () => {
+            dropdown.style.display = 'none';
+            isOpen.value = false;
+          }
+        });
+      }
+    };
+
+    const hideDropdown = () => {
       isOpen.value = false;
-    }
+      const dropdown = document.querySelector('.dropdown-menu');
+      anime({
+        targets: dropdown,
+        height: ['150px', '0%'],
+        width: ['200px', '0%'],
+        duration: 150,
+        easing: 'easeInOutQuad',
+        complete: () => {
+          dropdown.style.display = 'none';
+        }
+      });
+    };
+
+    watch(route, () => {
+      isOpen.value = false; // Close the dropdown when the route changes
     });
+    const dropdownIconClass = computed(() => {
+      switch (route.path) {
+        case '/familie':
+          return 'hamburger-icon familie-dropdown-icon';
+        case '/aften':
+          return 'hamburger-icon aften-dropdown-icon';
+        default:
+          return 'hamburger-icon default-dropdown-icon';
+      }
+    });
+
+
+    return {
+      logoSrc,
+      isOpen,
+      toggleDropdown,
+      hideDropdown,
+      dropdownIconClass
+
+    };
   }
-  
 };
-
-
-// Computed property for dropdown icon class
-const dropdownIconClass = computed(() => {
-  switch (route.path) {
-    case '/familie':
-      return 'hamburger-icon famille-dropdown-icon';
-    case '/aften':
-      return 'hamburger-icon aften-dropdown-icon';
-    default:
-      return 'hamburger-icon default-dropdown-icon';
-  }
-});
-
 </script>
+
 
 <style scoped>
 .navbarcomp {
