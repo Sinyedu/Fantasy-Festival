@@ -943,9 +943,10 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
 
   .ylwbutton2 {
+    position: relative;
     padding: 0;
     bottom: 0;
-    top: 40%;
+    top: 55%;
     scale: 1;
   }
 
@@ -1109,12 +1110,12 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
 
   .fillerimage {
-    width: 55%;
+    width: 70%;
     height: 100%;
   }
 
   .night-card p {
-    max-width: 55%;
+    max-width: 70%;
   }
 
   .video-container {
@@ -1129,30 +1130,27 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .ylwbutton {
     position: relative;
-    bottom: 70%;
-    height: 60%;
+    top: 40%;
     width: 100%;
     scale: 1;
   }
 
   .ylwbutton2 {
     position: relative;
-    bottom: 99%;
-    height: 60%;
+    top: 40%;
     width: 100%;
     scale: 1;
   }
 
   .buttonimage-night {
     position: relative;
-    top: -65%;
+    top: -45%;
     display: flex;
     scale: 0.7;
   }
 
   .buttonimage-day {
     position: relative;
-    top: -35%;
     display: flex;
     scale: 0.7;
   }
@@ -1353,7 +1351,12 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   }
 
   .ylwbutton {
-    bottom: 60%;
+    scale: 0.8;
+    top: -55%;
+  }
+
+  .ylwbutton2 {
+    scale: 0.8;
   }
 
   .accordion {
@@ -1403,6 +1406,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 
 @media (max-width: 360px) {
+
   .accordion-title {
     font-size: 0.8rem;
   }
@@ -1433,22 +1437,22 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .day-card p {
     font-size: 1.2rem;
-    max-width: 85%;
+    max-width: 58%;
   }
 
   .fillerimage {
-    width: 80%;
+    width: 58%;
     height: 100%;
   }
 
   .ylwbutton {
-    bottom: 75%;
-    scale: 1;
+    top: -120%;
+    scale: 0.55;
   }
 
   .ylwbutton2 {
-    bottom: 75%;
-    scale: 1;
+   top: -5%;
+    scale: 0.55;
   }
 
   .night-card h2 {
@@ -1457,15 +1461,39 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
   .night-card p {
     font-size: 1.2rem;
-    max-width: 75%;
+    max-width: 58%;
   }
 
   .buttonimage-day {
-    top: -50%;
+    top: -20%;
+    scale: 0.45;
   }
 
   .buttonimage-night {
-    top: -50%;
+    top: -33%;
+    scale: 0.45;
+
   }
+
+  .centertext h1 {
+    font-size: 3.5rem;
+    padding-top: 10%;
+  }
+}
+
+@media (max-width: 270px) {
+.centertext h1 {
+  font-size: 2rem;
+  padding-top: 10%;
+}
+
+.centertext p {
+  font-size: 1.5rem;
+  padding-top: 10%;
+}
+
+
+
+
 }
 </style>

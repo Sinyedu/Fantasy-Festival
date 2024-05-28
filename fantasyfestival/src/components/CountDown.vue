@@ -96,4 +96,28 @@ export default {
 .label2 {
   font-size: 35%;
 }
+
+@media (max-width: 768px) {
+  .countdown-box {
+    font-size: 2.5rem;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .countdown-box {
+    font-size: 2rem;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  .countdown-box {
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+  }
+}
 </style>
