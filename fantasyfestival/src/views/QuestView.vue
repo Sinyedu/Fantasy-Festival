@@ -155,8 +155,8 @@
         <div class="accordion">
           <div class="accordion-item">
             <input type="checkbox" id="q1" class="accordion-toggle w-96" />
-            <label for="q1" class="accordion-title raleway-font cursor-pointer rounded-lg">Hvordan bestiller jeg
-              billetter?
+            <label for="q1" class="accordion-title raleway-font cursor-pointer rounded-lg">Hvor bestiller jeg
+              billetter til disse Quests?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -166,7 +166,7 @@
             </label>
             <div class="accordion-content hidden rounded-lg">
               <p class="answer raleway-font text-bold">
-                Det gør du på
+                Det gør du
                 <a class="text-bold underline" href="https://www.universe.com/explore?query=Fantasy%20Quest"
                   target="_blank">HER!</a>
               </p>
@@ -174,8 +174,7 @@
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q2" class="accordion-toggle" />
-            <label for="q2" class="accordion-title raleway-font cursor-pointer rounded-lg">Er der en aldersbegrænsning
-              på Aften Quest?
+            <label for="q2" class="accordion-title raleway-font cursor-pointer rounded-lg">Er der en aldersbegrænsning?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -185,7 +184,7 @@
             </label>
             <div class="accordion-content hidden rounded-lg">
               <p class="answer raleway-font text-bold">
-                Ja, aldersgrænsen er på 16+
+                På familie questen er der ingen aldersbegrænsning, men på aften questen er der en aldersbegrænsning på som er 16+. Børn der gerne ville deltage i Aften Quest skal være i følgeskab med en voksen.
               </p>
             </div>
           </div>
@@ -202,13 +201,13 @@
             </label>
             <div class="accordion-content hidden rounded-lg">
               <p class="answer raleway-font text-bold">
-                Vores Quests tager en time og 15 minutter hver!
+                Hver vores quests tager en time og 15 minutter hver!
               </p>
             </div>
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q4" class="accordion-toggle" />
-            <label for="q4" class="accordion-title raleway-font cursor-pointer rounded-lg">Kan jeg have min hund med
+            <label for="q4" class="accordion-title raleway-font cursor-pointer rounded-lg">Kan jeg have mit kæledyr med
               rundt på Quest?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -218,13 +217,12 @@
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
-              <p class="answer raleway-font text-bold">Ja, det kan du godt!</p>
+              <p class="answer raleway-font text-bold">Ja, kæledyr er altid velkomne! Så længe du har kontrol over kæledyret, ellers er andre midler af kontrol nødvendigt!</p>
             </div>
           </div>
           <div class="accordion-item">
             <input type="checkbox" id="q5" class="accordion-toggle" />
-            <label for="q5" class="accordion-title raleway-font cursor-pointer rounded-lg">Kan jeg have en barnevogn
-              med?
+            <label for="q5" class="accordion-title raleway-font cursor-pointer rounded-lg">Kan jeg have min børn med?
               <span class="text-2xl" aria-hidden="true">
                 <svg class="arrow w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -233,7 +231,7 @@
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
-              <p class="answer raleway-font text-bold">Ja, det kan du godt!</p>
+              <p class="answer raleway-font text-bold">Børn er altid velkomne til Fantasy Festival og Fantasy Quest!</p>
             </div>
           </div>
           <div class="accordion-item">
@@ -248,7 +246,7 @@
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
-              <p class="answer raleway-font text-bold">Ja, det er de!</p>
+              <p class="answer raleway-font text-bold">Ja, vi prøver vores bedste hvert år at forbedre vores handicapvenlighed! Endelig giv lyd fra jer hvis noget kunne gøres bedre!</p>
             </div>
           </div>
         </div>
