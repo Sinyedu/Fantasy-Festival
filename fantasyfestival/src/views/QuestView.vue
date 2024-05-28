@@ -25,20 +25,18 @@
             <h2 class="titletext">{{ dayQuest.title }}</h2>
             <img class="fillerimage bg-auto" :src="dayQuest.image" alt="">
             <p class="description raleway-font text-2xl">{{ dayQuest.description }}</p>
-            <a href="/familie">
-              <img class="buttonimage-day" :src="dayQuest.image2" alt="">
-            </a>
+
+              <a href="/familie">
+                <img class="buttonimage-day" :src="dayQuest.image2" alt="">
+              </a>
 
             <div class="booking">
-              <div class="buttons">
-                <div class="booknuknap-dag">
-                  <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
-                    <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="">
-                  </a>
-                </div>
+              <div class="booknuknap-dag">
+                <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
+                  <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="">
+                </a>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
@@ -52,16 +50,13 @@
               <img class="buttonimage-night" :src="questItem.image2" alt="">
             </a>
 
-            <div class="booking">
-              <div class="buttons">
+              <div class="booking">
                 <div class="booknuknap-night">
                   <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
                     <img class="ylwbutton2" src="../assets/img/yellow buttentext.png" alt="">
                   </a>
                 </div>
               </div>
-            </div>
-
           </div>
         </div>
       </div>
@@ -332,6 +327,7 @@ document.addEventListener('DOMContentLoaded', function () {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-right: 20%;
 }
 
 a:hover .buttonimage-day, a:hover .buttonimage-night{
@@ -364,8 +360,6 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 0 5% 0 5%;
   height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  bottom: 15%;
-  position: relative;
 }
 .answer{
   color: #083a35;
@@ -454,8 +448,6 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   justify-content: center;
 }
 
-
-
 .hs-carousel-prev, .hs-carousel-next{
   background-color: #083a35;
   transition: 0.5s ease;
@@ -488,7 +480,6 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-color: blue;
 }
 
-
 body {
   background-color: #ede6d6;
   font-family: RomanSD, sans-serif;
@@ -503,7 +494,6 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   padding-top: 35%;
   font-size: 3rem;
 }
-
 
 .description {
   color: #EDE6D6;
@@ -524,7 +514,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   position: absolute;
   scale: 0.2;
   left: 40%;
-  top: 460%;
+  top: 380%;
 }
 
 .accordion-item {
@@ -577,49 +567,27 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   margin-bottom: 30%;
 }
 
-.booking{
-  display: flex;
-  justify-content: space-evenly;
-  // align-items: center;
-  // margin-top: 5%;
-  // bottom: 50%;
-}
 
-.buttons {
-  display: flex;
-  // justify-content: space-evenly;
-  width: 100%;
-  height: auto;
-  // top: 50%;
-}
 
-.booknuknap-dag, .booknuknap-night {
+.booknuknap-dag {
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: center, space-between;
   position: relative;
-  scale: .90;
-  top: 45%;
+  scale: .70;
+  // top: 45%;
 }
 
 .booknuknap-night {
   display: flex;
+  flex: 1;
   align-items: center;
-  justify-content: center;
+  justify-content: center, space-between;
   position: relative;
-  justify-content: space-between;
-  padding-top: 3%;
-  // scale: .60;
-  top: 50%;
+  scale: .70;
+  top: 5%;
 }
-
-
-.booknu2 {
-  width: 25%;
-  padding: 10px;
-}
-
 
 .countdown {
   display: flex;
@@ -660,7 +628,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   justify-content: center;
   width: auto;
   height: 150px;
-  top: 9%;
+  // top: 5%;
 }
 
 .buttonimage-day {
@@ -689,7 +657,7 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   justify-content: center;
   width: auto;
   height: 150px;
-  top: 15%;
+  top: 5%;
 }
 
 .button {
@@ -700,29 +668,28 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 
 .container-card {
   margin-top: 5%;
-  // margin-bottom: 5%;
   display: flex;
   justify-content: space-evenly;
 }
 
 .day-card{
-  max-width: 600px;
-  height: 1450px;
+  max-width: 550px;
+  height: 1150px;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
   background-color: #355C55;
   background-image: url("../assets/img/rammesol.svg");
   background-position: center;
-  background-size: 1050px 1400px;
+  background-size: 550px 1100px;
   background-repeat: no-repeat;
   border-radius: 50px;
   margin-bottom: 20%;
 }
 
 .night-card {
-  max-width: 600px;
-  height: 1450px;
+  max-width: 550px;
+  height: 1150px;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 25px rgba(12, 0, 80, 0.3);
@@ -730,51 +697,43 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   background-image: url("../assets/img/rammemoon.svg");
   background-position: center;
   // background-size: cover;
-  background-size: 1050px 1400px;
+  background-size: 550px 1100px;
   background-repeat: no-repeat;
   border-radius: 50px;
   margin-bottom: 15%;
 }
 
 .fillerimage {
-  width: 75%;
+  width: 65%;
   height: 100%;
   margin: 5% 0 5% 0;
   object-fit: cover;
 }
 
-.readbutton {
-  width: 100%;
-  height: 150px;
-}
-
-.whtbutton {
-  width: 100%;
-  height: auto;
-}
-
 .day-card h2 {
   font-size: 2.5rem;
   text-align: center;
+  padding-top: 30%;
 }
 
 .day-card p {
   margin-top: 5%;
-  max-width: 80%;
-  font-size: 28px;
+  max-width: 65%;
+  font-size: 25px;
   text-align: left;
 }
 
 .night-card h2 {
   font-size: 2.5rem;
+  padding-top: 30%;
   text-align: center;
 }
 
 .night-card p {
   // margin-left: 2%;
   margin-top: 5%;
-  max-width: 80%;
-  font-size: 28px;
+  max-width: 65%;
+  font-size: 25px;
   text-align: left;
 }
 
@@ -831,9 +790,9 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   overflow: hidden;
 }
 
-.pb-\[300px\] {
-  padding-bottom: 30%;
-}
+// .pb-\[300px\] {
+//   padding-bottom: 30%;
+// }
 @media (max-width: 1680px) {
   .arkivaren {
     display: none;
@@ -844,11 +803,128 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
 }
 
 @media (max-width: 1440px){
+  .deltag{
+    width: 63.5%;
+  }
+
+  .brødtekst{
+    width: 63.5%;
+  }
+
   .container-card {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 10%;
   }
+
+  .day-card{
+    height: 1050px;
+    width: 500px;
+    background-size: 500px 1000px;
+  }
+
+  .day-card h2{
+    font-size: 2.3rem;
+    padding-top: 30%;
+  }
+
+  .day-card p{
+    font-size: 22px;
+  }
+
+  .fillerimage{
+    width: 65%;
+  }
+
+  .description{
+    width: 65%;
+    font-size: 22px;
+  }
+
+  .buttonimage-day{
+    scale: 0.65;
+    top: 0;
+  }
+
+  .day-info a{
+    top: 1%;
+  }
+
+  .booknuknap-dag, .booknuknap-night {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  // justify-content: center, space-between;
+  position: relative;
+  scale: .5;
+  top: -45%;
+}
+
+.ylwbutton{
+  padding: 0;
+}
+
+.deltag{
+    width: 63.5%;
+  }
+
+// Night card
+  .brødtekst{
+    width: 63.5%;
+  }
+
+  .night-card{
+    height: 1050px;
+    width: 500px;
+    background-size: 500px 1000px;
+    margin-bottom: 20%;
+  }
+
+  .night-card h2{
+    font-size: 2.3rem;
+    padding-top: 30%;
+  }
+
+  .night-card p{
+    font-size: 22px;
+  }
+
+  .fillerimage{
+    width: 65%;
+  }
+
+  .description{
+    width: 65%;
+    font-size: 22px;
+  }
+
+  .buttonimage-night{
+    scale: 0.65;
+  }
+
+  .night-info a{
+    top: 9%;
+  }
+
+  .booknuknap-dag, .booknuknap-night {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  // justify-content: center, space-between;
+  position: relative;
+  scale: .5;
+  top: -40%;
+}
+
+
+.ylwbutton2{
+  padding: 0;
+  bottom: 0;
+  top: 40%;
+  scale: 1;
+}
+
   .pressfoto {
     height: 80%;
   }
