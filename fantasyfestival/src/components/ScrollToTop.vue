@@ -1,5 +1,5 @@
 <template>
-  <button class="scrollbtn" v-if="isVisible" @click="scrollToTop">
+  <button class="scrollbtn" v-if="isVisible" ref="scrollButton" @click="scrollToTop">
     <span class="text-2xl" aria-hidden="true">
       <svg
         class="arrow w-9 h-9"
@@ -20,6 +20,8 @@
 </template>
 
 <script>
+import anime from 'animejs';
+
 export default {
   data() {
     return {
@@ -34,11 +36,27 @@ export default {
       });
     },
     toggleVisibility() {
-      this.isVisible = window.scrollY > 1000;
+      this.isVisible = window.scrollY > 500;
+    },
+    bounceAnimation() {
+      anime({
+        targets: this.$refs.scrollButton,
+        translateY: [
+          { value: -50 , duration: 300 },
+          { value: 0, duration: 300 }
+        ],
+        loop: true,
+        easing: 'easeInOutQuad'
+      });
     },
   },
   mounted() {
-    window.addEventListener('scroll', this.toggleVisibility);
+    window.addEventListener('scroll', () => {
+      this.toggleVisibility();
+      if (this.isVisible) {
+        this.bounceAnimation();
+      }
+    });
   },
   beforeUnmount() {
     window.removeEventListener('scroll', this.toggleVisibility);
