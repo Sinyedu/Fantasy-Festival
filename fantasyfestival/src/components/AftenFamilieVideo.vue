@@ -95,11 +95,11 @@ export default {
   position: absolute;
   width: 50%;
   height: auto;
-  top: 4.6%;
-  left: 50%;
+  top: 6.9%;
+  left: 52%;
   pointer-events: none;
   z-index: 1;
-  scale: 1.2;
+  scale: 1;
 }
 .bottom-half {
   position: absolute;
