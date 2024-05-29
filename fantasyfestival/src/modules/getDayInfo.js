@@ -9,7 +9,6 @@ const getDayDetails = () => {
       time: 'Kl. 10.00 - 14.30',
       location: 'På Torvet i Esbjerg',
       duration: 'Varighed: 1 time og 15 minutter',
-      ages: 'Anbefales for hele familien',
     },
   ])
 

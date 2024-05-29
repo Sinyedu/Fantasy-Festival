@@ -168,7 +168,8 @@
               <p class="answer raleway-font text-bold">
                 Det gør du
                 <a class="text-bold underline" href="https://www.universe.com/explore?query=Fantasy%20Quest"
-                  target="_blank">HER!</a>
+                  target="_blank">HER</a>
+                  med linket, eller ved at trykke på knappen under hver Quest.
               </p>
             </div>
           </div>
@@ -184,7 +185,7 @@
             </label>
             <div class="accordion-content hidden rounded-lg">
               <p class="answer raleway-font text-bold">
-                På familie questen er der ingen aldersbegrænsning, men på aften questen er der en aldersbegrænsning på som er 16+. Børn der gerne ville deltage i Aften Quest skal være i følgeskab med en voksen.
+                På familie questen er der ingen aldersbegrænsning, men på aften questen er der et aldersforslag på 7+ som er i medfølge med enten forældre eller anden voksen.
               </p>
             </div>
           </div>
@@ -201,7 +202,7 @@
             </label>
             <div class="accordion-content hidden rounded-lg">
               <p class="answer raleway-font text-bold">
-                Hver vores quests tager en time og 15 minutter hver!
+                Hver quest tager cirka en time og 15 minutter, alt efter hvor hurtig din gruppe er.
               </p>
             </div>
           </div>
@@ -217,7 +218,7 @@
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
-              <p class="answer raleway-font text-bold">Ja, kæledyr er altid velkomne! Så længe du har kontrol over kæledyret, ellers er andre midler af kontrol nødvendigt!</p>
+              <p class="answer raleway-font text-bold">Ja, kæledyr er altid velkomne. Siden questen foregår udendørs, er der massere af plads til jeres kæledyr.</p>
             </div>
           </div>
           <div class="accordion-item">
@@ -231,7 +232,7 @@
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
-              <p class="answer raleway-font text-bold">Børn er altid velkomne til Fantasy Festival og Fantasy Quest!</p>
+              <p class="answer raleway-font text-bold">Børn er altid velkomne til Fantasy Festival og Fantasy Quest. Vi har massere af forskellige ting og sjove karaktere til børnene.</p>
             </div>
           </div>
           <div class="accordion-item">
@@ -246,7 +247,7 @@
               </span>
             </label>
             <div class="accordion-content hidden rounded-lg">
-              <p class="answer raleway-font text-bold">Ja, vi prøver vores bedste hvert år at forbedre vores handicapvenlighed! Endelig giv lyd fra jer hvis noget kunne gøres bedre!</p>
+              <p class="answer raleway-font text-bold">Ja, vi prøver vores bedste hvert år at forbedre vores handicapvenlighed. For Fantasy Festivalen selv som foregår på Hovedbiblioteket, er der massere af remedier til at hjælpe jer i kørestole og andet.</p>
             </div>
           </div>
         </div>
@@ -258,6 +259,7 @@
 <script>
 import CountDown from "../components/CountDown.vue";
 import FrontVideo from "../components/FrontVideo.vue";
+
 export default {
   name: "App",
   components: {
@@ -336,6 +338,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateCarousel();
 });
+
+
 </script>
 
 <style lang="scss" scoped>
@@ -407,7 +411,6 @@ a:hover .ylwbutton2 {
 .arrow {
   display: inline-block;
   transition: transform 0.3s;
-  margin-top: 1%;
 }
 
 .accordion {
@@ -494,8 +497,8 @@ a:hover .ylwbutton2 {
 }
 
 .hs-carousel-pagination .hs-carousel-active {
-  background-color: blue;
-  border-color: blue;
+  background-color: #6F9131;
+  border-color: #6F9131;
 }
 
 body {
@@ -818,6 +821,16 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   .hs-carousel-next,
   .hs-carousel-prev {
     display: none;
+  }
+}
+
+@media (max-width: 1520px){
+  .brødtekst{
+    width: 59.5%;
+  }
+
+  .faqtekst{
+    padding-right: 14%;
   }
 }
 
@@ -1451,9 +1464,5 @@ h2.text-3xl.font-semibold.mb-6.mt-32 {
   font-size: 1.5rem;
   padding-top: 10%;
 }
-
-
-
-
 }
 </style>

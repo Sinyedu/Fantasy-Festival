@@ -314,7 +314,7 @@ export default {
   .logo {
     width: 12%;
     height: 20vh;
-    padding-top: 15%;
+    padding-top: 8%;
     scale: 1.3;
     left: 1.7%;
   }

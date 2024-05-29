@@ -67,7 +67,6 @@
               <h2 class="time">{{ dayDetail.time }}</h2>
               <h2 class="location">{{ dayDetail.location }}</h2>
               <h2 class="duration">{{ dayDetail.duration }}</h2>
-              <h2 class="ages">{{ dayDetail.ages }}</h2>
             </div>
           </div>
         </div>
@@ -214,7 +213,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 50%;
-  // height: 60vh;
+  height: 60vh;
   justify-content: center;
   align-items: center;
   margin-top: 3%;
@@ -230,13 +229,12 @@ body {
   align-items: center;
   justify-content: center;
   background-image: url("../assets/img/familieramme.png");
-  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100% 82%;
+  background-size: 100% 85%;
 }
 
 .card h1 {
-  font-size: 35px;
+  font-size: 2.5rem;
   text-align: left;
   padding-left: 15%;
 }
@@ -244,8 +242,8 @@ body {
 .card h2 {
   padding-left: 15%;
   margin-top: 1rem;
-  max-width: 90%;
-  font-size: 25px;
+  max-width: 100%;
+  font-size: 1.4rem;
 }
 .headliner {
   text-align: center;
@@ -284,6 +282,33 @@ a {
   scale: 0.65;
   margin-bottom: 5%;
   bottom: 10%;
+}
+
+@media (max-width: 1520px){
+  .maintext{
+    font-size: 24px;
+  }
+
+  .card{
+    background-size: 100% 65%;
+  }
+
+  .info{
+    height: 50vh;
+  }
+
+  .info h1{
+    font-size: 1.9rem;
+  }
+
+  .info h2{
+    font-size: 1.1rem;
+    padding-bottom: 2%;
+  }
+
+  .lorecontainer{
+    margin-bottom: 0%;
+  }
 }
 
 @media (max-width: 1440px) {

@@ -68,7 +68,7 @@ updateFooterClass();
 <style scoped lang="scss">
   .masterfooter {
     width: 100%;
-    height: 300px;
+    height: 250px;
   }
   
   .footer {
@@ -93,7 +93,7 @@ updateFooterClass();
 }
   
   .footer-content {
-    display: flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   }
@@ -143,6 +143,12 @@ updateFooterClass();
   .logo-img {
     max-width: 350px;
     padding-top: 5%;
+  }
+
+  @media (max-width: 1520px){
+    .masterfooter{
+      height: 250px;
+    }
   }
 
   @media (max-width: 1440px) {

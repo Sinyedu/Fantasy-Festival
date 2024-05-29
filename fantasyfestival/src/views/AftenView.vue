@@ -12,7 +12,7 @@
   
     <div class="titlecontainer">
       <div class="centertext">
-        <h1 class="headliner font-bold text-7xl text-center">Aften Quest</h1>
+        <h1 class="mainheadliner font-bold text-7xl text-center">Aften Quest</h1>
       </div>
     </div>
   
@@ -103,6 +103,11 @@ color: var(--text-colour-dark);
 font-size: 25px;
 }
 
+.mainheadliner {
+  color: #FECD08;
+  margin-top: 2%;
+}
+
 .headliner {
   color: #FECD08;
   margin-top: 2%;
@@ -188,23 +193,19 @@ font-size: 25px;
 
 .card {
   max-width: 100%;
-  width: 55%;
-  height: 100%;
+  width: 50%;
   margin-top: 5%;
-  // padding-top: 3%;
   padding-bottom: 5%;
   align-items: center; 
   justify-content: center;
   background-image: url("../assets/img/aftenramme.png");
-  background-size: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .card h1 {
-  font-size: 3rem;
-  text-align: center;
-  // padding-left: 15%;
+  font-size: 2.5rem;
+  padding-left: 15%;
   color: var(--text-colour-dark);
 }
 
@@ -212,7 +213,7 @@ font-size: 25px;
   padding-left: 15%;
   margin-top: 1rem;
   max-width: 100%;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   color: var(--text-colour-dark);
 }
 
@@ -237,7 +238,7 @@ a{
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 12%;
+  margin-top: 7%;
 
 }
 
@@ -248,6 +249,36 @@ a{
   bottom: 10%;
 }
 
+@media (max-width: 1520px){
+  .headliner{
+    font-size: 1.8rem;
+  }
+
+  .maintext{
+    font-size: 24px;
+  }
+
+  .container-card{
+    height: 80vh;
+    margin-top: 5%;
+  }
+
+  .card{
+    background-size: 100% 65%;
+    text-align: start;
+  }
+
+  .info h1{
+    font-size: 1.9rem;
+    text-align: start;
+    padding-left: 15%;
+  }
+
+  .info h2{
+    font-size: 1.1rem;
+    padding-bottom: 2%;
+  }
+}
 
 @media (max-width: 1440px) {
   .herocontainer {

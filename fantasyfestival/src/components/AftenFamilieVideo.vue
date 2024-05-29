@@ -91,42 +91,25 @@ export default {
   position: relative;
 }
 
-
-/* 
-.tail-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-} */
-
 .top-half {
-  position: relative;
+  position: absolute;
   width: 50%;
   height: auto;
-  top: -2.25%;
-  left: 23%;
+  top: 4.6%;
+  left: 50%;
   pointer-events: none;
   z-index: 1;
   scale: 1.2;
 }
 .bottom-half {
-  position: relative;
+  position: absolute;
   width: 50%;
   height: auto;
   pointer-events: none;
   z-index: 1;
-  top: -22%;
-  scale: 1.2;
-  left: 15%;
-}
-
-@media (max-width: 1600px) {
-  .bottom-half,
-  .top-half {
-    display: none;
-  }
+  top: 48.5%;
+  scale: 1;
+  left: 40%;
 }
 
 @media (max-width: 1440px) {
