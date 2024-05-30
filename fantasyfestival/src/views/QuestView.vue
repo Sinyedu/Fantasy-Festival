@@ -970,6 +970,10 @@ body {
     display: none;
   }
 
+  .relative {
+    pointer-events: none;
+  }
+
   .faqtekst {
     display: flex;
     justify-content: center;
