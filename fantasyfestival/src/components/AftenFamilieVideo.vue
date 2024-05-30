@@ -1,17 +1,18 @@
 <template>
   <div class="video-holder">
-      <img class="top-half" src="../assets/img/toptail.png" alt="Toppen af Gnist's hale">
-      <div id="player" class="responsive-iframe mx-auto flex justify-center video "></div>
-      <img class="bottom-half" src="../assets/img/bottomtail.png" alt="Bunden af Gnist's hale">
+    <img class="top-half" src="../assets/img/toptail.png" alt="Toppen af Gnist's hale">
+    <div id="player" class="video-wrapper">
+      <div class="responsive-iframe"></div>
     </div>
+    <img class="bottom-half" src="../assets/img/bottomtail.png" alt="Bunden af Gnist's hale">
+  </div>
 </template>
 
 <script>
-// This block retrieves the YouTube API and loads the video player.
 export default {
   name: 'YouTubeComponent',
   mounted() {
-    if (window.YT) {
+    if (window.YT && window.YT.Player) {
       this.loadPlayer();
     } else {
       const tag = document.createElement('script');
@@ -19,26 +20,28 @@ export default {
       const firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-      window.onYouTubeIframeAPIReady = this.loadPlayer;
+      window.onYouTubeIframeAPIReady = this.loadPlayer.bind(this);
     }
   },
-  // Here we define the size of the video player and the video ID.
   methods: {
     loadPlayer() {
-      this.player = new YT.Player('player', {
-        height: '760px', 
-        width: '1280px',  
-        videoId: 'tAbEIZI9dZ8',
-        events: {
-          'onStateChange': this.onPlayerStateChange
-        }
-      });
+      if (window.YT && window.YT.Player) {
+        this.player = new window.YT.Player('player', {
+          height: '760px',
+          width: '1280px',
+          videoId: 'tAbEIZI9dZ8',
+          events: {
+            'onStateChange': this.onPlayerStateChange
+          }
+        });
+      } else {
+        console.error('YouTube API not loaded');
+      }
     },
-    // This is the function that hides and shows the bottom half of the tail holding the video.
     onPlayerStateChange(event) {
-      if (event.data === YT.PlayerState.PLAYING) {
+      if (event.data === window.YT.PlayerState.PLAYING) {
         this.hideHands();
-      } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
+      } else if (event.data === window.YT.PlayerState.PAUSED || event.data === window.YT.PlayerState.ENDED) {
         this.showHands();
       }
     },
@@ -83,6 +86,21 @@ export default {
   position: relative;
 }
 
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .top-half {
   position: absolute;
   width: 50%;
@@ -125,9 +143,9 @@ export default {
     padding-top: 56.25%;
     position: relative;
     max-width: 100%;
-    flex-direction:row;
+    flex-direction: row;
   }
-  
+
   .responsive-iframe {
     position: absolute;
     top: 0;
@@ -135,7 +153,7 @@ export default {
     width: 100%;
     height: 100%;
   }
-  
+
   .bottom-half,
   .top-half {
     display: none;

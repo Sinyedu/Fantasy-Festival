@@ -16,7 +16,7 @@
 export default {
   name: 'YouTubeComponent',
   mounted() {
-    if (window.YT) {
+    if (window.YT && window.YT.Player) {
       this.loadPlayer();
     } else {
       const tag = document.createElement('script');
@@ -24,26 +24,30 @@ export default {
       const firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-      window.onYouTubeIframeAPIReady = this.loadPlayer;
+      window.onYouTubeIframeAPIReady = () => {
+        this.loadPlayer();
+      };
     }
   },
 
   methods: {
     loadPlayer() {
-      this.player = new YT.Player('player', {
-        height: '720',
-        width: '1250',
-        videoId: 'nWYL6oaLhKE',
-        events: {
-          'onStateChange': this.onPlayerStateChange
-        }
-      });
+      if (window.YT && window.YT.Player) {
+        this.player = new window.YT.Player('player', {
+          height: '720',
+          width: '1250',
+          videoId: 'nWYL6oaLhKE',
+          events: {
+            'onStateChange': this.onPlayerStateChange
+          }
+        });
+      }
     },
 
     onPlayerStateChange(event) {
-      if (event.data === YT.PlayerState.PLAYING) {
+      if (event.data === window.YT.PlayerState.PLAYING) {
         this.hideHands();
-      } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
+      } else if (event.data === window.YT.PlayerState.PAUSED || event.data === window.YT.PlayerState.ENDED) {
         this.showHands();
       }
     },
@@ -60,7 +64,7 @@ export default {
         rightHand.classList.remove('show-right');
       }
     },
-    
+
     showHands() {
       const leftHand = document.querySelector('.dragonhand-left');
       if (leftHand) {
