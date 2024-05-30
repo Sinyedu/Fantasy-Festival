@@ -259,13 +259,12 @@ a{
   }
 
   .container-card{
-    height: 80vh;
     margin-top: 5%;
   }
 
   .card{
-    background-size: 100% 65%;
     text-align: start;
+    width: 75%;
   }
 
   .info h1{
@@ -277,6 +276,14 @@ a{
   .info h2{
     font-size: 1.1rem;
     padding-bottom: 2%;
+  }
+
+  .ylwbutton {
+    scale: 2;
+    margin-bottom: 15%;
+  }
+  .mainheadliner {
+    font-size: 4rem;
   }
 }
 
@@ -434,7 +441,7 @@ a{
   .ylwbutton {
     width: 100%;
     height: 100%;
-    scale: 1.4;
+    scale: 2;
   }
   .headliner2 {
   //  padding-top: 25%;

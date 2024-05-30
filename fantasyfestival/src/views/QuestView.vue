@@ -5,6 +5,7 @@
       <h1 class="top-text text-7xl font-bold text-center">Fantasy Quest</h1>
       <p class="city-text text-5xl font-bold text-center">Esbjerg 2024</p>
     </div>
+    <!-- Loading Countdown component -->
     <div id="countdown">
       <CountDown />
     </div>
@@ -22,6 +23,7 @@
         og redde hele verden? Så gør dig klar til Fantasy Quest Esbjerg.
       </p>
     </div>
+    <!-- Dynamically retrieved content from getDayQuest.js-->
     <div class="container-card">
       <div v-for="dayQuest in dayQuests" :key="dayQuest.id" class="day-card">
         <div class="portfolio-item">
@@ -46,6 +48,7 @@
           </div>
         </div>
       </div>
+      <!-- Dynamically retrieved content from getQuest.js-->
       <div v-for="questItem in questItems" :key="questItem.id" class="night-card">
         <div class="portfolio-item">
           <div class="night-info">
@@ -69,28 +72,15 @@
         </div>
       </div>
     </div>
-    <!-- <div class="booking">
-      <div class="buttons">
-        <div class="booknuknap-dag">
-              <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
-                <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="">
-              </a>
-            </div>
 
-        <div class="booknuknap-night">
-              <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">
-                <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="">
-              </a>
-            </div>
-      </div>
-    </div> -->
 
     <!-- VIDEO PLAYER FOR THE FESTIVAL OR THE QUESTS -->
     <div class="video-container relative pb-[300px]">
       <FrontVideo />
     </div>
 
-    <!-- Slider -->
+
+    <!-- Carousel -->
     <div class="presscarousel">
       <div data-hs-carousel='{
       "loadingClasses": "opacity-0",
@@ -100,6 +90,7 @@
         <div class="hs-carousel relative overflow-hidden w-full h-full rounded-lg">
           <div class="hs-carousel-body absolute top-0 bottom-0 left-0 flex transition-transform duration-700">
             <div class="hs-carousel-slide flex-shrink-0 h-full">
+              <!-- Photos for the carousel -->
               <img class="pressfoto" src="../assets/img/musikanter.png" alt="First slide" />
             </div>
             <div class="hs-carousel-slide flex-shrink-0 w-full h-full">
@@ -257,6 +248,7 @@
   </body>
 </template>
 <script>
+// Importing the components
 import CountDown from "../components/CountDown.vue";
 import FrontVideo from "../components/FrontVideo.vue";
 
@@ -270,6 +262,7 @@ export default {
 </script>
 
 <script setup>
+// Importing the dynamic content
 import getQuestsItems from "@/modules/getQuest.js";
 import getDayQuest from "@/modules/getDayQuest.js";
 
@@ -343,6 +336,8 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <style lang="scss" scoped>
+
+
 .faqtekst {
   display: flex;
   justify-content: center;
@@ -440,11 +435,6 @@ a:hover .ylwbutton2 {
   position: relative;
 }
 
-.carousel {
-  margin-top: 21%;
-  z-index: 9999;
-}
-
 .presscarousel {
   display: flex;
   justify-content: center;
@@ -506,9 +496,6 @@ body {
   font-family: RomanSD, sans-serif;
 }
 
-h2.text-3xl.font-semibold.mb-6.mt-32 {
-  margin-top: 12.5rem;
-}
 
 .titletext {
   color: #ede6d6;

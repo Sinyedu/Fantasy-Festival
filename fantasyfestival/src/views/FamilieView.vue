@@ -222,7 +222,7 @@ body {
 
 .card {
   max-width: 100%;
-  width: 50%;
+  width: 47%;
   height: 100%;
   margin-top: 5%;
   padding-top: 3%;
@@ -230,7 +230,7 @@ body {
   justify-content: center;
   background-image: url("../assets/img/familieramme.png");
   background-repeat: no-repeat;
-  background-size: 100% 85%;
+  background-size: 100% 90%;
 }
 
 .card h1 {
@@ -241,7 +241,7 @@ body {
 
 .card h2 {
   padding-left: 15%;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   max-width: 100%;
   font-size: 1.4rem;
 }
@@ -430,7 +430,7 @@ a {
   .card {
     // scale: 0.9;
     max-width: 100%;
-    height: 50%;
+    height: 60%;
     margin-top: 5%;
     padding-top: 3%;
     align-items: center;
@@ -535,7 +535,7 @@ a {
   .card {
     // scale: 0.9;
     max-width: 100%;
-    height: 50%;
+    height: 55%;
     margin-top: 5%;
     padding-top: 3%;
     align-items: center;
@@ -567,7 +567,7 @@ a {
   .card {
     // scale: 0.9;
     max-width: 100%;
-    height: 80%;
+    height: 60%;
     width: 70%;
     margin-top: 5%;
     padding-top: 3%;
@@ -596,17 +596,14 @@ a {
     text-align: center;
     padding-top: 60%;
   }
+
+  .ylwbutton {
+    scale: 2;
+    margin-bottom: 30%;
+  }
 }
 
 @media (max-width: 640px) {
-  .info {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    padding-bottom: 10%;
-  }
-
   .card h1 {
     padding: 0;
     align-items: center;
@@ -619,7 +616,7 @@ a {
   .card {
     // scale: 0.9;
     max-width: 100%;
-    height: 80%;
+    height: 58%;
     width: 50%;
     margin-top: 5%;
     padding-top: 3%;
@@ -634,8 +631,8 @@ a {
     width: 120%;
   }
   .ylwbutton {
-    scale: 2;
-    padding-bottom: 30%;
+    scale: 1.8;
+    margin-bottom: 10%;
   }
 
   .headliner {
@@ -658,8 +655,8 @@ a {
   max-width: 100%;
   text-align: center;
   padding-top: 60%;
-
 }
+
 }
 
 @media (max-width: 480px) {
@@ -729,7 +726,7 @@ a {
   .card {
     // scale: 0.9;
     width: 100%;
-    height: 100%;
+    height: 50%;
     margin-top: 5%;
     padding-top: 3%;
     align-items: center;
