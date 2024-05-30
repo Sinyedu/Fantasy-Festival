@@ -702,7 +702,6 @@ body {
   background-color: #355c55;
   background-image: url("../assets/img/rammemoon.svg");
   background-position: center;
-  // background-size: cover;
   background-size: 550px 1100px;
   background-repeat: no-repeat;
   border-radius: 50px;
@@ -797,9 +796,6 @@ body {
   overflow: hidden;
 }
 
-// .pb-\[300px\] {
-//   padding-bottom: 30%;
-// }
 @media (max-width: 1680px) {
   .arkivaren {
     display: none;

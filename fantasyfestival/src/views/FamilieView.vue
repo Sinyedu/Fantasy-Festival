@@ -1,4 +1,5 @@
 <template>
+
   <body>
     <div class="herocontainer">
       <div class="hero">
@@ -42,24 +43,14 @@
 
       <!-- Dynamically retrieves the general information about the evening quest -->
       <div class="container-card">
-        <a
-          href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3?ref=universe-discover"
-          target="_blank"
-        >
+        <a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3?ref=universe-discover"
+          target="_blank">
           <div class="book">
-            <img
-              class="ylwbutton"
-              src="../assets/img/yellow buttentext.png"
-              alt="Book Nu Knap"
-            />
+            <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="Book Nu Knap" />
           </div>
         </a>
-
-        <div
-          v-for="dayDetail in dayDetails"
-          :key="dayDetail.id"
-          class="card raleway-font"
-        >
+        <!-- Dynamically retrieved content from getInfo.js -->
+        <div v-for="dayDetail in dayDetails" :key="dayDetail.id" class="card raleway-font">
           <div class="info-data">
             <div class="info">
               <h1 class="titletext">{{ dayDetail.title }}</h1>
@@ -75,7 +66,7 @@
 
     <!-- Video trailer for the evening quest -->
     <AftenFamilieVideo />
-
+    <!-- Lore for the quest-->
     <div class="lorecontainer">
       <div class="infotext2">
         <h1 class="headliner2 font-bold text-3xl pb-9">
@@ -101,16 +92,13 @@
           holde øje med havet…
         </p>
       </div>
-      <img
-        class="goblin"
-        src="../assets/img/eventyrgoblin.png"
-        alt="Eventyr Goblin"
-      />
+      <img class="dragonkin" src="../assets/img/dragonkin.png" alt="Gnist Humanoid" />
     </div>
   </body>
 </template>
 
 <script setup>
+// Getting the Dynamic content
 import getDayDetails from "@/modules/getDayInfo.js";
 const { dayDetails } = getDayDetails();
 
@@ -245,6 +233,7 @@ body {
   max-width: 100%;
   font-size: 1.4rem;
 }
+
 .headliner {
   text-align: center;
 }
@@ -252,6 +241,7 @@ body {
 .headliner2 {
   text-align: start;
 }
+
 .ylwbutton {
   padding-top: 14%;
   width: 100%;
@@ -277,36 +267,35 @@ a {
   margin-bottom: 5%;
 }
 
-.goblin {
+.dragonkin {
   position: relative;
   scale: 0.65;
   margin-bottom: 5%;
   bottom: 10%;
 }
-
-@media (max-width: 1520px){
-  .maintext{
+@media (max-width: 1520px) {
+  .maintext {
     font-size: 24px;
   }
 
-  .card{
+  .card {
     background-size: 100% 65%;
   }
 
-  .info{
+  .info {
     height: 50vh;
   }
 
-  .info h1{
+  .info h1 {
     font-size: 1.9rem;
   }
 
-  .info h2{
+  .info h2 {
     font-size: 1.1rem;
     padding-bottom: 2%;
   }
 
-  .lorecontainer{
+  .lorecontainer {
     margin-bottom: 0%;
   }
 }
@@ -319,38 +308,38 @@ a {
 }
 
 @media (max-width: 1280px) {
-.card {  
-  max-width: 100%;
-  width: 50%;
-  height: 70%;
-  margin-top: 5%;
-  padding-top: 0%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-image: url("../assets/img/familieramme.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-size: 100% 82%;
-}
+  .card {
+    max-width: 100%;
+    width: 50%;
+    height: 70%;
+    margin-top: 5%;
+    padding-top: 0%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../assets/img/familieramme.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 82%;
+  }
 
-.card h1 {
-  font-size: 2rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-left: 0%;
-}
+  .card h1 {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 0%;
+  }
 
 
-.card h2 {
-  font-size: 1.3rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-left: 0%;
-  max-width: 100%;
-}
+  .card h2 {
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 0%;
+    max-width: 100%;
+  }
 
 
 
@@ -366,15 +355,19 @@ a {
     height: 50vh;
     background-position: center;
   }
+
   .container-card {
     width: 70%;
   }
+
   .hands img {
     scale: 0.5;
   }
+
   .hands {
     gap: 60%;
   }
+
   .infotext {
     margin-top: 3%;
     width: 80%;
@@ -385,10 +378,12 @@ a {
     margin-top: 3%;
     width: 80%;
   }
+
   .herocontainer {
     height: 40vh;
     background-position: center;
   }
+
   .infotext2 {
     margin-top: 3%;
     width: 80%;
@@ -397,6 +392,7 @@ a {
     display: flex;
     flex-direction: column;
   }
+
   .lorecontainer {
     margin-top: -45%;
     // display: flex;
@@ -408,9 +404,11 @@ a {
   .lorecontainer img {
     scale: 0.7;
   }
+
   .lorecontainer p {
     font-size: 25px;
   }
+
   .questcontainer {
     // margin-top: 35%;
     flex-direction: column;
@@ -451,9 +449,11 @@ a {
     font-size: 1.3rem;
     text-align: center;
   }
+
   .ages {
     padding-bottom: 5%;
   }
+
   .maintext {
     font-size: 20px;
     max-width: 80%;
@@ -461,6 +461,7 @@ a {
     align-items: center;
     display: flex;
   }
+
   .infotext {
     // margin-top: 250%;
     // width: 80%;
@@ -469,15 +470,17 @@ a {
     display: flex;
     flex-direction: column;
   }
+
   .ylwbutton {
     width: 100%;
     height: 100%;
     padding-bottom: 5%;
     padding-top: 25%;
   }
-.headliner {
-  padding-top: 15%;
-}
+
+  .headliner {
+    padding-top: 15%;
+  }
 
 
   .headliner2 {
@@ -493,21 +496,25 @@ a {
     height: 40vh;
     background-position: center;
   }
+
   .maintext {
     font-size: 20px;
     // padding-top: 100%;
   }
+
   .infotext {
     margin-top: 3%;
     width: 80%;
     align-items: center;
   }
+
   .ylwbutton {
     width: 100%;
     height: 100%;
     scale: 1.5;
     padding-bottom: 5%;
   }
+
   .infotext2 {
     margin-top: 3%;
     width: 80%;
@@ -516,6 +523,7 @@ a {
     display: flex;
     flex-direction: column;
   }
+
   .lorecontainer {
     margin-top: -35%;
     // display: flex;
@@ -527,11 +535,12 @@ a {
   .lorecontainer img {
     scale: 0.7;
   }
+
   .lorecontainer p {
     font-size: 20px;
     margin-top: 1%;
   }
-  
+
   .card {
     // scale: 0.9;
     max-width: 100%;
@@ -563,7 +572,7 @@ a {
     height: 40vh;
     background-position: center;
   }
-  
+
   .card {
     // scale: 0.9;
     max-width: 100%;
@@ -613,6 +622,7 @@ a {
     max-width: 100%;
     font-size: 120%;
   }
+
   .card {
     // scale: 0.9;
     max-width: 100%;
@@ -627,9 +637,11 @@ a {
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
+
   .container-card {
     width: 120%;
   }
+
   .ylwbutton {
     scale: 1.8;
     margin-bottom: 10%;
@@ -644,18 +656,19 @@ a {
     font-size: 1.5rem;
   }
 
-  .maintext{
+  .maintext {
     max-width: 80%;
     align-items: center;
     justify-content: center;
-  
+
   }
-.headliner2 {
-  font-size: 2.5rem;
-  max-width: 100%;
-  text-align: center;
-  padding-top: 60%;
-}
+
+  .headliner2 {
+    font-size: 2.5rem;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 60%;
+  }
 
 }
 
@@ -677,6 +690,7 @@ a {
     flex-direction: column;
     height: 100%;
   }
+
   .headliner {
     font-size: 2.5rem;
     margin-top: 18%;
@@ -694,6 +708,7 @@ a {
   .infotext {
     width: 90%;
   }
+
   .maintext {
     max-width: 90%;
   }
@@ -723,6 +738,7 @@ a {
     align-items: center;
     justify-content: center;
   }
+
   .card {
     // scale: 0.9;
     width: 100%;
@@ -736,9 +752,11 @@ a {
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
+
   .card h2 {
     max-width: 100%;
   }
+
   .info h1 {
     font-size: 1.5rem;
     max-width: 100%;
@@ -762,17 +780,19 @@ a {
     max-width: 90%;
   }
 }
+
 @media (max-width: 360px) {
   .hands {
     display: none;
   }
 
 }
+
 @media (max-width: 340px) {
 
 
   .headliner2 {
-    font-size: 1.9rem; 
+    font-size: 1.9rem;
     max-width: 100%;
     text-align: center;
     padding-top: 60%;
