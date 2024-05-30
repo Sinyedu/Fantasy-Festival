@@ -26,7 +26,7 @@
     <!-- Dynamically retrieved content from getDayQuest.js-->
     <div class="container-card">
       <div v-for="dayQuest in dayQuests" :key="dayQuest.id" class="day-card">
-        <div class="portfolio-item">
+        <div class="dynamic-data">
           <div class="day-info">
             <h2 class="titletext">{{ dayQuest.title }}</h2>
             <img class="fillerimage bg-auto" :src="dayQuest.image" alt="" />
@@ -50,7 +50,7 @@
       </div>
       <!-- Dynamically retrieved content from getQuest.js-->
       <div v-for="questItem in questItems" :key="questItem.id" class="night-card">
-        <div class="portfolio-item">
+        <div class="dynamic-data">
           <div class="night-info">
             <h2 class="titletext">{{ questItem.title }}</h2>
             <img class="fillerimage bg-auto" :src="questItem.image" alt="" />
