@@ -38,7 +38,7 @@
             <img class="ylwbutton" src="../assets/img/yellow buttentext.png" alt="Yellow Button">
           </div>
         </a>
-  
+        <!-- Dynamically retrieved content from getInfo.js-->
         <div v-for="infoDetail in infoDetails" :key="infoDetail.id" class="card raleway-font">
           <div class="info-data">
             <div class="info">
@@ -68,13 +68,14 @@
           Gygaz åbnede en portal til kæmpernes verden. Her fandt han frem til fire gode kæmper, der meldte sig frivilligt. De sagde farvel til deres familier og travede gennem portalen mod Esbjerg. Her mødtes de med Gygaz. Luften sitrede af magi, og da de sidste ord i en magtfuld formular forlod Gygaz’ læber, var de fire kæmper blevet ét med statuerne af de fire hvide mænd. På den måde kunne de til evig tid holde øje med havet…
         </p>
       </div>
-      <img class="goblin" src="../assets/img/eventyrgoblin.png" alt="Eventyr Goblin">
+      <img class="dragonkin" src="../assets/img/dragonkin.png" alt="Gnist Humanoid">
     </div>
   </body>
 </template>
 
 
 <script setup>
+//Importing the general information about the evening quest
   import getInfoDetails from '@/modules/getInfo.js';
   const { infoDetails } = getInfoDetails();
 
@@ -171,7 +172,7 @@ font-size: 25px;
 .infotext{
   margin-top: 3%;
   width: 50%;
-  // font-size: 35px;
+  // font-size: 35px; 
 }
 
 .infotext2{
@@ -242,7 +243,7 @@ a{
 
 }
 
-.goblin{
+.dragonkin{
   position: relative;
   scale: 0.65;
   margin-bottom: 5%;
