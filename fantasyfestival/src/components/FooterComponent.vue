@@ -40,6 +40,7 @@ const route = useRoute();
 const footerClass = ref('masterfooter default-footer');
 const logoSrc = ref(logogreen);
 
+// Function that updates the footer class based on the page you are on.
 const updateFooterClass = () => {
   switch (route.path) {
 
@@ -66,18 +67,18 @@ updateFooterClass();
 </script>
   
 <style scoped lang="scss">
-  .masterfooter {
-    width: 100%;
-    height: 250px;
-  }
+.masterfooter {
+  width: 100%;
+  height: 250px;
+}
   
-  .footer {
-    background-color: #083A35;
-    color: #ede6d6;
-    padding: 3.5% 5%;
-  }
+.footer {
+  background-color: #083A35;
+  color: #ede6d6;
+  padding: 3.5% 5%;
+}
 
-  .default-footer .footer {
+.default-footer .footer {
   background-color: #083A35;
   height: 300px;
 }
@@ -92,111 +93,115 @@ updateFooterClass();
   color: #083a35;
 }
   
-  .footer-content {
+.footer-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  }
+}
   
-  .footer-column {
-    // flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    margin-bottom: 20px; 
-  }
+.footer-column {
+  // flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 20px; 
+}
   
-  .footer-list {
-    // list-style: none;
-    padding: 0;
-  }
+.footer-list {
+  // list-style: none;
+  padding: 0;
+}
 
-  .footer-list a{
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
+.footer-list a{
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
-  .footer-list a:hover{
-    text-decoration: underline;
-  }
+.footer-list a:hover{
+  text-decoration: underline;
+}
   
-  .footer-item1 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.footer-item1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-item2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: start;
+  position: relative;
+  left: -80%;
+}
+  
+.footer-logo {
+  display: flex;
+  justify-content: end;
+  padding-right: 2.5%;
+}
+  
+.logo-img {
+  max-width: 350px;
+  padding-top: 5%;
+}
+
+@media (max-width: 1520px){
+  .masterfooter{
+    height: 250px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .masterfooter{
+    height: 250px;
   }
 
   .footer-item2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: start;
-    position: relative;
-    left: -80%;
+    left: 0;
   }
-  
+
   .footer-logo {
-    display: flex;
-    justify-content: end;
-    padding-right: 2.5%;
+    justify-content: start;
   }
-  
-  .logo-img {
-    max-width: 350px;
-    padding-top: 5%;
-  }
-
-  @media (max-width: 1520px){
-    .masterfooter{
-      height: 250px;
-    }
-  }
-
-  @media (max-width: 1440px) {
-    .masterfooter{
-      height: 250px;
-    }
-
-    .footer-item2 {
-      left: 0;
-    }
-
-    .footer-logo {
-      justify-content: start;
-    }
-  }
+}
 
 @media (max-width: 1024px) {
+  .logo-img {
+    max-width: 250px;
+    padding-right: 55px;
+  }
 
-.logo-img {
-  max-width: 250px;
-  padding-right: 55px;
-}
-.familie-footer .footer { 
-  height: 450px;
-}
+  .familie-footer .footer { 
+    height: 450px;
+  }
 
 
  .default-footer .footer {
-  height: 450px;
- }   
+    height: 450px;
+  }   
  
   .footer-content {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
   }
+
   .footer-column {
     align-items: flex-start;
     text-align: start;
     padding-left: 10%;
   }
+
   .footer-item2 {
     left: 0;
   }
+
   .footer-logo {
     justify-content: end;
     padding-right: 2.5%;
   }
+
   .footer-list {
     display: flex;
     flex-direction: column;
@@ -205,70 +210,70 @@ updateFooterClass();
   }
 }
 
-  @media (max-width: 768px) {
-.logo-img {
-  max-width: 250px;
-  padding-right: 55px;
-}
-.familie-footer .footer { 
-  height: 450px;
-}
-
-
-   .masterfooter {
-    height: 450px;
-   }
-   .default-footer .footer {
-    height: 450px;
-   }   
-   
-    .footer-content {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-
-    .footer-column {
-      align-items: flex-start;
-      text-align: start;
-      padding-left: 10%;
-    }
-
-    .footer-item2 {
-      left: 0;
-    }
-
-    .footer-logo {
-      justify-content: end;
-      padding-right: 2.5%;
-    }
-
-    .footer-list {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-    }
+@media (max-width: 768px) {
+  .logo-img {
+    max-width: 250px;
+    padding-right: 55px;
   }
 
-  @media (max-width: 480px) {
-    .footer-item1,
-    .footer-item2 {
-      font-size: 1.2rem;
-    }
+  .familie-footer .footer { 
+    height: 450px;
+  }
+
+  .masterfooter {
+    height: 450px;
   }
 
   .default-footer .footer {
-    background-color: #083A35;
+    height: 450px;
+  }   
+   
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
-  .familie-footer .footer {
-    background-color: #083a35;
+  .footer-column {
+    align-items: flex-start;
+    text-align: start;
+    padding-left: 10%;
   }
 
-  .aften-footer .footer {
-    background-color: #ede6d6;
-    color: #083a35;
+  .footer-item2 {
+    left: 0;
   }
 
+  .footer-logo {
+    justify-content: end;
+    padding-right: 2.5%;
+  }
+
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-item1,
+  .footer-item2 {
+    font-size: 1.2rem;
+  }
+}
+
+.default-footer .footer {
+  background-color: #083A35;
+}
+
+.familie-footer .footer {
+  background-color: #083a35;
+}
+
+.aften-footer .footer {
+  background-color: #ede6d6;
+  color: #083a35;
+}
 </style>

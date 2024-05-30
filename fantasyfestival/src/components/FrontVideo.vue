@@ -11,6 +11,7 @@
 </template>
 
 
+
 <script>
 export default {
   name: 'YouTubeComponent',
@@ -26,6 +27,7 @@ export default {
       window.onYouTubeIframeAPIReady = this.loadPlayer;
     }
   },
+
   methods: {
     loadPlayer() {
       this.player = new YT.Player('player', {
@@ -37,6 +39,7 @@ export default {
         }
       });
     },
+
     onPlayerStateChange(event) {
       if (event.data === YT.PlayerState.PLAYING) {
         this.hideHands();
@@ -44,6 +47,7 @@ export default {
         this.showHands();
       }
     },
+
     hideHands() {
       const leftHand = document.querySelector('.dragonhand-left');
       if (leftHand) {
@@ -56,6 +60,7 @@ export default {
         rightHand.classList.remove('show-right');
       }
     },
+    
     showHands() {
       const leftHand = document.querySelector('.dragonhand-left');
       if (leftHand) {
@@ -75,7 +80,6 @@ export default {
 
 
 <style scoped>
-
 .container {
   position: relative;
   width: fit-content;
@@ -84,16 +88,11 @@ export default {
 
 .player-wrapper {
   position: relative;
-  /* width: 1050px; */
-  /* height: 720px; */
-  /* scale: 0.7; */
 }
 
  .responsive-iframe {
   width: 1050px; 
 }
-  /* height: 720px; */
-
 
 #player {
   position: absolute;
@@ -166,8 +165,8 @@ export default {
   animation: move4 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
-
 }
+
 .hand {
   pointer-events: none;
   position: absolute;
@@ -176,16 +175,13 @@ export default {
   z-index: 1;
 }
 
-
-
 @media (max-width: 1440px) {
   .hand {
     display: none;
   }
 }
 
-
- @media (max-width: 1028px) {
+@media (max-width: 1028px) {
   #player {
     width: 100%;
     height: 100%;
@@ -194,19 +190,15 @@ export default {
   .container {
     width: 100%;
   }
+
   .player-wrapper {
     width: 100%;
     scale: 1.2;
     justify-content: center;
     display: flex;
   }
-  .hand {
-    display: none;
-  }
-  
 }
   
-
 @media (max-width: 768px) {
   .container {
     width: 100%;

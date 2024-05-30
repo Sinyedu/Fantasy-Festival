@@ -1,13 +1,4 @@
 <template>
-  <!-- <div class="container">
-    <img class="absolute -left-[72px] top-0 z-10 dragonhand-left hand h-64"
-      src="../assets/img/dragon_hand_left_darkcolour_mfinal.png" alt="Dragon Left">
-    <div id="player" class="responsive-iframe mx-auto flex justify-center"></div>
-    <img class="absolute -right-[72px] top-0 z-10 dragonhand-right hand h-64"
-      src="../assets/img/dragon_hand_right_darkcolour_mfinal.png" alt="Dragon Right">
-  </div> -->
-
-
   <div class="video-holder">
       <img class="top-half" src="../assets/img/toptail.png" alt="Toppen af Gnist's hale">
       <div id="player" class="responsive-iframe mx-auto flex justify-center video "></div>
@@ -16,6 +7,7 @@
 </template>
 
 <script>
+// This block retrieves the YouTube API and loads the video player.
 export default {
   name: 'YouTubeComponent',
   mounted() {
@@ -30,6 +22,7 @@ export default {
       window.onYouTubeIframeAPIReady = this.loadPlayer;
     }
   },
+  // Here we define the size of the video player and the video ID.
   methods: {
     loadPlayer() {
       this.player = new YT.Player('player', {
@@ -41,6 +34,7 @@ export default {
         }
       });
     },
+    // This is the function that hides and shows the bottom half of the tail holding the video.
     onPlayerStateChange(event) {
       if (event.data === YT.PlayerState.PLAYING) {
         this.hideHands();
@@ -65,8 +59,6 @@ export default {
 </script>
 
 <style scoped>
-
-
 @keyframes hide-animation {
   from {
     opacity: 100%;
@@ -101,6 +93,7 @@ export default {
   z-index: 1;
   scale: 1;
 }
+
 .bottom-half {
   position: absolute;
   width: 50%;

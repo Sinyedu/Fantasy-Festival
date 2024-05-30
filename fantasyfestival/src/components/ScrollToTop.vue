@@ -1,19 +1,8 @@
 <template>
   <button class="scrollbtn" v-if="isVisible" ref="scrollButton" @click="scrollToTop">
     <span class="text-2xl" aria-hidden="true">
-      <svg
-        class="arrow w-9 h-9"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="3"
-          d="M9 5l7 7-7 7"
-        />
+      <svg class="arrow w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
       </svg>
     </span>
   </button>
@@ -35,14 +24,16 @@ export default {
         behavior: 'smooth'
       });
     },
+
     toggleVisibility() {
       this.isVisible = window.scrollY > 900;
     },
+
     bounceAnimation() {
       anime({
         targets: this.$refs.scrollButton,
         translateY: [
-          { value: -50 , duration: 300 },
+          { value: -50, duration: 300 },
           { value: 0, duration: 300 }
         ],
         loop: true,
@@ -50,6 +41,7 @@ export default {
       });
     },
   },
+
   mounted() {
     window.addEventListener('scroll', () => {
       this.toggleVisibility();
@@ -58,6 +50,7 @@ export default {
       }
     });
   },
+
   beforeUnmount() {
     window.removeEventListener('scroll', this.toggleVisibility);
   },
@@ -85,6 +78,7 @@ export default {
   overflow: hidden;
   z-index: 999;
 }
+
 .scrollbtn:hover {
   opacity: 1;
 }
@@ -97,8 +91,9 @@ export default {
 
 @media (max-width: 1024px) {
   .scrollbtn {
-display: none;
+    display: none;
   }
+
   .arrow {
     display: none;
   }
@@ -108,7 +103,6 @@ display: none;
   }
 }
 
-
 @media (max-width: 768px) {
   .scrollbtn {
     bottom: 15px;
@@ -116,6 +110,7 @@ display: none;
     height: 50px;
     width: 50px;
   }
+
   .arrow {
     width: 20px;
     height: 20px;
@@ -129,6 +124,7 @@ display: none;
     height: 40px;
     width: 40px;
   }
+
   .arrow {
     width: 16px;
     height: 16px;

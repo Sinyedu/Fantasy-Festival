@@ -13,9 +13,9 @@
         </div>
     
         <div ref="dropdownMenu" v-show="isOpen" class="dropdown-menu">
-          <router-link @click.native="hideDropdown" to="/">Home</router-link>
-          <router-link @click.native="hideDropdown" to="/familie">Familie Quest</router-link>
-          <router-link @click.native="hideDropdown" to="/aften">Aften Quest</router-link>
+          <router-link @click = "hideDropdown" to="/">Home</router-link>
+          <router-link @click = "hideDropdown" to="/familie">Familie Quest</router-link>
+          <router-link @click = "hideDropdown" to="/aften">Aften Quest</router-link>
         </div>
       </div>
     </div>
@@ -28,6 +28,7 @@ import anime from 'animejs/lib/anime.es.js';
 import logogreen from '../assets/img/logogreen.png';
 import logogul from '../assets/img/logogul.png';
 
+// Function that changes the colour of the dropdown menu based on the page you are on.
 export default {
   setup() {
     const route = useRoute();
@@ -45,6 +46,7 @@ export default {
       }
     });
 
+    // Animation for the dropdown menu.
     const toggleDropdown = () => {
       isOpen.value = !isOpen.value;
       const dropdown = document.querySelector('.dropdown-menu');
@@ -75,6 +77,7 @@ export default {
     const hideDropdown = () => {
       isOpen.value = false;
       const dropdown = document.querySelector('.dropdown-menu');
+
       anime({
         targets: dropdown,
         height: ['150px', '0%'],
@@ -86,10 +89,11 @@ export default {
         }
       });
     };
-
+    
     watch(route, () => {
       isOpen.value = false; // Close the dropdown when the route changes
     });
+
     const dropdownIconClass = computed(() => {
       switch (route.path) {
         case '/familie':
@@ -201,7 +205,6 @@ export default {
   background-color: #d8d2c4;
 }
 
-/* Media Queries */
 @media (max-width: 1024px) {
   .hamburger-icon {
     width: 5%;
@@ -291,7 +294,6 @@ export default {
 
 
 @media (max-width: 360px) {
-
   .hamburger-icon {
     width: 20%;
     margin-right: 1%;
@@ -318,9 +320,5 @@ export default {
     scale: 1.3;
     left: 1.7%;
   }
-
-
-
-
 }
 </style>

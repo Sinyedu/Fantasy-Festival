@@ -20,6 +20,7 @@
 </template>
 
 <script>
+// States the target date and sets the interval for the timer.
 export default {
   data() {
     return {
@@ -31,6 +32,7 @@ export default {
       timerInterval: null,
     };
   },
+  
   methods: {
     timer() {
       const now = new Date().getTime();
@@ -48,14 +50,17 @@ export default {
       this.seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
     }
   },
+
   mounted() {
     this.timer();
     this.timerInterval = setInterval(this.timer, 1000);
   },
+
   beforeUnmount() {
     clearInterval(this.timerInterval);
   }
 };
+
 </script>
 
 <style scoped>
@@ -93,6 +98,7 @@ export default {
 .label {
   font-size: 40%;
 }
+
 .label2 {
   font-size: 35%;
 }
@@ -120,4 +126,5 @@ export default {
     height: 60px;
   }
 }
+
 </style>
