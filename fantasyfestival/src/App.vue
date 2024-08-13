@@ -16,7 +16,6 @@ import { RouterView } from "vue-router";
 import NavBar from "./components/NavBar.vue";
 import Footer from "./components/FooterComponent.vue";
 import ScrollToTop from "./components/ScrollToTop.vue";
-  
 </script>
 
 <style lang="scss">
