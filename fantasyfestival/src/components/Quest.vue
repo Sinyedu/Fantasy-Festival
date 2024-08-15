@@ -17,11 +17,14 @@
 
     <div class="questcontainer">
       <div class="infotext">
-        <h1 class="headliner2 font-bold text-3xl">
+        <h1 class="headliner2 font-bold text-2xl">
           {{ content.headliner2 }}
         </h1>
         <p class="maintext raleway-font">
-          {{ content.maintext }}
+          {{ content.maintext1 }} <br> <br> 
+          {{ content.maintext2 }} <br> <br> 
+          {{ content.maintext3 }} <br> <br> 
+          {{ content.maintext4 }}
         </p>
       </div>
 
@@ -104,6 +107,7 @@
 .headliner2 {
   color: var(--text-colour-light);
   margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .herocontainer {
@@ -184,10 +188,11 @@
 
 .card {
   max-width: 100%;
-  width: 47%;
+  width: 40%;
   height: 100%;
   margin-top: 5%;
   padding-top: 3%;
+  padding-bottom: 8%;
   align-items: center;
   justify-content: center;
   background-image: url("../assets/img/familieramme.png");
@@ -217,7 +222,8 @@
 }
 
 .ylwbutton {
-  padding-top: 14%;
+  padding-top: 45%;
+  padding-bottom: 20%;
   width: 100%;
   height: 100%;
   scale: 1.4;

@@ -6,14 +6,11 @@
   </div>
 </template>
 
-
 <script setup>
-//Importing the general information about the evening quest
   import getInfoDetails from '@/modules/getNightInfo.js';
   const { infoDetails } = getInfoDetails();
 
   import Quest from "../components/Quest.vue";
-
 </script>
 
 

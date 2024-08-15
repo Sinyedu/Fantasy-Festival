@@ -7,11 +7,10 @@
 </template>
 
 <script setup>
-// Getting the Dynamic content
-import getDayDetails from "@/modules/getDayInfo.js";
-const { dayDetails } = getDayDetails();
+  import getDayDetails from "@/modules/getDayInfo.js";
+  const { dayDetails } = getDayDetails();
 
-import Quest from "../components/Quest.vue";
+  import Quest from "../components/Quest.vue";
 </script>
 
 <style lang="scss" scoped>
