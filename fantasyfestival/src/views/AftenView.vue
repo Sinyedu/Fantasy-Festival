@@ -156,7 +156,7 @@ font-size: 25px;
   margin-top: 45%;
   z-index: 100;
   scale: 0.6;
-  gap: 82%;
+  gap: 110%;
   pointer-events: none;
 }
 

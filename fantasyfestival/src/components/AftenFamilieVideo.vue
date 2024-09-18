@@ -1,10 +1,10 @@
 <template>
   <div class="video-holder">
-    <img class="top-half" src="../assets/img/toptail.png" alt="Toppen af Gnist's hale">
+    <!-- <img class="top-half" src="../assets/img/toptail.png" alt="Toppen af Gnist's hale"> -->
     <div id="player" class="video-wrapper">
       <div class="responsive-iframe"></div>
     </div>
-    <img class="bottom-half" src="../assets/img/bottomtail.png" alt="Bunden af Gnist's hale">
+    <!-- <img class="bottom-half" src="../assets/img/bottomtail.png" alt="Bunden af Gnist's hale"> -->
   </div>
 </template>
 
